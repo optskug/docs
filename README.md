@@ -1,3 +1,5 @@
+# openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY
+
 ![](https://user-images.githubusercontent.com/5363/91650158-ed5f5880-ea30-11ea-9b07-6e3dca7f8f83.gif)
 
 [^2]
@@ -6,18 +8,55 @@
 
 ---
 
-## 📃 Background/Wiki with a list of affected vehicles:
+## Background
 
-* What is Toyota Security Key
-* What Toyota vehicles appear to have it?
+There is a `STEERING_LKA`-ish message and more in some new Toyotas that currently has an "authentication code" scheme appended to the end. The algorithm and security system for this "authentication code" is somewhat known for certain vehicles but requires a key that is unique to each vehicle to be extracted or smuggled out of the vehicle. Not all vehicles are able to have their keys extracted.
 
-Link to the Wiki Page: https://github.com/commaai/openpilot/wiki/Toyota-Lexus#2021-toyota-ecu-security-key-support-new-steering_lka--more
+## List of vehicles with Toyota ECU Security Key
 
-The current state of the art guide for vehicles that happen to have support is here: https://github.com/commaai/openpilot/wiki/Toyota-Security-Key-Guide
+Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of which OP doesn't currently support right now:
+
+* ~~2021+ RAV4 Prime~~
+  * Known as RAV4 PHEV in non-North American markets
+* 2021+ Venza
+* ~~2021+ Sienna~~
+* (EUDM/JDM/MXDM) 2021+ Yaris GR
+* (USDM) 2022+ Corolla Cross (Speculated from TechInfo lookup)
+  * Not applicable to Thailand or Brazil.
+* (EUDM/JDM/MXDM) 2021+ Yaris Cross Hybrid
+* ~~(EUDM/JDM/MXDM) 2020+ Yaris Hybrid~~
+* 2022+ Lexus NX (Speculated from TechInfo lookup)
+* 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497 )
+* (EUDM) 2022+ Aygo X (Speculated from Toyota Tech EU lookup)
+* 2022+ Lexus LS (Speculated from TechInfo lookup)
+* 2022+ Lexus LX (Speculated from TechInfo lookup)
+* 2023+ Sequoia (Speculated from Being a Tundra With a SUV Body)
+* 2023+ bz4x (Speculated from TechInfo lookup, also probably the same for sister rebranded Subaru Solterra)
+* 2023+ TMC/JP-made Corolla (Speculated from TechInfo lookup)
+  * It is also unknown what form, if any amount of TSK there is on US-made 2023 Corollas. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
+* 2024+ Toyota Corolla, All origins.
+* 2023+ Prius and Prius Prime (Speculated from TechInfo lookup)
+* 2023+ Lexus RX (Speculated from TechInfo lookup)
+* 2023+ Aygo X (Euro tech info Lookup).
+* 2023+ Lexus ES (From anecdote in RP Discord's #toyota) [Disputed](https://discord.com/channels/660951518014341124/744908622013661204/1155212167927320616), [TechInfo has no signals of TSK, probably safe to say no TSK](https://discord.com/channels/469524606043160576/524327905937850394/1176367428054286450)
+* 2023+ Toyota Crown
+* 2023+ Lexus RZ (Speculated from TechInfo lookup)
+* 2024+ Grand Highlander ICE and Hybrid (Speculated from TechInfo lookup)
+* 2024+ Highlander ICE and Hybrid (Speculated from TechInfo lookup)
+* 2024+ Lexus TX (Speculated from TechInfo lookup)
+* 2024+ Lexus GX (Speculated from TechInfo lookup)
+* 2024+ Tacoma (Speculated from TechInfo lookup)
+* 2024+ Mirai (Speculated from TechInfo lookup)
+* 2024+ Camry (Speculated from TechInfo lookup)
+* And so on.... as any refreshes or new models after 2024 will have ECU Security Key so this list will more or less be just a list of all new Toyotas after 2024.
+
+TechInfo lookup is looking at Toyota's Techinfo site (payment required, minimum ~$25) and seeing if replacing the "Object recognition camera" / "Forward recognition camera" requires an ECU Security Key update. https://discord.com/channels/469524606043160576/524327905937850394/894262224552624228
+
+The current state of the art setup guide for vehicles that happen to have support is [here](./archive/guide.md)
 
 ---
 
-## Status Overview
+## Support Status Overview
 
 Some vehicles have been attempted to be hacked and some have been successfully hacked and some not.
 
@@ -126,7 +165,23 @@ In its place are more specific community bounties:
 
 * Tundra Interest Group
   * [~~"I’ll put up 2k for Tundra alone" - bgill66~~](https://discord.com/channels/469524606043160576/905950538816978974/1243275998745722911)
-    * Scrubbed / User had bumped to $5k but no interest. https://discord.com/channels/469524606043160576/905950538816978974/1259282479257485383
+    * Scrubbed / User had bumped to $5k but there was no interest. https://discord.com/channels/469524606043160576/905950538816978974/1259282479257485383
+
+## Pictures of TSK'd and non-TSK'd Camera ECUs
+
+FWIW the outside of the ECU Security Key camera of a Rav4 Prime looks the same as a non-ECU Security Camera of a Corolla or Corolla Hatchback.
+
+2021 Rav4 Prime:
+
+![image](https://user-images.githubusercontent.com/5363/132140741-662d7c6c-f15d-4e25-a480-233ee11467a7.png)
+
+Security Key'd Denso innards: https://discord.com/channels/469524606043160576/905950538816978974/939203494152372274
+
+2020 Corolla/Corolla Hatchback:
+
+![IMG_20200831_164627](https://user-images.githubusercontent.com/5363/132140777-a9a9153d-622f-4640-b338-89871c24a706.jpg)
+
+A photo teardown of the 2020 Corolla camera (NON ECU SECURITY KEY) innards: https://photos.app.goo.gl/qsBaMFT6PSEs7BFXA
 
 # Current History
 
@@ -144,7 +199,7 @@ Most if not all Discord links are to the comma.ai Discord accessible with an inv
 * MoreTorque (MT): Ask or look in OPC or RP Discord
 * Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
 
-The activities, actions, and discussions on non-comma.ai Discords are/may not supported by or affiliated with comma.ai (this may even apply even to the comma.ai Discord too). In the case of MT, comma.ai is strongly opposed to that Discord. That said, the ECU Security Key issues affects all and relevant events and information may be there as well.
+The activities, actions, and discussions on non-comma.ai Discords are/may not supported by or affiliated with comma.ai (this may even apply even to the comma.ai Discord too). In the case of MoreTorque, comma.ai is strongly opposed to that community/Discord. That said, the ECU Security Key issues affects all and relevant events and information may be there as well.
 
 
 ## Background
@@ -697,6 +752,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 - [tranlocguy attempts separating out the sienna hybrid properly in a fork of anrum's frogpilot](https://discord.com/channels/469524606043160576/905950538816978974/1266663937978400809)
 - [A small request to some 2022 Sienna owners to send and post firmware versions](https://discord.com/channels/469524606043160576/905950538816978974/1267338201769705503)
 - [Some thoughts on part swapping very similar vehicles to rekey a vulnerable part instead, probably just wishful thinking](https://discord.com/channels/469524606043160576/905950538816978974/1267699386218053723)
-- [European/Italian 2020 Yaris Hybrid's Key successfully dumped. Unfortunately, the C3X was buggy and needs to be returned. If it wasn't though...](https://discord.com/channels/469524606043160576/905950538816978974/1268704646365581372)
+- [European/Italian 2020 Yaris Hybrid's Key successfully dumped. Unfortunately, the C3X was buggy and needs to be returned. If it wasn't though, it might have worked...](https://discord.com/channels/469524606043160576/905950538816978974/1268704646365581372)
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
