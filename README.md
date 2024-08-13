@@ -216,7 +216,7 @@ The status of the vehicles are as follows:
         - Key at least not at the same location as the RAV4 Prime
         - Brute force efforts to find key location successful on both Euro and Japanese
         - openpilot working working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
-        - First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controled by openpilot though.
+        - First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
         - Not sold in the USA, but is in Australia, Japan, and Europe
 
   - Wave HSM?
