@@ -884,4 +884,11 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 - [Some thoughts on part swapping very similar vehicles to rekey a vulnerable part instead, probably just wishful thinking](https://discord.com/channels/469524606043160576/905950538816978974/1267699386218053723)
 - [European/Italian 2020 Yaris Hybrid's Key successfully dumped. Unfortunately, the C3X was buggy and needs to be returned. If it wasn't though, it might have worked...](https://discord.com/channels/469524606043160576/905950538816978974/1268704646365581372)
 
+### August 2024
+
+- [A suggestion is made again to try to make a unified patch in a repo for TSK users.](https://discord.com/channels/469524606043160576/905950538816978974/1270120634139283577)
+- [Willem, Greg, and Robbe wins the DEFCON Car Hacking Village CTF and with it, a Model 3. (X, formerly known as Twitter)](https://x.com/pd0wm/status/1823030161207349639)
+  - `"We did it again!!! We got 1st place in the #defcon32 @CarHackVillage CTF. This year we won a Tesla Model 3, and the whole team has their own Black Badge now 😎. @gregjhogan @robbederks"`
+- **META**: [GitHub discussions have been shuttered in favor of all discussion going on at Discord. ](https://discord.com/channels/469524606043160576/954493346250887168/1272595007060054048). Please link users to https://github.com/optskug/docs/ for the latest news/history from here on out. Unfortunately, there's no way to make old GitHub links redirect so this is the best that can be done.
+
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
