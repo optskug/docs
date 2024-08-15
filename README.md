@@ -4,7 +4,7 @@
 
 [^2]
 
-[*Toyota's Sword in Rock situation*](https://store.steampowered.com/app/1865370/The_one_who_pulls_out_the_sword_will_be_crowned_king/) (that has been pulled out [quite a bit by Willem](https://icanhack.nl/blog/secoc-key-extraction/)!)
+[*Toyota's Sword in Rock situation*](https://store.steampowered.com/app/1865370/The_one_who_pulls_out_the_sword_will_be_crowned_king/) (that has been pulled out [quite a bit by Willem and Greg](https://icanhack.nl/blog/secoc-key-extraction/)!)
 
 ---
 
@@ -225,22 +225,22 @@ The status of the vehicles are as follows:
       - 2023: Known to be not working. Key not in visible memory. Mentioned in Willem's blog post.
     - `🇹 🇸 🇸 2️⃣` 2024 Toyota Highlander 🔴
       - 2024: Known to be not working. Key not in visible memory.
-      - 02 bootloader
-  - Wave with newer bootloader?
+      - 02 ~~bootloader~~
+  - Wave with newer ~~bootloader~~? [(It's not a bootloader version?)](https://discord.com/channels/469524606043160576/905950538816978974/1273746993394487376)
     - These vehicles don't seem to respond to the current exploit to run arbitrary code to do things like dump memory
     - `🇹 🇸 🇸 2️⃣` 2022 Tundra 🔴
-      - No known bootloader exploit execution
+      - No known ~~bootloader~~ exploit execution
       - User ThisGuy has an extra rack on the bench. No known progress.
-      - 04 bootloader
+      - 04 ~~bootloader~~
     - `🇹 🇸 🇸 2️⃣` 2021 Venza 🟡?🔴?
       - Key at least not at the same location as the RAV4 Prime
       - Brute force efforts to find key location TBD
-      - Has a 02 bootloader though from one sample. Strange for this vintage? Maybe another should try.
+      - Has a 02 ~~bootloader~~ though from one sample. Strange for this vintage? Maybe another should try.
     - `🇹 🇸 🇸 2️⃣` 2024 Rav4 Prime 🟡?🔴?
       - Key at least not at the same location as other RAV4 Prime
       - Brute force efforts to find key location TBD
       - At least code is executed. Unknown what might have changed.
-      - New 02 bootloader seen
+      - New 02 ~~bootloader~~ seen
    - Notable Unknown
      - `🇹 🇸 🇸 3️⃣` 2023+ Corolla, JP and US origins.
        - While users have come by here and there, none have produced usable engineering info or experiences of note.
@@ -889,6 +889,9 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 - [A suggestion is made again to try to make a unified patch in a repo for TSK users.](https://discord.com/channels/469524606043160576/905950538816978974/1270120634139283577)
 - [Willem, Greg, and Robbe wins the DEFCON Car Hacking Village CTF and with it, a Model 3. (X, formerly known as Twitter)](https://x.com/pd0wm/status/1823030161207349639)
   - `"We did it again!!! We got 1st place in the #defcon32 @CarHackVillage CTF. This year we won a Tesla Model 3, and the whole team has their own Black Badge now 😎. @gregjhogan @robbederks"`
-- **META**: [GitHub discussions have been shuttered in favor of all discussion going on at Discord. ](https://discord.com/channels/469524606043160576/954493346250887168/1272595007060054048). Please link users to https://github.com/optskug/docs/ for the latest news/history from here on out. Unfortunately, there's no way to make old GitHub links redirect so this is the best that can be done.
+- **META**: [GitHub discussions have been shuttered in favor of all discussion going on at Discord. ](https://discord.com/channels/469524606043160576/954493346250887168/1272595007060054048). Please link users to https://github.com/optskug/docs/ for the latest news/history from here on out. Unfortunately, there's no way to make old GitHub links redirect so this is the best that can be done. The old link, for reference is: https://github.com/commaai/openpilot/discussions/19932
+- gregjhogan clarifies what the first byte of a UDS firmware version is.
+  - "The first byte returned when reading the firmware versions using UDS read data by id isn't part of the version number, it is how many applications are running on the ECU (for example if it has two cores, there may be a separate application running on each core) and it tells you how many you can extract from the rest of the data returned."
+
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
