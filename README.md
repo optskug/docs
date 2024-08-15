@@ -890,7 +890,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 - [Willem, Greg, and Robbe wins the DEFCON Car Hacking Village CTF and with it, a Model 3. (X, formerly known as Twitter)](https://x.com/pd0wm/status/1823030161207349639)
   - `"We did it again!!! We got 1st place in the #defcon32 @CarHackVillage CTF. This year we won a Tesla Model 3, and the whole team has their own Black Badge now 😎. @gregjhogan @robbederks"`
 - **META**: [GitHub discussions have been shuttered in favor of all discussion going on at Discord. ](https://discord.com/channels/469524606043160576/954493346250887168/1272595007060054048). Please link users to https://github.com/optskug/docs/ for the latest news/history from here on out. Unfortunately, there's no way to make old GitHub links redirect so this is the best that can be done. The old link, for reference is: https://github.com/commaai/openpilot/discussions/19932
-- gregjhogan clarifies what the first byte of a UDS firmware version is.
+- [gregjhogan clarifies what the first byte of a UDS firmware version is.](https://discord.com/channels/469524606043160576/905950538816978974/1273746993394487376)
   - "The first byte returned when reading the firmware versions using UDS read data by id isn't part of the version number, it is how many applications are running on the ECU (for example if it has two cores, there may be a separate application running on each core) and it tells you how many you can extract from the rest of the data returned."
 
 
