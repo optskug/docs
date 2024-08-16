@@ -195,7 +195,7 @@ The status of the vehicles are as follows:
 - Vehicles and Possible Groupings
   - Wave Early Security Key
     - These vehicles do not use the HSM.
-    - These all seem to share the commonality of a version 1 bootloader on the EPS
+    - These all seem to share the commonality of a ~~version 1 bootloader~~ on the EPS
     - Longitudinal
       - A little fragmented. People are making change to their own code. While latitude is clearly controlled, the state of longitudinal is all over the place.
       - Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
