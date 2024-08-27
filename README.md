@@ -16,8 +16,9 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of which OP doesn't currently support right now:
 
-* ~~2021+ RAV4 Prime~~
+* ~~2021-2023 RAV4 Prime~~
   * Known as RAV4 PHEV in non-North American markets
+* 2024 RAV4 Prime
 * 2021+ Venza
 * ~~2021+ Sienna~~
 * (EUDM/JDM/MXDM) 2021+ Yaris GR
