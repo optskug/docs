@@ -263,7 +263,10 @@ It is also unknown what is the status of the approach where we pretend to be an 
 
 ### 🗳️ comma.ai Vote for Toyota Security
 
-In June 2022, comma.ai created a paid vote/crowdfund for making openpilot support Toyota Security. Once they get 500 votes at $100 a vote, they have 6 months to figure it out and open source a solution; Otherwise, a refund will happen and all the money is returned. The current status of that is: [![Latest Comma Vote Count for Toyota Security ($100 ea.)](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DB1&label=Latest%20Comma%20Vote%20Count%20for%20Toyota%20Security%20(%24100%20ea.))](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=B1) . It is tracked in [a spreadsheet](https://docs.google.com/spreadsheets/u/1/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=B1).
+In June 2022, comma.ai created a paid vote/crowdfund for making openpilot support Toyota Security. Once they get 500 votes at $100 a vote, they have 6 months to figure it out and open source a solution; Otherwise, a refund will happen and all the money is returned. The current status of that is: [![Latest Comma Vote Count for Toyota Security ($100 ea.)](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DB1&label=Latest%20Comma%20Vote%20Count%20for%20Toyota%20Security%20(%24100%20ea.))](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=B1) .
+
+Vote counts are reported every week or similar and are recorded in this spreadsheet by the community:
+https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0
 
 The result of this vote, even though it has not met its milestone, is [a pull request was produced for the RAV4 Prime to be supported in openpilot](https://github.com/commaai/openpilot/pull/31179). It is currently developed on-and-off.
 
@@ -272,9 +275,6 @@ comma.ai's Vote for Toyota Security system store/page is located at: https://com
 ![image](https://user-images.githubusercontent.com/5363/172986625-e4df487e-6e0a-4e37-bb73-89927fa7b597.png)
 
 Please visit the page and observe what it says for official information.
-
-Vote counts are reported every week or similar and are recorded in this spreadsheet by the community:
-https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0
 
 [![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DBulkVoteCount)](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=BulkVoteCount)
 
