@@ -67,7 +67,9 @@ INSTRUCTIONS STATUS: WIP 🚧
 
 1. Start off with the installation guide here:
 
-   https://comma.ai/setup/comma-3x
+  * https://comma.ai/setup/comma-3x
+  * Also connect the OBD2 connector to make sure the Comma stays powered on while turning on the car
+  * Make sure to use the USB-C connector that comes with the Comma ai. A USB-C 3.1 Gen 2 is required.
 
 2. Then once you get your Comma powered up, you'll connect it to your Wi-Fi network.
 
@@ -209,7 +211,7 @@ The status of the vehicles are as follows:
         - Focus of Willem's Pull Request
           - Additional fingerprints added in anrum's frogpilot port.
       - `🇹 🇸 🇸 2️⃣` 2021 Sienna 🟢🟡
-        - 2021-2022: Known to be working
+        - 2021-2023: Known to be working
         - Key surprisingly at the same location as the RAV4 Prime
         - Community currently hacking it in as a RAV4 Prime. Should really be formally put it in as a Sienna. WIP.
           - tranlocquy's fork of anrum's Frogpilot port has this separated out and fingerprints added for 2021 at least.
