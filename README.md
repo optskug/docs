@@ -896,5 +896,9 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 - [gregjhogan clarifies what the first byte of a UDS firmware version is.](https://discord.com/channels/469524606043160576/905950538816978974/1273746993394487376) It's not a bootloader version?
   - "The first byte returned when reading the firmware versions using UDS read data by id isn't part of the version number, it is how many applications are running on the ECU (for example if it has two cores, there may be a separate application running on each core) and it tells you how many you can extract from the rest of the data returned."
 
+### September 2024
+
+- [2023 Sienna confirmed to work](https://discord.com/channels/469524606043160576/905950538816978974/1281348878570094748)
+
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
