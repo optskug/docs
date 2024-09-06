@@ -68,7 +68,7 @@ INSTRUCTIONS STATUS: WIP 🚧
 1. Start off with the installation guide here:
 
   * https://comma.ai/setup/comma-3x
-  * Also connect the OBD2 connector to make sure the Comma stays powered on while turning on the car
+  * Also connect the OBD2 connector to make sure the Comma stays powered on while turning the car on and off
   * Make sure to use the USB-C connector that comes with the Comma ai. A USB-C 3.1 Gen 2 is required.
 
 2. Then once you get your Comma powered up, you'll connect it to your Wi-Fi network.
@@ -99,8 +99,9 @@ INSTRUCTIONS STATUS: WIP 🚧
       ```
     - The Comma should display just the splash screen with the Comma logo.
 
-7. Put the car into "Ignition on" mode but with "Not Ready to Drive":
-    - Slow press the "Power" button twice WITHOUT pressing the brake pedal.
+7. Put the car into "Ignition on" mode but with "Not Ready to Drive": 
+    - Slowly press the "Power" button twice WITHOUT pressing the brake pedal.
+    - The first press turns on accessory mode, the second press will activate Not Ready To Drive mode shown below.
     - ![PXL_20240718_234619671 MP](https://github.com/user-attachments/assets/4970e82e-e7df-471f-9896-ba532509793d)
 
 
