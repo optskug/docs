@@ -61,6 +61,8 @@ Based off of share-and-enjoy's and Rez's guide on Discord and previously on the 
 
 The instructions can and will change and are volatile. Please report and discuss any issues in the #toyota-security channel on the comma.ai Discord. The invite to that discord is at https://discord.comma.ai. Once joined, make sure to answer any prompts you see in the Discord to gain full access. Once that is answered, this link will work to get you to #toyota-security: https://discord.com/channels/469524606043160576/905950538816978974
 
+You'll need a C3 or C3X and a Toyota A harness for current supported vehicles. 
+
 INSTRUCTIONS STATUS: WIP 🚧
 
 ---
