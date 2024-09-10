@@ -902,6 +902,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### September 2024
 
 - [2023 Sienna confirmed to work](https://discord.com/channels/469524606043160576/905950538816978974/1281348878570094748)
-
+- [there is some rough renewed interest in fork support such as frogpilot/sunnypilot]([https://discord.com/channels/1137853399715549214/1137905508217540699/1282936146526994534](https://discord.com/channels/469524606043160576/905950538816978974/1283091024406908938))
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
