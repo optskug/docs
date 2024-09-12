@@ -61,7 +61,7 @@ Based off of share-and-enjoy's and Rez's guide on Discord and previously on the 
 
 The instructions can and will change and are volatile. Please report and discuss any issues in the #toyota-security channel on the comma.ai Discord. The invite to that discord is at https://discord.comma.ai. Once joined, make sure to answer any prompts you see in the Discord to gain full access. Once that is answered, this link will work to get you to #toyota-security: https://discord.com/channels/469524606043160576/905950538816978974
 
-You'll need a C3 or C3X and a Toyota A harness for current supported vehicles. 
+You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 INSTRUCTIONS STATUS: WIP 🚧
 
@@ -101,7 +101,7 @@ INSTRUCTIONS STATUS: WIP 🚧
       ```
     - The Comma should display just the splash screen with the Comma logo.
 
-7. Put the car into "Ignition on" mode but with "Not Ready to Drive": 
+7. Put the car into "Ignition on" mode but with "Not Ready to Drive":
     - Slowly press the "Power" button twice WITHOUT pressing the brake pedal.
     - The first press turns on accessory mode, the second press will activate Not Ready To Drive mode shown below.
     - ![PXL_20240718_234619671 MP](https://github.com/user-attachments/assets/4970e82e-e7df-471f-9896-ba532509793d)
@@ -903,5 +903,12 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 - [2023 Sienna confirmed to work](https://discord.com/channels/469524606043160576/905950538816978974/1281348878570094748)
 - [there is some rough renewed interest in fork support such as frogpilot/sunnypilot]([https://discord.com/channels/1137853399715549214/1137905508217540699/1282936146526994534](https://discord.com/channels/469524606043160576/905950538816978974/1283091024406908938))
+- [A small debate in openpilot Enthusiasts about the comma vote system (OPC). Would we have gotten this far without it?](https://discord.com/channels/771493367246094347/771493367779295304/1283867906937192459)
+- [Willem shows up in #toyota-security](https://discord.com/channels/469524606043160576/905950538816978974/1283870093067161721)
+  - Asks about TSS3 Toyota Corolla without TSK like the ones made in the USA in 2023. "If somebody makes that port work, I’ll see if I can spend some time on the HSM EPSes. It’s definitely possible to get lateral only on those by just nuking the SecOC checks on the power steering"
+  - "If somebody wants to finish the rav4 prime port, feel free to take my code and reopen the PR"
+  - "Probably best to start with the panda safety code. It’s all working now, but comma wanted it cleaned up with some config structs like the Chrysler code"
+  - "I’m too busy with other projects to work on car ports"
+  - "Happy to provide feedback"
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
