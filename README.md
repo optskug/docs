@@ -48,7 +48,7 @@ Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of
 * 2024+ Lexus GX (Speculated from TechInfo lookup)
 * 2024+ Tacoma (Speculated from TechInfo lookup)
 * 2024+ Mirai (Speculated from TechInfo lookup)
-* 2024+ Camry (Speculated from TechInfo lookup)
+* 2025+ Camry (Speculated from TechInfo lookup)
 * And so on.... as any refreshes or new models after 2024 will have ECU Security Key so this list will more or less be just a list of all new Toyotas after 2024.
 
 TechInfo lookup is looking at Toyota's Techinfo site (payment required, minimum ~$25) and seeing if replacing the "Object recognition camera" / "Forward recognition camera" requires an ECU Security Key update. https://discord.com/channels/469524606043160576/524327905937850394/894262224552624228
