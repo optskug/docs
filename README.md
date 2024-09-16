@@ -247,6 +247,11 @@ The status of the vehicles are as follows:
       - Brute force efforts to find key location TBD
       - At least code is executed. Unknown what might have changed.
       - New 02 ~~bootloader~~ seen
+    - `🇹 🇸 🇸 2️⃣` 2024 Sienna 🟡?🔴?
+      - Key at least not at the same location as other RAV4 Prime
+      - Brute force efforts to find key location TBD
+      - At least code is executed. Unknown what might have changed.
+      - New 02 ~~bootloader~~ seen
    - Notable Unknown
      - `🇹 🇸 🇸 3️⃣` 2023+ Corolla, JP and US origins.
        - While users have come by here and there, none have produced usable engineering info or experiences of note.
@@ -868,10 +873,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [$5k bounty is confirmed to be locked to Willem with the RAV4 Prime](https://github.com/commaai/openpilot/pull/32661#issuecomment-2156220468)
 * [@nelsonjchen helps GON0822 try to dump the key off their 2022 Yaris Hybrid in Japan. GON0822's English isn't great and it's quite a struggle but GON0822 is preservering. Unfortunately, the key is not located at the same memory address as the RAV4/Sienna. Plans are made for a possible brute force trial though more Western users have not had much success.](https://discord.com/channels/469524606043160576/905950538816978974/1251451250331877426)
 * [@nelsonjchen misremembers the Venza. Apparently it was bootloader version 2 unlike the RAV4 Prime and Sienna which came out in the same model year. GON0822's Yaris is actually the first bootloader v1 to fail to dump the key.](https://discord.com/channels/469524606043160576/905950538816978974/1252441668372664350)
+* [According to thehui, the 2024 Sienna fails with the same error as the 2024 RAV4 Prime](https://discord.com/channels/469524606043160576/905950538816978974/1249192050096738315)
 * [The key from GON0822's 2022 Yaris Hybrid is extracted with a brute-force method. However, dropping in the key into the rav4 prime branch doesn't work for unknown reasons with a forced fingerprint.](https://discord.com/channels/469524606043160576/1234274531691069502/1254322986970779660)
 * [Fixing the key and using a firmware replaced branch doesn't work on GON0822's Yaris Hybrid. Request for assistance](https://discord.com/channels/469524606043160576/905950538816978974/1256508887146958848)
 * [AleSato comes with with a bunch of suggestions and working latitude is now working on GON0822's Yaris Hybrid! It is the first radar controlled vehicle to work.](https://discord.com/channels/469524606043160576/905950538816978974/1256873861979574396)
-
    [C3 Gon　Yaris-enc.webm](https://github.com/commaai/openpilot/assets/5363/fb611502-0ecb-4555-ac5a-4ac442511d53)
 * [Update from Willem on RAV4 Prime port upstreaming: "Regarding the Rav4 prime port, I've been quite busy lately."](https://discord.com/channels/469524606043160576/905950538816978974/1256568186568970263)
 
