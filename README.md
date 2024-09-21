@@ -915,5 +915,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   - "Probably best to start with the panda safety code. It’s all working now, but comma wanted it cleaned up with some config structs like the Chrysler code"
   - "I’m too busy with other projects to work on car ports"
   - "Happy to provide feedback"
+-  [Renewed interest from newer driving models being available re-raises the question of merging in support for TSK vehicles into Frogpilot. anrum, the original first porter to Frogpilot reappears. Since the original port, there has sporadic been semi-one-off Sienna and Rav4 fingerprints but nothing unified or upstreamed and numerous disparent HEADs. (FP Discord)]()
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
