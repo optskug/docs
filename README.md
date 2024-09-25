@@ -917,5 +917,9 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   - "Happy to provide feedback"
 -  [Renewed interest from newer driving models being available re-raises the question of merging in support for TSK vehicles into Frogpilot. anrum, the original first porter to Frogpilot reappears. Since the original port, there has sporadic been semi-one-off Sienna and Rav4 fingerprints but nothing unified or upstreamed and numerous disparent HEADs. (FP Discord)]()
 -  [Work continues on the Frogpilot TSK support upstreaming.](https://discord.com/channels/1137853399715549214/1137905508217540699/1287467639559422023)
+* comma Discord Sept 25 Developer Meeting notes
+  * Jason Young (jyoung8607), a prominent openpilot contributor and VW openpilot saint, is wanting to work on moving forward Willem's RAV4 Prime work to be rebased atop current comma openpilot with Willem's guidance (pd0wm).
+  * Approved goal by Adeeb is to have release comma openpilot be able to work with the RAV4 Prime *if* the key is provided by the user.
+  * SecOC Key extraction is outside of the scope of this work though and will not be included. In other words, plug-and-play is not to be expected.
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
