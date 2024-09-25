@@ -920,6 +920,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * comma Discord Sept 25 Developer Meeting notes
   * Jason Young (jyoung8607), a prominent openpilot contributor and VW openpilot saint, is wanting to work on moving forward Willem's RAV4 Prime work to be rebased atop current comma openpilot with Willem's guidance (pd0wm).
   * Approved goal by Adeeb is to have release comma openpilot be able to work with the RAV4 Prime *if* the key is provided by the user.
-  * SecOC Key extraction is outside of the scope of this work though and will not be included. In other words, plug-and-play is not to be expected.
+  * SecOC Key extraction is outside of the scope of this work though and will not be included. In other words, plug-and-play is not to be expected. The are open to seeing if/any UI or workflow might come from the community on this.
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
