@@ -6,6 +6,8 @@
 
 [*Toyota's Sword in Rock situation*](https://store.steampowered.com/app/1865370/The_one_who_pulls_out_the_sword_will_be_crowned_king/) (that has been pulled out [quite a bit by Willem and Greg](https://icanhack.nl/blog/secoc-key-extraction/)!)
 
+[![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c%26cellRange%3DA1)](https://docs.google.com/spreadsheets/d/1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c/edit#gid=0&range=A1)
+
 ---
 
 ## Background
@@ -922,5 +924,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * Approved goal by Adeeb is to have release comma openpilot be able to work with the RAV4 Prime *if* the key is provided by the user.
   * SecOC Key extraction is outside of the scope of this work though and will not be included. In other words, plug-and-play is not to be expected. The are open to seeing if/any UI or workflow might come from the community on this.
 * Jason opens a new draft pull request superceding Willem's pull request: https://github.com/commaai/openpilot/pull/33654
+* Produced a user group list of working vehicles and users on Jason's request: https://docs.google.com/spreadsheets/d/1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c/edit?gid=0#gid=0
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
