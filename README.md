@@ -942,6 +942,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
     * "The only thing I can think of, it's possible you were extremely lucky with `openpilotLongitudinalControl` and managed to filter the old message which still has [Stop and Go] relevant control bits, and transparent passthrough the new SecOC message with the actual acceleration command."
     * ["LOL that's exactly what you managed to do" "You accidentally made partial long control work "](https://discord.com/channels/469524606043160576/905950538816978974/1291459549794140182)
     * [The changes are not slated to be merged in but they are at least documented for future follow up work.](https://discord.com/channels/469524606043160576/905950538816978974/1291466235082571877)
+    * "Just FYI, yes incode was running the same SnG hack as me from tranlocquy. tranlocquy told me how to do it, and actually did it for incode."
+    * **"Now, it does NOT stop at red lights or stop signs, but DOES auto-resume from stop with a lead car."**
 * [Jason restates the current merge goals and milestones, quoted below:](https://discord.com/channels/469524606043160576/905950538816978974/1291077896269467668)
   1. It won't be in dashcam mode, if there's a correctly saved SecOC key, it'll just work
   2. It will require a non-release branch, just like alpha openpilot longitudinal
@@ -950,6 +952,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [Jason asks for a couple of test route data for automated safety as a prerequisite of getting comma panda (Vehicle Interface) changes relating to safety merged in.](https://discord.com/channels/469524606043160576/905950538816978974/1291215107547861105)
   * [GON0822 volunteers and we capture some with Frogpilot's AI Translation bot doing translation duties (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980)
   * ["For the stock routes, I've got what I need now"](https://discord.com/channels/469524606043160576/905950538816978974/1291456815527231581)
-
+* The first of the RAV4 Prime support PRs is merged into the car support repository.
+  * This was done on the first part of a live stream. There was cake. https://youtube.com/live/ayiIi5hxE38?feature=share
+  * https://github.com/commaai/openpilot/pull/33654
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
