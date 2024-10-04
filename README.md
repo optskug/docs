@@ -933,4 +933,23 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "Ready for testers! I have a test branch for you (not the one in the PR) that forces the fingerprint to RAV4 Prime. This means it should work even if you have a Sienna, or a RAV4 Prime with a different fingerprint."
   * [gon0822 asks about Yaris Hybrid support. Yaris has a Continental Radar. Jason answers they might finish support for that as well this week.](https://discord.com/channels/469524606043160576/905950538816978974/1290457046910763073)
 
+
+### October 2024
+
+* [share-and-enjoy mentions that Stop and Go is working on their hacked branch off of an old Willem's branch in April 2024. This is baffling as it is not supposed to be working. ACC/Automatic Cruise Control messages are supposed to be signed! HOW?](https://discord.com/channels/469524606043160576/905950538816978974/1291044591138766919)
+  * Effort is spent to try to preserve and archive share-and-enjoy's very special and self-hacked copy as the git commit reported up to comma does not appear to have prerequsite or necessary changes.
+  * [share-and-enjoy shares their dirty changes and some shocking/amazing discoveries are made](https://discord.com/channels/469524606043160576/905950538816978974/1291457526004453498)
+    * "The only thing I can think of, it's possible you were extremely lucky with `openpilotLongitudinalControl` and managed to filter the old message which still has [Stop and Go] relevant control bits, and transparent passthrough the new SecOC message with the actual acceleration command."
+    * ["LOL that's exactly what you managed to do" "You accidentally made partial long control work "](https://discord.com/channels/469524606043160576/905950538816978974/1291459549794140182)
+    * [The changes are not slated to be merged in but they are at least documented for future follow up work.](https://discord.com/channels/469524606043160576/905950538816978974/1291466235082571877)
+* [Jason restates the current merge goals and milestones, quoted below:](https://discord.com/channels/469524606043160576/905950538816978974/1291077896269467668)
+  1. It won't be in dashcam mode, if there's a correctly saved SecOC key, it'll just work
+  2. It will require a non-release branch, just like alpha openpilot longitudinal
+  3. It won't appear in comma.ai/vehicles or CARS.md
+  4. comma will not ship the key retrieval mechanism, you're on your own for that
+* [Jason asks for a couple of test route data for automated safety as a prerequisite of getting comma panda (Vehicle Interface) changes relating to safety merged in.](https://discord.com/channels/469524606043160576/905950538816978974/1291215107547861105)
+  * [GON0822 volunteers and we capture some with Frogpilot's AI Translation bot doing translation duties (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980)
+  * ["For the stock routes, I've got what I need now"](https://discord.com/channels/469524606043160576/905950538816978974/1291456815527231581)
+
+
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
