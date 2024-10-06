@@ -955,5 +955,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * The first of the RAV4 Prime support PRs is merged into the car support repository.
   * This was done on the first part of a live stream. There was cake. https://youtube.com/live/ayiIi5hxE38?feature=share
   * https://github.com/commaai/openpilot/pull/33654
+* [While the RAV4 Prime fingerprint changes are being merged in, the Sienna Fingerprints are *not*. Another call for Sienna owners to provide their fingerprints.](https://discord.com/channels/469524606043160576/905950538816978974/1292480897441857536)
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
