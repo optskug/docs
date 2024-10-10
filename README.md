@@ -956,5 +956,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * This was done on the first part of a live stream. There was cake. https://youtube.com/live/ayiIi5hxE38?feature=share
   * https://github.com/commaai/openpilot/pull/33654
 * [While the RAV4 Prime fingerprint changes are being merged in, the Sienna Fingerprints are *not*. Another call for Sienna owners to provide their fingerprints.](https://discord.com/channels/469524606043160576/905950538816978974/1292480897441857536)
+* [Sienna fingerprints / support are merged into opendbc, an openpilot dependency. Will naturally get into openpilot's master branch sooner than later.](https://discord.com/channels/469524606043160576/905950538816978974/1292898908460023901)
+* [A small discussion about what happens to the code to support this in OP's release configuration. It won't work except on development branches such as master-ci/master and fails cleanly with a clear error.](https://discord.com/channels/469524606043160576/905950538816978974/1293017524270534656)
+* [Some discussion about producing a key-dumping tool that can be run with the Custom Software input for dumping the key.](https://discord.com/channels/469524606043160576/905950538816978974/1293088853359460383)
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
