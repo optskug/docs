@@ -963,5 +963,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [A small discussion about what happens to the code to support this in OP's release configuration. It won't work except on development branches such as master-ci/master and fails cleanly with a clear error.](https://discord.com/channels/469524606043160576/905950538816978974/1293017524270534656)
 * [Some discussion about producing a key-dumping tool that can be run with the Custom Software input for dumping the key.](https://discord.com/channels/469524606043160576/905950538816978974/1293088853359460383)
 * [The MY2025 ES300H is one of the few (only so far?) 2025 Lexus vehicles without SecOC/TSK apparently.](https://discord.com/channels/469524606043160576/524327905937850394/1294352198482001972)
+* [Alexandre N. Sato, Brazil-SP adds to his own personal fork functionality to dump a SecOC key on a compatible vehicle assuming the vehicle is in the correct state. He does not have a SecOC vehicle and its functionality is purely speculative.](https://discord.com/channels/469524606043160576/905950538816978974/1295082300337553419)
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
