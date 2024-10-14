@@ -16,6 +16,9 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 ## List of vehicles with Toyota ECU Security Key
 
+> [!NOTE]
+> A notable vehicle not included here is the US-made (VIN does not start with `J`) 2023 Corolla. It does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. If you have one of these US Corollas, stop by the [comma Discord](https://discord.comma.ai). It's exact standing or nature is unknown.
+
 Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of which OP **doesn't** currently support right now:
 
 * ~~2021-2023 RAV4 Prime~~
