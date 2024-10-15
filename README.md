@@ -1,4 +1,4 @@
-# openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY
+# openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC
 
 ![](https://user-images.githubusercontent.com/5363/91650158-ed5f5880-ea30-11ea-9b07-6e3dca7f8f83.gif)
 
