@@ -885,6 +885,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [AleSato comes with with a bunch of suggestions and working latitude is now working on GON0822's Yaris Hybrid! It is the first radar controlled vehicle to work.](https://discord.com/channels/469524606043160576/905950538816978974/1256873861979574396)
    [C3 Gon　Yaris-enc.webm](https://github.com/commaai/openpilot/assets/5363/fb611502-0ecb-4555-ac5a-4ac442511d53)
 * [Update from Willem on RAV4 Prime port upstreaming: "Regarding the Rav4 prime port, I've been quite busy lately."](https://discord.com/channels/469524606043160576/905950538816978974/1256568186568970263)
+* [(Longitudinal Support on SecOC/TSK vehicles) Regarding the ACC message, if I remember correctly it's split up into the existing message and 0x177. They moved the actual acceleration command to 0x177 which has a SecOC MAC.](https://discord.com/channels/469524606043160576/905950538816978974/1256569386781904896)
 
 ### July 2024
 
@@ -947,6 +948,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
     * [The changes are not slated to be merged in but they are at least documented for future follow up work.](https://discord.com/channels/469524606043160576/905950538816978974/1291466235082571877)
     * "Just FYI, yes incode was running the same SnG hack as me from tranlocquy. tranlocquy told me how to do it, and actually did it for incode."
     * **"Now, it does NOT stop at red lights or stop signs, but DOES auto-resume from stop with a lead car."**
+* [(Longitudinal Support) Jason posts a PR to document the ACC command to the opendbc repo for SecOC/TSK vehicles. "Toyota: DBC message for SecOC longitudinal control #1337"](https://github.com/commaai/opendbc/pull/1337)
 * [Jason restates the current merge goals and milestones, quoted below:](https://discord.com/channels/469524606043160576/905950538816978974/1291077896269467668)
   1. It won't be in dashcam mode, if there's a correctly saved SecOC key, it'll just work
   2. It will require a non-release branch, just like alpha openpilot longitudinal
