@@ -711,6 +711,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1134950311719
 * comma.ai has its periodic social and product convention "[comma_con](https://web.archive.org/web/20230807020817/https://commacon.splashthat.com/)" to announce new products, meet and greet contributors and users, and talk about the future.
   * [comma ai | Shipping github.com/commaai/openpilot | Adeeb Shihadeh | COMMA_CON talks | CPO](https://youtu.be/18CjH41VXn4?t=1444)
 
+    ```
     [23:49.760 --> 23:52.360]  \[Audience Question\] Which car brands are the easiest to support
     [23:52.360 --> 23:53.360]  and the hardest to support?
     [23:53.360 --> 23:55.600]  \<cut\>
@@ -732,6 +733,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1134950311719
     [24:33.160 --> 24:34.560]  We haven't spent much time on it,
     [24:34.560 --> 24:36.320]  but that'll be a little bit of a project.
     [24:36.320 --> 24:39.600]  It just adds more overhead to porting a car.
+    ```
   * [Jason Young (a major non-comma.ai openpilot contributor) discusses SecOC as a **bad** thing to see when attempting to port OP to a new vehicle.](https://youtu.be/KcfzEHB6ms4?t=221)
 * [The Toyota B Harness seen in the 2023 Corolla and the 2023 Prius go on sale in comma's shop after a tester was located.](https://github.com/commaai/openpilot/issues/28402)
 * [rap_rep_291 on Discord discovers that Vector's (A popular CAN Bus Analyzer and debugging tool) tooling may have SecOC "OEM Security Addons" "free of charge" for some OEMs. Toyota is not mentioned specifically though. Vector stuff is $20k though.](https://discord.com/channels/469524606043160576/905950538816978974/1137507914525970615)
