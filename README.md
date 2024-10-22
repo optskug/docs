@@ -342,10 +342,10 @@ Many of these Discord links are to a pre-hidden channel named `#toyota-security`
 
 Most if not all Discord links are to the comma.ai Discord accessible with an invite from https://discord.comma.ai unless otherwise noted. These other Discords include:
 
-* Retropilot (RP): https://discord.gg/GzWegVa . This Discord can also be located in the Discord's Public Server Explore/Discover (🧭 icon on left sidebar) as well.
-* Sunnyharbin's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV . This Discord can also be located in the Discord's Public Server Explore/Discover (🧭 icon on left sidebar) as well. In case it's not clear, this is Sunnypilot's home Discord.
-* Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): Ask or look in RP Discord. This Discord can also be located in the Discord's Public Server Explore/Discover (🧭 icon on left sidebar) as well.
-* MoreTorque (MT): Ask or look in OPC or RP Discord
+* Retropilot (RP): https://discord.gg/GzWegVa.
+* Sunnyharbin's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV. This is Sunnypilot's home Discord.
+* Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): https://discord.gg/rRB7eDKccy
+* MoreTorque (MT): https://discord.gg/439DM9KJ4r
 * Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
 
 The activities, actions, and discussions on non-comma.ai Discords are/may not supported by or affiliated with comma.ai (this may even apply even to the comma.ai Discord too). In the case of MoreTorque, comma.ai is strongly opposed to that community/Discord. That said, the ECU Security Key issues affects all and relevant events and information may be there as well.
