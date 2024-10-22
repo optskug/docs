@@ -215,29 +215,25 @@ The status of the vehicles are as follows:
 - Vehicles and Possible Groupings
   - Wave Early Security Key
     - These vehicles do not use the HSM.
-    - These all seem to share the commonality of a ~~version 1 bootloader~~ on the EPS
+    - These all seem to share the commonality of a ~~version 1 bootloader~~ ? on the EPS
     - Longitudinal
-      - A little fragmented. People are making change to their own code. While latitude is clearly controlled, the state of longitudinal is all over the place.
+      - Some people seem to have it going. It's not upstreamed.
       - Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
-      - openpilot can't control gas or brake; no traffic lights or experimental mode. The CAN bus command to control this is currently unknown, but sought.
 
     - Vehicles
       - `🇹 🇸 🇸 2️⃣` 2021 RAV4 Prime 🟢
         - 2021-2023: Known to be working
-        - Flagship vehicle for ECU Security Key efforts
-        - Focus of Willem's Pull Request
-          - Additional fingerprints added in anrum's frogpilot port.
+        - Upstreamed into openpilot's master branch
       - `🇹 🇸 🇸 2️⃣` 2021 Sienna 🟢🟡
         - 2021-2023: Known to be working
-        - Key surprisingly at the same location as the RAV4 Prime
-        - Community currently hacking it in as a RAV4 Prime. Should really be formally put it in as a Sienna. WIP.
-          - tranlocquy's fork of anrum's Frogpilot port has this separated out and fingerprints added for 2021 at least.
+        - Upstreamed into openpilot's master branch
       - `🇹 🇸 🇸 2️⃣` 2020-2022 Yaris Hybrid 🟢🟡🟡
         - Key at least not at the same location as the RAV4 Prime
         - Brute force efforts to find key location successful on both Euro and Japanese
         - openpilot working working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
         - First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
         - Not sold in the USA, but is in Australia, Japan, and Europe
+        - Only one guy using it in Japan unfortunately. Help double the population!
 
   - Wave HSM?
     - These vehicles don't seem to have a valid key in the memory returned after the exploit payload is run.
@@ -276,8 +272,6 @@ The status of the vehicles are as follows:
 Note: 🟢 = Working, 🟡 = WIP, 🔴 = Not Working and sometimes a mix.
 
 Note 2: If it's not listed above, then there has been no documented information or attempts.
-
-It is also unknown what is the status of the approach where we pretend to be an ECU to get the keys in a re-keying situation. This might be an approach that might work for unsupported vehicles. Theoretically anybody could dump the firmware now with the exploit to dump firmware and try to reverse engineer this but no one other than the original researchers have done this.
 
 - History and such can be found below. The most recent history is at the bottom. If you need to catch up, start from where you left off. Feel free to ask questions in Discord.
 
