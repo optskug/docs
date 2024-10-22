@@ -971,6 +971,18 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [The MY2025 ES300H is one of the few (only so far?) 2025 Lexus vehicles without SecOC/TSK apparently.](https://discord.com/channels/469524606043160576/524327905937850394/1294352198482001972)
 * [Alexandre N. Sato, Brazil-SP adds to his own personal fork functionality to dump a SecOC key on a compatible vehicle assuming the vehicle is in the correct state. He does not have a SecOC vehicle and its functionality is purely speculative.](https://discord.com/channels/469524606043160576/905950538816978974/1295082300337553419)
 * [Longitudinal control is brought up again. "all you people who say you can spell Python and Linux, go add a second copy of the ACC message packer and (for testing) an unconditional transmit allow in Panda for address 0x183 (decimal 387), high chance it'll Just Work" - Jason](https://discord.com/channels/469524606043160576/905950538816978974/1295793229228408923)
-* [chrispypatt takes on that offer and gives it a try. They are able to successfully block the message but generating longitudinal ACC messages isn't working yet.](https://discord.com/channels/469524606043160576/905950538816978974/1296311472095494195)
+* [chrispypatt takes on that offer and gives it a try on their 2021 RAV4 Prime. They are able to successfully block the message but generating longitudinal ACC messages isn't working yet.](https://discord.com/channels/469524606043160576/905950538816978974/1296311472095494195)
+* [chrispypatt gets longitudinal control working on their 2021 RAV4 Prime.](https://discord.com/channels/469524606043160576/905950538816978974/1296469627911667713)
+
+  >  Ok so I changed the ACC_CONTROL_2’s ACCEL_CMD to match the ACC_CONTROL’s scaling in the dbc. I just manually edited it for now rather than figuring out how the generation works. I can throw my changes up to my fork tonight.
+  >
+  >  The good news is it worked 🎉🎉🎉! OP was clearly controlling long. It just doesn’t seem to be fully working. It seemed something was not quite right but I don’t have any experience with OP long so let me know if it is expected when on city streets. Acceleration seemed to not always work, even with no lead car, my rav would not always accelerate up to my set point. Many times I would have to accelerate manually up to the desired speed but then OP would be good about decelerating down for lead cars and stopping at stop lights.
+  >
+  >  I also noticed at clear and green light stop lights and when cars were a whole block in front of me OP would decelerate.
+  >
+  >  If I came to a complete stop I always had to hit the gas to get going again. Also rolling up to a red light there was some creep where the car would not come to a complete stop until many times I was in the cross walk.
+  >
+  >You can see some of these issues in the attached videos.
+* [chrispypatt: "The biggest benefit I have seen is coming up on freeway traffic and cars stopped at stoplights deceleration is smooth. With TSS2 it would always wait till last minute and then just slam on the breaks"](https://discord.com/channels/469524606043160576/905950538816978974/1297571813970284627)
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
