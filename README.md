@@ -736,7 +736,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1134950311719
     [24:34.560 --> 24:36.320]  but that'll be a little bit of a project.
     [24:36.320 --> 24:39.600]  It just adds more overhead to porting a car.
     ```
-  * [Jason Young (a major non-comma.ai openpilot contributor) discusses SecOC as a **bad** thing to see when attempting to port OP to a new vehicle.](https://youtu.be/KcfzEHB6ms4?t=221)
+  * [Jason Young, a prominent not-comma.ai openpilot community contributor, discusses SecOC as a **bad** thing to see when attempting to port OP to a new vehicle.](https://youtu.be/KcfzEHB6ms4?t=221)
 * [The Toyota B Harness seen in the 2023 Corolla and the 2023 Prius go on sale in comma's shop after a tester was located.](https://github.com/commaai/openpilot/issues/28402)
 * [rap_rep_291 on Discord discovers that Vector's (A popular CAN Bus Analyzer and debugging tool) tooling may have SecOC "OEM Security Addons" "free of charge" for some OEMs. Toyota is not mentioned specifically though. Vector stuff is $20k though.](https://discord.com/channels/469524606043160576/905950538816978974/1137507914525970615)
 * [The Lexus UX 2023 2023 are looked up to not have Security Key.](https://discord.com/channels/469524606043160576/524327905937850394/1141095773346472019)
@@ -929,7 +929,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 -  [Renewed interest from newer driving models being available re-raises the question of merging in support for TSK vehicles into Frogpilot. anrum, the original first porter to Frogpilot reappears. Since the original port, there has sporadic been semi-one-off Sienna and Rav4 fingerprints but nothing unified or upstreamed and numerous disparent HEADs. (FP Discord)]()
 -  [Work continues on the Frogpilot TSK support upstreaming.](https://discord.com/channels/1137853399715549214/1137905508217540699/1287467639559422023)
 * comma Discord Sept 25 Developer Meeting notes
-  * Jason Young (jyoung8607), a prominent openpilot contributor and VW openpilot saint, is wanting to work on moving forward Willem's RAV4 Prime work to be rebased atop current comma openpilot with Willem's guidance (pd0wm).
+  * Jason Young (jyoung8607), a prominent non-comma.ai openpilot contributor and VW openpilot saint, is wanting to work on moving forward Willem's RAV4 Prime work to be rebased atop current comma openpilot with Willem's guidance (pd0wm) while he is visiting comma.ai's office in San Diego on vacation.
   * Approved goal by Adeeb is to have release comma openpilot be able to work with the RAV4 Prime *if* the key is provided by the user.
   * SecOC Key extraction is outside of the scope of this work though and will not be included. In other words, plug-and-play is not to be expected. The are open to seeing if/any UI or workflow might come from the community on this.
 * Jason opens a new draft pull request superceding Willem's pull request: https://github.com/commaai/openpilot/pull/33654
