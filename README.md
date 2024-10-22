@@ -71,7 +71,13 @@ The instructions can and will change and are volatile. Please report and discuss
 
 You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
-INSTRUCTIONS STATUS: WIP 🚧
+> [!NOTE]
+> This section is outdated and could use an **update**.
+>
+> * Support has been merged into `master`. You might not even need to use Willem's fork anymore.
+> * The current `secoc` repo requires the latest `master` installed to work.
+>
+> **If you are an TSK/SecOC vehicle owner, please send in pull requests to fix or amend this section with first hand experience!**
 
 ---
 
