@@ -432,7 +432,7 @@ matty#8553 came on Discord as the first user with a RAV4 Prime and a new Comma 2
 ### August 2021
 
 * Comma 3 is released at Comma Con.
-  * [At the Comma Team Group Chat, Erich asked about ECU Security Key:](https://youtu.be/qTaPD0l_8PM?t=23390)
+  * [At the Comma Team Group Chat, Erich, a prominent Toyota community contributor and community Discord moderator, asked about ECU Security Key:](https://youtu.be/qTaPD0l_8PM?t=23390)
     * Adeeb: I think we'll just look into it a bit and just kind of understand what the scope of the issue was and we just decided this isn't affecting too many cars yet that's not where we're choosing. We've aggressively chosen in the last year or so to not spend time on specific cars
 
        We've spent almost all of our time doing things that improve everybody's experience with openpilot.
