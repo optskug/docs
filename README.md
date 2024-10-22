@@ -371,10 +371,13 @@ The typical process for adding a new TSS2 vehicle is simply creating a fingerpri
 matty#8553 came on Discord as the first user with a RAV4 Prime and a new Comma 2. crazysim#7797 / @nelsonjchen offered to get the RAV4 Prime supported. [Some worrying observations were immediately made in a GitHub issue after validating that the hardware was sound and working on another non-Prime TSS2 RAV4 ](https://github.com/commaai/openpilot/issues/2103):
 
 * The `STEERING_LKA` CAN message is now 8 bytes in size. Existing TSS2 vehicles had a 5 byte `STEERING_LKA` CAN message.
+  * There is a 4 byte authentication code on the CAN message instead of the simple 1 byte checksum of past Toyotas.
 * [@nelsonjchen implemented and tried many checksum algorithms to try and create an identical `STEERING_LKA` message to what was seen in Cabana](https://github.com/nelsonjchen/toyota_checksum_2020_scratch/blob/8422bd3b4b7770391e940d31202b8129fdebcb02/src/lib.rs#L97-L108). None of them worked.
 * @nelsonjchen asked around on many Discords and other well-known users for help. No one was able to help.
 * @nelsonjchen notices that the "checksum" is the not the same for messages with the same data. It doesn't seem like a checksum. Maybe some other state is kept somewhere?
 * The authentication code messages change between ignitions.
+* The messages are different between vehicles.
+* The same inputs result in different "checksum"/authentication code outputs.
 * [@nelsonjchen notices that Toyota filed a patent about message authentication on the CAN bus.](https://discord.com/channels/469524606043160576/524327905937850394/749576060110241824)
 * [matty#8553 eventually returned the Comma 2 within the trial period.](https://discord.com/channels/469524606043160576/524327905937850394/793525907763363901)
 
