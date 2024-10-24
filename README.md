@@ -71,14 +71,6 @@ The instructions can and will change and are volatile. Please report and discuss
 
 You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
-> [!NOTE]
-> This section is outdated and could use an **update**.
->
-> * Support has been merged into `master`. You might not even need to use Willem's fork anymore.
-> * The current `secoc` repo requires the latest `master` installed to work.
->
-> **If you are an TSK/SecOC vehicle owner, please send in pull requests to fix or amend this section with first hand experience!**
-
 ---
 
 1. Start off with the installation guide here:
@@ -89,9 +81,8 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 2. Then once you get your Comma powered up, you'll connect it to your Wi-Fi network.
 
-3. Install "Custom Software:
-    - When it asks you to enter a URL for "Custom Software", first try: `https://installer.comma.ai/pd0wm/rav4-prime`
-    - If you installation hangs and then restarts, try: `https://smiskol.com/fork/pd0wm/rav4-prime`
+3. Install "Custom Software":
+    - When it asks you to enter a URL for "Custom Software", use: `https://installer.comma.ai/commaai/master`
 
 4. Get SSH setup on the device:
    * Before you start (Both): https://github.com/commaai/openpilot/wiki/SSH#before-you-start
