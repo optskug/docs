@@ -988,5 +988,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   >You can see some of these issues in the attached videos.
 * [chrispypatt: "The biggest benefit I have seen is coming up on freeway traffic and cars stopped at stoplights deceleration is smooth. With TSS2 it would always wait till last minute and then just slam on the breaks"](https://discord.com/channels/469524606043160576/905950538816978974/1297571813970284627)
 * [calvinspark had his Sienna repaired after his wife sideswipes it and the key apparently changed. He was able re-dump it though.](https://discord.com/channels/469524606043160576/524592892627517450/1299143839059021925)
+  * [Willem: Every time a rekey operation is done the key changes. I think there is a sonar/parking sensor that has SecOC because it can press the brake when you’re backing up into something.](https://discord.com/channels/469524606043160576/524592892627517450/1299187790860517448) 
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
