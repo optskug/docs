@@ -66,6 +66,7 @@ TechInfo lookup is looking at Toyota's Techinfo site (payment required, minimum 
 For vehicles that do work, here's a very rough guide. Please send in pull requests to fix or amend it.
 
 ### Preamble
+
 Based off of share-and-enjoy's and Rez's guide on Discord and previously on the openpilot wiki before it was disabled.
 
 The instructions can and will change and are volatile. Please report and discuss any issues in the #toyota-security channel on the comma.ai Discord. The invite to that discord is at https://discord.comma.ai. Once joined, make sure to answer any prompts you see in the Discord to gain full access. Once that is answered, this link will work to get you to #toyota-security: https://discord.com/channels/469524606043160576/905950538816978974
@@ -73,6 +74,7 @@ The instructions can and will change and are volatile. Please report and discuss
 You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 ### Step 1. Power up C3X, connect to Wi-Fi, and install `commaai/master`
+
 1-1. Start with the official installation guide: https://comma.ai/setup/comma-3x
 
 1-2. Always use the right-angled USB-C cable that came with the Comma 3X. Don't use your own USB cable. A USB-C 3.1 Gen 2 is required.
@@ -86,6 +88,7 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 1-6. Install "Custom Software" with URL `commaai/master`
 
 ### Step 2. SSH into the device
+
 2-1. Before you start (for both macOS and Windows): https://github.com/commaai/openpilot/wiki/SSH#before-you-start
 
 2-2-1. macOS: https://github.com/commaai/openpilot/wiki/SSH#option-2mac---pre-installed-openssh-client-on-macos
@@ -98,6 +101,7 @@ ssh comma@"your Comma IP"
 ```
 
 ### Step 3. Extract security key
+
 > [!TIP]
 > If you already have the security key, proceed to Step 5. 
 
@@ -110,6 +114,7 @@ ssh comma@"your Comma IP"
 ```sh
 pkill -f openpilot
 ```
+
 Comma should display just the splash screen with the Comma logo.
 
 3-3. Clone Willem's secoc Git repository.
@@ -128,7 +133,6 @@ cd /data/openpilot/secoc
 ```
 
 3-6. If you see something like this, the key extraction was successful.
-
 ```sh
 comma@comma-71b93b83:/data/openpilot/secoc$ ./extract_keys.py 
 INFO: connecting to panda 2c0004004450383632311333
@@ -166,6 +170,7 @@ SecOC Key (KEY_4) 0123456789abcdef0123456789abcdef
 SecOC key written to param successfully!
 comma@comma-71b93b83:/data/openpilot/secoc$ 
 ```
+
 This 32 digit hexadecimal number is your key.
 > SecOC Key (KEY_4) **0123456789abcdef0123456789abcdef**
 
@@ -174,20 +179,24 @@ Email yourself the key so that you don't need to extract it again.
 Proceed to Step 5.
 
 > [!WARNING]
-> It's theoretically possible for someone to hack your car with the key _if the hacker has physical access to your car_. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
+> It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
 ### Step 4. Debugging
 
 #### 4-1. `panda.python.uds.MessageTimeoutError: timeout waiting for response`
+
 Turn off the car, put it back into `Not Ready to Drive` mode, and then try again.
 
 #### 4-2. `panda.python.uds.InvalidServiceIdError: invalid response service id: 0x50` or similar
+
 Turn off the car, put it back into `Not Ready to Drive` mode, and then try again.
 
 #### 4-3. `Can't read application software identification. Please cycle ignition.`
+
 Turn off the car, put it back into `Not Ready to Drive` mode, and then try again.
 
 #### 4-4. `Unexpected application version!`
+
 4-4-1. Open the script for editing.
 ```sh
 nano -l /data/openpilot/secoc/extract_keys.py
@@ -213,19 +222,22 @@ if bl_version != APPLICATION_VERSIONS[app_version]:
 ```
 
 #### 4-5. Still doesn't work?
+
 Turn off the car, unplug everything, plug them back in, and try Step 3 again.
 
-
 ### Step 5. Write the security key to params
+
 ```sh
 echo -n "your key here" > /data/params/d/SecOCKey
 ```
+
 For example,
 ```sh
 echo -n "0123456789abcdef0123456789abcdef" > /data/params/d/SecOCKey
 ```
 
 ### Step 6. Fingerprinting (if the car is not recognized)
+
 6-1. Follow the fingerprinting guide to get the ECU codes: https://github.com/commaai/openpilot/wiki/Fingerprinting
 
 6-2. Add the ECU codes to `fingerprints.py`.
@@ -266,9 +278,11 @@ CAR.TOYOTA_RAV4_PRIME: {
 6-2-4. Save and exit the editor (`Ctrl+X`, then `Y`, then `Enter`).
 
 ### Step 7. Reboot the device
+
  ```sh
  sudo reboot
  ```
+
 You're done!
 
 Comma 3X should reboot into the 15mph calibration screen.
@@ -280,6 +294,7 @@ Some cars support not using OBD2.
 At this time, Comma 3X can't use the gas and brake pedals (aka "long support"). 
 
 ---
+
 ## Support Status Overview
 
 Some vehicles have been attempted to be hacked and some have been successfully hacked and some not.
