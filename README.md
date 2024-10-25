@@ -174,7 +174,7 @@ comma@comma-71b93b83:/data/openpilot/secoc$
 This 32 digit hexadecimal number is your key.
 > SecOC Key (KEY_4) **0123456789abcdef0123456789abcdef**
 
-Email yourself the key so that you don't need to extract it again.
+Archive and don't lose the key so that you don't need to extract it again. Perhaps email it to yourself.
 
 Proceed to Step 5.
 
