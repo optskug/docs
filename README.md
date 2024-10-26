@@ -17,11 +17,13 @@ openpilot, in order to control the steering or latitude, needs to be able to man
 There is a `STEERING_LKA`-ish message and more in some new Toyotas that currently has an "authentication code" scheme appended to the end. The algorithm and security system for this "authentication code" is somewhat known for certain vehicles but requires a key that is unique to each vehicle to be extracted or smuggled out of the vehicle (https://icanhack.nl/blog/secoc-key-extraction/). Not all vehicles are able to have their keys extracted with what is currently known. Without the key or knowledge of the system, third parties like comma and users cannot control the vehicle.
 
 ## List of vehicles with Toyota ECU Security Key
+Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of which OP **doesn't** currently support right now:
 
 > [!NOTE]
 > A notable vehicle not included here is the US-made (VIN does not start with `J`) 2023 Corolla. It does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. If you have one of these US Corollas, stop by the [comma Discord](https://discord.comma.ai). It's exact standing or nature is unknown.
 
-Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of which OP **doesn't** currently support right now:
+> [!NOTE]
+> Bold vehicles are vehicles we suspect might work with the current key dumping procedures but no one has stopped by and/or attempted on them yet. It is speculation.
 
 * ~~2021-2023 RAV4 Prime~~
   * Known as RAV4 PHEV in non-North American markets
@@ -29,10 +31,10 @@ Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of
 * 2021+ Venza
 * ~~2021-2023 Sienna~~
 * 2024 Sienna
-* (EUDM/JDM/MXDM) 2021+ Yaris GR
+* **(EUDM/JDM/MXDM) 2021+ Yaris GR**
 * (USDM) 2022+ Corolla Cross (Speculated from TechInfo lookup)
   * Not applicable to Thailand or Brazil.
-* (EUDM/JDM/MXDM) 2021+ Yaris Cross Hybrid
+* **(EUDM/JDM/MXDM) 2021+ Yaris Cross Hybrid**
 * ~~(EUDM/JDM/MXDM) 2020+ Yaris Hybrid~~
 * 2022+ Lexus NX (Speculated from TechInfo lookup)
 * 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497 )
