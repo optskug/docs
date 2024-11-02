@@ -105,7 +105,7 @@ ssh comma@"your Comma IP"
 ### Step 3. Extract security key
 
 > [!TIP]
-> If you already have the security key, proceed to Step 5. 
+> If you already have the security key, proceed to Step 5.
 
 3-1. Put the car into `Not Ready to Drive` mode.
 * Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
@@ -136,7 +136,7 @@ cd /data/openpilot/secoc
 
 3-6. If you see something like this, the key extraction was successful.
 ```sh
-comma@comma-71b93b83:/data/openpilot/secoc$ ./extract_keys.py 
+comma@comma-71b93b83:/data/openpilot/secoc$ ./extract_keys.py
 INFO: connecting to panda 2c0004004450383632311333
 Getting application versions...
  - APPLICATION_SOFTWARE_IDENTIFICATION (application) b'\x018965B4509100\x00\x00\x00\x00'
@@ -170,7 +170,7 @@ ECU_MASTER_KEY    82667ef509b9f07a134aaf89d4973c68
 SecOC Key (KEY_4) 0123456789abcdef0123456789abcdef
 
 SecOC key written to param successfully!
-comma@comma-71b93b83:/data/openpilot/secoc$ 
+comma@comma-71b93b83:/data/openpilot/secoc$
 ```
 
 This 32 digit hexadecimal number is your key.
@@ -244,7 +244,7 @@ echo -n "0123456789abcdef0123456789abcdef" > /data/params/d/SecOCKey
 
 6-2. Add the ECU codes to `fingerprints.py`.
 
-6-2-1. Open the file for editing. 
+6-2-1. Open the file for editing.
 ```sh
 nano /data/openpilot/selfdrive/car/toyota/fingerprints.py
 ```
@@ -293,7 +293,7 @@ If you're able to calibrate and then use Comma 3X to use the steering wheel (aka
 
 Some cars support not using OBD2.
 
-At this time, Comma 3X can't use the gas and brake pedals (aka "long support"). 
+At this time, Comma 3X can't use the gas and brake pedals (aka "long support").
 
 ---
 
@@ -1079,6 +1079,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   >You can see some of these issues in the attached videos.
 * [chrispypatt: "The biggest benefit I have seen is coming up on freeway traffic and cars stopped at stoplights deceleration is smooth. With TSS2 it would always wait till last minute and then just slam on the breaks"](https://discord.com/channels/469524606043160576/905950538816978974/1297571813970284627)
 * [calvinspark had his Sienna repaired after his wife sideswipes it and the key apparently changed. He was able re-dump it though.](https://discord.com/channels/469524606043160576/524592892627517450/1299143839059021925)
-  * [Willem: Every time a rekey operation is done the key changes. I think there is a sonar/parking sensor that has SecOC because it can press the brake when you’re backing up into something.](https://discord.com/channels/469524606043160576/524592892627517450/1299187790860517448) 
+  * [Willem: Every time a rekey operation is done the key changes. I think there is a sonar/parking sensor that has SecOC because it can press the brake when you’re backing up into something.](https://discord.com/channels/469524606043160576/524592892627517450/1299187790860517448)
+
+### November 2024
+
+* [alesatobrazilsp and gon0822 determine that the Yaris Hybrid in Japan uses the same acceleration command seen in other Toyotas by looking in Cabana for the CAN BUS data. (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1302269836017008694)
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
