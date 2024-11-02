@@ -308,7 +308,7 @@ The status of the vehicles are as follows:
     - These vehicles do not use the HSM.
     - These all seem to share the commonality of a ~~version 1 bootloader~~ ? on the EPS
     - Longitudinal
-      - Some people seem to have it going. It's not upstreamed.
+      - Some people seem to have it going. It's [WIP upstreamed](https://github.com/commaai/opendbc/pull/1385).
       - Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
 
     - Vehicles
@@ -320,7 +320,7 @@ The status of the vehicles are as follows:
         - Upstreamed into openpilot's master branch
       - `🇹 🇸 🇸 2️⃣` 2020-2022 Yaris Hybrid 🟢🟡🟡
         - Key at least not at the same location as the RAV4 Prime
-        - Brute force efforts to find key location successful on both Euro and Japanese
+        - Brute force efforts to find key location successful on both Euro and Japanese. Euro gave up due to broken C3.
         - openpilot working working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
         - First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
         - Not sold in the USA, but is in Australia, Japan, and Europe
