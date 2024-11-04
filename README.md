@@ -81,7 +81,7 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 1-2. Always use the right-angled USB-C cable that came with the Comma 3X. Don't use your own USB cable. A USB-C 3.1 Gen 2 is required.
 
-1-3. Also connect the OBD2 connector to make sure the Comma stays powered on while turning the car on and off. You can experiment with not using OBD2 once everything's working, but use it for now.
+1-3. Also connect the OBD2 connector to make sure the Comma stays powered on while turning the car on and off.
 
 1-4. Turn on your Comma 3X by plugging in the right-angled USB-C cable to the harness.
 
@@ -299,8 +299,6 @@ CAR.TOYOTA_RAV4_PRIME: {
 Comma 3X should reboot into the 15mph calibration screen.
 
 If you're able to calibrate and then use Comma 3X to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
-
-Some cars support not using OBD2. @calvinspark uses his C3X on '23 Sienna without OBD2 because he never installed it, but the official installation guide says to use it.
 
 At this time, Comma 3X can't use the gas and brake pedals (aka "long support") on TSK vehicles.
 
