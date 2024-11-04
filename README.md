@@ -87,7 +87,7 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 1-5. Connect it to your Wi-Fi network.
 
-1-6. Install "Custom Software" with URL `commaai/master`
+1-6. Install "Custom Software" with URL `commaai/master` (Someone please try `commaai/master-ci` and report to #toyota-security on whether the extraction script still works.)
 
 ### Step 2. SSH into the device
 
@@ -227,8 +227,9 @@ if bl_version != APPLICATION_VERSIONS[app_version]:
 
 Turn off the car, unplug everything, plug them back in, and try Step 3 again.
 
-### Step 5. Write the security key to params
+### Step 5. Write the security key to params & Reboot
 
+5-1. Write the key.
 ```sh
 echo -n "your key here" > /data/params/d/SecOCKey
 ```
@@ -238,7 +239,16 @@ For example,
 echo -n "0123456789abcdef0123456789abcdef" > /data/params/d/SecOCKey
 ```
 
+5-2. Reboot the device.
+ ```sh
+ sudo reboot
+ ```
+
 ### Step 6. Fingerprinting (if the car is not recognized)
+
+> [!TIP]
+> If the Comma 3X reboots into the 15mph calibration screen, proceed to Step 7.  
+> If it says something like `Car unrecognized` or `Dashcam mode for unsupported car`, continue on Step 6.
 
 6-1. Follow the fingerprinting guide to get the ECU codes: https://github.com/commaai/openpilot/wiki/Fingerprinting
 
@@ -279,21 +289,20 @@ CAR.TOYOTA_RAV4_PRIME: {
 
 6-2-4. Save and exit the editor (`Ctrl+X`, then `Y`, then `Enter`).
 
-### Step 7. Reboot the device
-
+6-3. Reboot the device.
  ```sh
  sudo reboot
  ```
 
-You're done!
+### Step 7. Calibrate & Clean up
 
 Comma 3X should reboot into the 15mph calibration screen.
 
 If you're able to calibrate and then use Comma 3X to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
 
-Some cars support not using OBD2.
+Some cars support not using OBD2. @calvinspark uses his C3X on '23 Sienna without OBD2 because he never installed it, but the official installation guide says to use it.
 
-At this time, Comma 3X can't use the gas and brake pedals (aka "long support").
+At this time, Comma 3X can't use the gas and brake pedals (aka "long support") on TSK vehicles.
 
 ---
 
