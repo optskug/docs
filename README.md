@@ -107,6 +107,10 @@ ssh comma@"your Comma IP"
 > [!TIP]
 > If you already have the security key, proceed to Step 5.
 
+> [!NOTE]
+The key will change if Toyota Security Key or SecOC parts are replaced and the technician or mechanic runs an "ECU Security Key" update procedure. In this scenario, you'll have to re-extract and get your new key.
+
+
 3-1. Put the car into `Not Ready to Drive` mode.
 * Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 * The first press turns on `ACCESSORY` mode. The second press activates `Not Ready To Drive` mode shown below.
@@ -177,9 +181,6 @@ This 32 digit hexadecimal number is your key.
 > SecOC Key (KEY_4) **0123456789abcdef0123456789abcdef**
 
 Archive and don't lose the key so that you don't need to extract it again. Perhaps email it to yourself.
-
-> [!NOTE]
-> The key will change if Toyota Security Key or SecOC parts are replaced and the technician or mechanic runs an "ECU Security Key" update procedure. In this scenario, you'll have to re-extract and get your new key.
 
 Proceed to Step 5.
 
