@@ -178,6 +178,9 @@ This 32 digit hexadecimal number is your key.
 
 Archive and don't lose the key so that you don't need to extract it again. Perhaps email it to yourself.
 
+> [!NOTE]
+> The key will change if Toyota Security Key or SecOC parts are replaced and the technician or mechanic runs an "ECU Security Key" update procedure. In this scenario, you'll have to re-extract the and get your new key.
+
 Proceed to Step 5.
 
 > [!WARNING]
