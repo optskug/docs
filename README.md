@@ -75,7 +75,7 @@ The instructions can and will change and are volatile. Please report and discuss
 
 You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
-### Step 1. Power up C3X, connect to Wi-Fi, and install `commaai/master`
+### Step 1. Power up C3X, connect to Wi-Fi, and install `commaai/master-ci`
 
 1-1. Start with the official installation guide: https://comma.ai/setup/comma-3x
 
@@ -87,7 +87,7 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 1-5. Connect it to your Wi-Fi network.
 
-1-6. Install "Custom Software" with URL `commaai/master` (Someone please try `commaai/master-ci` and report to #toyota-security on whether the extraction script still works.)
+1-6. Install "Custom Software" with URL `commaai/master-ci`
 
 ### Step 2. SSH into the device
 
