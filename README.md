@@ -49,7 +49,7 @@ Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of
 * 2023+ Prius and Prius Prime (Speculated from TechInfo lookup)
 * 2023+ Lexus RX (Speculated from TechInfo lookup)
 * 2023+ Aygo X (Euro tech info Lookup).
-* 2023+ Lexus ES (From anecdote in RP Discord's #toyota) [Disputed](https://discord.com/channels/660951518014341124/744908622013661204/1155212167927320616), [TechInfo has no signals of TSK, probably safe to say no TSK](https://discord.com/channels/469524606043160576/524327905937850394/1176367428054286450)
+* 2023+ Lexus ES (From anecdote in RP Discord's #toyota) [Disputed](https://discord.com/channels/660951518014341124/744908622013661204/1155212167927320616), [TechInfo has no signals of TSK, probably safe to say no TSK](https://discord.com/channels/469524606043160576/524327905937850394/1176367428054286450), comma even bought one and there's no TSK. In fact, even the 2025 MY seems to work.
 * 2023+ Toyota Crown
 * 2023+ Lexus RZ (Speculated from TechInfo lookup)
 * 2024+ Grand Highlander ICE and Hybrid (Speculated from TechInfo lookup)
