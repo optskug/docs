@@ -323,10 +323,10 @@ The status of the vehicles are as follows:
       - Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
 
     - Vehicles
-      - `🇹 🇸 🇸 2️⃣` 2021 RAV4 Prime 🟢
+      - `🇹 🇸 🇸 2️⃣` 2021-2023 RAV4 Prime 🟢
         - 2021-2023: Known to be working
         - Upstreamed into openpilot's master branch
-      - `🇹 🇸 🇸 2️⃣` 2021 Sienna 🟢🟡
+      - `🇹 🇸 🇸 2️⃣` 2021-2023 Sienna 🟢
         - 2021-2023: Known to be working
         - Upstreamed into openpilot's master branch
       - `🇹 🇸 🇸 2️⃣` 2020-2022 Yaris Hybrid 🟢🟡🟡
