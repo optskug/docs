@@ -251,7 +251,7 @@ echo -n "0123456789abcdef0123456789abcdef" > /data/params/d/SecOCKey
 ### Step 6. Fingerprinting (if the car is not recognized)
 
 > [!TIP]
-> If the Comma 3X reboots into the 15mph calibration screen, proceed to Step 7.  
+> If the Comma 3X reboots into the 15mph calibration screen, proceed to Step 7.
 > If it says something like `Car unrecognized` or `Dashcam mode for unsupported car`, continue on Step 6.
 
 6-1. Follow the fingerprinting guide to get the ECU codes: https://github.com/commaai/openpilot/wiki/Fingerprinting
@@ -1096,5 +1096,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [domsz06 and calvinspark are attempting to dump the key from a 2024 Prius. It's not expected to work but they want to try the memory brute force script.](https://discord.com/channels/469524606043160576/905950538816978974/1302185205251182663)
 * [alesatobrazilsp and gon0822 determine that the Yaris Hybrid in Japan uses the same acceleration command seen in other Toyotas by looking in Cabana for the CAN BUS data. (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1302269836017008694)
+* [posts pictures of the camera internals for the 2024 Tacoma](https://discord.com/channels/469524606043160576/905950538816978974/1303932394776301589)
 
 [^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
