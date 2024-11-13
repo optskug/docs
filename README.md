@@ -17,6 +17,7 @@ openpilot, in order to control the steering or latitude, needs to be able to man
 There is a `STEERING_LKA`-ish message and more in some new Toyotas that currently has an "authentication code" scheme appended to the end. The algorithm and security system for this "authentication code" is somewhat known for certain vehicles but requires a key that is unique to each vehicle to be extracted or smuggled out of the vehicle (https://icanhack.nl/blog/secoc-key-extraction/). Not all vehicles are able to have their keys extracted with what is currently known. Without the key or knowledge of the system, third parties like comma and users cannot control the vehicle. While vehicles that have had their keys smuggled out are currently working with openpilot.
 
 ## List of vehicles with Toyota ECU Security Key
+
 Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of which OP **doesn't** currently support right now:
 
 > [!NOTE]
@@ -24,6 +25,9 @@ Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of
 
 > [!NOTE]
 > Bold vehicles are vehicles we suspect might work with the current key dumping procedures but no one has stopped by and/or attempted on them yet. It is speculation.
+
+> > [!NOTE]
+> Vehicles that are crossed out are supported by openpilot but are not on https://comma.ai/vehicles because they are not fully officially supported. The primary reason stems from the key extraction process being produced from a non-comma.ai process. That said, if you have the key, it will work.
 
 * ~~2021-2023 RAV4 Prime~~
   * Known as RAV4 PHEV in non-North American markets
