@@ -79,6 +79,10 @@ The instructions can and will change and are volatile. Please report and discuss
 
 You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
+> [!TIP]
+> Don't Panic.  
+> The entire operation is read-only and can't break your car even if you yank the cable at any point. At times the car may throw a bunch of errors and beep at you. Keep calm, turn off the car, and turn it on again. If there are still errors, turn off the car, unplug Comma, and turn the car back on. Everything will be back to normal.
+
 ### Step 1. Power up C3X, connect to Wi-Fi, and install `commaai/master-ci`
 
 1-1. Start with the official installation guide: https://comma.ai/setup/comma-3x
