@@ -26,7 +26,7 @@ Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of
 > [!NOTE]
 > Bold vehicles are vehicles we suspect might work with the current key dumping procedures but no one has stopped by and/or attempted on them yet. It is speculation.
 
-> > [!NOTE]
+> [!NOTE]
 > Vehicles that are crossed out are supported by openpilot but are not on https://comma.ai/vehicles because they are not fully officially supported. The primary reason stems from the key extraction process being produced from a non-comma.ai process. That said, if you have the key, it will work.
 
 * ~~2021-2023 RAV4 Prime~~
@@ -113,16 +113,19 @@ ssh comma@"your Comma IP"
 ### Step 3. Extract security key
 
 > [!TIP]
-> If you already have the security key, proceed to Step 5.
+> * If you already have the security key, proceed to Step 5.
+> * If you had your car recently repaired and was re-keyed (perhaps because an SecOC parts was replaced, or the mechanic pushed a wrong button), your key may have changed, so continue on Step 3.
 
-> [!NOTE]
-The key will change if Toyota Security Key or SecOC parts are replaced and the technician or mechanic runs an "ECU Security Key" update procedure. In this scenario, you'll have to re-extract and get your new key.
+3-1. Put the car into `Not Ready To Drive` mode.
 
+Some cars refer to `Not Ready To Drive` mode as `IGNITION ON` mode while others refer to it as `POWER ON` mode. Regardless of what your car calls it, you want to be on the mode that says `Not Ready To Drive`.
 
-3-1. Put the car into `Not Ready to Drive` mode.
 * Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
-* The first press turns on `ACCESSORY` mode. The second press activates `Not Ready To Drive` mode shown below.
+* The first press turns on `ACCESSORY` mode.
+* The second press activates `Not Ready To Drive` mode shown below.  
   ![PXL_20240718_234619671 MP](https://github.com/user-attachments/assets/4970e82e-e7df-471f-9896-ba532509793d)
+* Some cars have `ACCESSORY` mode disabled. In this case, the first press will turn on `Not Ready To Drive` mode and the second mode will turn off the car.
+
 
 3-2. Kill the openpilot process.
 ```sh
@@ -145,6 +148,9 @@ cd /data/openpilot/secoc
 ```sh
 ./extract_keys.py
 ```
+
+> [!Tip]
+> If you restarted C3X, be sure to run `pkill -f openpilot` on each C3X restart before running `./extract_keys.py`.
 
 3-6. If you see something like this, the key extraction was successful.
 ```sh
