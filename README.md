@@ -1109,6 +1109,9 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### November 2024
 
 * [domsz06 and calvinspark are attempting to dump the key from a 2024 Prius. It's not expected to work but they want to try the memory brute force script.](https://discord.com/channels/469524606043160576/905950538816978974/1302185205251182663)
+  * [They are running into issues even getting the firmware versions.](https://discord.com/channels/469524606043160576/905950538816978974/1307983214970667018)
+  * [Willem - I think the key extract is timing out because of the car being CAN-FD. You need to change a line in the the panda FW to force it back into regular CAN mode for diagnostic communications. See the Bz4x Thread.](https://discord.com/channels/469524606043160576/905950538816978974/1308103144525267016)
+    * Bz4X thread: https://discord.com/channels/469524606043160576/1226559486160801823
 * [alesatobrazilsp and gon0822 determine that the Yaris Hybrid in Japan uses the same acceleration command seen in other Toyotas by looking in Cabana for the CAN BUS data. (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1302269836017008694)
 * [posts pictures of the camera internals for the 2024 Tacoma](https://discord.com/channels/469524606043160576/905950538816978974/1303932394776301589)
 * [Jason - "Definitely technically possible to back port the work to openpilot 0.8.13.1" (last version of openpilot that supports the comma two and comma two class of devices.)](https://discord.com/channels/469524606043160576/905950538816978974/1304818543920939070)
