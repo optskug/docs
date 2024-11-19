@@ -1,71 +1,74 @@
 # openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC
 
-![](https://user-images.githubusercontent.com/5363/91650158-ed5f5880-ea30-11ea-9b07-6e3dca7f8f83.gif)
-
-[^2]
+![](https://user-images.githubusercontent.com/5363/91650158-ed5f5880-ea30-11ea-9b07-6e3dca7f8f83.gif)[^1]
 
 [*Toyota's Sword in Rock situation*](https://store.steampowered.com/app/1865370/The_one_who_pulls_out_the_sword_will_be_crowned_king/) (that has been pulled out [quite a bit by Willem and Greg](https://icanhack.nl/blog/secoc-key-extraction/)!)
 
-[![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c%26cellRange%3DA1)](https://docs.google.com/spreadsheets/d/1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c/edit#gid=0&range=A1)
+[![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c%26cellRange%3DA1)](https://docs.google.com/spreadsheets/d/1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c/edit#gid=0&range=A1)[^2]
 
 ---
 
 ## Background
 
+tl;dr: Toyota started to use cryptographical signatures to block openpilot (and other hacks). Some smart people in the industry hacked the signatures for _some_ cars, but not all cars.
+
 openpilot, in order to control the steering or latitude, needs to be able to man-in-the-middle the steering control messages used by the lane keep assist system. It blocks the original steering control messages and replaces them with its own. This is done by the forward-facing camera, which is also known as the "Forward Recognition Camera" or "Object Recognition Camera" in Toyota vehicles. The camera is responsible for the lane keep assist in Toyota vehicles.
 
 There is a `STEERING_LKA`-ish message and more in some new Toyotas that currently has an "authentication code" scheme appended to the end. The algorithm and security system for this "authentication code" is somewhat known for certain vehicles but requires a key that is unique to each vehicle to be extracted or smuggled out of the vehicle (https://icanhack.nl/blog/secoc-key-extraction/). Not all vehicles are able to have their keys extracted with what is currently known. Without the key or knowledge of the system, third parties like comma and users cannot control the vehicle. While vehicles that have had their keys smuggled out are currently working with openpilot.
 
-## List of vehicles with Toyota ECU Security Key
+---
 
-Known vehicles with Toyota ECU Security Key on the Forward Recognition Camera of which OP **doesn't** currently support right now:
+## Cars
 
-> [!NOTE]
-> A notable vehicle not included here is the US-made (VIN does not start with `J`) 2023 Corolla. It does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. If you have one of these US Corollas, stop by the [comma Discord](https://discord.comma.ai). It's exact standing or nature is unknown.
+### Successfully running openpilot
 
-> [!NOTE]
-> Bold vehicles are vehicles we suspect might work with the current key dumping procedures but no one has stopped by and/or attempted on them yet. It is speculation.
+These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because Comma (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
-> [!NOTE]
-> Vehicles that are crossed out are supported by openpilot but are not on https://comma.ai/vehicles because they are not fully officially supported. The primary reason stems from the key extraction process being produced from a non-comma.ai process. That said, if you have the key, it will work.
+* 2021-2023 RAV4 Prime
+* 2021-2023 Sienna
+* 2020+ Yaris Hybrid (EUDM/JDM/MXDM)
+  * Needs extra steps. See [Support Status Overview](#support-status-overview).
 
-* ~~2021-2023 RAV4 Prime~~
-  * Known as RAV4 PHEV in non-North American markets
-* 2024 RAV4 Prime
+### May be possible to hack but hasn't been tried
+
+If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information from people like you.
+
+* 2023 US-made Corolla (VIN does not start with `J`)
+  * Uses TSS 3.0 but does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
+* 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
+  * Brute force script may work.
+* 2021+ Yaris GR (EUDM/JDM/MXDM)
+  * Brute force script may work.
+
+### Not hacked and can't run openpilot
+
+Car hackers, we need your help with these.
+
+* 2022+ Aygo X (EUDM)[^3]
+* 2023+ Aygo X (Euro tech info Lookup)
+* 2023+ bz4x[^3] (Probably the same for sister rebranded Subaru Solterra)
+* 2025+ Camry[^3]
+* 2023 TMC/JP-made Corolla[^3]
+* 2024+ Corolla, All origins.
+* 2022+ Corolla Cross (USDM, not applicable to Thailand or Brazil)[^3]
+* 2023+ Crown
+* 2024+ Grand Highlander ICE and Hybrid[^3]
+* 2024+ Highlander ICE and Hybrid[^3]
+* 2024+ Mirai[^3]
+* 2023+ Prius and Prius Prime[^3]
+* 2024+ RAV4 Prime
 * 2021+ Venza
-* ~~2021-2023 Sienna~~
-* 2024 Sienna
-* **(EUDM/JDM/MXDM) 2021+ Yaris GR**
-* (USDM) 2022+ Corolla Cross (Speculated from TechInfo lookup)
-  * Not applicable to Thailand or Brazil.
-* **(EUDM/JDM/MXDM) 2021+ Yaris Cross Hybrid**
-* ~~(EUDM/JDM/MXDM) 2020+ Yaris Hybrid~~
-* 2022+ Lexus NX (Speculated from TechInfo lookup)
-* 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497 )
-* (EUDM) 2022+ Aygo X (Speculated from Toyota Tech EU lookup)
-* 2022+ Lexus LS (Speculated from TechInfo lookup)
-* 2022+ Lexus LX (Speculated from TechInfo lookup)
-* 2023+ Sequoia (Speculated from Being a Tundra With a SUV Body)
-* 2023+ bz4x (Speculated from TechInfo lookup, also probably the same for sister rebranded Subaru Solterra)
-* 2023+ TMC/JP-made Corolla (Speculated from TechInfo lookup)
-  * It is also unknown what form, if any amount of TSK there is on US-made 2023 Corollas. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
-* 2024+ Toyota Corolla, All origins.
-* 2023+ Prius and Prius Prime (Speculated from TechInfo lookup)
-* 2023+ Lexus RX (Speculated from TechInfo lookup)
-* 2023+ Aygo X (Euro tech info Lookup).
-* 2023+ Lexus ES (From anecdote in RP Discord's #toyota) [Disputed](https://discord.com/channels/660951518014341124/744908622013661204/1155212167927320616), [TechInfo has no signals of TSK, probably safe to say no TSK](https://discord.com/channels/469524606043160576/524327905937850394/1176367428054286450), comma even bought one and there's no TSK. In fact, even the 2025 MY seems to work.
-* 2023+ Toyota Crown
-* 2023+ Lexus RZ (Speculated from TechInfo lookup)
-* 2024+ Grand Highlander ICE and Hybrid (Speculated from TechInfo lookup)
-* 2024+ Highlander ICE and Hybrid (Speculated from TechInfo lookup)
-* 2024+ Lexus TX (Speculated from TechInfo lookup)
-* 2024+ Lexus GX (Speculated from TechInfo lookup)
-* 2024+ Tacoma (Speculated from TechInfo lookup)
-* 2024+ Mirai (Speculated from TechInfo lookup)
-* 2025+ Camry (Speculated from TechInfo lookup)
-* And so on.... as any refreshes or new models after 2024 will have ECU Security Key so this list will more or less be just a list of all new Toyotas after 2024.
+* 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
+* 2024+ Sienna
+* 2024+ Tacoma[^3]
+* 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497)
+* 2024+ Lexus GX[^3]
+* 2022+ Lexus LS, LX, NX[^3]
+* 2023+ Lexus RX, RZ[^3]
+* 2024+ Lexus TX[^3]
+* All other 2024+ cars with Toyota ECU Security Key.
 
-TechInfo lookup is looking at Toyota's Techinfo site (payment required, minimum ~$25) and seeing if replacing the "Object recognition camera" / "Forward recognition camera" requires an ECU Security Key update. https://discord.com/channels/469524606043160576/524327905937850394/894262224552624228
+---
 
 ## Setup Guide
 
@@ -80,7 +83,8 @@ The instructions can and will change and are volatile. Please report and discuss
 You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 > [!TIP]
-> Don't Panic.  
+> Don't Panic.
+>
 > The entire operation is read-only and can't break your car even if you yank the cable at any point. At times the car may throw a bunch of errors and beep at you. Keep calm, turn off the car, and turn it on again. If there are still errors, turn off the car, unplug Comma, and turn the car back on. Everything will be back to normal.
 
 ### Step 1. Power up C3X, connect to Wi-Fi, and install `commaai/master-ci`
@@ -397,7 +401,7 @@ Note 2: If it's not listed above, then there has been no documented information 
 
 ### 🗳️ comma.ai Vote for Toyota Security
 
-In June 2022, comma.ai created a paid vote/crowdfund for making openpilot support Toyota Security. Once they get 500 votes at $100 a vote, they have 6 months to figure it out and open source a solution; Otherwise, a refund will happen and all the money is returned. The current status of that is: [![Latest Comma Vote Count for Toyota Security ($100 ea.)](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DB1&label=Latest%20Comma%20Vote%20Count%20for%20Toyota%20Security%20(%24100%20ea.))](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=B1) .
+In June 2022, comma.ai created a paid vote/crowdfund for making openpilot support Toyota Security. Once they get 500 votes at $100 a vote, they have 6 months to figure it out and open source a solution; Otherwise, a refund will happen and all the money is returned. The current status of that is: [![Latest Comma Vote Count for Toyota Security ($100 ea.)](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DB1&label=Latest%20Comma%20Vote%20Count%20for%20Toyota%20Security%20(%24100%20ea.))](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=B1)[^2] .
 
 Vote counts are reported every week or similar and are recorded in this spreadsheet by the community:
 https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0
@@ -410,7 +414,7 @@ comma.ai's Vote for Toyota Security system store/page is located at: https://com
 
 Please visit the page and observe what it says for official information.
 
-[![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DBulkVoteCount)](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=BulkVoteCount)
+[![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DBulkVoteCount)](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=BulkVoteCount)[^2]
 
 In addition to their vote system, comma also has specific bounties up:
 
@@ -701,7 +705,7 @@ matty#8553 came on Discord as the first user with a RAV4 Prime and a new Comma 2
   * ![unknown](https://user-images.githubusercontent.com/5363/179237984-50137dd3-030e-4085-a396-5e2383348b41.png)
 * The bulk vote party spreadsheet is launched for bulk votes contingent on some criteria: https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=1958149470
   * A new counter/badge is produced along-side as well
-  * [![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DBulkVoteCount)](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=BulkVoteCount)
+  * [![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DBulkVoteCount)](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=BulkVoteCount)[^2]
 * [geohot: Bulk votes can be bought in blocks of 10.](https://discord.com/channels/469524606043160576/905950538816978974/998719121644601394)
 * [`CARS.md`](https://github.com/commaai/openpilot/blob/a009723513329921aafa6902ce320c3cc537729b/docs/CARS.md#toyota-security), an intermediate source file behind https://comma.ai/vehicles or the vehicle compatibility list on comma's site, is updated with a list of Toyota Security Key vehicles. It has not been pushed to comma's site yet as of July 27, but eventually will.
 * Toyota posts a [video](https://www.youtube.com/watch?v=8pNwnX6hpE8) about TSS 3.0. The video description mentions "23 Corolla, 23 Corolla Hatch, 23 Corolla Cross, 23 GR Corolla, 23 Crown, 23 bZ4X". The bZ4X and the Corolla Cross are known released vehicles with Security Key. The others are unknown and as of July 27, 2022, not on TechInfo yet for confirmation.
@@ -909,7 +913,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1134950311719
   * 2024+ Mirai (Speculated from TechInfo lookup)
 * Q: I’ll tell my friends, can we spend marketing budget on new Toyota/lexus ecu cracking? :kekw: geohot: no, buy votes
    * https://discord.com/channels/469524606043160576/954493346250887168/1197701819686715462
-[^1]: As a shameless plug, do you like those real-time updating embedded values from the Google Spreadsheet up there for the bounty and vote tracker? I made [cellshield.info](https://cellshield.info) for that and other non-security key related uses. Check it out and let me know outside of this discussion if you have any comments!
 * [Willem: "We got code execution in the bootloader over CAN! Still a few issues to work out though, the main application stops working after a few seconds now. EPS part # is 89650-42370, whole steering rack is 44250-42310. 2021+ Rav4 Prime." ](https://twitter.com/PD0WM/status/1750253508530483699)
   * [Greg: Can anyone help find a Rav4 prime power steering motor from a wrecked vehicle? Some promising things have been found!  I want one that was in a car so it has real keys, and something that we have no fear of bricking or physically destroying.](https://twitter.com/gregjhogan/status/1750214610328969552)
   * [Greg: FYI, this means a way to dump the keys over CAN has been found](https://discord.com/channels/469524606043160576/905950538816978974/1200071382210465872)
@@ -1116,4 +1119,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [posts pictures of the camera internals for the 2024 Tacoma](https://discord.com/channels/469524606043160576/905950538816978974/1303932394776301589)
 * [Jason - "Definitely technically possible to back port the work to openpilot 0.8.13.1" (last version of openpilot that supports the comma two and comma two class of devices.)](https://discord.com/channels/469524606043160576/905950538816978974/1304818543920939070)
 
-[^2]: This is an image of the CAN BUS traffic on a Rav4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
+[^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
+
+[^2]: As a shameless plug, do you like those real-time updating embedded values from the Google Spreadsheet up there for the bounty and vote tracker? I made [cellshield.info](https://cellshield.info) for that and other non-security key related uses. Check it out and let me know outside of this discussion if you have any comments!
+
+[^3]: Speculated from TechInfo lookup. TechInfo lookup is looking at Toyota's Techinfo site (payment required, minimum ~$25) and seeing if replacing the "Object recognition camera" / "Forward recognition camera" requires an ECU Security Key update. https://discord.com/channels/469524606043160576/524327905937850394/894262224552624228
