@@ -34,9 +34,9 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information from people like you.
 
 * 2023 US-made Corolla (VIN does not start with `J`)
-  * It does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's exact standing or nature is unknown.
+  * Uses TSS 3.0 but does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
 * 2023 TMC/JP-made Corolla[^3]
-  * It is also unknown what form, if any amount of TSK there is on US-made 2023 Corollas. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
+  * May be similar to US-made? Unknown.
 * 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
   * Brute force script may work.
 * 2021+ Yaris GR (EUDM/JDM/MXDM)
