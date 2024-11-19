@@ -20,7 +20,7 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 ## Cars
 
-### Successfully hacked for running openpilot
+### Successfully running openpilot
 
 These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because Comma (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
@@ -28,9 +28,6 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 * 2021-2023 Sienna
 * 2020+ Yaris Hybrid (EUDM/JDM/MXDM)
   * Needs extra steps. See [Support Status Overview](#support-status-overview).
-* 2023+ Lexus ES
-  * There's no TSK so no hacks are necessary. It's even listed on https://comma.ai/vehicles.
-  * There's an anecdote in RP Discord's #toyota that says it's not supported, but it's wrong.
 
 ### May be possible to hack but hasn't been tried
 
