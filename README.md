@@ -35,8 +35,6 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
 
 * 2023 US-made Corolla (VIN does not start with `J`)
   * Uses TSS 3.0 but does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
-* 2023 TMC/JP-made Corolla[^3]
-  * May be similar to US-made? Unknown.
 * 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
   * Brute force script may work.
 * 2021+ Yaris GR (EUDM/JDM/MXDM)
@@ -50,8 +48,9 @@ Car hackers, we need your help with these.
 * 2023+ Aygo X (Euro tech info Lookup)
 * 2023+ bz4x[^3] (Probably the same for sister rebranded Subaru Solterra)
 * 2025+ Camry[^3]
-* 2022+ Corolla Cross (USDM, not applicable to Thailand or Brazil)[^3]
+* 2023 TMC/JP-made Corolla[^3]
 * 2024+ Corolla, All origins.
+* 2022+ Corolla Cross (USDM, not applicable to Thailand or Brazil)[^3]
 * 2023+ Crown
 * 2024+ Grand Highlander ICE and Hybrid[^3]
 * 2024+ Highlander ICE and Hybrid[^3]
