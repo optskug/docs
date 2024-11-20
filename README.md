@@ -372,6 +372,8 @@ Comma 3X should reboot into the 15mph calibration screen.
 
 If you're able to calibrate and then use Comma 3X to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
 
+Comma power (ODB2+RJ45) is optional, so you can keep it or remove it. Keeping it allows Comma 3X to stay on when you turn off the car, which allows you to upload logs and SSH in more easily. For most people this is unnecessary.
+
 At this time, Comma 3X can't use the gas and brake pedals (aka "long support") on TSK vehicles.
 
 ---
