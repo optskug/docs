@@ -92,10 +92,6 @@ Car hackers, we need your help with these.
   * Brute force efforts to find key location TBD
   * At least code is executed. Unknown what might have changed.
   * New 02 ~~bootloader~~[^4] seen
-* 2021+ Venza
-  * Key at least not at the same location as the RAV4 Prime
-  * Brute force efforts to find key location TBD
-  * Has a 02 ~~bootloader~~[^4] though from one sample. Strange for this vintage? Maybe another should try.
 * 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
 * 2024+ Sienna
   * TSS 2.0
@@ -109,6 +105,10 @@ Car hackers, we need your help with these.
   * No known ~~bootloader~~[^4] exploit execution
   * User ThisGuy has an extra rack on the bench. No known progress.
   * 04 ~~bootloader~~[^4]
+* 2021+ Venza
+  * Key at least not at the same location as the RAV4 Prime
+  * Brute force efforts to find key location TBD
+  * Has a 02 ~~bootloader~~[^4] though from one sample. Strange for this vintage? Maybe another should try.
 * 2024+ Lexus GX[^3]
 * 2022+ Lexus LS, LX, NX[^3]
 * 2023+ Lexus RX, RZ[^3]
