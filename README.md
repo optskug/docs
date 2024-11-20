@@ -30,7 +30,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * Upstreamed into openpilot's master branch.
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
-  * Brute force efforts to find key location successful on both Euro and Japanese. Euro gave up due to broken C3.
+  * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
   * openpilot working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
   * Not sold in the USA, but is in Australia, Japan, and Europe
@@ -49,14 +49,13 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 
 If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information from people like you.
 
-* 2023 US-made Corolla (VIN does not start with `J`)
+* 2023 US-made Corolla (VIN starts with `5`)
   * Uses TSS 3.0 but does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
 * 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
   * Brute force script may work.
 * 2021+ GR Yaris (EUDM/JDM/MXDM)
-  * Brute force script may work.
-* 2023+ GR Yaris
   * TSS 2.0
+  * Brute force script may work.
   * Seems externally similar to Yaris Hybrid?
 
 ### 🔴 Not hacked and can't run openpilot
