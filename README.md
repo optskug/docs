@@ -25,9 +25,25 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because Comma (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 * 2021-2023 RAV4 Prime
+  * Upstreamed into openpilot's master branch.
 * 2021-2023 Sienna
-* 2020+ Yaris Hybrid (EUDM/JDM/MXDM)
-  * Needs extra steps. See [Support Status Overview](#support-status-overview).
+  * Upstreamed into openpilot's master branch.
+* 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
+  * Memory dump hack works but the key is not in the same address as RAV4 Prime.
+  * Brute force efforts to find key location successful on both Euro and Japanese. Euro gave up due to broken C3.
+  * openpilot working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
+  * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
+  * Not sold in the USA, but is in Australia, Japan, and Europe
+  * Only one guy using it in Japan, unfortunately. Help double the population!
+
+#### Notes
+
+* These vehicles have TSS 2.0.
+* These vehicles do not use the HSM.
+* These all seem to share the commonality of a ~~version 1 bootloader~~[^4] ? on the EPS
+* Longitudinal
+  * Some people seem to have it going. It's [WIP upstreamed](https://github.com/commaai/opendbc/pull/1385).
+  * Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
 
 ### May be possible to hack but hasn't been tried
 
@@ -37,8 +53,11 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * Uses TSS 3.0 but does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
 * 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
   * Brute force script may work.
-* 2021+ Yaris GR (EUDM/JDM/MXDM)
+* 2021+ GR Yaris (EUDM/JDM/MXDM)
   * Brute force script may work.
+* 2023+ GR Yaris
+  * TSS 2.0
+  * Seems externally similar to Yaris Hybrid?
 
 ### Not hacked and can't run openpilot
 
@@ -49,24 +68,55 @@ Car hackers, we need your help with these.
 * 2023+ bz4x[^3] (Probably the same for sister rebranded Subaru Solterra)
 * 2025+ Camry[^3]
 * 2023 TMC/JP-made Corolla[^3]
+* 2022+ Corolla Cross (USDM, not applicable to Thailand or Brazil)[^3]
+* 2023 Corolla Cross Hybrid
+  * TSS 2.0
+  * Known to be not working.
+  * Memory can be dumped but the key is not in visible memory.
+  * Mentioned in Willem's blog post.
 * 2024+ Corolla, All origins.
 * 2022+ Corolla Cross (USDM, not applicable to Thailand or Brazil)[^3]
 * 2023+ Crown
 * 2024+ Grand Highlander ICE and Hybrid[^3]
-* 2024+ Highlander ICE and Hybrid[^3]
+* 2024 Highlander ICE and Hybrid
+  * TSS 2.0
+  * Known to be not working.
+  * Memory can be dumped but the key is not in visible memory.
+  * 02 ~~bootloader~~[^4]
+* 2025+ Highlander ICE and Hybrid[^3]
 * 2024+ Mirai[^3]
 * 2023+ Prius and Prius Prime[^3]
 * 2024+ RAV4 Prime
+  * TSS 2.0
+  * Key at least not at the same location as other RAV4 Prime
+  * Brute force efforts to find key location TBD
+  * At least code is executed. Unknown what might have changed.
+  * New 02 ~~bootloader~~[^4] seen
 * 2021+ Venza
+  * Key at least not at the same location as the RAV4 Prime
+  * Brute force efforts to find key location TBD
+  * Has a 02 ~~bootloader~~[^4] though from one sample. Strange for this vintage? Maybe another should try.
 * 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
 * 2024+ Sienna
+  * TSS 2.0
+  * Key at least not at the same location as other RAV4 Prime
+  * Brute force efforts to find key location TBD
+  * At least code is executed. Unknown what might have changed.
+  * New 02 ~~bootloader~~[^4] seen
 * 2024+ Tacoma[^3]
 * 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497)
+  * TSS 2.0
+  * No known ~~bootloader~~[^4] exploit execution
+  * User ThisGuy has an extra rack on the bench. No known progress.
+  * 04 ~~bootloader~~[^4]
 * 2024+ Lexus GX[^3]
 * 2022+ Lexus LS, LX, NX[^3]
 * 2023+ Lexus RX, RZ[^3]
 * 2024+ Lexus TX[^3]
-* All other 2024+ cars with Toyota ECU Security Key.
+
+### Unknown
+
+If your car is not listed above, then there has been no documented information or attempts. Please talk to us at the [comma Discord](https://discord.comma.ai)'s #toyota-security channel.
 
 ---
 
@@ -325,75 +375,7 @@ If you're able to calibrate and then use Comma 3X to use the steering wheel (aka
 At this time, Comma 3X can't use the gas and brake pedals (aka "long support") on TSK vehicles.
 
 ---
-
-## Support Status Overview
-
-Some vehicles have been attempted to be hacked and some have been successfully hacked and some not.
-
-The status of the vehicles are as follows:
-
-- Vehicles and Possible Groupings
-  - Wave Early Security Key
-    - These vehicles do not use the HSM.
-    - These all seem to share the commonality of a ~~version 1 bootloader~~ ? on the EPS
-    - Longitudinal
-      - Some people seem to have it going. It's [WIP upstreamed](https://github.com/commaai/opendbc/pull/1385).
-      - Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
-
-    - Vehicles
-      - `🇹 🇸 🇸 2️⃣` 2021-2023 RAV4 Prime 🟢
-        - 2021-2023: Known to be working
-        - Upstreamed into openpilot's master branch
-      - `🇹 🇸 🇸 2️⃣` 2021-2023 Sienna 🟢
-        - 2021-2023: Known to be working
-        - Upstreamed into openpilot's master branch
-      - `🇹 🇸 🇸 2️⃣` 2020-2022 Yaris Hybrid 🟢🟡🟡
-        - Key at least not at the same location as the RAV4 Prime
-        - Brute force efforts to find key location successful on both Euro and Japanese. Euro gave up due to broken C3.
-        - openpilot working working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
-        - First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
-        - Not sold in the USA, but is in Australia, Japan, and Europe
-        - Only one guy using it in Japan unfortunately. Help double the population!
-
-  - Wave HSM?
-    - These vehicles don't seem to have a valid key in the memory returned after the exploit payload is run.
-    - `🇹 🇸 🇸 3️⃣` 2023 Corolla Cross Hybrid 🔴
-      - 2023: Known to be not working. Key not in visible memory. Mentioned in Willem's blog post.
-    - `🇹 🇸 🇸 2️⃣` 2024 Toyota Highlander 🔴
-      - 2024: Known to be not working. Key not in visible memory.
-      - 02 ~~bootloader~~
-  - Wave with newer ~~bootloader~~? [(It's not a bootloader version?)](https://discord.com/channels/469524606043160576/905950538816978974/1273746993394487376)
-    - These vehicles don't seem to respond to the current exploit to run arbitrary code to do things like dump memory
-    - `🇹 🇸 🇸 2️⃣` 2022 Tundra 🔴
-      - No known ~~bootloader~~ exploit execution
-      - User ThisGuy has an extra rack on the bench. No known progress.
-      - 04 ~~bootloader~~
-    - `🇹 🇸 🇸 2️⃣` 2021 Venza 🟡?🔴?
-      - Key at least not at the same location as the RAV4 Prime
-      - Brute force efforts to find key location TBD
-      - Has a 02 ~~bootloader~~ though from one sample. Strange for this vintage? Maybe another should try.
-    - `🇹 🇸 🇸 2️⃣` 2024 Rav4 Prime 🟡?🔴?
-      - Key at least not at the same location as other RAV4 Prime
-      - Brute force efforts to find key location TBD
-      - At least code is executed. Unknown what might have changed.
-      - New 02 ~~bootloader~~ seen
-    - `🇹 🇸 🇸 2️⃣` 2024 Sienna 🟡?🔴?
-      - Key at least not at the same location as other RAV4 Prime
-      - Brute force efforts to find key location TBD
-      - At least code is executed. Unknown what might have changed.
-      - New 02 ~~bootloader~~ seen
-   - Notable Unknown
-     - `🇹 🇸 🇸 3️⃣` 2023+ Corolla, JP and US origins.
-       - While users have come by here and there, none have produced usable engineering info or experiences of note.
-       - No one has tried getting things to work on a 2023 US-made Corolla that doesn't appear to have TSK.
-     - `🇹 🇸 🇸 2️⃣` 2023+ GR Yaris
-       - Seems externally similar to Yaris Hybrid?
-
-Note: 🟢 = Working, 🟡 = WIP, 🔴 = Not Working and sometimes a mix.
-
-Note 2: If it's not listed above, then there has been no documented information or attempts.
-
-- History and such can be found below. The most recent history is at the bottom. If you need to catch up, start from where you left off. Feel free to ask questions in Discord.
+History and such can be found below. The most recent history is at the bottom. If you need to catch up, start from where you left off. Feel free to ask questions in Discord.
 
 ---
 
@@ -1119,8 +1101,13 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [posts pictures of the camera internals for the 2024 Tacoma](https://discord.com/channels/469524606043160576/905950538816978974/1303932394776301589)
 * [Jason - "Definitely technically possible to back port the work to openpilot 0.8.13.1" (last version of openpilot that supports the comma two and comma two class of devices.)](https://discord.com/channels/469524606043160576/905950538816978974/1304818543920939070)
 
+---
+
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
 
 [^2]: As a shameless plug, do you like those real-time updating embedded values from the Google Spreadsheet up there for the bounty and vote tracker? I made [cellshield.info](https://cellshield.info) for that and other non-security key related uses. Check it out and let me know outside of this discussion if you have any comments!
 
 [^3]: Speculated from TechInfo lookup. TechInfo lookup is looking at Toyota's Techinfo site (payment required, minimum ~$25) and seeing if replacing the "Object recognition camera" / "Forward recognition camera" requires an ECU Security Key update. https://discord.com/channels/469524606043160576/524327905937850394/894262224552624228
+
+[^4]: gregjhogan stated that the first byte of a UDS firmware version is not a bootloader version. https://discord.com/channels/469524606043160576/905950538816978974/1273746993394487376
+> The first byte returned when reading the firmware versions using UDS read data by id isn't part of the version number, it is how many applications are running on the ECU (for example if it has two cores, there may be a separate application running on each core) and it tells you how many you can extract from the rest of the data returned.
