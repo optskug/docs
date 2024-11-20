@@ -20,7 +20,7 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 ## Cars
 
-### Successfully running openpilot
+### 🟢 Successfully running openpilot
 
 These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because Comma (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
@@ -45,7 +45,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * Some people seem to have it going. It's [WIP upstreamed](https://github.com/commaai/opendbc/pull/1385).
   * Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
 
-### May be possible to hack but hasn't been tried
+### 🟡 May be possible to hack but hasn't been tried
 
 If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information from people like you.
 
@@ -59,7 +59,7 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * TSS 2.0
   * Seems externally similar to Yaris Hybrid?
 
-### Not hacked and can't run openpilot
+### 🔴 Not hacked and can't run openpilot
 
 Car hackers, we need your help with these.
 
@@ -373,9 +373,6 @@ Comma 3X should reboot into the 15mph calibration screen.
 If you're able to calibrate and then use Comma 3X to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
 
 At this time, Comma 3X can't use the gas and brake pedals (aka "long support") on TSK vehicles.
-
----
-History and such can be found below. The most recent history is at the bottom. If you need to catch up, start from where you left off. Feel free to ask questions in Discord.
 
 ---
 
