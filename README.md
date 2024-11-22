@@ -42,7 +42,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 * These vehicles do not use the HSM.
 * These all seem to share the commonality of a ~~version 1 bootloader~~[^4] ? on the EPS
 * Longitudinal
-  * Some people seem to have it going. It's [WIP upstreamed](https://github.com/commaai/opendbc/pull/1385).
+  * Some people seem to have it going. It is a [work in progress in getting it upstreamed to comma's codebase](https://github.com/commaai/opendbc/pull/1385).
   * Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
 
 ### 🟡 May be possible to hack but hasn't been tried
