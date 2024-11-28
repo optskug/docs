@@ -91,6 +91,7 @@ Car hackers, we need your help with these.
   * Brute force efforts to find key location TBD
   * At least code is executed. Unknown what might have changed.
   * New 02 ~~bootloader~~[^4] seen
+* 2024+ RAV4 in Europe (techinfo)
 * 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
 * 2024+ Sienna
   * TSS 2.0
