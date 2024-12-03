@@ -176,7 +176,7 @@ Some cars refer to `Not Ready To Drive` mode as `IGNITION ON` mode while others 
 
 * Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 * The first press turns on `ACCESSORY` mode.
-* The second press activates `Not Ready To Drive` mode shown below.  
+* The second press activates `Not Ready To Drive` mode shown below.
   ![PXL_20240718_234619671 MP](https://github.com/user-attachments/assets/4970e82e-e7df-471f-9896-ba532509793d)
 * Some cars have `ACCESSORY` mode disabled. In this case, the first press will turn on `Not Ready To Drive` mode and the second mode will turn off the car.
 
@@ -1099,6 +1099,11 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [alesatobrazilsp and gon0822 determine that the Yaris Hybrid in Japan uses the same acceleration command seen in other Toyotas by looking in Cabana for the CAN BUS data. (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1302269836017008694)
 * [posts pictures of the camera internals for the 2024 Tacoma](https://discord.com/channels/469524606043160576/905950538816978974/1303932394776301589)
 * [Jason - "Definitely technically possible to back port the work to openpilot 0.8.13.1" (last version of openpilot that supports the comma two and comma two class of devices.)](https://discord.com/channels/469524606043160576/905950538816978974/1304818543920939070)
+* [Re: openpilot long on R4P and Sienna- Jason: "I don't remember and I'm not in a position to refresh myself right now" "But I haven’t had the time to get back to it to resolve the mutations issue or put more thought into the refactor" [of secOC Long]. The secOC Long support is getting a bit stale. ](https://discord.com/channels/469524606043160576/905950538816978974/1309380353261174847)
+
+### December 2024
+
+* [Users are still working on porting openpilot long, at least to Frogpilot or their own forks/branches for now, in lieu of working tests.](https://discord.com/channels/469524606043160576/905950538816978974/1313523364975083621)
 
 ---
 
