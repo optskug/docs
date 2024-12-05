@@ -1100,10 +1100,12 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [posts pictures of the camera internals for the 2024 Tacoma](https://discord.com/channels/469524606043160576/905950538816978974/1303932394776301589)
 * [Jason - "Definitely technically possible to back port the work to openpilot 0.8.13.1" (last version of openpilot that supports the comma two and comma two class of devices.)](https://discord.com/channels/469524606043160576/905950538816978974/1304818543920939070)
 * [Re: openpilot long on R4P and Sienna- Jason: "I don't remember and I'm not in a position to refresh myself right now" "But I haven’t had the time to get back to it to resolve the mutations issue or put more thought into the refactor" [of secOC Long]. The secOC Long support is getting a bit stale. ](https://discord.com/channels/469524606043160576/905950538816978974/1309380353261174847)
+* [por_por.t helps determine on a trip that the EU 2024 RAV4 Hybrid has TSK from looking at the EU equivalent of TechInfo](https://discord.com/channels/469524606043160576/524327905937850394/1311431355564822630)
 
 ### December 2024
 
 * [Users are still working on porting openpilot long, at least to Frogpilot or their own forks/branches for now, in lieu of working tests.](https://discord.com/channels/469524606043160576/905950538816978974/1313523364975083621)
+* [dstaley determines that the 2025 US RAV4, unlike the EU 2024 RAV4 Hybrid, does not have TSK from looking at TechInfo](https://discord.com/channels/469524606043160576/524327905937850394/1314137491711856680)
 
 ---
 
