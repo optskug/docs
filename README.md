@@ -1106,6 +1106,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [Users are still working on porting openpilot long, at least to Frogpilot or their own forks/branches for now, in lieu of working tests.](https://discord.com/channels/469524606043160576/905950538816978974/1313523364975083621)
 * [dstaley determines that the 2025 US RAV4, unlike the EU 2024 RAV4 Hybrid, does not have TSK from looking at TechInfo](https://discord.com/channels/469524606043160576/524327905937850394/1314137491711856680)
+* [Ale and GON0822 continue work on Yaris Latitude upstreaming (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1316946374205505638)
 
 ---
 
