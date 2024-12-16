@@ -1001,7 +1001,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   - https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
   - https://discord.com/channels/1137853399715549214/1137905508217540699/1264113031365787700 (Frogpilot Discord)
 - [Willem & Greg's talk on SecOC is posted. "Hardwear.io USA 2024 : My Car, My Keys: Obtaining CAN Bus SecOC Signing Keys - Willem & Greg"](https://www.youtube.com/watch?v=8958gH3KD3Y)
-- [A discussion on why intercepting the key from a key updating process may be infeasible.](https://discord.com/channels/469524606043160576/905950538816978974/1265284524401754195)
+- [A discussion with Willem on why intercepting the key from a key updating process may be infeasible.](https://discord.com/channels/469524606043160576/905950538816978974/1265284524401754195)
 - [anrum announces a successful port of the changes necessary for the 2021-2023 rav4 prime and 2021 sienna to frogpilot](https://discord.com/channels/469524606043160576/905950538816978974/1266255824263708694)
   - [Frogpilot Discord link version](https://discord.com/channels/1137853399715549214/1137905508217540699/1266255306921480202)
 - [tranlocguy attempts separating out the sienna hybrid properly in a fork of anrum's frogpilot](https://discord.com/channels/469524606043160576/905950538816978974/1266663937978400809)
@@ -1108,7 +1108,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [dstaley determines that the 2025 US RAV4, unlike the EU 2024 RAV4 Hybrid, does not have TSK from looking at TechInfo](https://discord.com/channels/469524606043160576/524327905937850394/1314137491711856680)
 * [Ale and GON0822 continue work on Yaris Latitude upstreaming (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1316946374205505638)
   * https://github.com/commaai/opendbc/pull/1578
-* [shiver32 confirms that the 2024 IS does not have ECU Security Key. A lot of interested IS users come on and don't do things but shiver32 pulled through.](https://discord.com/channels/469524606043160576/524327905937850394/1318361110558281728)    
+* [shiver32 confirms that the 2024 IS does not have ECU Security Key. A lot of interested IS users come on and don't do things but shiver32 pulled through.](https://discord.com/channels/469524606043160576/524327905937850394/1318361110558281728)
 
 ---
 
