@@ -464,7 +464,7 @@ The typical process for adding a new TSS2 vehicle is simply creating a fingerpri
 
 ### 2013
 
-* [IOActive experiments with injecting packets to steer a Prius in a widely disseminated and seminal security assessment. Their research around this time also led to them being able to remotely inject through the radio with a FCA vehicle.](https://www.youtube.com/watch?v=qX0rRRUdOKU)
+* [IOActive experiments with injecting packets to steer a Prius in a widely disseminated and seminal security assessment. Their research around this time also led to them being able to **remotely** inject through the radio with a FCA vehicle and cause it to steer. In an unwise move, they demonstrated this in the middle of a busy highway. Anyways, not great.](https://www.youtube.com/watch?v=qX0rRRUdOKU)
   * This is way in the past, but it's important to note that even large slow dinosaurs or turtles _move_ and it's been a few years.
 
 ### August 2020
