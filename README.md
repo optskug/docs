@@ -22,7 +22,7 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 ### 🟢 Successfully running openpilot
 
-These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because Comma AI (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
+These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because comma.ai (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 * 2021-2023 RAV4 Prime
   * Upstreamed into openpilot's master branch.
@@ -144,10 +144,11 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 1-2. Turn on your Comma 3X by plugging in the right-angled OBD-C cable to the harness.
 
 > [!WARNING]
-> * For connecting Comma to the car harness, always use the right-angled OBD-C cable that came with the Comma 3X. The hardness sends 12V instead of the usual 5V, so your own USB cable will not work.
-> * Comma AI sells it if you need more: https://comma.ai/shop/obd-c-cable
+> * The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than Comma.
+> * For connecting Comma to the harness, always use the right-angled OBD-C cable that came with the Comma 3X.
+> * comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable
 > * If you must buy your own, USB-C 3.1 Gen 2 is required.  
-> * For turning on Comma at home, your phone charger works fine. It will show a voltage warning but it will work.
+> * For turning on Comma at home, your phone charger usually works despite the voltage warning. USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
 
 1-3. Also connect Comma Power (OBD2 connector + long cable) to make sure the Comma stays powered on while turning the car on and off. You can remove it later but connect it for now.
 
