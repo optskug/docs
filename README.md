@@ -22,7 +22,7 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 ### 🟢 Successfully running openpilot
 
-These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because Comma (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
+These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because comma.ai (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 * 2021-2023 RAV4 Prime
   * Upstreamed into openpilot's master branch.
@@ -139,17 +139,22 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 
 ### Step 1. Power up C3X, connect to Wi-Fi, and install `commaai/master-ci`
 
-1-1. Start with the official installation guide: https://comma.ai/setup/comma-3x
+1-1. Install the hardware by following the official Installation Guide: https://comma.ai/setup/comma-3x
 
-1-2. Always use the right-angled USB-C cable that came with the Comma 3X. Don't use your own USB cable. A USB-C 3.1 Gen 2 is required.
+1-2. Turn on your Comma 3X by plugging in the right-angled OBD-C cable to the harness.
 
-1-3. Also connect the OBD2 connector to make sure the Comma stays powered on while turning the car on and off.
+> [!WARNING]
+> * The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than Comma.
+> * For connecting Comma to the harness, always use the right-angled OBD-C cable that came with the Comma 3X.
+> * comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable
+> * If you must buy your own, USB-C 3.1 Gen 2 is required.  
+> * For turning on Comma at home, your phone charger usually works despite the voltage warning. USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
 
-1-4. Turn on your Comma 3X by plugging in the right-angled USB-C cable to the harness.
+1-3. Also connect Comma Power (OBD2 connector + long cable) to make sure the Comma stays powered on while turning the car on and off. You can remove it later but connect it for now.
 
-1-5. Connect it to your Wi-Fi network.
+1-4. Connect C3X to your Wi-Fi network.
 
-1-6. Install "Custom Software" with URL `commaai/master-ci`
+1-5. Install "Custom Software" with URL `commaai/master-ci`
 
 ### Step 2. SSH into the device
 
@@ -168,7 +173,7 @@ ssh comma@"your Comma IP"
 
 > [!TIP]
 > * If you already have the security key, proceed to Step 5.
-> * If you had your car recently repaired and was re-keyed (perhaps because an SecOC parts was replaced, or the mechanic pushed a wrong button), your key may have changed, so continue on Step 3.
+> * If you had your car recently repaired and was re-keyed (perhaps because an SecOC part was replaced, or the mechanic pushed a wrong button), your key may have changed, so continue on Step 3.
 
 3-1. Put the car into `Not Ready To Drive` mode.
 
@@ -361,7 +366,18 @@ CAR.TOYOTA_RAV4_PRIME: {
 
 6-2-4. Save and exit the editor (`Ctrl+X`, then `Y`, then `Enter`).
 
-6-3. Reboot the device.
+6-3. Optionally disable updates, because an update will delete the manually added fingerprints.
+
+6-3-1. If your fingerprints were upstreamed, then the next update will contain your fingerprints, so don't disable.
+
+6-3-2. If your fingerprints were not upstreamed, disable.
+```sh
+echo -n "1" > /data/params/d/DisableUpdates
+```
+
+6-3-3. If you're using FrogPilot, disabling update causes an error, so don't disable.
+
+6-4. Reboot the device.
  ```sh
  sudo reboot
  ```
@@ -372,9 +388,9 @@ Comma 3X should reboot into the 15mph calibration screen.
 
 If you're able to calibrate and then use Comma 3X to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
 
-Comma power (ODB2+RJ45) is optional, so you can keep it or remove it. Keeping it allows Comma 3X to stay on when you turn off the car, which allows you to upload logs and SSH in more easily. For most people this is unnecessary.
+Comma power (ODB2 connector + long cable) is optional, so you can keep it or remove it. Keeping it allows Comma 3X to stay on when you turn off the car, which allows you to upload logs and SSH in more easily. For most people this is unnecessary.
 
-At this time, Comma 3X can't use the gas and brake pedals (aka "long support") on TSK vehicles.
+At this time, Comma 3X can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor these PRs for long support progress (https://github.com/commaai/opendbc/pull/1385 & https://github.com/commaai/panda/pull/2061)
 
 ---
 
