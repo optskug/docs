@@ -1125,6 +1125,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [Ale and GON0822 continue work on Yaris Latitude upstreaming (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1316946374205505638)
   * https://github.com/commaai/opendbc/pull/1578
 * [shiver32 confirms that the 2024-2025 Model Year IS 500 does not have ECU Security Key. A lot of interested IS users come on and don't do things but shiver32 pulled through.](https://discord.com/channels/469524606043160576/524327905937850394/1318361110558281728)
+* [calvinspark is trying to make a GUI dumping and restoration tool for the key.](https://discord.com/channels/469524606043160576/905950538816978974/1321643758600851506)
 
 ---
 
