@@ -1127,6 +1127,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [shiver32 confirms that the 2024-2025 Model Year IS 500 does not have ECU Security Key. A lot of interested IS users come on and don't do things but shiver32 pulled through.](https://discord.com/channels/469524606043160576/524327905937850394/1318361110558281728)
 * [calvinspark is trying to make a GUI dumping and restoration tool for the key.](https://discord.com/channels/469524606043160576/905950538816978974/1321643758600851506)
 
+### January 2025
+
+* [calvinspark is talking with sunnypilot developers about his GUI dumping and restoration tool along with integration opportunies and concern. As the sunnypilot fork is one that continuously and properly keeps up with comma's codebase much more frequently than frogpilot, sunnypilot has inherited compatibility and with that, some focus on making the UX for TSK/SecOC users is of great interest. (SP Discord)](https://discord.com/channels/880416502577266699/1326432461298860042)
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
