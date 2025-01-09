@@ -1130,6 +1130,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### January 2025
 
 * [calvinspark is talking with sunnypilot developers about his GUI dumping and restoration tool along with integration opportunies and concern. As the sunnypilot fork is one that continuously and properly keeps up with comma's codebase much more frequently than frogpilot, sunnypilot has inherited compatibility and with that, some focus on making the UX for TSK/SecOC users is of great interest. (SP Discord)](https://discord.com/channels/880416502577266699/1326432461298860042)
+* [sunnyharbin makes a dedicated channel for the quirks and features needed for sunnypilot support of TSK/SecOC Toyotas (SP Discord)](https://discord.com/channels/880416502577266699/1326834259096371211)
 
 ---
 
