@@ -147,7 +147,7 @@ You'll need a C3 or C3X and a Toyota A harness for current supported vehicles.
 > * The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than Comma.
 > * For connecting Comma to the harness, always use the right-angled OBD-C cable that came with the Comma 3X.
 > * comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable
-> * If you must buy your own, USB-C 3.1 Gen 2 is required.  
+> * If you must buy your own, USB-C 3.1 Gen 2 is required.
 > * For turning on Comma at home, your phone charger usually works despite the voltage warning. USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
 
 1-3. Also connect Comma Power (OBD2 connector + long cable) to make sure the Comma stays powered on while turning the car on and off. You can remove it later but connect it for now.
@@ -1131,6 +1131,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [calvinspark is talking with sunnypilot developers about his GUI dumping and restoration tool along with integration opportunies and concern. As the sunnypilot fork is one that continuously and properly keeps up with comma's codebase much more frequently than frogpilot, sunnypilot has inherited compatibility and with that, some focus on making the UX for TSK/SecOC users is of great interest. (SP Discord)](https://discord.com/channels/880416502577266699/1326432461298860042)
 * [sunnyharbin makes a dedicated channel for the quirks and features needed for sunnypilot support of TSK/SecOC Toyotas (SP Discord)](https://discord.com/channels/880416502577266699/1326834259096371211)
+* [satireshepherd was looking for the DBC for a 2024 Corolla or similar. They are the first not ex-comma or comma staff but a community member to have looked at the CANFD traffic on a 2024 Corolla. They are using a comma adapter, but on a Raspberry Pi and CAN-FD shield. Unfortunately, they are the first but just noting this here for the log.](https://discord.com/channels/469524606043160576/905950538816978974/1328554540534071306)
 
 ---
 
