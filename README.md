@@ -150,7 +150,7 @@ The installation takes 10~20 minutes with one or two restarts. This is longer th
 
 1-4. Scroll and accept the EULA, and go through the training.
 
-![](v2.master-ci.jpg)
+![](img/v2.master-ci.jpg)
 
 ### Step 2. Install the hardware
 
@@ -174,7 +174,7 @@ The installation takes 10~20 minutes with one or two restarts. This is longer th
 
 Some cars refer to `Not Ready To Drive` mode as `IGNITION ON` mode while others refer to it as `POWER ON` mode. Regardless of what your car calls it, get on the mode that says `Not Ready To Drive`.
 
-![](v2.nrtd1.jpg) ![](v2.nrtd2.jpg)
+![](img/v2.nrtd1.jpg) ![](img/v2.nrtd2.jpg)
 
 Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 * The first press turns on `ACCESSORY` mode.
@@ -191,7 +191,7 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 4A-2. Connect C3X to Wi-Fi and install `Custom Software` with URL `optskug/tskm` to download `TSK Manager`. It will stay at 92% and then 100% for a few minutes as it installs.
 
-![](v2.tsk-manager.jpg)
+![](img/v2.tsk-manager.jpg)
 
 4A-3. Run `TSK Extractor`. The car may beep and flash LKAS & Power Steering errors.
 
@@ -203,17 +203,17 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 When you see the output, always scroll to the bottom of the text to see the result and what to do next.
 
 4A-3-1. In case of a known error, it'll tell you to retry.
-![](v2.ext-known.jpg)
+![](img/v2.ext-known.jpg)
 
 4A-3-2. In case of an unknown error, it will tell you to send @calvinspark a photo.
-![](v2.ext-unknown.jpg)
+![](img/v2.ext-unknown.jpg)
 
 The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
 
 4A-3-3.  If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, stop and talk to us in #toyota-security.
 
 4A-3-4.  If it was successful, it'll tell you to take a photo.
-![](v2.ext-success.jpg)
+![](img/v2.ext-success.jpg)
 
 This 32 digit hexadecimal number is your key (second redacted line).
 > SecOC Key (KEY_4) **0123456789abcdef0123456789abcdef**
@@ -238,7 +238,7 @@ As a bonus, the key was installed in `/data/params/d/SecOCKey` file and archived
 
 We did T1, T2, T3, T5, O1, and O2 together. If you installed a wrong branch, then you also did O3.
 
-![](v2.review.png)
+![](img/v2.review.png)
 
 * `commaai/master-ci` is the only branch from comma.ai <code>with TSK support<sup>*</sup></code>.
 
@@ -347,7 +347,7 @@ Archive and don't lose the key so that you don't need to extract it again. Perha
 
 ### Step 4B-3. Debugging
 
-#### 4B-3-1. If you see any of these error messages 
+#### 4B-3-1. If you see any of these error messages
 
 * `panda.python.uds.MessageTimeoutError: timeout waiting for response`
 * `panda.python.uds.InvalidServiceIdError: invalid response service id: 0x50` or similar
@@ -381,7 +381,7 @@ Be sure to kill openpilot process if you restarted C3X.
 * Kill openpilot process and run the script again.
   ```sh
   pkill -f openpilot
-  
+
   ./extract_keys.py
   ```
 
@@ -488,7 +488,7 @@ Some forks/branches have `TSK Manager` or `TSK Keyboard` under Settings.
 
 ⚙ > `Device` > `TSK Manager`/`TSK Keyboard`
 
-![](v2.settings-keyboard.jpg)
+![](img/v2.settings-keyboard.jpg)
 
 If it's there, use it to type in your key and install, and then reboot.
 
@@ -530,7 +530,7 @@ This is the workflow for using `TSK Manager` to install the security key, which 
 
 The only difference is that instead of T3, you'll do T4.
 
-![](v2.review.png)
+![](img/v2.review.png)
 
 #### Step 3-1. Same as Key Extraction
 
@@ -540,7 +540,7 @@ Go back to [Key Extraction](#key-extraction) and start again from Step 1.
 
 When you get to Step 4A-3, don't run `TSK Extractor` but instead run `TSK Keyboard`.
 
-![](v2.keyboard-success.jpg)
+![](img/v2.keyboard-success.jpg)
 
 Use it to type in your key and install.
 
