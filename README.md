@@ -57,6 +57,7 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * TSS 2.0
   * Brute force script may work.
   * Seems externally similar to Yaris Hybrid?
+  * Would be the first manual transmission.
 
 ### 🔴 Not hacked and can't run openpilot
 
