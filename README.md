@@ -220,7 +220,7 @@ This 32 digit hexadecimal number is your key (second redacted line).
 
 Congratulations, you have the key now!
 
-As a bonus, the key was installed in `/data/params/d/SecOCKey` file and archived in `/persist/tsk/key` file.
+As a bonus, the key was installed in `/data/params/d/SecOCKey` file and archived in `/cache/params/SecOCKey` file.
 
 > [!WARNING]
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
@@ -401,7 +401,20 @@ For example,
 echo -n "0123456789abcdef0123456789abcdef" > /data/params/d/SecOCKey
 ```
 
-4B-4-2. Reboot the device.
+4B-4-2. Archive the key, so that it doesn't get deleted when openpilot is uninstalled.
+
+Make the archive directory with correct permissions.
+```sh
+sudo mkdir -p /cache/params || true
+sudo chown comma:comma /cache/params
+```
+
+Archive the key.
+```sh
+echo -n "0123456789abcdef0123456789abcdef" > /cache/params/SecOCKey
+```
+
+4B-4-3. Reboot the device.
 ```sh
 sudo reboot
 ```
