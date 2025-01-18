@@ -567,9 +567,9 @@ Go back to Step 4A-4 and then finish with Step 4A-5.
 
 ### 🗳️ comma.ai Vote for Toyota Security
 
-In June 2022, comma.ai created a paid vote/crowdfund for making openpilot support Toyota Security. Once they get 500 votes at $100 a vote, they have 6 months to figure it out and open source a solution; Otherwise, a refund will happen and all the money is returned. The current status of that is: [![Latest Comma Vote Count for Toyota Security ($100 ea.)](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DB1&label=Latest%20Comma%20Vote%20Count%20for%20Toyota%20Security%20(%24100%20ea.))](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=B1)[^2] .
+In June 2022, comma.ai created a paid vote/crowdfund for making openpilot support Toyota Security. Once they get 500 votes at $100 a vote, they have 6 months to figure it out and open source a solution; Otherwise, a refund will happen and all the money is returned. The current status of that was: [![Latest Comma Vote Count for Toyota Security ($100 ea.)](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DB1&label=Latest%20Comma%20Vote%20Count%20for%20Toyota%20Security%20(%24100%20ea.))](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=B1)[^2] .
 
-Vote counts are reported every week or similar and are recorded in this spreadsheet by the community:
+Vote counts were reported every week or similar and are recorded in this spreadsheet by the community:
 https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0
 
 The result of this vote, even though it has not met its target cost, is [a pull request was produced for the RAV4 Prime to be supported in openpilot](https://github.com/commaai/openpilot/pull/31179). It was eventually merged in.
@@ -577,8 +577,6 @@ The result of this vote, even though it has not met its target cost, is [a pull 
 In January, the vote page was taken down. Below is a snapshot.
 
 ![image](https://github.com/user-attachments/assets/fa1b25b5-f8c5-4f03-b5a7-c80912d17b8f)
-
-Please visit the page and observe what it says for official information.
 
 The last known vote count from community observations:
 
@@ -632,7 +630,7 @@ Many of these Discord links are to a pre-hidden channel named `#toyota-security`
 Most if not all Discord links are to the comma.ai Discord accessible with an invite from https://discord.comma.ai unless otherwise noted. These other Discords include:
 
 * Retropilot (RP): https://discord.gg/GzWegVa.
-* Sunnyharbin's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV. This is Sunnypilot's home Discord.
+* Sunnypilot's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV.
 * Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): https://discord.gg/rRB7eDKccy
 * MoreTorque (MT): https://discord.gg/439DM9KJ4r
 * Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
@@ -642,9 +640,9 @@ The activities, actions, and discussions on non-comma.ai Discords are/may not su
 
 ## Background
 
-For Toyota Openpilot enthusiasts, the community was very excited for the RAV4 Prime, a high performance Toyota that was going to have "Toyota Safety Sense 2" (TSS2), other awesome Toyota traits such as reliability, utility, and economy, and, new for a Toyota SUV, speed. It is the fastest accelerating real Toyota excluding Lexuses as the Supra, a BMW badged as a Toyota, does not count.
+For Toyota openpilot enthusiasts, the community was very excited for the RAV4 Prime, a high performance Toyota that was going to have "Toyota Safety Sense 2" (TSS2), other awesome Toyota traits such as reliability, utility, and economy, and, new for a Toyota SUV, speed. It is the fastest accelerating real Toyota excluding Lexuses as the Supra, a BMW badged as a Toyota, does not count.
 
-Previously seen TSS2 vehicles have had an architecture where both latitude and longitudinal are both controlled by the front-facing camera. Openpilot was able to intercept and control latitude and longitudinal all at the front-facing camera of TSS2 vehicles, promising full openpilot capabilities. No other taps in the CAN of the vehicle were needed to control or block messages for this capability.
+Previously seen TSS2 vehicles have had an architecture where both latitude and longitudinal are both controlled by the front-facing camera. openpilot was able to intercept and control latitude and longitudinal all at the front-facing camera of TSS2 vehicles, promising full openpilot capabilities. No other taps in the CAN of the vehicle were needed to control or block messages for this capability.
 
 The typical process for adding a new TSS2 vehicle is simply creating a fingerprint with reference to the closest similar vehicle and trying it out.
 
@@ -723,7 +721,7 @@ matty#8553 came on Discord as the first user with a RAV4 Prime and a new Comma 2
 
 ### August 2021
 
-* Comma 3 is released at Comma Con.
+* Comma 3 is released at comma Con.
   * [At the Comma Team Group Chat, Erich, a prominent Toyota community contributor and community Discord moderator, asked about ECU Security Key:](https://youtu.be/qTaPD0l_8PM?t=23390)
     * Adeeb: I think we'll just look into it a bit and just kind of understand what the scope of the issue was and we just decided this isn't affecting too many cars yet that's not where we're choosing. We've aggressively chosen in the last year or so to not spend time on specific cars
 
