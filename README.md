@@ -1306,6 +1306,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * [The guide is updated to use this manager](https://discord.com/channels/469524606043160576/905950538816978974/1329505463351382056)
 * [The keyboard integration suggestion for SecOC into comma openpilot is rejected.](https://github.com/commaai/openpilot/issues/34392)
 * [After some discussion, the `/cache` is identified as a place to store the key. It is looking good that comma openpilot may accept the process of restoring the key from this location as a proposal. While a "third-party" non-comma key extractor must still be run, this is a major good QOL change.](https://discord.com/channels/469524606043160576/524594418628558878/1329867134721065011)
+  * [The pull request for this change was accepted](https://github.com/commaai/openpilot/pull/34401)
 * [crispypatt is continuing to develop longitudinal support and just recently rebased and worked on safety. (SP Discord)](https://discord.com/channels/880416502577266699/1326834259096371211/1329893800658731160)
 * [calvinspark notices the shop page for comma votes has been taken down. There has been no statement from comma. Perhaps the inclusion of the Sienna and RAV4 Prime qualified?](https://discord.com/channels/469524606043160576/905950538816978974/1330048270407434300)
 
