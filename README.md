@@ -572,20 +572,23 @@ In June 2022, comma.ai created a paid vote/crowdfund for making openpilot suppor
 Vote counts are reported every week or similar and are recorded in this spreadsheet by the community:
 https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0
 
-The result of this vote, even though it has not met its milestone, is [a pull request was produced for the RAV4 Prime to be supported in openpilot](https://github.com/commaai/openpilot/pull/31179). It is currently developed on-and-off.
+The result of this vote, even though it has not met its target cost, is [a pull request was produced for the RAV4 Prime to be supported in openpilot](https://github.com/commaai/openpilot/pull/31179). It was eventually merged in.
 
-comma.ai's Vote for Toyota Security system store/page is located at: https://comma.ai/shop/products/vote
+In January, the vote page was taken down. Below is a snapshot.
 
-![image](https://user-images.githubusercontent.com/5363/172986625-e4df487e-6e0a-4e37-bb73-89927fa7b597.png)
+![image](https://github.com/user-attachments/assets/fa1b25b5-f8c5-4f03-b5a7-c80912d17b8f)
 
 Please visit the page and observe what it says for official information.
 
+The last known vote count from community observations:
+
 [![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DBulkVoteCount)](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=BulkVoteCount)[^2]
 
-In addition to their vote system, comma also has specific bounties up:
+In addition to their vote system, comma also has/had specific bounties up:
 
 * ["$5k if someone cracks it and upstreams RAV4 prime support -geohot (link currently broken)](https://discord.com/channels/469524606043160576/524328425415245827/839289683489062952)
   * Currently locked to Willem for Willem's PR for the RAV4 Prime to merge in completely: https://github.com/commaai/openpilot/pull/32661#issuecomment-2156220468
+  * Likely paid out.
 * [We're announcing a bounty for the 2023 Corolla, 2023 Corolla Hybrid, and 2023 Prius. $500 for a working port merged.](https://discord.com/channels/469524606043160576/954493346250887168/1082390596544639086)
 
 ### 👥 Communities Bounty
@@ -1306,6 +1309,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [The keyboard integration suggestion for SecOC into comma openpilot is rejected.](https://github.com/commaai/openpilot/issues/34392)
 * [After some discussion, the `/cache` is identified as a place to store the key. It is looking good that comma openpilot may accept the process of restoring the key from this location as a proposal. While a "third-party" non-comma key extractor must still be run, this is a major good QOL change.](https://discord.com/channels/469524606043160576/524594418628558878/1329867134721065011)
 * [crispypatt is continuing to develop longitudinal support and just recently rebased and worked on safety. (SP Discord)](https://discord.com/channels/880416502577266699/1326834259096371211/1329893800658731160)
+* [calvinspark notices the shop page for comma votes has been taken down. There has been no statement from comma. Perhaps the inclusion of the Sienna and RAV4 Prime qualified?](https://discord.com/channels/469524606043160576/905950538816978974/1330048270407434300)
 
 ---
 
