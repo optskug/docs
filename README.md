@@ -562,6 +562,51 @@ Use it to type in your key and install.
 Go back to Step 4A-4 and then finish with Step 4A-5.
 
 ---
+## Forks
+### Which Fork Should I Use?
+> [!WARNING]
+> If you have to ask, you're not ready for forks.
+
+Begin your research in Discord #custom-forks
+
+Please do not ask about forks outside of that channel.
+
+Please start with `commaai/master-ci`. This is the latest upstream and supports lateral only. 
+
+> [!WARNING]
+> Some forks will brick your C3X.
+> Most forks are not made for C3X because C3X is less than a year old.
+> 
+> Some forks contain banned code.
+> Using it will get you banned by the comma.ai company.
+> 
+> Some forks have nudgeless-lane-change.
+> Simply clicking the turn signal will move your car to the next lane.
+> Without any checks.
+> Yes, it will drive into the car next to you.
+> 
+> Some forks play a blood-curdling goat scream at max volume randomly.
+> 
+> The danger in using forks is not theoretical because it has full control over your car.
+> 
+> There's a real and present danger in using forks, even on the most popular forks.
+
+If you acknowledge the warning above and are still looking to try a fork that supports TSK the following are available to install at your own risk. Please keep in mind that these are community maintained and may not stay up to date:
+
+#### Forks with Long
+* `alexandresato/personal3`
+  * A.K.A SatoPilot, the first fork to support TSK long!
+  * Very quick S&G response
+  * Includes TSK key extract button
+* `chrispypatt/sunnypilot`
+  * Chrispypatt's fork of SunnyPilot's in-progress rewrite. 
+  * Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's re-write if it is out of date.
+  * Includes a TSK keyboard with key caching
+  * Model switcher to easily switch between various models
+#### Forks with Lateral Only
+* `optskug/SiennaFP`
+  * Anbuck's old fork of FP and first fork to support TSK lateral!
+---
 
 ## Bounty Statuses
 
