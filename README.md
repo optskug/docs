@@ -577,12 +577,12 @@ Please start with `commaai/master-ci`. This is the latest upstream and supports 
 > Some forks will brick your C3X. \
 > Most forks are not made for C3X because C3X is less than a year old.
 > 
-> Some forks contain banned code.
+> Some forks contain banned code. \
 > Using it will get you banned by the comma.ai company.
 > 
-> Some forks have nudgeless-lane-change.
-> Simply clicking the turn signal will move your car to the next lane.
-> Without any checks.
+> Some forks have nudgeless-lane-change. \
+> Simply clicking the turn signal will move your car to the next lane. \
+> Without any checks. \
 > Yes, it will drive into the car next to you.
 > 
 > Some forks play a blood-curdling goat scream at max volume randomly.
