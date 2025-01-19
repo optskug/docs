@@ -596,7 +596,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
 #### Forks with Long
 * `alexandresato/personal3`
   * A.K.A SatoPilot, the first fork to support TSK long!
-  * Very quick S&G response
+  * Very quick stop-and-go response
   * Includes TSK key extract button
 * `chrispypatt/sunnypilot`
   * Chrispypatt's fork of SunnyPilot's in-progress rewrite. 
