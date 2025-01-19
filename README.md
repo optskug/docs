@@ -600,17 +600,17 @@ If you acknowledge the warning above and are still looking to try a fork that su
 * `alexandresato/personal3`
   * A.K.A SatoPilot, the first fork to support TSK long!
   * Very quick stop-and-go response
-  * Includes TSK key extract button
+  * Also `alexandresato/extract_secoc_key_btn` includes a TSK key extract button and is rebased with personal3 often.
 * `chrispypatt/sunnypilot`
   * Chrispypatt's fork of SunnyPilot's in-progress rewrite. 
-  * Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's re-write if it is out of date.
+  * Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite.
   * Includes a TSK keyboard with key caching
   * Model switcher to easily switch between various models
 
 #### Forks with Lateral Only
 
 * `optskug/SiennaFP`
-  * @anbuck's old fork of FP and first fork to support TSK lateral!
+  * @anrum's old fork of FP and first fork to support TSK lateral!
   * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.
 
 ---
