@@ -605,7 +605,9 @@ If you acknowledge the warning above and are still looking to try a fork that su
   * Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's re-write if it is out of date.
   * Includes a TSK keyboard with key caching
   * Model switcher to easily switch between various models
+
 #### Forks with Lateral Only
+
 * `optskug/SiennaFP`
   * @anbuck's old fork of FP and first fork to support TSK lateral!
   * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.
