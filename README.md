@@ -574,7 +574,7 @@ Please do not ask about forks outside of that channel.
 Please start with `commaai/master-ci`. This is the latest upstream and supports lateral only. 
 
 > [!WARNING]
-> Some forks will brick your C3X.
+> Some forks will brick your C3X. \
 > Most forks are not made for C3X because C3X is less than a year old.
 > 
 > Some forks contain banned code.
