@@ -573,7 +573,7 @@ Begin your research in Discord #custom-forks
 
 Please do not ask about forks outside of that channel.
 
-Please start with `commaai/master-ci`. This is the latest upstream and supports lateral only. 
+If you're new, please start with `commaai/master-ci` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to.
 
 > [!WARNING]
 > Some forks will brick your C3X. \
