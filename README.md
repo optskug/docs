@@ -575,7 +575,7 @@ Please do not ask about forks outside of that channel.
 
 If you're new, please start with `commaai/master-ci` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to.
 
-> [!WARNING]
+> [!CAUTION]
 > Some forks will brick your C3X. \
 > Most forks are not made for C3X because C3X is less than a year old.
 > 
