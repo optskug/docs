@@ -1309,6 +1309,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * [The pull request for this change was accepted](https://github.com/commaai/openpilot/pull/34401)
 * [crispypatt is continuing to develop longitudinal support and just recently rebased and worked on safety. (SP Discord)](https://discord.com/channels/880416502577266699/1326834259096371211/1329893800658731160)
 * [calvinspark notices the shop page for comma votes has been taken down. There has been no statement from comma. Perhaps the inclusion of the Sienna and RAV4 Prime qualified?](https://discord.com/channels/469524606043160576/905950538816978974/1330048270407434300)
+* [satireshepherd is able to dump the memory on their 2024 Corolla's EPS.](https://discord.com/channels/469524606043160576/905950538816978974/1330440541703241789)
 
 ---
 
