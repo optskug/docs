@@ -565,16 +565,9 @@ Go back to Step 4A-4 and then finish with Step 4A-5.
 ## Forks
 
 ### Which Fork Should I Use?
-
-If you have to ask, you're not ready for forks.
-
-Begin your research in Discord #custom-forks
-
-Please do not ask about forks outside of that channel.
-
-If you're new, please start with `commaai/master-ci` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to.
-
 > [!CAUTION]
+> If you have to ask, you're not ready for forks. Using forks present a real danger so do your research and understand what fork you are installing and what it does.
+>
 > Some forks will brick your C3X. \
 > Most forks are not made for C3X because C3X is less than a year old.
 > 
@@ -587,33 +580,33 @@ If you're new, please start with `commaai/master-ci` and use it for two weeks. T
 > Yes, it will drive into the car next to you.
 > 
 > Some forks play a blood-curdling goat scream at max volume randomly.
-> 
-> The danger in using forks is not theoretical because it has full control over your car.
-> 
-> There's a real and present danger in using forks, even on the most popular forks.
 
-If you acknowledge the warning above and are still looking to try a fork that supports TSK the following are available to install at your own risk. Please keep in mind that these are community maintained and may not stay up to date:
+Begin your research in Discord #custom-forks
 
-#### Forks with Long
+Please do not ask about forks outside of that channel.
 
-* `alexandresato/personal3`
-  * A.K.A SatoPilot, the first fork to support TSK long!
-  * Very quick stop-and-go response
-  * Also `alexandresato/extract_secoc_key_btn` includes a TSK key extract button and is rebased with personal3 often.
-* `chrispypatt/sunnypilot`
-  * Chrispypatt's fork of SunnyPilot's in-progress rewrite. 
-  * Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite.
-  * Includes a TSK keyboard with key caching
-  * Model switcher to easily switch between various models
+If you're new, please start with `commaai/master-ci` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to.
 
-#### Forks with Lateral Only
+Then familiarize yourself with the communities through Discord for each fork you are looking to install.
 
-* `optskug/SiennaFP`
-  * anrum's old fork of FP and first fork to support TSK lateral!
-  * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.
+If you acknowledge the warning above and are still looking to try a fork that supports TSK the following are available to install at your own risk. Keep in mind that these are community maintained and may not stay up to date:
+
+|  | 1. Lateral support <br> 2. AOL / MADS / keep-lat-on-after-brakes <br> 3. Longitudinal support <br><br> Notes |
+|:---:|:---|
+| `alexandresato/personal3` <br> (a.k.a SatoPilot) | 1. Yes from upstream <br> 2. Yes from community (MADS from SP) <br> 3. Yes from community (from chrispypatt) <br><br> * First to get long <br> * Very quick stop-and-go response <br> * `alexandresato/extract_secoc_key_btn` <br> includes a TSK key extract button and is rebased with personal3 often. |
+| `sunnypilot/master-new` <br> (A.K.A SunnyPilot) <br> [SunnyPilot discord](https://discord.com/invite/sunnypilot) | 1. Yes from upstream <br> 2. Yes from community (MADS original author) <br> 3. No <br><br> * Model switcher to easily switch between various models |
+| `chrispypatt/sunnypilot` <br> (fork of SunnyPilot) <br> [SunnyPilot discord](https://discord.com/invite/sunnypilot) | 1. Yes from upstream <br> 2. Yes from community (MADS from SP) <br> 3. Yes from community (original author) <br><br> Same notes as `sunnypilot/master-new` plus: <br> * Includes a TSK keyboard with key caching <br> * `commaai/master` and most forks based on it have unstable experimental mode due to the latest model. The model switcher in SP allows you to use old models with stable experimental mode <br> * Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite. |
+| `optskug/SiennaFP` <br> (fork of FrogPilot) <br> [Frogpilot discord](https://discord.com/invite/frogpilot) | 1. Yes from community (from anrum)<br>2. Yes from community (AOL from FP) <br> 3. No <br><br> * anrum's old fork of FP and first fork to support TSK lateral! <br> * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again. |
 
 > [!WARNING]
 > `optskug/SiennaFP` is the only FrogPilot fork/branch with TSK support. Do not install the latest FP unless FrogGoesMoo confirmed that it supports TSK vehicles.
+
+If you are installing a fork not included in the list above, reach out to the fork owner and ask:
+1. if it's for C3X
+2. if it supports TSK
+3. if it contains banned code
+4. if there's anything to watch out for
+
 ---
 
 ## Bounty Statuses
