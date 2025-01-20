@@ -612,7 +612,8 @@ If you acknowledge the warning above and are still looking to try a fork that su
 * `optskug/SiennaFP`
   * anrum's old fork of FP and first fork to support TSK lateral!
   * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.
-
+  > [!WARNING]
+  > `optskug/SiennaFP` is the only FrogPilot fork/branch with TSK support. Do not install the latest FP unless FrogGoesMoo confirmed that it supports TSK vehicles.
 ---
 
 ## Bounty Statuses
