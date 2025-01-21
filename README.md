@@ -189,7 +189,9 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 ⚙️ > `Software` > `Uninstall openpilot` > `UNINSTALL` > `Uninstall` > `Confirm` > `Confirm`
 
-4A-2. Connect C3X to Wi-Fi and install `Custom Software` with URL `optskug/tskm` to download `TSK Manager`. It will stay at 92% and then 100% for a few minutes as it installs.
+4A-2. Connect C3X to Wi-Fi and install `Custom Software` with URL `optskug/tskm` to download `TSK Manager`.
+
+It will stay at 92% and then 100% for a few minutes as it installs.
 
 ![](img/v2.tsk-manager.jpg)
 
@@ -200,7 +202,7 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 >
 > If you want to quit, turn off the car, unplug C3X, and turn the car back on. Everything will be back to normal.
 
-When you see the output, always scroll to the bottom of the text to see the result and what to do next.
+When you see the output, always scroll to the bottom to see the result and what to do next.
 
 4A-3-1. In case of a known error, it'll tell you to retry.
 ![](img/v2.ext-known.jpg)
@@ -241,9 +243,9 @@ As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also wri
 >
 > If you want to do just the bare minimum and come back to this later, then skip over to Step 5.
 
-### Step 4B-1. SSH into the device
+#### Step 4B-1. SSH into the device
 
-4B-1-1. Set up SSH
+4B-1-1. Set up SSH.
 
 Do this: https://github.com/commaai/openpilot/wiki/SSH#before-you-start
 
@@ -256,7 +258,7 @@ And then do one of these:
 ssh comma@"your Comma IP"
 ```
 
-### Step 4B-2. Extract the security key
+#### Step 4B-2. Extract the security key
 
 4B-2-1. Navigate to openpilot directory.
 ```sh
@@ -335,9 +337,9 @@ Archive and don't lose the key so that you don't need to extract it again. Perha
 > [!WARNING]
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
-### Step 4B-3. Debugging
+#### Step 4B-3. Debugging
 
-#### 4B-3-1. If you see any of these error messages
+4B-3-1. If you see any of these error messages
 
 * `panda.python.uds.MessageTimeoutError: timeout waiting for response`
 * `panda.python.uds.InvalidServiceIdError: invalid response service id: 0x50` or similar
@@ -347,7 +349,7 @@ Turn off the car, put it back into `Not Ready to Drive` mode, and then try again
 
 Be sure to kill openpilot process if you restarted C3X.
 
-#### 4B-3-2. `Unexpected application version!`
+4B-3-2. `Unexpected application version!`
 
 * Open the script for editing.
   ```sh
@@ -375,11 +377,12 @@ Be sure to kill openpilot process if you restarted C3X.
   ./extract_keys.py
   ```
 
-#### 4B-3-3. Still doesn't work?
+4B-3-3. Still doesn't work?
 
 Turn off the car, unplug everything, plug them back in, and try again.
 
-### Step 4B-4. Install the security key & Reboot
+#### Step 4B-4. Install the security key & Reboot
+
 4B-4-1. Install the key in `/cache/params/SecOCKey`.
 
 Make the installation directory.
@@ -515,12 +518,11 @@ Redo [Step 4B-4. Install the security key & Reboot](#step-4b-4-install-the-secur
 
 Redo [Step 4A. Run the exploit using `TSK Manager`](#step-4a-run-the-exploit-using-tsk-manager).
 
-When you get to Step 4A-3, don't run `TSK Extractor` but instead run `TSK Keyboard`.
+When you get to Step 4A-3, don't run `TSK Extractor` but instead run `TSK Keyboard`. Use it to type in your key and install.
 
 ![](img/v2.keyboard-success.jpg)
 
-Use it to type in your key and install.
-Go back to Step 4A-4 and then finish with Step 4A-5.
+Continue to Step 4A-4 and then finish with 4A-5.
 
 ---
 
