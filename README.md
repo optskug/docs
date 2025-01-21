@@ -589,7 +589,7 @@ If you're new, please start with `commaai/master-ci` and use it for two weeks. T
 
 Then familiarize yourself with the communities through Discord for each fork you are looking to install.
 
-If you acknowledge the warning above and are still looking to try a fork that supports TSK the following are available to install at your own risk. Keep in mind that these are community maintained and may not stay up to date:
+If you acknowledge the warning above and are still looking to try a fork that supports TSK, the following are available to install at your own risk. Keep in mind that these are community maintained and may not stay up to date:
 
 <table>
     <tr>
