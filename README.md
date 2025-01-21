@@ -659,7 +659,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
       <td>
         <code>optskug/SiennaFP</code> <br/> 
         (fork of FrogPilot) <br/>
-        <a href="https://discord.com/invite/frogpilot">Frogpilot discord</a>
+        <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from community (from anrum) <br/>
