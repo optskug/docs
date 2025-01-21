@@ -591,12 +591,89 @@ Then familiarize yourself with the communities through Discord for each fork you
 
 If you acknowledge the warning above and are still looking to try a fork that supports TSK the following are available to install at your own risk. Keep in mind that these are community maintained and may not stay up to date:
 
-|  | **Lat:** Lateral support <br> **MADS:** AOL / MADS / keep-lat-on-after-brakes <br> **Long:** Longitudinal support <br><br> Notes |
-|:---:|:---|
-| `alexandresato/personal3` <br> (a.k.a SatoPilot) | **Lat:** Yes from upstream <br> **MADS:** Yes from community (MADS from Spektor56) <br> **Long:** Yes from community (from chrispypatt) <br><br> * First to get long <br> * Very quick stop-and-go response <br> * `alexandresato/extract_secoc_key_btn` <br> includes a TSK key extract button and is rebased with personal3 often. |
-| `sunnypilot/master-new` <br> (A.K.A SunnyPilot) <br> [SunnyPilot discord](https://discord.com/invite/sunnypilot) | **Lat:** Yes from upstream <br> **MADS:** Yes from community (MADS original author) <br> **Long:** No <br><br> * Model switcher to easily switch between various models |
-| `chrispypatt/sunnypilot` <br> (fork of SunnyPilot) <br> [SunnyPilot discord](https://discord.com/invite/sunnypilot) | **Lat:** Yes from upstream <br> **MADS:** Yes from community (MADS from SP) <br> **Long:** Yes from community (original author) <br><br> Same notes as `sunnypilot/master-new` plus: <br> * Includes a TSK keyboard with key caching <br> * `commaai/master` and most forks based on it have unstable experimental mode due to the latest model. The model switcher in SP allows you to use old models with stable experimental mode <br> * Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite. |
-| `optskug/SiennaFP` <br> (fork of FrogPilot) <br> [Frogpilot discord](https://discord.com/invite/frogpilot) | **Lat:** Yes from community (from anrum)<br>**MADS:** Yes from community (AOL from FP) <br> **Long:** No <br><br> * anrum's old fork of FP and first fork to support TSK lateral! <br> * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again. |
+<table>
+    <tr>
+        <td></td>
+        <td>
+          <strong>Lat:</strong> Lateral support
+          <br>
+          <strong>MADS:</strong> AOL / MADS / keep-lat-on-after-brakes
+          <br>
+          <strong>Long:</strong> Longitudinal support
+          <br>
+          <br>
+          <strong>Notes:</strong>
+        </td>
+    </tr>
+    <tr>
+      <td><code>alexandresato/personal3</code>  <br/> 
+        (a.k.a SatoPilot)
+      </td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> Yes from community (MADS from Spektor56) <br/>
+        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
+        <strong>Notes:</strong>
+        <ul>
+          <li>First fork to get long!</li>
+          <li>Very quick stop-and-go response</li>
+          <li><code>`alexandresato/extract_secoc_key_btn</code> includes a TSK key extract button and is rebased with personal3 often.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>sunnypilot/master-new</code> <br/> 
+        (a.k.a SunnyPilot) <br/>
+        <a href="https://discord.com/invite/sunnypilot">SunnyPilot discord</a>
+      </td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> Yes from community (MADS original author) <br/>
+        <strong>Long:</strong> No <br/> <br/>
+        <strong>Notes:</strong>
+        <ul>
+          <li>Model switcher to easily switch between various models</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>chrispypatt/sunnypilot</code>  <br/> 
+        (fork of SunnyPilot)
+        <a href="https://discord.com/invite/sunnypilot">SunnyPilot discord</a>
+      </td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> Yes from community (MADS from SP) <br/>
+        <strong>Long:</strong> Yes from community (original author) <br/> <br/>
+        <strong>Notes - same as <code>sunnypilot/master-new</code> plus:</strong>
+        <ul>
+          <li>Includes a TSK keyboard with key caching</li>
+          <li><code>commaai/master</code> and most forks based on it have unstable experimental mode due to the latest model. The model switcher in SP allows you to use old models with stable experimental mode</li>
+          <li>Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>optskug/SiennaFP</code> <br/> 
+        (fork of FrogPilot) <br/>
+        <a href="https://discord.com/invite/frogpilot">Frogpilot discord</a>
+      </td>
+      <td>
+        <strong>Lat:</strong> Yes from community (from anrum) <br/>
+        <strong>MADS:</strong> Yes from community (AOL from FP) <br/>
+        <strong>Long:</strong> No <br/> <br/>
+        <strong>Notes</strong>
+        <ul>
+          <li>anrum's old fork of FP and first fork to support TSK lateral!</li>
+          <li>Includes a TSK keyboard with key caching</li>
+          <li>Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
+        </ul>
+      </td>
+    </tr>
+</table>
 
 > [!WARNING]
 > `optskug/SiennaFP` is the only FrogPilot fork/branch with TSK support. Do not install the latest FP unless FrogGoesMoo confirmed that it supports TSK vehicles.
