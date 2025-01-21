@@ -144,9 +144,11 @@ AGNOS is the operating system used in C3X. The latest one is needed to run TSK M
 
 1-2. Connect C3X to your Wi-Fi network.
 
-1-3. Install `Custom Software` with URL `commaai/master-ci`
+1-3. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/master-ci`
 
 The installation takes 10~20 minutes with one or two restarts. This is longer than usual because `commaai/master-ci` is not precompiled.
+
+If you're doing this in your car, keep the engine running to keep the 12V battery alive.
 
 1-4. Scroll and accept the EULA, and go through the training.
 
@@ -229,7 +231,9 @@ As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also wri
 
 4A-4. Exit `TSK Extractor` and exit `TSK Manager`. C3X will reboot.
 
-4A-5. Install `Custom Software` with URL `commaai/master-ci`
+4A-5. Either come back home or start the engine so that your 12V battery doesn't die.
+
+4A-6. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/master-ci`
 
 > [!CAUTION]
 > `commaai/master-ci` is the only branch from comma.ai that supports TSK vehicles.
@@ -466,7 +470,7 @@ sudo reboot
   ```sh
   echo -n "1" > /data/params/d/DisableUpdates
   ```
-* If you're using FrogPilot, disabling update causes an `updated` error, so don't disable.
+* If you're using FrogPilot, disabling update using the `echo` command causes an `updated` error. Use the settings menu to disable instead.
 
 5-4. Reboot the device.
  ```sh
