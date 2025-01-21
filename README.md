@@ -679,7 +679,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
 > [!WARNING]
 > `optskug/SiennaFP` is the only FrogPilot fork/branch with TSK support. Do not install the latest FP unless FrogGoesMoo confirmed that it supports TSK vehicles.
 
-If you are installing a fork not included in the list above, reach out to the fork owner and ask:
+If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork.
 1. if it's for C3X
 2. if it supports TSK
 3. if it contains banned code
