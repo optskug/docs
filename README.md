@@ -144,9 +144,11 @@ AGNOS is the operating system used in C3X. The latest one is needed to run TSK M
 
 1-2. Connect C3X to your Wi-Fi network.
 
-1-3. Install `Custom Software` with URL `commaai/master-ci`
+1-3. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/master-ci`
 
 The installation takes 10~20 minutes with one or two restarts. This is longer than usual because `commaai/master-ci` is not precompiled.
+
+If you're doing this in your car, keep the engine running to keep the 12V battery alive.
 
 1-4. Scroll and accept the EULA, and go through the training.
 
@@ -183,13 +185,15 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 ### Step 4A. Run the exploit using `TSK Manager`
 
 > [!NOTE]
-> This is the recommended method for new users. See Step 4B for an alternate method.
+> This is the recommended method. See Step 4B for an alternate method.
 
 4A-1. Uninstall openpilot (AGNOS will remain upgraded).
 
 ⚙️ > `Software` > `Uninstall openpilot` > `UNINSTALL` > `Uninstall` > `Confirm` > `Confirm`
 
-4A-2. Connect C3X to Wi-Fi and install `Custom Software` with URL `optskug/tskm` to download `TSK Manager`. It will stay at 92% and then 100% for a few minutes as it installs.
+4A-2. Connect C3X to Wi-Fi and install `Custom Software` with URL `optskug/tskm` to download `TSK Manager`.
+
+It will stay at 92% and then 100% for a few minutes as it installs.
 
 ![](img/v2.tsk-manager.jpg)
 
@@ -200,7 +204,7 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 >
 > If you want to quit, turn off the car, unplug C3X, and turn the car back on. Everything will be back to normal.
 
-When you see the output, always scroll to the bottom of the text to see the result and what to do next.
+When you see the output, always scroll to the bottom to see the result and what to do next.
 
 4A-3-1. In case of a known error, it'll tell you to retry.
 ![](img/v2.ext-known.jpg)
@@ -220,40 +224,32 @@ This 32 digit hexadecimal number is your key (second redacted line).
 
 Congratulations, you have the key now!
 
-As a bonus, the key was installed in `/data/params/d/SecOCKey` file and archived in `/cache/params/SecOCKey` file.
+As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also written in `/data/params/d/SecOCKey` file for legacy support.
 
 > [!WARNING]
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
 4A-4. Exit `TSK Extractor` and exit `TSK Manager`. C3X will reboot.
 
-4A-5. Install `Custom Software` with URL `commaai/master-ci`
+4A-5. Either come back home or start the engine so that your 12V battery doesn't die.
+
+4A-6. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/master-ci`
 
 > [!CAUTION]
 > `commaai/master-ci` is the only branch from comma.ai that supports TSK vehicles.
 >
-> If you install a branch without TSK support, openpilot won't be able to drive your car. If you uninstall the openpilot from the wrong branch, **the key also gets uninstalled**.
-
-#### Review
-
-We did T1, T2, T3, T5, O1, and O2 together. If you installed a wrong branch, then you also did O3.
-
-![](img/v2.review.png)
-
-* `commaai/master-ci` is the only branch from comma.ai <code>with TSK support<sup>*</sup></code>.
-
-* Most <code>Upgrades<sup>**</sup></code> are safe, but it's also possible for an upgrade to uninstall the security key.
+> If you install a branch without TSK support, openpilot won't be able to drive your car.
 
 ### Step 4B. Run the exploit using SSH manually
 
 > [!NOTE]
-> Even if you already extracted the key using `TSK Manager`, setting up SSH access will help you later with the key installation. It's not hard to do so follow along.
+> Even if you already extracted the key using `TSK Manager`, setting up SSH access will help you later with the key installation for legacy fork/branches. It's not hard to do so follow along.
 >
 > If you want to do just the bare minimum and come back to this later, then skip over to Step 5.
 
-### Step 4B-1. SSH into the device
+#### Step 4B-1. SSH into the device
 
-4B-1-1. Set up SSH
+4B-1-1. Set up SSH.
 
 Do this: https://github.com/commaai/openpilot/wiki/SSH#before-you-start
 
@@ -266,7 +262,7 @@ And then do one of these:
 ssh comma@"your Comma IP"
 ```
 
-### Step 4B-2. Extract the security key
+#### Step 4B-2. Extract the security key
 
 4B-2-1. Navigate to openpilot directory.
 ```sh
@@ -345,9 +341,9 @@ Archive and don't lose the key so that you don't need to extract it again. Perha
 > [!WARNING]
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
-### Step 4B-3. Debugging
+#### Step 4B-3. Debugging
 
-#### 4B-3-1. If you see any of these error messages
+4B-3-1. If you see any of these error messages
 
 * `panda.python.uds.MessageTimeoutError: timeout waiting for response`
 * `panda.python.uds.InvalidServiceIdError: invalid response service id: 0x50` or similar
@@ -357,7 +353,7 @@ Turn off the car, put it back into `Not Ready to Drive` mode, and then try again
 
 Be sure to kill openpilot process if you restarted C3X.
 
-#### 4B-3-2. `Unexpected application version!`
+4B-3-2. `Unexpected application version!`
 
 * Open the script for editing.
   ```sh
@@ -385,33 +381,37 @@ Be sure to kill openpilot process if you restarted C3X.
   ./extract_keys.py
   ```
 
-#### 4B-3-3. Still doesn't work?
+4B-3-3. Still doesn't work?
 
 Turn off the car, unplug everything, plug them back in, and try again.
 
-### Step 4B-4. Install the security key & Reboot
+#### Step 4B-4. Install the security key & Reboot
 
-4B-4-1. Install the key.
+4B-4-1. Install the key in `/cache/params/SecOCKey`.
+
+Make the installation directory.
 ```sh
-echo -n "your key here" > /data/params/d/SecOCKey
+sudo mkdir -p /cache/params || true
+```
+
+Give it the correct permissions.
+```sh
+sudo chown comma:comma /cache/params
+```
+
+Install the key.
+```sh
+echo -n "your key here" > /cache/params/SecOCKey
 ```
 
 For example,
 ```sh
-echo -n "0123456789abcdef0123456789abcdef" > /data/params/d/SecOCKey
-```
-
-4B-4-2. Archive the key, so that it doesn't get deleted when openpilot is uninstalled.
-
-Make the archive directory with correct permissions.
-```sh
-sudo mkdir -p /cache/params || true
-sudo chown comma:comma /cache/params
-```
-
-Archive the key.
-```sh
 echo -n "0123456789abcdef0123456789abcdef" > /cache/params/SecOCKey
+```
+
+4B-4-2. Also write it in `/data/params/d/SecOCKey` for legacy support.
+```sh
+echo -n "your key here" > /data/params/d/SecOCKey
 ```
 
 4B-4-3. Reboot the device.
@@ -470,7 +470,7 @@ sudo reboot
   ```sh
   echo -n "1" > /data/params/d/DisableUpdates
   ```
-* If you're using FrogPilot, disabling update causes an `updated` error, so don't disable.
+* If you're using FrogPilot, disabling update using the `echo` command causes an `updated` error. Use the settings menu to disable instead.
 
 5-4. Reboot the device.
  ```sh
@@ -487,13 +487,22 @@ Comma Power (OBD2 connector + long cable) is optional. It's not necessary for us
 
 ## Key Installation
 
-### When to do this
-The security key gets uninstalled when
-1. openpilot is uninstalled,
-2. comma is reset (tap-tap-tap on the boot screen), or
-3. comma is flashed (flash.comma.ai).
+### You shouldn't need to do this
 
-Follow this guide to reinstall the key that you already have.
+Modern openpilot and its forks have an [auto-key-install process](https://github.com/commaai/openpilot/pull/34401/files) that runs on every car start.
+
+This means that **uninstalling openpilot or resetting comma no longer uninstalls the security key.**
+
+**🎉🎉🎉 Gone are the days of key installation. From now on, just install openpilot and go drive, just like non-TSK users! 🎉🎉🎉**
+
+### When to do this
+
+You may need to still reinstall the key if
+1. the key was never installed in `/cache/params/SecOCKey` because you did it the old SSH way and never ran `TSK Manager` / `TSK Keyboard`,
+2. the installed key in `/cache/params/SecOCKey` was deleted, or
+3. you're using an old fork without the auto-key-installer.
+
+Follow this guide to reinstall the key.
 
 ### Method 1. Use the built-in `TSK Manager`/`TSK Keyboard`
 
@@ -505,61 +514,19 @@ Some forks/branches have `TSK Manager` or `TSK Keyboard` under Settings.
 
 If it's there, use it to type in your key and install, and then reboot.
 
-### Method 2. SSH and install the key to `/data/params/d/SecOCKey` file
+### Method 2. SSH and install the key to `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files
 
-### Step 2-1. SSH into the device
-
-2-1-1. Set up SSH
-
-Do this: https://github.com/commaai/openpilot/wiki/SSH#before-you-start
-
-And then do one of these:
-* macOS: https://github.com/commaai/openpilot/wiki/SSH#option-2mac---pre-installed-openssh-client-on-macos
-* Windows: https://github.com/commaai/openpilot/wiki/SSH#option-2---pre-installed-openssh-client-on-windows-10-and-up
-
-2-1-2. SSH into the device.
-```sh
-ssh comma@"your Comma IP"
-```
-
-### Step 2-2. Install the key and reboot
-```sh
-echo -n "your key here" > /data/params/d/SecOCKey
-```
-
-For example,
-```sh
-echo -n "0123456789abcdef0123456789abcdef" > /data/params/d/SecOCKey
-```
-
-And then reboot the device.
-```sh
-sudo reboot
-```
+Redo [Step 4B-4. Install the security key & Reboot](#step-4b-4-install-the-security-key--reboot).
 
 ### Method 3. Uninstall openpilot, install the key using `TSK Manager`, and install openpilot
 
-This is the workflow for using `TSK Manager` to install the security key, which is the same as the key extraction process.
+Redo [Step 4A. Run the exploit using `TSK Manager`](#step-4a-run-the-exploit-using-tsk-manager).
 
-The only difference is that instead of T3, you'll do T4.
-
-![](img/v2.review.png)
-
-#### Step 3-1. Same as Key Extraction
-
-Go back to [Key Extraction](#key-extraction) and start again from Step 1.
-
-#### Step 3-2. Except for Step 4A-3
-
-When you get to Step 4A-3, don't run `TSK Extractor` but instead run `TSK Keyboard`.
+When you get to Step 4A-3, don't run `TSK Extractor` but instead run `TSK Keyboard`. Use it to type in your key and install.
 
 ![](img/v2.keyboard-success.jpg)
 
-Use it to type in your key and install.
-
-#### Step 3-3. Again, same as Key Extraction
-
-Go back to Step 4A-4 and then finish with Step 4A-5.
+Continue to Step 4A-4 and then finish with 4A-5.
 
 ---
 ## Forks
