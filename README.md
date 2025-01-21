@@ -617,7 +617,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <ul>
           <li>First fork to get long!</li>
           <li>Very quick stop-and-go response</li>
-          <li><code>`alexandresato/extract_secoc_key_btn</code> includes a TSK key extract button and is rebased with personal3 often.</li>
+          <li><code>alexandresato/extract_secoc_key_btn</code> includes a TSK key extract button and is rebased with <code>personal3</code> often.</li>
         </ul>
       </td>
     </tr>
