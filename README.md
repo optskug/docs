@@ -537,15 +537,15 @@ Continue to Step 4A-4 and then finish with 4A-5.
 >
 > Some forks will brick your C3X. \
 > Most forks are not made for C3X because C3X is less than a year old.
-> 
+>
 > Some forks contain banned code. \
 > Using it will get you banned by the comma.ai company.
-> 
+>
 > Some forks have nudgeless-lane-change. \
 > Simply clicking the turn signal will move your car to the next lane. \
 > Without any checks. \
 > Yes, it will drive into the car next to you.
-> 
+>
 > Some forks play a blood-curdling goat scream at max volume randomly.
 
 Begin your research in Discord #custom-forks
@@ -573,7 +573,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
         </td>
     </tr>
     <tr>
-      <td><code>alexandresato/personal3</code>  <br/> 
+      <td><code>alexandresato/personal3</code>  <br/>
         (a.k.a SatoPilot)
       </td>
       <td>
@@ -590,7 +590,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
-        <code>sunnypilot/master-new</code> <br/> 
+        <code>sunnypilot/master-new</code> <br/>
         (a.k.a SunnyPilot) <br/>
         <a href="https://discord.com/invite/sunnypilot">SunnyPilot discord</a>
       </td>
@@ -606,7 +606,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
-        <code>chrispypatt/sunnypilot</code>  <br/> 
+        <code>chrispypatt/sunnypilot</code>  <br/>
         (fork of SunnyPilot)
         <a href="https://discord.com/invite/sunnypilot">SunnyPilot discord</a>
       </td>
@@ -624,7 +624,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
-        <code>optskug/SiennaFP</code> <br/> 
+        <code>optskug/SiennaFP</code> <br/>
         (fork of FrogPilot) <br/>
         <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
       </td>
