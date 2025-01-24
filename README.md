@@ -577,7 +577,6 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <strong>Lat:</strong> Yes from upstream <br/>
         <strong>MADS:</strong> Yes from community (MADS from Spektor56) <br/>
         <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
-        <strong>Notes:</strong>
         <ul>
           <li>First fork to get long!</li>
           <li>Very quick stop-and-go response</li>
@@ -595,7 +594,6 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <strong>Lat:</strong> Yes from upstream <br/>
         <strong>MADS:</strong> Yes from community (MADS original author) <br/>
         <strong>Long:</strong> No <br/> <br/>
-        <strong>Notes:</strong>
         <ul>
           <li>Model switcher to easily switch between various models</li>
         </ul>
@@ -615,7 +613,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <ul>
           <li>Includes a TSK keyboard with key caching</li>
           <li><code>commaai/master</code> and most forks based on it have unstable experimental mode due to the latest model. The model switcher in SP allows you to use old models with stable experimental mode</li>
-          <li>Maintained as best effort. This may not always be up to date with latest SunnyPilot. Reach out to @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite.</li>
+          <li>Maintained as best effort. This may not always be up to date with the latest SunnyPilot. Contact @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite.</li>
         </ul>
       </td>
     </tr>
@@ -629,7 +627,6 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <strong>Lat:</strong> Yes from community (from anrum) <br/>
         <strong>MADS:</strong> Yes from community (AOL from FP) <br/>
         <strong>Long:</strong> No <br/> <br/>
-        <strong>Notes</strong>
         <ul>
           <li>anrum's old fork of FP and first fork to support TSK lateral!</li>
           <li>Includes a TSK keyboard with key caching</li>
