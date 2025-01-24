@@ -567,9 +567,6 @@ If you acknowledge the warning above and are still looking to try a fork that su
           <strong>MADS:</strong> AOL / MADS / keep-lat-on-after-brakes
           <br>
           <strong>Long:</strong> Longitudinal support
-          <br>
-          <br>
-          <strong>Notes:</strong> Additional notes about the fork
         </td>
     </tr>
     <tr>
