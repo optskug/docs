@@ -560,7 +560,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
 
 <table>
     <tr>
-        <td><strong>Legend</strong></td>
+        <td><strong>Fork</strong></td>
         <td>
           <strong>Lat:</strong> Lateral support
           <br>
