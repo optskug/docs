@@ -1397,7 +1397,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [calvinspark notices the shop page for comma votes has been taken down. There has been no statement from comma. Perhaps the inclusion of the Sienna and RAV4 Prime qualified?](https://discord.com/channels/469524606043160576/905950538816978974/1330048270407434300)
 * [satireshepherd is able to dump the memory on their 2024 Corolla's EPS.](https://discord.com/channels/469524606043160576/905950538816978974/1330440541703241789)
 * [A discussion breaks out about the status of OP longitudinal control and radar parsing on TSK vehicles.](https://discord.com/channels/469524606043160576/1331823208424542330)
-
+* [.lx93: "I just bought a 2021 GR Yaris and am interested in getting my c3 to work with it. i see https://github.com/optskug/docs?tab=readme-ov-file#-may-be-possible-to-hack-but-hasnt-been-tried its possible but no one has done it yet. i will report back once i get my toyota harness to mess around"](https://discord.com/channels/469524606043160576/905950538816978974/1332610193443520522)
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
