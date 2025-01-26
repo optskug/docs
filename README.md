@@ -402,17 +402,17 @@ sudo chown comma:comma /cache/params
 
 Install the key.
 ```sh
-echo -n "your key here" > /cache/params/SecOCKey
+echo -n [your key here] > /cache/params/SecOCKey
 ```
 
 For example,
 ```sh
-echo -n "0123456789abcdef0123456789abcdef" > /cache/params/SecOCKey
+echo -n 0123456789abcdef0123456789abcdef > /cache/params/SecOCKey
 ```
 
 4B-4-2. Also write it in `/data/params/d/SecOCKey` for legacy support.
 ```sh
-echo -n "your key here" > /data/params/d/SecOCKey
+echo -n [your key here] > /data/params/d/SecOCKey
 ```
 
 4B-4-3. Reboot the device.
@@ -469,7 +469,7 @@ sudo reboot
 * If your fingerprints were upstreamed, then the next update will contain your fingerprints, so don't disable.
 * If your fingerprints were not upstreamed, disable.
   ```sh
-  echo -n "1" > /data/params/d/DisableUpdates
+  echo -n 1 > /data/params/d/DisableUpdates
   ```
 * If you're using FrogPilot, disabling update using the `echo` command causes an `updated` error. Use the settings menu to disable instead.
 
