@@ -532,32 +532,41 @@ Continue to Step 4A-4 and then finish with 4A-5.
 ---
 ## Forks
 
+Forks may offer additional functionality or changes that comma openpilot may not offer or are unwilling to offer. 
+
+You can totally have a good time with comma openpilot without using a fork too. You can also have a better time or a worst time with forks!
+
 ### Which Fork Should I Use?
+
 > [!CAUTION]
-> If you have to ask, you're not ready for forks. Using forks present a real danger so do your research and understand what fork you are installing and what it does.
+> Using forks present a real danger so do your research and understand what fork you are installing and what it does. Do not go down this path without research!
 >
 > Some forks will brick your C3X. \
-> Most forks are not made for C3X because C3X is less than a year old.
+> Some forks may not be made for the current C3X. \
+> comma may make changes to newly produced C3Xs that necessitate always running the newest comma openpilot and forks might brick them.
 >
 > Some forks contain banned code. \
-> Using it will get you banned by the comma.ai company.
+> Using it will get you banned from using any comma.ai cloud resource or debugging. \
+> They will not restore access.
 >
 > Some forks have nudgeless-lane-change. \
 > Simply clicking the turn signal will move your car to the next lane. \
 > Without any checks. \
-> Yes, it will drive into the car next to you.
+> Yes, it will drive into the car next to you. 
 >
-> Some forks play a blood-curdling goat scream at max volume randomly.
+> Some forks play a blood-curdling goat scream at max volume randomly. 🐐
+>
+> comma will not answer to support you if you're running forks until you restore back to comma openpilot.
 
-Begin your research in Discord #custom-forks
+Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). For all forks, you should read their readme documentation as well. 
 
 Please do not ask about forks outside of that channel.
 
-If you're new, please start with `commaai/master-ci` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to.
+If you're new, please start with comma openpilot with `commaai/master-ci` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
 
-Then familiarize yourself with the communities through Discord for each fork you are looking to install.
+Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks, their communities may or may not for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
 
-If you acknowledge the warning above and are still looking to try a fork that supports TSK, the following are available to install at your own risk. Keep in mind that these are community maintained and may not stay up to date:
+If you acknowledge the warning above and are still looking to try a fork that supports SecOC/TSK, the following are available to install at your own risk. Keep in mind that this page is community maintained and may not stay up to date so please send in changes/fixes, or notices of any inaccuracies:
 
 <table>
     <tr>
@@ -641,11 +650,12 @@ If you acknowledge the warning above and are still looking to try a fork that su
 > [!WARNING]
 > `optskug/SiennaFP` is the only FrogPilot fork/branch with TSK support. Do not install the latest FP unless FrogGoesMoo confirmed that it supports TSK vehicles.
 
-If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork.
-1. if it's for C3X
-2. if it supports TSK
-3. if it contains banned code
-4. if there's anything to watch out for
+If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork! 
+
+1. If it's for the latest C3X
+2. If it supports SecOC/TSK
+3. If it contains banned code
+4. If there's anything to watch out for
 
 ---
 
