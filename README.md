@@ -234,6 +234,11 @@ As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also wri
 
 4A-5. Either come back home or start the engine so that your 12V battery doesn't die.
 
+> [!WARNING]
+> 12V battery is not your hybrid driving battery. It will die even if your car is plugged in.
+>
+> This step was written because many people ended up with a dead battery and had to jump the car, and yet there are people who are still not following this step. Do it now.
+
 4A-6. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/master-ci`
 
 > [!CAUTION]
