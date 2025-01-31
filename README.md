@@ -537,7 +537,7 @@ Continue to Step 4A-4 and then finish with 4A-5.
 ---
 ## Forks
 
-Forks may offer additional functionality or changes that comma openpilot may not offer or are unwilling to offer. 
+Forks may offer additional functionality or changes that comma openpilot may not offer or are unwilling to offer.
 
 You can totally have a good time with comma openpilot without using a fork too. You can also have a better time or a worst time with forks!
 
@@ -563,7 +563,7 @@ You can totally have a good time with comma openpilot without using a fork too. 
 >
 > comma will not answer to support you if you're running forks until you restore back to comma openpilot.
 
-Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). For all forks, you should read their readme documentation as well. 
+Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). For all forks, you should read their README documentation as well.
 
 Please do not ask about forks outside of that channel.
 
@@ -655,7 +655,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
 > [!WARNING]
 > `optskug/SiennaFP` is the only FrogPilot fork/branch with TSK support. Do not install the latest FP unless FrogGoesMoo confirmed that it supports TSK vehicles.
 
-If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork! 
+If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork!
 
 1. If it's for the latest C3X
 2. If it supports SecOC/TSK
