@@ -422,7 +422,7 @@ echo -n [your key here] > /data/params/d/SecOCKey
 
 4B-4-3. Reboot the device.
 ```sh
-sudo reboot
+sudo reboot now
 ```
 
 ### Step 5. Fingerprinting (if the car is not recognized)
@@ -480,7 +480,7 @@ sudo reboot
 
 5-4. Reboot the device.
  ```sh
- sudo reboot
+ sudo reboot now
  ```
 
 ### Step 6. Calibrate & Clean up
