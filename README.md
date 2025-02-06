@@ -1417,6 +1417,13 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [Satire_Shepherd: "A quick update so you guys know I havent given up, I couldnt find an eps on its own but I did find a 2023 Japan Corolla steering column that also goes back to the 2019 corolla, I just wanted something with secoc but not too new, I'm hoping to have some progress soon. If I have some good progress ill see if I can register to the comma hack 5 since I live in the San Diego area."](https://discord.com/channels/469524606043160576/905950538816978974/1334700988539469894)
   * There is some confusion that a SecOC vehicle (2023-2024 Corolla) shares the same **EPS** part number as a non-SecOC vehicle (2019-2022 Corolla). A theory is brought up that SecOC security only goes up to the "multiplexer" and that traffic after it may be unsecured. This is a theory and no direct observations have been made yet.
 * [A third GR Yaris shows up in the Discord and some discussion is had about dumping happening from the dataflash vs the RAM.](https://discord.com/channels/469524606043160576/905950538816978974/1335710649702940835)
+
+### February 2025
+
+* ["why don't you just wrap the installer? why does the fork even need to know about TSK extraction?". An idea or proposal is made for the community to wrap an installer with an extractor that extracts the key first and then automatically continues installation of a compatible openpilot version for TSK/SecOC.](https://discord.com/channels/469524606043160576/954493346250887168/1336842625373962301)
+* ["I think the sweet spot branch for upstream TSK users is `nightly-dev`". A better branch of comma openpilot for initial install is discussed.](https://discord.com/channels/469524606043160576/905950538816978974/1336748446295654410)
+
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
