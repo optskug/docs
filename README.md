@@ -137,7 +137,7 @@ If your car is not listed above, then there has been no documented information o
 Your car has a security key that Toyota doesn't want you to have. \
 Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key-extraction/) to extract the key.
 
-### Step 1. Upgrade AGNOS by installing `commaai/master-ci`
+### Step 1. Upgrade AGNOS by installing `commaai/nightly-dev`
 
 AGNOS is the operating system used in C3X. The latest one is needed to run TSK Manager.
 
@@ -145,15 +145,15 @@ AGNOS is the operating system used in C3X. The latest one is needed to run TSK M
 
 1-2. Connect C3X to your Wi-Fi network.
 
-1-3. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/master-ci`
+1-3. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/nightly-dev`
 
-The installation takes 10~20 minutes with one or two restarts. This is longer than usual because `commaai/master-ci` is not precompiled.
+The installation takes 1~5 minutes with one or two restarts.
 
 If you're doing this in your car, keep the engine running to keep the 12V battery alive.
 
 1-4. Scroll and accept the EULA, and go through the training.
 
-![](img/v2.master-ci.jpg)
+![](img/v2.nightly-dev.jpg)
 
 ### Step 2. Install the hardware
 
@@ -239,12 +239,14 @@ As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also wri
 >
 > This step was written because many people ended up with a dead battery and had to jump the car, and yet there are people who are still not following this step. Do it now.
 
-4A-6. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/master-ci`
+4A-6. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/nightly-dev`
 
 > [!CAUTION]
-> `commaai/master-ci` is the only branch from comma.ai that supports TSK vehicles.
+> `commaai/nightly-dev` is the only branch from comma.ai that supports TSK vehicles.
 >
 > If you install a branch without TSK support, openpilot won't be able to drive your car.
+
+Technically `commaai/master-ci` also supports TSK, but that branch is not precompiled so it takes a long time to install. There's no benefit of using it over `commaai/nightly-dev`.
 
 ### Step 4B. Run the exploit using SSH manually
 
@@ -487,7 +489,7 @@ sudo reboot
 
 If you're able to calibrate and then use openpilot to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
 
-At this time, `commaai/master-ci` branch can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor these PRs for long support progress (https://github.com/commaai/opendbc/pull/1385 & https://github.com/commaai/panda/pull/2061). Experimental mode is also not supported.
+At this time, `commaai/nightly-dev` branch can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor these PRs for long support progress (https://github.com/commaai/opendbc/pull/1385 & https://github.com/commaai/panda/pull/2061). Experimental mode is also not supported.
 
 Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car, which allows you to upload logs and SSH in more easily. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
 
@@ -567,7 +569,7 @@ Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/ch
 
 Please do not ask about forks outside of that channel.
 
-If you're new, please start with comma openpilot with `commaai/master-ci` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
+If you're new, please start with comma openpilot with `commaai/nightly-dev` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
 
 Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks, their communities may or may not for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
 
