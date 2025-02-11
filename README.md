@@ -1424,6 +1424,11 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * ["why don't you just wrap the installer? why does the fork even need to know about TSK extraction?". An idea or proposal is made for the community to wrap an installer with an extractor that extracts the key first and then automatically continues installation of a compatible openpilot version for TSK/SecOC.](https://discord.com/channels/469524606043160576/954493346250887168/1336842625373962301)
 * ["I think the sweet spot branch for upstream TSK users is `nightly-dev`". A better branch of comma openpilot for initial install is discussed.](https://discord.com/channels/469524606043160576/905950538816978974/1336748446295654410)
+  * This change was eventually merged into the guide. https://github.com/optskug/docs/pull/28
+* 2401_penitenttangent: "A couple of bZ4X/Soltera owners are looking at replicating Willem's work on an EPS from a bZ4X. The payloads Willem provided work for code execution, but the brute force script was not able to find a key in the RAM dump. They are hoping that by reverse engineering the full firmware we may gain a better understanding of how/where the key is stored.
+
+  We also determined that the pinout for the Toyota B harness is incorrect for our cars. The CAN busses are flipped so the relay ends up on bus 1 instead of bus 0/2. Once the busses are flipped we are able to see the different ECUs and interact with the EPS ECU. I have a feeling the same may be true for all of the TSS3.0 vehicles."
+  * https://discord.com/channels/469524606043160576/905950538816978974/1338908891148193903
 
 
 ---
