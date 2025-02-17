@@ -1429,7 +1429,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
   We also determined that the pinout for the Toyota B harness is incorrect for our cars. The CAN busses are flipped so the relay ends up on bus 1 instead of bus 0/2. Once the busses are flipped we are able to see the different ECUs and interact with the EPS ECU. I have a feeling the same may be true for all of the TSS3.0 vehicles."
   * https://discord.com/channels/469524606043160576/905950538816978974/1338908891148193903
-* [martinolium shows up with a 2023 US Corolla, a specific year and model with TSS3 and with no (?) TSK. Does not have a device, but some discussion is conducted on some preparations.](https://discord.com/channels/469524606043160576/905950538816978974/1340558302945214516) 
+* [martinolium shows up with a 2023 US Corolla, a specific year and model with TSS3 and with no (?) TSK. Does not have a device, but some discussion is conducted on some preparations.](https://discord.com/channels/469524606043160576/905950538816978974/1340558302945214516)
+* [martinolium: I'll be back here if I get a raise in the next 4 months](https://discord.com/channels/469524606043160576/905950538816978974/1340874369378811934)
 
 
 ---
