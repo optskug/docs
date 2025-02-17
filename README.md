@@ -85,8 +85,8 @@ Car hackers, we need your help with these.
   * 02 ~~bootloader~~[^4]
 * 2025+ Highlander ICE and Hybrid[^3]
 * 2024+ Mirai[^3]
-* 2023+ Prius and Prius Prime[^3]
-* 2024+ RAV4 Prime
+* 2023+ Prius and Prius Prime/PHEV[^3]
+* 2024+ RAV4 Prime/PHEV
   * TSS 2.0
   * Key at least not at the same location as other RAV4 Prime
   * Brute force efforts to find key location TBD
