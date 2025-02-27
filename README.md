@@ -489,7 +489,7 @@ sudo reboot
 
 If you're able to calibrate and then use openpilot to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
 
-At this time, `commaai/nightly-dev` branch can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor these PRs for long support progress (https://github.com/commaai/opendbc/pull/1385 & https://github.com/commaai/panda/pull/2061). Experimental mode is also not supported.
+At this time, `commaai/nightly-dev` branch can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR for long support progress (https://github.com/commaai/opendbc/pull/1385). Experimental mode is also not supported.
 
 Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car, which allows you to upload logs and SSH in more easily. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
 
