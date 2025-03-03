@@ -246,7 +246,10 @@ As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also wri
 >
 > If you install a branch without TSK support, openpilot won't be able to drive your car.
 
-Technically `commaai/master-ci` also supports TSK, but that branch is not precompiled so it takes a long time to install. There's no benefit of using it over `commaai/nightly-dev`.
+> [!NOTE]
+> Past versions of this document recommended using `commaai/master-ci` when it was available. It's no longer produced by comma.
+>
+> You should consider reinstalling or switching to `nightly-dev` if you are currently on `commaai/master-ci` for the latest updates. 
 
 ### Step 4B. Run the exploit using SSH manually
 
