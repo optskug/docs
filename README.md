@@ -137,23 +137,21 @@ If your car is not listed above, then there has been no documented information o
 Your car has a security key that Toyota doesn't want you to have. \
 Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key-extraction/) to extract the key.
 
-### Step 1. Upgrade AGNOS by installing `commaai/nightly-dev`
+### Step 1. Install `TSK Manager`
 
-AGNOS is the operating system used in C3X. The latest one is needed to run TSK Manager.
-
-1-1. At home, turn on C3X with your phone charger. Ignore the low voltage warning. USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work. If all fails, you can do this in your car.
+1-1. At home, turn on C3X with your phone charger. Ignore the low voltage warning. USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
 
 1-2. Connect C3X to your Wi-Fi network.
 
-1-3. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/nightly-dev`
+1-3. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `tsk.lvin.ca`
 
-The installation takes 1~5 minutes with one or two restarts.
+The installation usually takes 1~2 minutes, or longer if an OS update is needed.
 
-If you're doing this in your car, keep the engine running to keep the 12V battery alive.
+In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install `tsk.lvin.ca`
 
-1-4. Scroll and accept the EULA, and go through the training.
+![](img/v3.tsk-manager.jpg)
 
-![](img/v2.nightly-dev.jpg)
+1-4. Once installed, unplug the device to power off.
 
 ### Step 2. Install the hardware
 
@@ -188,40 +186,25 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 > [!NOTE]
 > This is the recommended method. See Step 4B for an alternate method.
 
-4A-1. Uninstall openpilot (AGNOS will remain upgraded).
-
-⚙️ > `Software` > `Uninstall openpilot` > `UNINSTALL` > `Uninstall` > `Confirm` > `Confirm`
-
-4A-2. Connect C3X to Wi-Fi and install `Custom Software` with URL `optskug/tskm` to download `TSK Manager`.
-
-It will stay at 92% and then 100% for a few minutes as it installs.
-
-![](img/v2.tsk-manager.jpg)
-
-4A-3. Run `TSK Extractor`. The car may beep and flash LKAS & Power Steering errors.
+4A-1. Run `TSK Extractor`. The car may beep and flash LKAS & Power Steering errors.
 
 > [!TIP]
 > Relax. The exploit is safe to run and can't break your car even if you yank the cable.
 >
 > If you want to quit, turn off the car, unplug C3X, and turn the car back on. Everything will be back to normal.
 
-When you see the output, always scroll to the bottom to see the result and what to do next.
-
-4A-3-1. In case of a known error, it'll tell you to retry.
+4A-1-1. In case of a known error, it'll tell you to retry.
 ![](img/v2.ext-known.jpg)
 
-4A-3-2. In case of an unknown error, it will tell you to send @calvinspark a photo.
+4A-1-2. In case of an unknown error, it will tell you to send @calvinspark a photo.
 ![](img/v2.ext-unknown.jpg)
 
 The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
 
-4A-3-3.  If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, stop and talk to us in #toyota-security.
+4A-1-3.  If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, stop and talk to us in #toyota-security.
 
-4A-3-4.  If it was successful, it'll tell you to take a photo.
+4A-1-4.  If it was successful, it'll tell you to take a photo.
 ![](img/v2.ext-success.jpg)
-
-This 32 digit hexadecimal number is your key (second redacted line).
-> SecOC Key (KEY_4) **0123456789abcdef0123456789abcdef**
 
 Congratulations, you have the key now!
 
@@ -230,23 +213,25 @@ As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also wri
 > [!WARNING]
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
-4A-4. Exit `TSK Extractor` and exit `TSK Manager`. C3X will reboot.
-
-4A-5. Either come back home or start the engine so that your 12V battery doesn't die.
-
-> [!WARNING]
+4A-2. Either come back home or start the engine so that your 12V battery doesn't die.
+> [!CAUTION]
 > 12V battery is not your hybrid driving battery. It will die even if your car is plugged in.
 >
-> This step was written because many people ended up with a dead battery and had to jump the car, and yet there are people who are still not following this step. Do it now.
+> This step was written because many people ended up with a dead battery and had to jump the car, and yet there are people who are still not following this step. This is important. Start the engine now.
 
-4A-6. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/nightly-dev`
+4A-3. Go to the `Reboot Menu` and `Install commaai/devel`.
+
+![](img/v3.reboot.jpg)
+
+> [!NOTE]
+> `commaai/devel` is the same as the official v0.9.8 release, except with TSK support enabled.
 
 > [!CAUTION]
-> `commaai/nightly-dev` is the only branch from comma.ai that supports TSK vehicles.
+> `commaai/devel` is the only official release branch from comma.ai that supports TSK vehicles.
 >
 > If you install a branch without TSK support, openpilot won't be able to drive your car.
 
-Technically `commaai/master-ci` also supports TSK, but that branch is not precompiled so it takes a long time to install. There's no benefit of using it over `commaai/nightly-dev`.
+Check out the [Forks](#forks) section below for more information.
 
 ### Step 4B. Run the exploit using SSH manually
 
@@ -489,7 +474,7 @@ sudo reboot
 
 If you're able to calibrate and then use openpilot to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
 
-At this time, `commaai/nightly-dev` branch can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
+v0.9.8 release in `commaai/devel` can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
 
 Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car, which allows you to upload logs and SSH in more easily. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
 
@@ -528,13 +513,13 @@ Redo [Step 4B-4. Install the security key & Reboot](#step-4b-4-install-the-secur
 
 ### Method 3. Uninstall openpilot, install the key using `TSK Manager`, and install openpilot
 
-Redo [Step 4A. Run the exploit using `TSK Manager`](#step-4a-run-the-exploit-using-tsk-manager).
+3-1. Follow [Step 1. Install TSK Manager](#step-1-install-tsk-manager) to install `TSK Manager` via the URL `tsk.lvin.ca`
 
-When you get to Step 4A-3, don't run `TSK Extractor` but instead run `TSK Keyboard`. Use it to type in your key and install.
+3-2. No need to go to the car. Run `TSK Keyboard`. Use it to type in your key and install.
 
-![](img/v2.keyboard-success.jpg)
+![](img/v3.tsk-keyboard.jpg)
 
-Continue to Step 4A-4 and then finish with 4A-5.
+3-3. Go to the `Reboot Menu` and install either `commaai/devel` or some other fork/branch.
 
 ---
 ## Forks
@@ -565,11 +550,11 @@ You can totally have a good time with comma openpilot without using a fork too. 
 >
 > comma will not answer to support you if you're running forks until you restore back to comma openpilot.
 
-Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). For all forks, you should read their README documentation as well.
+Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). Please do not ask about forks outside of that channel.
 
-Please do not ask about forks outside of that channel.
+For all forks, you should read their README documentation as well.
 
-If you're new, please start with comma openpilot with `commaai/nightly-dev` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
+If you're new, please start with comma openpilot with `commaai/devel` and use it for two weeks. This is the same as the latest official version with only lateral support (with TSK support enabled). This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
 
 Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks, their communities may or may not for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
 
@@ -585,6 +570,31 @@ If you acknowledge the warning above and are still looking to try a fork that su
           <br>
           <strong>Long:</strong> Longitudinal support
         </td>
+    </tr>
+    <tr>
+      <td><code>commaai/devel</code></td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> No <br/>
+        <strong>Long:</strong> No <br/> <br/>
+        <ul>
+          <li>Not a fork but an official release branch from comma.ai with TSK support.</li>
+          <li>Install this if you need support from comma.ai company. They won't talk to you if you're on a fork.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><code>commaai/nightly-dev</code></td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> No <br/>
+        <strong>Long:</strong> No <br/> <br/>
+        <ul>
+          <li>Not a fork but an alternate branch from comma.ai with TSK support.</li>
+          <li>Pre-compiled, so quick to install.</li>
+          <li>It has the most up-to-date changes, which is cool, but it could get unstable.</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td><code>alexandresato/personal3</code>  <br/>
@@ -659,10 +669,10 @@ If you acknowledge the warning above and are still looking to try a fork that su
 
 If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork!
 
-1. If it's for the latest C3X
-2. If it supports SecOC/TSK
-3. If it contains banned code
-4. If there's anything to watch out for
+1. Is it for the latest C3X?
+2. Does it supports SecOC/TSK?
+3. Does it contain banned code?
+4. Is there anything to watch out for?
 
 ---
 
