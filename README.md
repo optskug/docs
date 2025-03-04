@@ -249,7 +249,7 @@ As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also wri
 > [!NOTE]
 > Past versions of this document recommended using `commaai/master-ci` when it was available. It's no longer produced by comma.
 >
-> You should consider reinstalling or switching to `nightly-dev` if you are currently on `commaai/master-ci` for the latest updates. 
+> You should consider reinstalling or switching to `nightly-dev` if you are currently on `commaai/master-ci` for the latest updates.
 
 ### Step 4B. Run the exploit using SSH manually
 
@@ -1437,6 +1437,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [martinolium shows up with a 2023 US Corolla, a specific year and model with TSS3 and with no (?) TSK. Does not have a device, but some discussion is conducted on some preparations.](https://discord.com/channels/469524606043160576/905950538816978974/1340558302945214516)
 * [martinolium: I'll be back here if I get a raise in the next 4 months](https://discord.com/channels/469524606043160576/905950538816978974/1340874369378811934)
 * [mehrab.shakil comes on and asks for help with a Yaris Cross Hybrid but never responded.](https://discord.com/channels/469524606043160576/905950538816978974/1345161761548013609)
+* [lx93 proceeds with getting an A harness for Yaris GR port(FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1342905714213130322)
 
 
 ---
