@@ -1423,6 +1423,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * There is some confusion that a SecOC vehicle (2023-2024 Corolla) shares the same **EPS** part number as a non-SecOC vehicle (2019-2022 Corolla). A theory is brought up that SecOC security only goes up to the "multiplexer" and that traffic after it may be unsecured. This is a theory and no direct observations have been made yet.
 * [A third GR Yaris shows up in the Discord and some discussion is had about dumping happening from the dataflash vs the RAM.](https://discord.com/channels/469524606043160576/905950538816978974/1335710649702940835)
 * [Yaris Pull request was reverted as easily it had went in due to test route lacking](https://github.com/commaai/opendbc/pull/1653)
+  * ["I will open a new PR. We need the same route with the same curves at the same speed to improve lateral control by torque to be at least equal to PID." - Ale](https://discord.com/channels/1137853399715549214/1291217403157413980/1333110387960447070)
 
 ### February 2025
 
