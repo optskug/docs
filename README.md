@@ -1423,6 +1423,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [martinolium: I'll be back here if I get a raise in the next 4 months](https://discord.com/channels/469524606043160576/905950538816978974/1340874369378811934)
 * [mehrab.shakil comes on and asks for help with a Yaris Cross Hybrid but never responded.](https://discord.com/channels/469524606043160576/905950538816978974/1345161761548013609)
 * [lx93 proceeds with getting an A harness for Yaris GR port(FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1342905714213130322)
+* [Satopilot removed on request from author from listing due to support load.](https://discord.com/channels/469524606043160576/905950538816978974/1350253438210019359)
 
 
 ---
