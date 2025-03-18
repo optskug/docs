@@ -28,6 +28,8 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * Upstreamed into openpilot's master branch.
 * 2021-2023 Sienna Hybrid
   * Upstreamed into openpilot's master branch.
+  * Early 2024 might work too? Few data points.
+    https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
@@ -588,7 +590,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
           <br>
           <strong>Long:</strong> Longitudinal support
         </td>
-    </tr>    
+    </tr>
     <tr>
       <td>
         <code>sunnypilot/master-new</code> <br/>
@@ -1424,6 +1426,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [mehrab.shakil comes on and asks for help with a Yaris Cross Hybrid but never responded.](https://discord.com/channels/469524606043160576/905950538816978974/1345161761548013609)
 * [lx93 proceeds with getting an A harness for Yaris GR port(FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1342905714213130322)
 * [Satopilot removed on request from author from listing due to support load.](https://discord.com/channels/469524606043160576/905950538816978974/1350253438210019359)
+* [gako_41825 reports that they were able to get a key dump on an early 2024 Canadian-spec 2024 Sienna. This is in contrast to earlier failures on other 2024 Siennas.](https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142)
 
 
 ---
