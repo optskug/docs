@@ -1427,7 +1427,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [lx93 proceeds with getting an A harness for Yaris GR port(FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1342905714213130322)
 * [Satopilot removed on request from author from listing due to support load.](https://discord.com/channels/469524606043160576/905950538816978974/1350253438210019359)
 * [gako_41825 reports that they were able to get a key dump on an early 2024 Canadian-spec 2024 Sienna. This is in contrast to earlier failures on other 2024 Siennas.](https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142)
-
+* [warren.2: "I copied TOYOTA_RAV4_TSS2_2022.json to TOYOTA_RAV4_PRIME.json then committed it to a local git branch. Now Developer menu NNLC says Exact match. Subjectively lat is smoother now. I think that means it's working."  (SP Discord)](https://discord.com/channels/880416502577266699/1118704399850680522/1351567921414934661)
+  * The NNLC stuff works for the RAV4 Prime EPS where available. It is similar to the 2020-2021 RAV4 except for the whole security key thing.
 
 ---
 
