@@ -128,375 +128,124 @@ If your car is not listed above, then there has been no documented information o
 * [Key Extraction](#key-extraction) if you don't know the key.
 * [Key Installation](#key-installation) if you know the key.
 
-> [!NOTE]
-> The key will change if you get a new bumper, because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with secoc components.
->
-> If you never get into an accident, then the key will never change, unless a Toyota service technician presses a wrong button.
-
-
 ## Key Extraction
 
 Your car has a security key that Toyota doesn't want you to have. \
 Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key-extraction/) to extract the key.
 
-### Step 1. Upgrade AGNOS by installing `commaai/nightly-dev`
+### Step 1. Install `TSK Manager`
 
-AGNOS is the operating system used in C3X. The latest one is needed to run TSK Manager.
+At home, turn on C3X with your phone charger. Ignore the low voltage warning.
 
-1-1. At home, turn on C3X with your phone charger. Ignore the low voltage warning. USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work. If all fails, you can do this in your car.
+Choose `Custom Software` and enter the URL `tsk.lvin.ca`
 
-1-2. Connect C3X to your Wi-Fi network.
+![](img/v3.install.jpg)
 
-1-3. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/nightly-dev`
+![](img/v3.tsk-manager.home.jpg)
 
-The installation takes 1~5 minutes with one or two restarts.
+Unplug the power to turn off the device.
 
-If you're doing this in your car, keep the engine running to keep the 12V battery alive.
+<details><summary>Troubleshooting</summary>
 
-1-4. Scroll and accept the EULA, and go through the training.
-
-![](img/v2.nightly-dev.jpg)
+1. A normal phone or laptop charger works fine. If not, USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
+2. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
+3. If your internet is slow, the installation could get stuck at 98% and then on the comma logo. The installation is still continuing on the background so give it up to 10 additional minutes before giving up and trying again.
+4. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install `tsk.lvin.ca`
+</details>
 
 ### Step 2. Install the hardware
 
-2-1. Go to your car.
+Go to your car and connect everything including Comma Power (OBD2 connector + long cable).
 
-2-2. Connect the harness to your car by following the official Setup Guide: https://comma.ai/setup/comma-3x
+Official Setup Guide: https://comma.ai/setup/comma-3x
 
-2-3. Connect Comma Power (OBD2 connector + long cable) to make sure C3X stays powered on while turning the car on and off. You can remove it later but connect it for now.
+Turn the car on and off - C3X should remain powered on.
 
-2-4. Connect the right-angled OBD-C cable to the harness.
+![](img/v3.tsk-manager.incar.jpg)
 
-> [!WARNING]
-> * The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than C3X.
-> * For connecting C3X to the harness, always use the right-angled OBD-C cable that came with the C3X.
-> * comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable
-> * If you must buy your own, USB-C 3.1 Gen 2 is required.
+<details><summary>Troubleshooting</summary>
 
-2-5. Connect the OBD-C cable to C3X to see that it powers on. Turn the car on and off - C3X should remain powered on.
+1. The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than C3X.
+2. For connecting C3X to the harness, always use the right-angled OBD-C cable that came with the C3X. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
+3. You can remove Comma Power later but connect it for now.
+</details>
 
 ### Step 3. Put the car into `Not Ready To Drive` mode
 
-Some cars refer to `Not Ready To Drive` mode as `IGNITION ON` mode while others refer to it as `POWER ON` mode. Regardless of what your car calls it, get on the mode that says `Not Ready To Drive`.
+Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 ![](img/v2.nrtd1.jpg) ![](img/v2.nrtd2.jpg)
 
-Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
-* The first press turns on `ACCESSORY` mode.
-* The second press activates `Not Ready To Drive` mode.
+<details><summary>Troubleshooting</summary>
 
-### Step 4A. Run the exploit using `TSK Manager`
+1. Some cars refer to `Not Ready To Drive` mode as `IGNITION ON` mode while others refer to it as `POWER ON` mode. Regardless of what your car calls it, get on the mode that says `Not Ready To Drive`.
+2. The first press turns on `ACCESSORY` mode. The second press activates `Not Ready To Drive` mode.
+3. Some cars don't have `ACCESSORY` mode. Doesn't matter - get on the mode that says `Not Ready To Drive`.
+</details>
 
-> [!NOTE]
-> This is the recommended method. See Step 4B for an alternate method.
+### Step 4. Run the exploit using `TSK Manager`
 
-4A-1. Uninstall openpilot (AGNOS will remain upgraded).
+Run `TSK Extractor`. The car may beep and flash LKAS & Power Steering errors.
 
-⚙️ > `Software` > `Uninstall openpilot` > `UNINSTALL` > `Uninstall` > `Confirm` > `Confirm`
-
-4A-2. Connect C3X to Wi-Fi and install `Custom Software` with URL `optskug/tskm` to download `TSK Manager`.
-
-It will stay at 92% and then 100% for a few minutes as it installs.
-
-![](img/v2.tsk-manager.jpg)
-
-4A-3. Run `TSK Extractor`. The car may beep and flash LKAS & Power Steering errors.
-
-> [!TIP]
-> Relax. The exploit is safe to run and can't break your car even if you yank the cable.
->
-> If you want to quit, turn off the car, unplug C3X, and turn the car back on. Everything will be back to normal.
-
-When you see the output, always scroll to the bottom to see the result and what to do next.
-
-4A-3-1. In case of a known error, it'll tell you to retry.
-![](img/v2.ext-known.jpg)
-
-4A-3-2. In case of an unknown error, it will tell you to send @calvinspark a photo.
-![](img/v2.ext-unknown.jpg)
-
-The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
-
-4A-3-3.  If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, stop and talk to us in #toyota-security.
-
-4A-3-4.  If it was successful, it'll tell you to take a photo.
-![](img/v2.ext-success.jpg)
-
-This 32 digit hexadecimal number is your key (second redacted line).
-> SecOC Key (KEY_4) **0123456789abcdef0123456789abcdef**
+![](img/v3.ext-success.jpg)
 
 Congratulations, you have the key now!
 
-As a bonus, the key was installed in `/cache/params/SecOCKey` file, and also written in `/data/params/d/SecOCKey` file for legacy support.
-
 > [!WARNING]
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
-4A-4. Exit `TSK Extractor` and exit `TSK Manager`. C3X will reboot.
+Sometimes `TSK Extractor` can't talk to the car. Try again.
 
-4A-5. Either come back home or start the engine so that your 12V battery doesn't die.
+![](img/v3.ext-known.jpg)
 
-> [!WARNING]
-> 12V battery is not your hybrid driving battery. It will die even if your car is plugged in.
->
-> This step was written because many people ended up with a dead battery and had to jump the car, and yet there are people who are still not following this step. Do it now.
+<details><summary>Troubleshooting</summary>
 
-4A-6. Don't choose `Install openpilot`. Instead, choose `Custom Software` with URL `commaai/nightly-dev`
+1. Relax. The exploit is safe to run and can't break your car even if you yank the cable.
+2. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
+3. In rare cases, `TSK Extractor` may hit an unexpected error.  
+![](img/v3.ext-unknown.jpg)  
+  The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
+4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
+</details>
 
-> [!CAUTION]
-> `commaai/nightly-dev` is the only branch from comma.ai that supports TSK vehicles.
->
-> If you install a branch without TSK support, openpilot won't be able to drive your car.
+### Step 5. Install `commaai/devel`
 
-> [!NOTE]
-> Past versions of this document recommended using `commaai/master-ci` when it was available. It's no longer produced by comma.
->
-> You should consider reinstalling or switching to `nightly-dev` if you are currently on `commaai/master-ci` for the latest updates.
+Start your car's engine.
 
-### Step 4B. Run the exploit using SSH manually
+Go to the `Reboot Menu` and `Install commaai/devel`.
 
-> [!NOTE]
-> Even if you already extracted the key using `TSK Manager`, setting up SSH access will help you later with the key installation for legacy fork/branches. It's not hard to do so follow along.
->
-> If you want to do just the bare minimum and come back to this later, then skip over to Step 5.
+`commaai/devel` is the same as the official v0.9.8 release, except with TSK support enabled.
 
-#### Step 4B-1. SSH into the device
+![](img/v3.reboot.jpg)
 
-4B-1-1. Set up SSH.
+<details><summary>Troubleshooting</summary>
 
-Do this: https://github.com/commaai/openpilot/wiki/SSH#before-you-start
-
-And then do one of these:
-* macOS: https://github.com/commaai/openpilot/wiki/SSH#option-2mac---pre-installed-openssh-client-on-macos
-* Windows: https://github.com/commaai/openpilot/wiki/SSH#option-2---pre-installed-openssh-client-on-windows-10-and-up
-
-4B-1-2. SSH into the device.
-```sh
-ssh comma@"your Comma IP"
-```
-
-#### Step 4B-2. Extract the security key
-
-4B-2-1. Navigate to openpilot directory.
-```sh
-cd /data/openpilot
-```
-
-4B-2-2. Clone Willem's secoc Git repository.
-```sh
-git clone https://github.com/I-CAN-hack/secoc
-```
-
-4B-2-3. Navigate to secoc directory.
-```sh
-cd /data/openpilot/secoc
-```
-
-4B-2-4. Kill openpilot process.
-```sh
-pkill -f openpilot
-```
-
-C3X will display a splash screen with Comma logo.
-
-4B-2-5. Run the key extraction script.
-```sh
-./extract_keys.py
-```
-
-> [!Tip]
-> If you restarted C3X, be sure to run `pkill -f openpilot` on each C3X restart before running `./extract_keys.py`.
-
-If you see something like this, the key extraction was successful.
-```sh
-comma@comma-71b93b83:/data/openpilot/secoc$ ./extract_keys.py
-INFO: connecting to panda 2c0004004450383632311333
-Getting application versions...
- - APPLICATION_SOFTWARE_IDENTIFICATION (application) b'\x018965B4509100\x00\x00\x00\x00'
- - APPLICATION_SOFTWARE_IDENTIFICATION (bootloader)  b'\x01!!!!!!!!!!!!!!!!'
-
-Security Access...
- - SEED: 36552fe27172c99222eec3a9b9bd1f28
- - KEY: b7b55ba16369bba912b7aa4c06e6c35e
- - Key OK!
-
-Preparing to upload payload...
- - Write data by identifier 0x201 00000000000000000000000000000000
- - Write data by identifier 0x202 00000000000000000000000000000000
-
-Upload payload...
- - Request download
- - Transfer data 0
- - Transfer data 1
- - Transfer data 2
- - Transfer data 3
-
-Verify payload...
- - Routine control 0x10f0 OK!
-
-Trigger payload...
-
-Dumping keys...
-100%|████████████████████████| 448/448 [00:00<00:00, 14293.36it/s]
-
-ECU_MASTER_KEY    82667ef509b9f07a134aaf89d4973c68
-SecOC Key (KEY_4) 0123456789abcdef0123456789abcdef
-
-SecOC key written to param successfully!
-comma@comma-71b93b83:/data/openpilot/secoc$
-```
-
-This 32 digit hexadecimal number is your key.
-> SecOC Key (KEY_4) **0123456789abcdef0123456789abcdef**
-
-Archive and don't lose the key so that you don't need to extract it again. Perhaps email it to yourself.
-
-> [!WARNING]
-> It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
-
-#### Step 4B-3. Debugging
-
-4B-3-1. If you see any of these error messages
-
-* `panda.python.uds.MessageTimeoutError: timeout waiting for response`
-* `panda.python.uds.InvalidServiceIdError: invalid response service id: 0x50` or similar
-* `Can't read application software identification. Please cycle ignition.`
-
-Turn off the car, put it back into `Not Ready to Drive` mode, and then try again.
-
-Be sure to kill openpilot process if you restarted C3X.
-
-4B-3-2. `Unexpected application version!`
-
-* Open the script for editing.
-  ```sh
-  nano -l /data/openpilot/secoc/extract_keys.py
-  ```
-
-* Comment out lines 78 and 93 by adding a `#` at the beginning of each line.
-  ```python
-  if app_version not in APPLICATION_VERSIONS:
-      print("Unexpected application version!", app_version)
-  #    exit(1)
-  ```
-  ```python
-  if bl_version != APPLICATION_VERSIONS[app_version]:
-      print("Unexpected bootloader version!", bl_version)
-  #    exit(1)
-  ```
-
-* Save and exit the editor (`Ctrl+X`, then `Y`, then `Enter`).
-
-* Kill openpilot process and run the script again.
-  ```sh
-  pkill -f openpilot
-
-  ./extract_keys.py
-  ```
-
-4B-3-3. Still doesn't work?
-
-Turn off the car, unplug everything, plug them back in, and try again.
-
-#### Step 4B-4. Install the security key & Reboot
-
-4B-4-1. Install the key in `/cache/params/SecOCKey`.
-
-Make the installation directory.
-```sh
-sudo mkdir -p /cache/params || true
-```
-
-Give it the correct permissions.
-```sh
-sudo chown comma:comma /cache/params
-```
-
-Install the key.
-```sh
-echo -n [your key here] > /cache/params/SecOCKey
-```
-
-For example,
-```sh
-echo -n 0123456789abcdef0123456789abcdef > /cache/params/SecOCKey
-```
-
-4B-4-2. Also write it in `/data/params/d/SecOCKey` for legacy support.
-```sh
-echo -n [your key here] > /data/params/d/SecOCKey
-```
-
-4B-4-3. Reboot the device.
-```sh
-sudo reboot
-```
-
-### Step 5. Fingerprinting (if the car is not recognized)
-
-> [!NOTE]
-> If C3X reboots into the 15mph calibration screen, skip to Step 6.
-> If it says something like `Car unrecognized` or `Dashcam mode for unsupported car`, continue on Step 5.
-
-5-1. Follow the fingerprinting guide to get the ECU codes: https://github.com/commaai/openpilot/wiki/Fingerprinting
-
-5-2. Add the ECU codes to `fingerprints.py`.
-
-* Open the file for editing.
-  ```sh
-  nano /data/openpilot/selfdrive/car/toyota/fingerprints.py
-  ```
-
-* Scroll down to the `CAR.TOYOTA_RAV4_PRIME` section.
-
-* Add your corresponding ECU codes:
-  ```python
-  },
-  CAR.TOYOTA_RAV4_PRIME: {
-  (Ecu.engine, 0x700, None): [
-    b'\x01896634AJ7000\x00\x00\x00\x00',
-    b'\x018966342S7000\x00\x00\x00\x00',
-  ],
-  (Ecu.abs, 0x7b0, None): [
-    b'\x01F15264284100\x00\x00\x00\x00',
-    b'\x01F15264228300\x00\x00\x00\x00',
-  ],
-  (Ecu.eps, 0x7a1, None): [
-    b'\x018965B4233100\x00\x00\x00\x00',
-    b'\x018965B4209000\x00\x00\x00\x00',
-  ],
-  (Ecu.fwdRadar, 0x750, 0xf): [
-    b'\x018821F6201300\x00\x00\x00\x00',
-    b'\x018821F3301400\x00\x00\x00\x00',
-  ],
-  (Ecu.fwdCamera, 0x750, 0x6d): [
-    b'\x028646F4210100\x00\x00\x00\x008646G3305000\x00\x00\x00\x00',
-    b'\x028646F4205200\x00\x00\x00\x008646G4202000\x00\x00\x00\x00',
-  ],
-  ```
-
-* Save and exit the editor (`Ctrl+X`, then `Y`, then `Enter`).
-
-5-3. Optionally disable updates, because an update will delete the manually added fingerprints.
-* If your fingerprints were upstreamed, then the next update will contain your fingerprints, so don't disable.
-* If your fingerprints were not upstreamed, disable.
-  ```sh
-  echo -n 1 > /data/params/d/DisableUpdates
-  ```
-* If you're using FrogPilot, disabling update using the `echo` command causes an `updated` error. Use the settings menu to disable instead.
-
-5-4. Reboot the device.
- ```sh
- sudo reboot
- ```
+1. `commaai/devel` is the only official release branch from comma.ai that supports TSK vehicles.
+2. `commaai/nightly-dev` is the newest and possibly unstable branch from comma.ai with TSK support.
+3. Openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
+</details>
 
 ### Step 6. Calibrate & Clean up
 
-If you're able to calibrate and then use openpilot to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
+C3X should show to the 15mph calibration screen.
 
-At this time, `commaai/nightly-dev` branch can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
+![](img/v3.calibrate.jpg)
 
-Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car, which allows you to upload logs and SSH in more easily. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
+If you're able to calibrate and use openpilot to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
+
+You're done! Congratulations!
+
+* v0.9.8 release in `commaai/devel` can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
+
+
+* Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car, which allows you to upload logs and SSH in more easily. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
+
+<details><summary>Troubleshooting</summary>
+
+1. If you get an `LKAS` error, either the key was not installed or you're running a fork/branch without TSK support.
+2. If C3x says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyota-security.
+3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
+</details>
 
 ## Key Installation
 
@@ -511,9 +260,10 @@ This means that **uninstalling openpilot or resetting comma no longer uninstalls
 ### When to do this
 
 You may need to still reinstall the key if
-1. the key was never installed in `/cache/params/SecOCKey` because you did it the old SSH way and never ran `TSK Manager` / `TSK Keyboard`,
-2. the installed key in `/cache/params/SecOCKey` was deleted, or
-3. you're using an old fork without the auto-key-installer.
+1. your C3 died and you got a new C3X,
+2. the key was never installed in `/cache/params/SecOCKey` because you did it the old SSH way and never ran `TSK Manager` / `TSK Keyboard`,
+3. the installed key in `/cache/params/SecOCKey` was deleted, or
+4. you're using an old fork without the auto-key-installer.
 
 Follow this guide to reinstall the key.
 
@@ -529,17 +279,21 @@ If it's there, use it to type in your key and install, and then reboot.
 
 ### Method 2. SSH and install the key to `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files
 
-Redo [Step 4B-4. Install the security key & Reboot](#step-4b-4-install-the-security-key--reboot).
+Redo [Step 4B-4. Install the security key & Reboot](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-4b-4-install-the-security-key--reboot).
 
 ### Method 3. Uninstall openpilot, install the key using `TSK Manager`, and install openpilot
 
-Redo [Step 4A. Run the exploit using `TSK Manager`](#step-4a-run-the-exploit-using-tsk-manager).
+Follow [Step 1. Install TSK Manager](#step-1-install-tsk-manager) to install `TSK Manager` via the URL `tsk.lvin.ca`
 
-When you get to Step 4A-3, don't run `TSK Extractor` but instead run `TSK Keyboard`. Use it to type in your key and install.
+No need to go to the car. Run `TSK Keyboard`. Use it to type in your key and install.
 
-![](img/v2.keyboard-success.jpg)
+![](img/v3.tsk-keyboard.jpg)
 
-Continue to Step 4A-4 and then finish with 4A-5.
+## Advanced Topic: Run the exploit using SSH manually
+
+This is how to [extract the key manually](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-4b-run-the-exploit-using-ssh-manually). Most people can skip this.
+
+
 
 ---
 ## Forks
@@ -570,11 +324,11 @@ You can totally have a good time with comma openpilot without using a fork too. 
 >
 > comma will not answer to support you if you're running forks until you restore back to comma openpilot.
 
-Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). For all forks, you should read their README documentation as well.
+Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). Please do not ask about forks outside of that channel.
 
-Please do not ask about forks outside of that channel.
+For all forks, you should read their README documentation as well.
 
-If you're new, please start with comma openpilot with `commaai/nightly-dev` and use it for two weeks. This is the latest official version with only lateral support. This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
+If you're new, please start with comma openpilot with `commaai/devel` and use it for two weeks. This is the same as the latest official version with only lateral support (with TSK support enabled). This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
 
 Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks, their communities may or may not for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
 
@@ -590,6 +344,32 @@ If you acknowledge the warning above and are still looking to try a fork that su
           <br>
           <strong>Long:</strong> Longitudinal support
         </td>
+    </tr>
+    <tr>
+      <td><code>commaai/devel</code></td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> No <br/>
+        <strong>Long:</strong> No <br/> <br/>
+        <ul>
+          <li>Not a fork but an official release branch from comma.ai with TSK support.</li>
+          <li>Install this if you need support from comma.ai company. They won't talk to you if you're on a fork.</li>
+          <li>This branch may be replaced by <code>commaai/release3-dev</code> in a few months. If something seems off, check this page again for the latest info.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><code>commaai/nightly-dev</code></td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> No <br/>
+        <strong>Long:</strong> No <br/> <br/>
+        <ul>
+          <li>Not a fork but an alternate branch from comma.ai with TSK support.</li>
+          <li>Pre-compiled, so quick to install.</li>
+          <li>It has the most up-to-date changes, which is cool, but it could get unstable.</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td>
@@ -649,10 +429,10 @@ If you acknowledge the warning above and are still looking to try a fork that su
 
 If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork!
 
-1. If it's for the latest C3X
-2. If it supports SecOC/TSK
-3. If it contains banned code
-4. If there's anything to watch out for
+1. Is it for the latest C3X?
+2. Does it supports SecOC/TSK?
+3. Does it contain banned code?
+4. Is there anything to watch out for?
 
 ---
 
