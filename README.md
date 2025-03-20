@@ -202,8 +202,8 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 1. Relax. The exploit is safe to run and can't break your car even if you yank the cable.
 2. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
-3. In rare cases, `TSK Extractor` may hit an unexpected error.  
-![](img/v3.ext-unknown.jpg)  
+3. In rare cases, `TSK Extractor` may hit an unexpected error.
+![](img/v3.ext-unknown.jpg)
   The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
 4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
 </details>
@@ -1197,6 +1197,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [gako_41825 reports that they were able to get a key dump on an early 2024 Canadian-spec 2024 Sienna. This is in contrast to earlier failures on other 2024 Siennas.](https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142)
 * [warren.2: "I copied TOYOTA_RAV4_TSS2_2022.json to TOYOTA_RAV4_PRIME.json then committed it to a local git branch. Now Developer menu NNLC says Exact match. Subjectively lat is smoother now. I think that means it's working."  (SP Discord)](https://discord.com/channels/880416502577266699/1118704399850680522/1351567921414934661)
   * The NNLC stuff works for the RAV4 Prime EPS where available. It is similar to the 2020-2021 RAV4 except for the whole security key thing.
+* [Sunnypilot declares it is open to accepting chrispypatt's longitudinal control work in advance of the pull request being merged or accepted upstream in comma openpilot/opendbc.](https://discord.com/channels/469524606043160576/905950538816978974/1352300164143911024)
 
 ---
 
