@@ -208,20 +208,20 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
 </details>
 
-### Step 5. Install `commaai/devel`
+### Step 5. Install `commaai/nightly-dev`
 
 Start your car's engine.
 
-Go to the `Reboot Menu` and `Install commaai/devel`.
+Go to the `Reboot Menu` and `Install commaai/nigtly-dev`.
 
-`commaai/devel` is the same as the official v0.9.8 release, except with TSK support enabled.
+`commaai/nightly-dev` is the only branch from comma.ai with TSK support.
 
 ![](img/v3.reboot.jpg)
 
 <details><summary>Troubleshooting</summary>
 
-1. `commaai/devel` is the only official release branch from comma.ai that supports TSK vehicles.
-2. `commaai/nightly-dev` is the newest and possibly unstable branch from comma.ai with TSK support.
+1. `commaai/nightly-dev` is the newest and possibly unstable branch from comma.ai with TSK support.
+2. Frustratingly, there isn't a release branch from comma.ai with TSK support.
 3. Openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
 </details>
 
@@ -235,7 +235,7 @@ If you're able to calibrate and use openpilot to use the steering wheel (aka "la
 
 You're done! Congratulations!
 
-* v0.9.8 release in `commaai/devel` can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
+* `commaai/nightly-dev` can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
 
 
 * Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car, which allows you to upload logs and SSH in more easily. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
@@ -328,7 +328,7 @@ Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/ch
 
 For all forks, you should read their README documentation as well.
 
-If you're new, please start with comma openpilot with `commaai/devel` and use it for two weeks. This is the same as the latest official version with only lateral support (with TSK support enabled). This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
+If you're new, please start with comma openpilot with `commaai/nightly-dev` and use it for two weeks. This is the same as the latest official version with only lateral support (with TSK support enabled). This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
 
 Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks, their communities may or may not for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
 
@@ -346,19 +346,6 @@ If you acknowledge the warning above and are still looking to try a fork that su
         </td>
     </tr>
     <tr>
-      <td><code>commaai/devel</code></td>
-      <td>
-        <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> No <br/>
-        <strong>Long:</strong> No <br/> <br/>
-        <ul>
-          <li>Not a fork but an official release branch from comma.ai with TSK support.</li>
-          <li>Install this if you need support from comma.ai company. They won't talk to you if you're on a fork.</li>
-          <li>This branch may be replaced by <code>commaai/release3-dev</code> in a few months. If something seems off, check this page again for the latest info.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td><code>commaai/nightly-dev</code></td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
@@ -366,6 +353,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <strong>Long:</strong> No <br/> <br/>
         <ul>
           <li>Not a fork but an alternate branch from comma.ai with TSK support.</li>
+          <li>Install this if you need support from comma.ai company. They won't talk to you if you're on a fork.</li>
           <li>Pre-compiled, so quick to install.</li>
           <li>It has the most up-to-date changes, which is cool, but it could get unstable.</li>
         </ul>
