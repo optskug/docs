@@ -1198,6 +1198,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [warren.2: "I copied TOYOTA_RAV4_TSS2_2022.json to TOYOTA_RAV4_PRIME.json then committed it to a local git branch. Now Developer menu NNLC says Exact match. Subjectively lat is smoother now. I think that means it's working."  (SP Discord)](https://discord.com/channels/880416502577266699/1118704399850680522/1351567921414934661)
   * The NNLC stuff works for the RAV4 Prime EPS where available. It is similar to the 2020-2021 RAV4 except for the whole security key thing.
 * [Sunnypilot declares it is open to accepting chrispypatt's longitudinal control work in advance of the pull request being merged or accepted upstream in comma openpilot/opendbc.](https://discord.com/channels/469524606043160576/905950538816978974/1352300164143911024)
+* ["checking with @Woosa 's 💸 on request. the 2022 and 2023 mirai do not have ⁠toyota-security and the 2024+ still do.](https://discord.com/channels/469524606043160576/905950538816978974/1352472975944974427)
 
 ---
 
