@@ -26,10 +26,17 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 
 * 2021-2023 RAV4 Prime
   * Upstreamed into openpilot's master branch.
+  * Early 2024 MY situation ala Early 2024 MY Sienna unknown.
 * 2021-2023 Sienna Hybrid
   * Upstreamed into openpilot's master branch.
-  * Early 2024 might work too? Few data points.
-    https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
+  * Early 2024 MY might work? Currently too few data points to determine cutoff
+    https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142    
+    * Check driver door jam to get month and year. It's Month/Year
+      * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
+    * Working
+      * Gako - 10/23
+    * Not Working
+      * grb5 - 09/24
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
@@ -1199,6 +1206,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * The NNLC stuff works for the RAV4 Prime EPS where available. It is similar to the 2020-2021 RAV4 except for the whole security key thing.
 * [Sunnypilot declares it is open to accepting chrispypatt's longitudinal control work in advance of the pull request being merged or accepted upstream in comma openpilot/opendbc.](https://discord.com/channels/469524606043160576/905950538816978974/1352300164143911024)
 * ["checking with @Woosa 's 💸 on request. the 2022 and 2023 mirai do not have ⁠toyota-security and the 2024+ still do.](https://discord.com/channels/469524606043160576/905950538816978974/1352472975944974427)
+* [Some more precise information is recorded for the possible working early MY2024 workings](https://discord.com/channels/469524606043160576/905950538816978974/1352687298885713940)
 
 ---
 
