@@ -27,6 +27,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 * 2021-2023 RAV4 Prime
   * Upstreamed into openpilot's master branch.
   * Early 2024 MY situation ala Early 2024 MY Sienna unknown.
+  * The compatibility status of the RAV4 Hybrid is not relevant to the Prime/PHEV. They're different vehicles.
 * 2021-2023 Sienna Hybrid
   * Upstreamed into openpilot's master branch.
   * Early 2024 MY might work? Currently too few data points to determine cutoff
