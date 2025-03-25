@@ -41,6 +41,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
+  * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach
   * openpilot working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
   * Not sold in the USA, but is in Australia, Japan, and Europe
