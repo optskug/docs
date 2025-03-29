@@ -31,7 +31,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 * 2021-2023 Sienna Hybrid
   * Upstreamed into openpilot's master branch.
   * Early 2024 MY might work? Currently too few data points to determine cutoff
-    https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142    
+    https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
     * Check driver door jam to get month and year. It's Month/Year
       * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
     * Working
@@ -125,6 +125,41 @@ Car hackers, we need your help with these.
 * 2022+ Lexus LS, LX, NX[^3]
 * 2023+ Lexus RX, RZ[^3]
 * 2024+ Lexus TX[^3]
+
+### 🔵 Vehicles not in comma's supported vehicles list
+
+The following vehicles aren't in comma's supported vehicles list but are known to not have SecOC/TSK.
+
+They may not have been added due to:
+
+* Bugs in the automated process of adding vehicles to the supported vehicle list such as in the case of the 2025 Lexus ES.
+* No one has tried it!
+
+However, they are confirmed on Toyota Techinfo to not have SecOC/TSK.
+
+With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehicles and might just be a fingerprint away from being supported by openpilot.
+
+* 2023 US-made (VIN starts with `5`) Corolla Sedan
+  * TSS 3.0
+  * No ECU Security Key or SecOC steps when replacing the forward camera.
+  * It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
+  * Likely requires a C3X as it's probably that it uses CAN-FD.
+  * Probably not a fingerprint print away.
+* 2021-2022 Lexus RC
+  * TSS+?
+  * No TSK
+* 2023-2025 Lexus RC
+  * TSS2?
+  * No TSK
+  * 2023 WIP
+* 2020 Lexus IS
+  * TSS+
+  * No one has tried
+* 2021 Lexus IS
+  * TSS2
+  * No one has tried
+* 2025 Lexus ES Non-Hybrid
+  * Seems to have issues being auto-added to comma's supported vehicle list for some reason.
 
 ### Unknown
 
@@ -1202,13 +1237,18 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [martinolium: I'll be back here if I get a raise in the next 4 months](https://discord.com/channels/469524606043160576/905950538816978974/1340874369378811934)
 * [mehrab.shakil comes on and asks for help with a Yaris Cross Hybrid but never responded.](https://discord.com/channels/469524606043160576/905950538816978974/1345161761548013609)
 * [lx93 proceeds with getting an A harness for Yaris GR port(FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1342905714213130322)
+
+### March 2025
+
 * [Satopilot removed on request from author from listing due to support load.](https://discord.com/channels/469524606043160576/905950538816978974/1350253438210019359)
 * [gako_41825 reports that they were able to get a key dump on an early 2024 Canadian-spec 2024 Sienna. This is in contrast to earlier failures on other 2024 Siennas.](https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142)
 * [warren.2: "I copied TOYOTA_RAV4_TSS2_2022.json to TOYOTA_RAV4_PRIME.json then committed it to a local git branch. Now Developer menu NNLC says Exact match. Subjectively lat is smoother now. I think that means it's working."  (SP Discord)](https://discord.com/channels/880416502577266699/1118704399850680522/1351567921414934661)
   * The NNLC stuff works for the RAV4 Prime EPS where available. It is similar to the 2020-2021 RAV4 except for the whole security key thing.
 * [Sunnypilot declares it is open to accepting chrispypatt's longitudinal control work in advance of the pull request being merged or accepted upstream in comma openpilot/opendbc.](https://discord.com/channels/469524606043160576/905950538816978974/1352300164143911024)
+
 * ["checking with @Woosa 's 💸 on request. the 2022 and 2023 mirai do not have ⁠toyota-security and the 2024+ still do.](https://discord.com/channels/469524606043160576/905950538816978974/1352472975944974427)
 * [Some more precise information is recorded for the possible working early MY2024 workings](https://discord.com/channels/469524606043160576/905950538816978974/1352687298885713940)
+* [2023 Lexus RC is confirmed to not have TSK. A small discussion results in a section on TSK-less but not in comma's supported vehicle list being added to this document.](https://discord.com/channels/469524606043160576/905950538816978974/1355162109620785163)
 
 ---
 
