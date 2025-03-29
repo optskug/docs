@@ -38,6 +38,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
       * Gako - 10/23
     * Not Working
       * grb5 - 09/24
+      * samueljsg - 12/23
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
