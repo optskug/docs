@@ -135,6 +135,7 @@ They may not have been added due to:
 
 * Bugs in the automated process of adding vehicles to the supported vehicle list such as in the case of the 2025 Lexus ES.
 * No one has tried it!
+* No development has been done on it.
 
 However, they are confirmed on Toyota Techinfo to not have SecOC/TSK.
 
