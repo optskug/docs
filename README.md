@@ -504,11 +504,17 @@ https://www.reddit.com/r/Comma_ai/comments/1d5r7xr/comment/l6vjf9e/
 
 Original Sheet: https://docs.google.com/spreadsheets/d/1MKS78_utvbAe74Xv7zszgEnn6JrtBgpgYlVOfoIvLEw/edit#gid=0
 
+#### Specific Community Bounties
+
 In its place are more specific community bounties:
 
 * Tundra Interest Group
   * [~~"I’ll put up 2k for Tundra alone" - bgill66~~](https://discord.com/channels/469524606043160576/905950538816978974/1243275998745722911)
     * Scrubbed / User had bumped to $5k but there was no interest. https://discord.com/channels/469524606043160576/905950538816978974/1259282479257485383
+* heitikender for RX 2023
+  * 1000 EUR
+  * "I can buy techinfo access and whatever else is needed. Have pics of connectors."
+  * Konik.ai Discord link: https://discord.com/channels/1110987393990922322/1355531073353678950/1355531309333614782
 
 ## Pictures of TSK'd and non-TSK'd Camera ECUs
 
@@ -541,6 +547,7 @@ Most if not all Discord links are to the comma.ai Discord accessible with an inv
 * Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): https://discord.gg/rRB7eDKccy
 * MoreTorque (MT): https://discord.gg/439DM9KJ4r
 * Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
+* Konik.ai (KA): Discord Link on https://konik.ai/
 
 The activities, actions, and discussions on non-comma.ai Discords are/may not supported by or affiliated with comma.ai (this may even apply even to the comma.ai Discord too). In the case of MoreTorque, comma.ai is strongly opposed to that community/Discord. That said, the ECU Security Key issues affects all and relevant events and information may be there as well.
 
@@ -1251,6 +1258,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * ["checking with @Woosa 's 💸 on request. the 2022 and 2023 mirai do not have ⁠toyota-security and the 2024+ still do.](https://discord.com/channels/469524606043160576/905950538816978974/1352472975944974427)
 * [Some more precise information is recorded for the possible working early MY2024 workings](https://discord.com/channels/469524606043160576/905950538816978974/1352687298885713940)
 * [2023 Lexus RC is confirmed to not have TSK. A small discussion results in a section on TSK-less but not in comma's supported vehicle list being added to this document.](https://discord.com/channels/469524606043160576/905950538816978974/1355162109620785163)
+* [heitikender posts 1000 EUR bounty for 2023 RX on Konik.ai Discord (KA)](https://discord.com/channels/1110987393990922322/1355531073353678950/1355531073353678950)
 
 ---
 
