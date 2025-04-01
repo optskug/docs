@@ -1259,6 +1259,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [Some more precise information is recorded for the possible working early MY2024 workings](https://discord.com/channels/469524606043160576/905950538816978974/1352687298885713940)
 * [2023 Lexus RC is confirmed to not have TSK. A small discussion results in a section on TSK-less but not in comma's supported vehicle list being added to this document.](https://discord.com/channels/469524606043160576/905950538816978974/1355162109620785163)
 * [heitikender posts 1000 EUR bounty for 2023 RX on Konik.ai Discord (KA)](https://discord.com/channels/1110987393990922322/1355531073353678950/1355531073353678950)
+* warren.2 - " https://www.renesas.com/en/products/microcontrollers-microprocessors/rh850-automotive-mcus/rh850p1m-e-high-end-automotive-microcontrollers-electronic-power-steering-systems#documents https://www.renesas.com/en/document/eln/end-life-notice-saf-b-24-0011?r=1054236 Add to notes ... the Renesas RH850/P1M-E is the same across both working and not-working cars. [The non-working cars still have working payload execution so there is some hope of figuring something out. But see the End of Life document. That gives us a clue as to when the cut-off will be when models move away from this part to something totally unknown.](https://discord.com/channels/469524606043160576/905950538816978974/1356487039025021032)"
 
 ---
 
