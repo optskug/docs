@@ -147,11 +147,11 @@ With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehic
   * It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
   * Likely requires a C3X as it's probably that it uses CAN-FD.
   * Probably not a fingerprint print away.
-* 2021-2022 Lexus RC
-  * TSS+?
+* 2021 Lexus RC
+  * TSS2
   * No TSK
-* 2023-2025 Lexus RC
-  * TSS2?
+* 2022-2025 Lexus RC
+  * TSS2.5
   * No TSK
   * 2023 WIP
 * 2020 Lexus IS
