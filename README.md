@@ -43,7 +43,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
   * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach
-  * openpilot working with heavy hacked out [branch](https://github.com/nelsonjchen/openpilot/commits/yaris-gon/)
+  * openpilot currently working on frogpilot fork but not upstream comma openpilot.
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
   * Not sold in the USA, but is in Australia, Japan, and Europe
   * Only one guy using it in Japan, unfortunately. Help double the population!
@@ -1266,6 +1266,12 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [2023 Lexus RC is confirmed to not have TSK. A small discussion results in a section on TSK-less but not in comma's supported vehicle list being added to this document.](https://discord.com/channels/469524606043160576/905950538816978974/1355162109620785163)
 * [heitikender posts 1000 EUR bounty for 2023 RX on Konik.ai Discord (KA)](https://discord.com/channels/1110987393990922322/1355531073353678950/1355531073353678950)
 * warren.2 - " https://www.renesas.com/en/products/microcontrollers-microprocessors/rh850-automotive-mcus/rh850p1m-e-high-end-automotive-microcontrollers-electronic-power-steering-systems#documents https://www.renesas.com/en/document/eln/end-life-notice-saf-b-24-0011?r=1054236 Add to notes ... the Renesas RH850/P1M-E is the same across both working and not-working cars. [The non-working cars still have working payload execution so there is some hope of figuring something out. But see the End of Life document. That gives us a clue as to when the cut-off will be when models move away from this part to something totally unknown.](https://discord.com/channels/469524606043160576/905950538816978974/1356487039025021032)"
+
+### April 2025
+
+* ["Thanks to @GON0822, "Toyota Security Keyed" vehicles have been confirmed to work in FrogPilot!" - frogsgomoo
+ (FP)](https://discord.com/channels/1137853399715549214/1137905508217540699/1359246607069220926)
+  * This includes the Yaris Hybrid in Japan which at the moment, upstream comma openpilot had removed support for.
 
 ---
 
