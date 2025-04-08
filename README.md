@@ -231,7 +231,14 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 ### Step 4. Run the exploit using `TSK Manager`
 
-Run `TSK Extractor`. The car may beep and flash LKAS & Power Steering errors.
+> [!NOTE]
+> Your car is going to freak out - it will beep and flash all kinds of errors.
+> 
+> Relax. The exploit is safe to run and can't break your car even if you yank the cable.
+>
+> Turn off the car, wait one minute, and turn it back on. Everything will be back to normal.
+
+Run `TSK Extractor`.
 
 ![](img/v3.ext-success.jpg)
 
@@ -246,12 +253,11 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 <details><summary>Troubleshooting</summary>
 
-1. Relax. The exploit is safe to run and can't break your car even if you yank the cable.
-2. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
-3. In rare cases, `TSK Extractor` may hit an unexpected error.
+1. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
+2. In rare cases, `TSK Extractor` may hit an unexpected error.
 ![](img/v3.ext-unknown.jpg)
   The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
-4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
+3. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
 </details>
 
 ### Step 5. Install `commaai/nightly-dev`
