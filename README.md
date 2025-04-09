@@ -43,7 +43,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
   * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach
-  * openpilot currently working on frogpilot fork but not upstream comma openpilot.
+  * openpilot currently working on frogpilot fork and upstream comma openpilot.
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
   * Not sold in the USA, but is in Australia, Japan, and Europe
   * Only one guy using it in Japan, unfortunately. Help double the population!
@@ -233,7 +233,7 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 > [!NOTE]
 > Your car is going to freak out - it will beep and flash all kinds of errors.
-> 
+>
 > Relax. The exploit is safe to run and can't break your car even if you yank the cable.
 >
 > Turn off the car, wait one minute, and turn it back on. Everything will be back to normal.
@@ -1269,6 +1269,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 ### April 2025
 
+* [Yaris support re-merged in from Ale working with GON0822](https://github.com/commaai/opendbc/pull/1668)
 * ["Thanks to @GON0822, "Toyota Security Keyed" vehicles have been confirmed to work in FrogPilot!" - frogsgomoo
  (FP)](https://discord.com/channels/1137853399715549214/1137905508217540699/1359246607069220926)
   * This includes the Yaris Hybrid in Japan which at the moment, upstream comma openpilot had removed support for.
