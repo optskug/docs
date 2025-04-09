@@ -47,6 +47,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
   * Not sold in the USA, but is in Australia, Japan, and Europe
   * Only one guy using it in Japan, unfortunately. Help double the population!
+    * Another vehicle, not a daily driver, but an academic study specimen, has their key dumped in France.
 
 #### Notes
 
@@ -1273,6 +1274,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * ["Thanks to @GON0822, "Toyota Security Keyed" vehicles have been confirmed to work in FrogPilot!" - frogsgomoo
  (FP)](https://discord.com/channels/1137853399715549214/1137905508217540699/1359246607069220926)
   * This includes the Yaris Hybrid in Japan which at the moment, upstream comma openpilot had removed support for.
+* [ir0nbyte is able to dump a key from a donated lemon French 2019 Yaris Hybrid MX. It is for academic purposes and not for personal or daily use. This is the 3rd Yaris Hybrid whose key has been dumped.](https://discord.com/channels/469524606043160576/905950538816978974/1359481937449975990)
 
 ---
 
