@@ -30,15 +30,15 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * The compatibility status of the RAV4 Hybrid is not relevant to the Prime/PHEV. They're different vehicles.
 * 2021-2023 Sienna Hybrid
   * Upstreamed into openpilot's master branch.
-  <!-- * (EDIT: User never actually ran OP and when trying, it didn't work. ) Early 2024 MY might work? Currently too few data points to determine cutoff
+  * Early 2024 MY might work? Currently too few data points to determine cutoff
     https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
     * Check driver door jam to get month and year. It's Month/Year
       * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
-    *  (not) Working, got the key though.
+    * Working
       * Gako - 10/23
     * Not Working
       * grb5 - 09/24
-      * samueljsg - 12/23 -->
+      * samueljsg - 12/23
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
@@ -1276,6 +1276,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * This includes the Yaris Hybrid in Japan which at the moment, upstream comma openpilot had removed support for.
 * [ir0nbyte is able to dump a key from a donated lemon French 2019 Yaris Hybrid MX. It is for academic purposes and not for personal or daily use. This is the 3rd Yaris Hybrid whose key has been dumped.](https://discord.com/channels/469524606043160576/905950538816978974/1359481937449975990)
 * [Gako, who earlier was able to dump the key from their early 2024 Sienna, is unable to use the dumped key with OP after dumping it with two different methods. There's some weird CAN Bus error that needs to be looked into.](https://discord.com/channels/469524606043160576/905950538816978974/1359696972877135974)
+  * [Error was due to frogpilot implementation issues currently being cleared up. (FP)](https://discord.com/channels/1137853399715549214/1137905508217540699/1359768523408408697)
 
 ---
 
