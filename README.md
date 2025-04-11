@@ -296,7 +296,7 @@ You're done! Congratulations!
 <details><summary>Troubleshooting</summary>
 
 1. If you get an `LKAS` error, either the key was not installed or you're running a fork/branch without TSK support.
-2. If C3x says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyot-security.
+2. If C3x says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyota-security.
 3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
 </details>
 
