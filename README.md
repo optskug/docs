@@ -447,6 +447,21 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
+        <code>frogpilot.download</code> <br/>
+        (FrogPilot) <br/>
+        <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
+      </td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> Yes from community (AOL from FP) <br/>
+        <strong>Long:</strong> No <br/> <br/>
+        <ul>
+          <li>As of April 10, 2025, the main branch does not yet support TSK. If you encounter the error message "LKAS fault: Restart car to engage", go to the Software section and switch to the target branch 'FrogPilot-Testing'. Once the download finishes, the system will prompt you to reboot.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <code>optskug/SiennaFP</code> <br/>
         (fork of FrogPilot) <br/>
         <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
@@ -464,9 +479,6 @@ If you acknowledge the warning above and are still looking to try a fork that su
       </td>
     </tr>
 </table>
-
-> [!WARNING]
-> `optskug/SiennaFP` is the only FrogPilot fork/branch with TSK support. Do not install the latest FP unless FrogGoesMoo confirmed that it supports TSK vehicles.
 
 If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork!
 
