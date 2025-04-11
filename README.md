@@ -159,7 +159,7 @@ With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehic
   * TSS+
   * No one has tried
 * 2021 Lexus IS
-  * TSS2
+  * TSS2.5
   * No one has tried
 * 2025 Lexus ES Non-Hybrid
   * Seems to have issues being auto-added to comma's supported vehicle list for some reason.
