@@ -136,6 +136,7 @@ They may not have been added due to:
 
 * Bugs in the automated process of adding vehicles to the supported vehicle list such as in the case of the 2025 Lexus ES.
 * No one has tried it!
+* Sometimes no one has tried that specific *year* and sent in evidential data that comma will accept to put it on the list. This sometimes results in weird year gaps on comma's list.
 * No development has been done on it.
 
 However, they are confirmed on Toyota Techinfo to not have SecOC/TSK.
