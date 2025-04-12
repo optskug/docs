@@ -302,6 +302,26 @@ You're done! Congratulations!
 3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
 </details>
 
+### Step 7. What's next?
+
+#### Keep using `commaai/nightly-dev`
+
+* If there is a hardware problem, you need to be on a branch from comma.ai to get support from the comma.ai company.
+
+* If there is a software problem, you need to be on a branch from comma.ai to get support on comma.ai's Discord. There is a channel for #custom-forks, but it's easier to get support in other channels.
+
+* `commaai/nightly-dev` updates every day but you don't need to update every day. We hope that comma.ai provides a stable release branch with TSK support, but until then, `commaai/nightly-dev` is the only official branch with TSK support.
+
+* If everything's working as expected for a week or two, you're done - just keep using it. If you want to tinker more, check out [Forks](#forks).
+
+#### Tell us how it went
+
+Did everything go smoothly? Was something not clear? Did you get into a state that's not described in the doc?
+
+Please let us know! We've put in lots of effort into this doc, so even a simple "It worked out well" comment is appreciated.
+
+We're in [comma Discord](https://discord.comma.ai) in #toyota-security channel.
+
 ## Key Installation
 
 ### You shouldn't need to do this
