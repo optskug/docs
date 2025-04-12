@@ -1290,6 +1290,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [ir0nbyte is able to dump a key from a donated lemon French 2019 Yaris Hybrid MX. It is for academic purposes and not for personal or daily use. This is the 3rd Yaris Hybrid whose key has been dumped.](https://discord.com/channels/469524606043160576/905950538816978974/1359481937449975990)
 * [Gako, who earlier was able to dump the key from their early 2024 Sienna, is unable to use the dumped key with OP after dumping it with two different methods. There's some weird CAN Bus error that needs to be looked into.](https://discord.com/channels/469524606043160576/905950538816978974/1359696972877135974)
   * [Error was due to frogpilot implementation issues currently being cleared up. (FP)](https://discord.com/channels/1137853399715549214/1137905508217540699/1359768523408408697)
+* [.lx93 comes back with their GR Yaris attempt. (FP)](https://discord.com/channels/1137853399715549214/1291217403157413980/1360462532418212042)
+  * Able to dump the SecOC key with the dataflash method just like a Yaris Hybrid. Sienna and RAV4 Prime dump does not work.
+  * FrogPilot with the vehicle set to the Yaris does not work. Lots of `GEAR_PACKET_HYBRID` errors which makes sense since this is a ICE 6MT.
+  * WIP
 
 ---
 
