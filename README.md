@@ -69,9 +69,10 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * Brute force script may work.
 * 2021+ GR Yaris (EUDM/JDM/MXDM)
   * TSS 2.0
-  * Brute force script may work.
-  * Seems externally similar to Yaris Hybrid?
+  * Brute force script does work to get the key! 
   * Would be the first manual transmission.
+  * Current TSK/SecOC implementations expect Hybrids so this is erroring out due to transmission. 
+  * WIP
 
 ### 🔴 Not hacked and can't run openpilot
 
