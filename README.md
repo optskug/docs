@@ -40,7 +40,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
       * samueljsg - 12/23
       * grb5 - 09/24
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
-  * Memory dump hack works but the key is not in the same address as RAV4 Prime.
+  * Dataflash dump hack works as the key is not in the same address as RAV4 Prime in program memory
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
   * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach
   * openpilot currently working on frogpilot fork and upstream comma openpilot.
@@ -48,6 +48,12 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * Not sold in the USA, but is in Australia, Japan, and Europe
   * Only one guy using it in Japan, unfortunately. Help double the population!
     * Another vehicle, not a daily driver, but an academic study specimen, has their key dumped in France.
+* 2021 GR Yaris (EUDM/JDM/MXDM)
+  * Memory dump hack works but the key is not in the same address as RAV4 Prime.
+  * Same hardware as Hybrid Yaris with Continental Radar + Camera
+  * Manual Transmission
+  * One user in Poland at the moment.
+  * WIP
 
 #### Notes
 
@@ -67,12 +73,8 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * Note that this is not the same as the 2023 TMC/JP-made Corolla or the 2024+ Corolla. It happens to be applicable to a single year of US-made Corolla.
 * 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
   * Brute force script may work.
-* 2021+ GR Yaris (EUDM/JDM/MXDM)
-  * TSS 2.0
-  * Brute force script does work to get the key! 
-  * Would be the first manual transmission.
-  * Current TSK/SecOC implementations expect Hybrids so this is erroring out due to transmission. 
-  * WIP
+* 2022+ GR Yaris (EUDM/JDM/MXDM)
+  * Unknown
 
 ### 🔴 Not hacked and can't run openpilot
 
@@ -1315,6 +1317,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * Able to dump the SecOC key with the dataflash method just like a Yaris Hybrid. Sienna and RAV4 Prime dump does not work.
   * FrogPilot with the vehicle set to the Yaris does not work. Lots of `GEAR_PACKET_HYBRID` errors which makes sense since this is a ICE 6MT.
   * WIP
+* [.lx93 is able to get their GR Yaris working. As it is a manual transmission, some changes had to be made and there's some desire and requests for comments of upstreaming. (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1360861569495466044)
+  * [Some followup in #toyota-security](https://discord.com/channels/469524606043160576/905950538816978974/1361021966244646992)
 
 ---
 
