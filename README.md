@@ -139,7 +139,7 @@ They may not have been added due to:
 
 * Bugs in the automated process of adding vehicles to the supported vehicle list such as in the case of the 2025 Lexus ES.
 * No one has tried it!
-* Sometimes no one has tried that specific *year* and sent in evidential data that comma will accept to put it on the list. This sometimes results in weird year gaps on comma's list even if its other years in the same generation/facelift are supported. 
+* Sometimes no one has tried that specific *year* and sent in evidential data that comma will accept to put it on the list. This sometimes results in weird year gaps on comma's list even if its other years in the same generation/facelift are supported.
 * No development has been done on it.
 
 However, they are confirmed on Toyota Techinfo to not have SecOC/TSK.
@@ -1319,6 +1319,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * WIP
 * [.lx93 is able to get their GR Yaris working. As it is a manual transmission, some changes had to be made and there's some desire and requests for comments of upstreaming. (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1360861569495466044)
   * [Some followup in #toyota-security](https://discord.com/channels/469524606043160576/905950538816978974/1361021966244646992)
+* [SecOC long merged into Sunnypilot](https://github.com/sunnypilot/opendbc/pull/93)
+  * [This means you will have longitudinal control in `master-new` and `staging-c3-new`.](https://discord.com/channels/469524606043160576/905950538816978974/1361435824960311448)
 
 ---
 
