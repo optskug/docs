@@ -1321,6 +1321,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * [Some followup in #toyota-security](https://discord.com/channels/469524606043160576/905950538816978974/1361021966244646992)
 * [SecOC long merged into Sunnypilot](https://github.com/sunnypilot/opendbc/pull/93)
   * [This means you will have longitudinal control in `master-new` and `staging-c3-new`.](https://discord.com/channels/469524606043160576/905950538816978974/1361435824960311448)
+  * reverted soon after: https://github.com/sunnypilot/opendbc/pull/125
 
 ---
 
