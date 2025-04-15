@@ -439,8 +439,8 @@ If you acknowledge the warning above and are still looking to try a fork that su
     <tr>
       <td>
         <code>sunnypilot/staging-c3-new</code> <br/>
-        (a.k.a SunnyPilot) <br/>
-        <a href="https://discord.com/invite/sunnypilot">SunnyPilot discord</a>
+        (a.k.a sunnypilot) <br/>
+        <a href="https://discord.gg/sunnypilot">sunnypilot discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
