@@ -438,34 +438,17 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
-        <code>sunnypilot/master-new</code> <br/>
+        <code>sunnypilot/staging-c3-new</code> <br/>
         (a.k.a SunnyPilot) <br/>
         <a href="https://discord.com/invite/sunnypilot">SunnyPilot discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
         <strong>MADS:</strong> Yes from community (MADS original author) <br/>
-        <strong>Long:</strong> No <br/> <br/>
+        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
         <ul>
+          <li>Pre-built version of `sunnypilot/master-new`</li>
           <li>Model switcher to easily switch between various models</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>chrispypatt/sunnypilot</code>  <br/>
-        (fork of SunnyPilot)
-        <a href="https://discord.com/invite/sunnypilot">SunnyPilot discord</a>
-      </td>
-      <td>
-        <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> Yes from community (MADS from SP) <br/>
-        <strong>Long:</strong> Yes from community (original author) <br/> <br/>
-        <strong>Notes - same as <code>sunnypilot/master-new</code> plus:</strong>
-        <ul>
-          <li>Includes a TSK keyboard with key caching</li>
-          <li><code>commaai/master</code> and most forks based on it have unstable experimental mode due to the latest model. The model switcher in SP allows you to use old models with stable experimental mode</li>
-          <li>Maintained as best effort. This may not always be up to date with the latest SunnyPilot. Contact @Chrispypatt for requests to rebase his fork with SunnyPilot's rewrite.</li>
         </ul>
       </td>
     </tr>
