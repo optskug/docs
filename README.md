@@ -1305,7 +1305,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [SecOC long merged into Sunnypilot](https://github.com/sunnypilot/opendbc/pull/93)
   * [This means you will have longitudinal control in `master-new` and `staging-c3-new`.](https://discord.com/channels/469524606043160576/905950538816978974/1361435824960311448)
   * reverted soon after: https://github.com/sunnypilot/opendbc/pull/125
-
+  * and unreverted soon after again!
+* [drumstyx. tries their hand at tackling the Toyota Crown with B harness. Has some issues getting FW version, advised to talk to Bz4x/Solterra people. "aha, good to note. Don't suppose there's anyone working on the Crown...as far as I can tell, this would be the first recorded effort at a crown"](https://discord.com/channels/469524606043160576/905950538816978974/1361689361556443177)
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
