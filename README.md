@@ -377,7 +377,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 
 Forks may offer additional functionality or changes that comma openpilot may not offer or are unwilling to offer.
 
-You can totally have a good time with comma openpilot without using a fork too. You can also have a better time or a worst time with forks!
+You can totally have a good time with comma openpilot without using a fork too. You can also have a better time or a worse time with forks!
 
 ### Which Fork Should I Use?
 
@@ -407,7 +407,7 @@ For all forks, you should read their README documentation as well.
 
 If you're new, please start with comma openpilot with `commaai/nightly-dev` and use it for two weeks. This is the same as the latest official version with only lateral support (with TSK support enabled). This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
 
-Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks, their communities may or may not for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
+Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks outside of basic support in their #custom-forks channel, a fork's Discord communities may or may not offer support for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
 
 If you acknowledge the warning above and are still looking to try a fork that supports SecOC/TSK, the following are available to install at your own risk. Keep in mind that this page is community maintained and may not stay up to date so please send in changes/fixes, or notices of any inaccuracies:
 
