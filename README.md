@@ -45,6 +45,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach
   * openpilot currently working on frogpilot fork and upstream comma openpilot.
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
+    * Experimental work in disabling the radar has shown this does work to let openpilot control longitudinal. It will not parse radar points but can use its Visual Only ACC.
   * Not sold in the USA, but is in Australia, Japan, and Europe
   * Only one guy using it in Japan, unfortunately. Help double the population!
     * Another vehicle, not a daily driver, but an academic study specimen, has their key dumped in France.
@@ -1224,6 +1225,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * [Willem - I think the key extract is timing out because of the car being CAN-FD. You need to change a line in the the panda FW to force it back into regular CAN mode for diagnostic communications. See the Bz4x Thread.](https://discord.com/channels/469524606043160576/905950538816978974/1308103144525267016)
     * Bz4X thread: https://discord.com/channels/469524606043160576/1226559486160801823
 * [alesatobrazilsp and gon0822 determine that the Yaris Hybrid in Japan uses the same acceleration command seen in other Toyotas by looking in Cabana for the CAN BUS data. (FP Discord)](https://discord.com/channels/1137853399715549214/1291217403157413980/1302269836017008694)
+* ["disable radar worked in the conti radar of the japanese Yaris (RADAR_ACC car)"](https://discord.com/channels/469524606043160576/524327905937850394/1305662760381714492)
 * [posts pictures of the camera internals for the 2024 Tacoma](https://discord.com/channels/469524606043160576/905950538816978974/1303932394776301589)
 * [Jason - "Definitely technically possible to back port the work to openpilot 0.8.13.1" (last version of openpilot that supports the comma two and comma two class of devices.)](https://discord.com/channels/469524606043160576/905950538816978974/1304818543920939070)
 * [Re: openpilot long on R4P and Sienna- Jason: "I don't remember and I'm not in a position to refresh myself right now" "But I haven’t had the time to get back to it to resolve the mutations issue or put more thought into the refactor" [of secOC Long]. The secOC Long support is getting a bit stale. ](https://discord.com/channels/469524606043160576/905950538816978974/1309380353261174847)
