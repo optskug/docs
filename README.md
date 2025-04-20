@@ -575,6 +575,7 @@ Most if not all Discord links are to the comma.ai Discord accessible with an inv
 * MoreTorque (MT): https://discord.gg/439DM9KJ4r
 * Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
 * Konik.ai (KA): Discord Link on https://konik.ai/
+* Car Hacking Village (CHV): https://www.carhackingvillage.com/
 
 The activities, actions, and discussions on non-comma.ai Discords are/may not supported by or affiliated with comma.ai (this may even apply even to the comma.ai Discord too). In the case of MoreTorque, comma.ai is strongly opposed to that community/Discord. That said, the ECU Security Key issues affects all and relevant events and information may be there as well.
 
@@ -1310,6 +1311,9 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * reverted soon after: https://github.com/sunnypilot/opendbc/pull/125
   * and unreverted soon after again!
 * [drumstyx. tries their hand at tackling the Toyota Crown with B harness. Has some issues getting FW version, advised to talk to Bz4x/Solterra people. "aha, good to note. Don't suppose there's anyone working on the Crown...as far as I can tell, this would be the first recorded effort at a crown"](https://discord.com/channels/469524606043160576/905950538816978974/1361689361556443177)
+* [jamalbrown - "Hey all, does anyone have any CAN recordings of firmware updates for Toyota Instrument Clusters? Specifically 2018+ Models with RH850s are what I'm looking for the most.", "I've followed this and have successfully reversed the majority of the firmware update procedure. I'm now just having trouble with getting code execution for my uploaded code to change the language." (CHV)](https://discord.com/channels/717022042313982033/717022042313982036/1363514703632142356)
+  * Ooh, someone else is also dumping the firmware from Toyota ECUs?
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
