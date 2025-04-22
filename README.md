@@ -8,6 +8,26 @@
 
 ---
 
+## Table of Contents
+
+* [openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC](#openpilotetc-on-toyotalexussubaru-with-tskecu-security-keysecoc)
+   * [Background](#background)
+   * [Cars](#cars)
+      * [🟢 Successfully running openpilot](#-successfully-running-openpilot)
+         * [Notes](#notes)
+      * [🟡 May be possible to hack but hasn't been tried](#-may-be-possible-to-hack-but-hasnt-been-tried)
+      * [🔴 Not hacked and can't run openpilot](#-not-hacked-and-cant-run-openpilot)
+      * [🔵 Vehicles not in comma's supported vehicles list](#-vehicles-not-in-commas-supported-vehicles-list)
+      * [Unknown](#unknown)
+* [Setup Guide](#setup-guide)
+   * [Key Extraction](#key-extraction)
+   * [Key Installation](#key-installation)
+   * [Advanced Topic: Run the exploit using SSH manually](#advanced-topic-run-the-exploit-using-ssh-manually)
+   * [Forks](#forks)
+* [Current History](#current-history)
+
+---
+
 ## Background
 
 tl;dr: Toyota started to use cryptographical signatures to block openpilot (and other hacks). Some smart people in the industry hacked the signatures for _some_ cars, but not all cars.
