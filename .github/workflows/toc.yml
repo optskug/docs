@@ -1,0 +1,20 @@
+name: Generate TOC
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'README.md' ]
+
+jobs:
+  generateTOC:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate TOC
+        uses: technote-space/toc-generator@v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_PATHS: 'README.md'
+          TOC_TITLE: '## Table of Contents'
+          COMMIT_MESSAGE: 'docs: update TOC'
+          CREATE_PR: true
+          PR_TITLE: 'docs: update TOC'
