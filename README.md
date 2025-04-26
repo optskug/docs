@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/27b5494a-a1a1-40f3-81b4-91c53ec3bfa7)# openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC
-
 ![](https://user-images.githubusercontent.com/5363/91650158-ed5f5880-ea30-11ea-9b07-6e3dca7f8f83.gif)[^1]
 
 [*Toyota's Sword in Rock situation*](https://store.steampowered.com/app/1865370/The_one_who_pulls_out_the_sword_will_be_crowned_king/) (that has been pulled out [quite a bit by Willem and Greg](https://icanhack.nl/blog/secoc-key-extraction/)!)
