@@ -210,7 +210,7 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 At home, sitting next to your router, turn on C3X with your phone charger. Ignore the low voltage warning.
 
-Choose `Custom Software` and enter the URL `tsk.lvin.ca`
+Choose `Custom Software` and enter the URL `tsk.lvin.ca`. 
 
 ![](img/v3.install.jpg)
 
@@ -291,7 +291,7 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 Start your car's engine.
 
-Go to the `Reboot Menu` and `Install commaai/nigtly-dev`.
+Go to the `Reboot Menu` and `Install commaai/nightly-dev`.
 
 `commaai/nightly-dev` is the only branch from comma.ai with TSK support.
 
