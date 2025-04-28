@@ -476,16 +476,17 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
-        <code>frogpilot.download</code> <br/>
-        (FrogPilot) <br/>
+        <code>chrispypatt/frogpilot-r4p</code> <br/>
+        (fork of FrogPilot) <br/>
         <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
         <strong>MADS:</strong> Yes from community (AOL from FP) <br/>
-        <strong>Long:</strong> No <br/> <br/>
+        <strong>Long:</strong> Yes from community (original author) <br/> <br/>
         <ul>
-          <li>As of April 10, 2025, the main branch does not yet support TSK. If you encounter the error message "LKAS fault: Restart car to engage", go to the Software section and switch to the target branch 'FrogPilot-Testing'. Once the download finishes, the system will prompt you to reboot.</li>
+          <li>chrispypatt's fork with TSK long support.</li>
+          <li>Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
         </ul>
       </td>
     </tr>
