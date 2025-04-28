@@ -210,7 +210,7 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 At home, sitting next to your router, turn on C3X with your phone charger. Ignore the low voltage warning.
 
-Choose `Custom Software` and enter the URL `tsk.lvin.ca`. 
+Choose `Custom Software` and enter the URL `tsk.lvin.ca`
 
 ![](img/v3.install.jpg)
 
