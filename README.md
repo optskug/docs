@@ -487,6 +487,7 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <ul>
           <li>chrispypatt's fork with TSK long support.</li>
           <li>Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
+          <li>‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.</li>
         </ul>
       </td>
     </tr>
