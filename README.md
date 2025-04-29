@@ -210,7 +210,7 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 At home, sitting next to your router, turn on C3X with your phone charger. Ignore the low voltage warning.
 
-Choose `Custom Software` and enter the URL `tsk.lvin.ca`. 
+Choose `Custom Software` and enter the URL `tsk.lvin.ca`
 
 ![](img/v3.install.jpg)
 
@@ -476,16 +476,18 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
-        <code>frogpilot.download</code> <br/>
-        (FrogPilot) <br/>
+        <code>chrispypatt/frogpilot-r4p</code> <br/>
+        (fork of FrogPilot) <br/>
         <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
         <strong>MADS:</strong> Yes from community (AOL from FP) <br/>
-        <strong>Long:</strong> No <br/> <br/>
+        <strong>Long:</strong> Yes from community (original author) <br/> <br/>
         <ul>
-          <li>As of April 10, 2025, the main branch does not yet support TSK. If you encounter the error message "LKAS fault: Restart car to engage", go to the Software section and switch to the target branch 'FrogPilot-Testing'. Once the download finishes, the system will prompt you to reboot.</li>
+          <li>chrispypatt's fork with TSK long support.</li>
+          <li>Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
+          <li>‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.</li>
         </ul>
       </td>
     </tr>
