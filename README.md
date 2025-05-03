@@ -1342,6 +1342,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### May 2025
 
 * [heitikender's Lexus RX 2023 bounty raised to 2000 EUR](https://discord.com/channels/469524606043160576/1310778132478955540/1367854050103529524)
+* [heitikender and PenitentTangent are able to get the current exploit for code execution on the 2023 RX but no key is dumped](https://discord.com/channels/469524606043160576/905950538816978974/1367923937723289742)
 
 ---
 
