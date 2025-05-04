@@ -562,11 +562,13 @@ In its place are more specific community bounties:
   * [~~"I’ll put up 2k for Tundra alone" - bgill66~~](https://discord.com/channels/469524606043160576/905950538816978974/1243275998745722911)
     * Scrubbed / User had bumped to $5k but there was no interest. https://discord.com/channels/469524606043160576/905950538816978974/1259282479257485383
 * heitikender for RX 2023
-  * ~~1000~~ 2000cEUR
+  * ~~1000~~ ~~2000EUR~~ 3000EUR
   * "I can buy techinfo access and whatever else is needed. Have pics of connectors."
   * Konik.ai Discord link: https://discord.com/channels/1110987393990922322/1355531073353678950/1355531309333614782
   * Raised to 2000 EUR
-  * https://discord.com/channels/469524606043160576/1310778132478955540/1367854050103529524
+    * https://discord.com/channels/469524606043160576/1310778132478955540/1367854050103529524
+  * Raised to 3000 EUR
+    * https://discord.com/channels/469524606043160576/905950538816978974/1368164880489775185
 
 ## Pictures of TSK'd and non-TSK'd Camera ECUs
 
@@ -1338,10 +1340,11 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [drumstyx. tries their hand at tackling the Toyota Crown with B harness. Has some issues getting FW version, advised to talk to Bz4x/Solterra people. "aha, good to note. Don't suppose there's anyone working on the Crown...as far as I can tell, this would be the first recorded effort at a crown"](https://discord.com/channels/469524606043160576/905950538816978974/1361689361556443177)
 * [jamalbrown - "Hey all, does anyone have any CAN recordings of firmware updates for Toyota Instrument Clusters? Specifically 2018+ Models with RH850s are what I'm looking for the most.", "I've followed this and have successfully reversed the majority of the firmware update procedure. I'm now just having trouble with getting code execution for my uploaded code to change the language." (CHV)](https://discord.com/channels/717022042313982033/717022042313982036/1363514703632142356)
   * Ooh, someone else is also dumping the firmware from Toyota ECUs?
- 
+
 ### May 2025
 
 * [heitikender's Lexus RX 2023 bounty raised to 2000 EUR](https://discord.com/channels/469524606043160576/1310778132478955540/1367854050103529524)
+  * [Later raised to 3000 EUR](https://discord.com/channels/469524606043160576/905950538816978974/1368164880489775185)
 * [heitikender and PenitentTangent are able to get the current exploit for code execution on the 2023 RX but no key is dumped](https://discord.com/channels/469524606043160576/905950538816978974/1367923937723289742)
 
 ---
