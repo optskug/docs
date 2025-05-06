@@ -1348,8 +1348,6 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [heitikender and PenitentTangent are able to get the current exploit for code execution on the 2023 RX but no key is dumped](https://discord.com/channels/469524606043160576/905950538816978974/1367923937723289742)
 * [RAV4 Prime News: TOYOTA_RAV4_PRIME.json NNLC model gen 1 merged into sunnypilot](https://discord.com/channels/469524606043160576/905950538816978974/1369157071865647125)
   * https://github.com/sunnypilot/sunnypilot/pull/850
-  * "Merged April 23, 2025. Recently confirmed by various 2021 and 2023 RAV4 Prime SE and XSE owners to significantly improve the quality of NNLC lat control. Within the limited range of Toyota EPS torque it feels smoother and more confident in curves. Collecting rlogs to train the gen 2 model to improve it even further. SP rewrite branches now work extremely well for RAV4 Prime. See that Discord for details."
-  * "The 2021-2023 Sienna is currently fuzzy matching to TOYOTA_RAV4_TSS2.json (2019-2021 RAV4) which is not a good match. If Sienna owners can collaborate on rlogs containing a wide variety of curves at all speeds and somebody to feed it into the NNLC tuning scripts they might be able to achieve a similar significant improvement to lat control. "
 
 ---
 
