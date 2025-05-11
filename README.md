@@ -471,6 +471,8 @@ If you acknowledge the warning above and are still looking to try a fork that su
         <ul>
           <li>Pre-built version of `sunnypilot/master-new`</li>
           <li>Model switcher to easily switch between various models</li>
+          <li>NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna</li>
+          <li>Ships the same latest improvements as nightly-dev (with the same risk of breaking on rare occasions).</li>
         </ul>
       </td>
     </tr>
