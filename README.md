@@ -36,6 +36,15 @@ openpilot, in order to control the steering or latitude, needs to be able to man
 
 There is a `STEERING_LKA`-ish message and more in some new Toyotas that currently has an "authentication code" scheme appended to the end. The algorithm and security system for this "authentication code" is somewhat known for certain vehicles but requires a key that is unique to each vehicle to be extracted or smuggled out of the vehicle (https://icanhack.nl/blog/secoc-key-extraction/). Not all vehicles are able to have their keys extracted with what is currently known. Without the key or knowledge of the system, third parties like comma and users cannot control the vehicle. While vehicles that have had their keys smuggled out are currently working with openpilot.
 
+### Unresolved Mysteries
+
+The following is not comprehensive.
+
+* The exact details of how the process of how Toyota's tools communicate with the vehicle and their servers, and how the key is updated for multiple ECUs is still not fully known or experimented with. A high level overview of the process is known, but not the exact details.
+  * Could a simulation of an extraneous "blank" vulnerable ECU into the system be tacked onto the communication with Toyota to extract the key?
+  * There's something with Master ECUs and Slave ECUs here.
+* The 2023 US made ICE Corolla (VIN starts with `5`) is a TSS 3.0 vehicle that does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. No one has come by to show what TSS3 without TSK looks like. It's not a rare vehicle so it's quite unknown why no one has come by yet.
+
 ---
 
 ## Cars
