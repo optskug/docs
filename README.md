@@ -45,11 +45,13 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because comma.ai (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 * 2021-2023 RAV4 Prime
-  * Upstreamed into openpilot's master branch.
+  * All Trims supported
+  * Toyota Harness A
   * Early 2024 MY situation ala Early 2024 MY Sienna unknown.
   * The compatibility status of the RAV4 Hybrid is not relevant to the Prime/PHEV. They're different vehicles.
 * 2021-2023 Sienna Hybrid
-  * Upstreamed into openpilot's master branch.
+  * All Trims supported
+  * Toyota Harness A
   * Early 2024 MY might work? Currently too few data points to determine cutoff
     https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
     * Check driver door jam to get month and year. It's Month/Year
@@ -61,20 +63,23 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
       * [sadmenmen (Sienna made in PRC)](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932) - 04/24
       * grb5 - 09/24
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
+  * All Trims supported
+  * Toyota Harness A
   * Dataflash dump hack works as the key is not in the same address as RAV4 Prime in program memory
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
   * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach
-  * openpilot currently working on frogpilot fork and upstream comma openpilot.
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
     * Experimental work in disabling the radar has shown this does is not enough to let openpilot control longitudinal.
   * Not sold in the USA, but is in Australia, Japan, and Europe
   * Only one guy using it in Japan, unfortunately. Help double the population!
     * Another vehicle, not a daily driver, but an academic study specimen, has their key dumped in France.
 * 2021 GR Yaris (EUDM/JDM/MXDM)
+  * All Trims supported
+  * Toyota Harness A
   * Memory dump hack works but the key is not in the same address as RAV4 Prime.
   * Same hardware as Hybrid Yaris with Continental Radar + Camera
   * Manual Transmission
-  * One user in Poland at the moment.
+  * One user in Poland at the moment. lx93.
   * WIP
 
 #### Notes
