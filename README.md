@@ -182,10 +182,10 @@ With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehic
 * 2021 Lexus RC
   * TSS2
   * No TSK
-* 2022-2025 Lexus RC
+* 2022, 2024-2025 Lexus RC
   * TSS2.5
   * No TSK
-  * 2023 WIP
+  * No one has tried
 * 2020 Lexus IS
   * TSS+
   * No one has tried
