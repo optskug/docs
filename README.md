@@ -585,7 +585,9 @@ In its place are more specific community bounties:
     * https://discord.com/channels/469524606043160576/1310778132478955540/1367854050103529524
   * Raised to 3000 EUR
     * https://discord.com/channels/469524606043160576/905950538816978974/1368164880489775185
-
+* ecman. for some Lexus RX
+  * 1000 USD
+  * https://discord.com/channels/469524606043160576/905950538816978974/1374020440711762042
 ## Pictures of TSK'd and non-TSK'd Camera ECUs
 
 FWIW the outside of the ECU Security Key camera of a Rav4 Prime looks the same as a non-ECU Security Camera of a Corolla or Corolla Hatchback.
@@ -1364,6 +1366,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [heitikender and PenitentTangent are able to get the current exploit for code execution on the 2023 RX but no key is dumped](https://discord.com/channels/469524606043160576/905950538816978974/1367923937723289742)
 * [RAV4 Prime News: TOYOTA_RAV4_PRIME.json NNLC model gen 1 merged into sunnypilot](https://discord.com/channels/469524606043160576/905950538816978974/1369157071865647125)
   * https://github.com/sunnypilot/sunnypilot/pull/850
+* [1000 USD added to Lexus RX 2023 bounty](https://discord.com/channels/469524606043160576/1310778132478955540/1369157071865647125)
+* [geohot comments on CAN BUS encryption/validation in general](https://www.reddit.com/r/Comma_ai/comments/1kpuvbx/comment/mt26nzn/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+  * "Our mission is to solve self driving cars. Aka design software capable of driving a car better than a human. There's plenty of cars that are controllable enough for what we are doing. We don't really care about the encrypted ones. If they all get encrypted, we'll just buy used cars and so can you."
+  * "The truth about the whole encryption thing is that it's not even on our priority list, and every time I see more FUD about it I push it even lower."
 
 ---
 
