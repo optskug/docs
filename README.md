@@ -459,6 +459,21 @@ If you acknowledge the warning above and are still looking to try a fork that su
         </td>
     </tr>
     <tr>
+      <td><code>alexandresato/personal3</code>  <br/>
+        (a.k.a SatoPilot)
+      </td>
+      <td>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> Yes from community (MADS from Spektor56) <br/>
+        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
+        <ul>
+          <li>First fork to get long!</li>
+          <li>Very quick stop-and-go response</li>
+          <li><code>alexandresato/extract_secoc_key_btn</code> includes a TSK key extract button and is rebased with <code>personal3</code> often.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td><code>commaai/nightly-dev</code></td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
