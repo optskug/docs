@@ -1396,7 +1396,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### June 2025
 
 * [More comments from geohot](https://www.reddit.com/r/Comma_ai/comments/1l271c2/comment/mvsoj94/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-  * Our mission is solving self driving cars, improving the models and the software. That's where we are focusing the full resources of the team, we just don't care that much about encryption. To comma the AI and driving quality is the interesting problem, the security isn't. Buy a different car, or break the encryption yourself (you have all the tools).
+  * "Our mission is solving self driving cars, improving the models and the software. That's where we are focusing the full resources of the team, we just don't care that much about encryption. To comma the AI and driving quality is the interesting problem, the security isn't. Buy a different car, or break the encryption yourself (you have all the tools)."
 
 ---
 
