@@ -263,6 +263,13 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 ![](img/v2.nrtd1.jpg) ![](img/v2.nrtd2.jpg)
 
+> [!CAUTION]
+> The 12V battery will die in 10 minutes. Turn off the A/C and never stay on this mode for more than 5 minutes at a time. After 5 minutes, start the engine and leave it running for 5 minutes before trying again.
+>
+> The 12V battery is not your hybrid driving battery. It doesn't matter that your car is charged to 100%.
+>
+> THIS IS IMPORTANT! Many people had to jump the car, so I'm telling you. Please listen. Do not stay on this mode for more than 5 minutes.
+
 <details><summary>Troubleshooting</summary>
 
 1. Some cars refer to `Not Ready To Drive` mode as `IGNITION ON` mode while others refer to it as `POWER ON` mode. Regardless of what your car calls it, get on the mode that says `Not Ready To Drive`.
