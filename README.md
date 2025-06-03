@@ -1393,6 +1393,11 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "Our mission is to solve self driving cars. Aka design software capable of driving a car better than a human. There's plenty of cars that are controllable enough for what we are doing. We don't really care about the encrypted ones. If they all get encrypted, we'll just buy used cars and so can you."
   * "The truth about the whole encryption thing is that it's not even on our priority list, and every time I see more FUD about it I push it even lower."
 
+### June 2025
+
+* [More comments from geohot](https://www.reddit.com/r/Comma_ai/comments/1l271c2/comment/mvsoj94/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+  * Our mission is solving self driving cars, improving the models and the software. That's where we are focusing the full resources of the team, we just don't care that much about encryption. To comma the AI and driving quality is the interesting problem, the security isn't. Buy a different car, or break the encryption yourself (you have all the tools).
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
