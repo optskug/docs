@@ -61,6 +61,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
 * 2021-2023 Sienna Hybrid
   * All Trims supported
   * Toyota Harness A
+  * Not applicable to 2023+ Sienna (PRC)
   * Early 2024 MY might work? Currently too few data points to determine cutoff
     https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
     * Check driver door jam to get month and year. It's Month/Year
@@ -146,6 +147,7 @@ Car hackers, we need your help with these.
   * New 02 ~~bootloader~~[^4] seen
 * 2024+ RAV4 in Europe (techinfo)
 * 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
+* 2023+ Sienna (PRC)
 * 2024+ Sienna
   * TSS 2.0
   * Key at least not at the same location as other RAV4 Prime
@@ -1397,6 +1399,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [More comments from geohot](https://www.reddit.com/r/Comma_ai/comments/1l271c2/comment/mvsoj94/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
   * "Our mission is solving self driving cars, improving the models and the software. That's where we are focusing the full resources of the team, we just don't care that much about encryption. To comma the AI and driving quality is the interesting problem, the security isn't. Buy a different car, or break the encryption yourself (you have all the tools)."
+* [hl.elias_44035 is unable to get their Sienna in the PRC working. It was made in December 2022 and is likely a 2023 model.](https://discord.com/channels/469524606043160576/905950538816978974/1379612874942709780)
 
 ---
 
