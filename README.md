@@ -224,9 +224,11 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 At home, sitting next to your router, turn on C3X with your phone charger. Ignore the low voltage warning.
 
-Choose `Custom Software` and enter the URL `tsk.lvin.ca`
+Choose `Custom Software` and enter the URL `optskug/tskm`
 
-![](img/v3.install.jpg)
+![](img/v4.install.1.jpg)
+
+![](img/v4.install.2.jpg)
 
 ![](img/v3.tsk-manager.home.jpg)
 
@@ -236,8 +238,8 @@ Unplug the power to turn off the device.
 
 1. A normal phone or laptop charger works fine. If not, USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
 2. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
-3. If your internet is slow, the installation could get stuck at 98% and then on the comma logo. The installation is still continuing on the background so give it up to 10 additional minutes before giving up and trying again.
-4. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install `tsk.lvin.ca`
+3. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `commaai/nightly-dev` manually instead of using TSK Manager.
+4. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install `optskug/tskm`
 </details>
 
 ### Step 2. Install the hardware
@@ -303,9 +305,10 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 1. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
 2. In rare cases, `TSK Extractor` may hit an unexpected error.
-![](img/v3.ext-unknown.jpg)
+![](img/v3.ext-unknown.jpg)  
   The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
-3. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
+3. Run `TSK Extractor` within 30 seconds of putting the car in `Not Ready To Drive` mode. If the car stays on that mode for a long time the extractor no longer works.
+4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
 </details>
 
 ### Step 5. Install `commaai/nightly-dev`
@@ -316,7 +319,7 @@ Go to the `Reboot Menu` and `Install commaai/nightly-dev`.
 
 `commaai/nightly-dev` is the only branch from comma.ai with TSK support.
 
-![](img/v3.reboot.jpg)
+![](img/v4.reboot.jpg)
 
 <details><summary>Troubleshooting</summary>
 
@@ -403,7 +406,7 @@ Redo [Step 4B-4. Install the security key & Reboot](https://github.com/optskug/d
 
 ### Method 3. Uninstall openpilot, install the key using `TSK Manager`, and install openpilot
 
-Follow [Step 1. Install TSK Manager](#step-1-install-tsk-manager) to install `TSK Manager` via the URL `tsk.lvin.ca`
+Follow [Step 1. Install TSK Manager](#step-1-install-tsk-manager) to install `TSK Manager` via the URL `optskug/tskm`
 
 No need to go to the car. Run `TSK Keyboard`. Use it to type in your key and install.
 
