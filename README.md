@@ -1404,6 +1404,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "Our mission is solving self driving cars, improving the models and the software. That's where we are focusing the full resources of the team, we just don't care that much about encryption. To comma the AI and driving quality is the interesting problem, the security isn't. Buy a different car, or break the encryption yourself (you have all the tools)."
 * [hl.elias_44035 is unable to get their Sienna in the PRC working. It was made in December 2022 and is likely a 2023 model.](https://discord.com/channels/469524606043160576/905950538816978974/1379612874942709780)
 * [Some PRC users discuss some services that offer to re-key. Unfortunately, it still seems that getting a key is not possible, even with some insider Chinese Toyota (FAW) knowledge.](https://discord.com/channels/469524606043160576/905950538816978974/1382203847661064345)
+* [More NNLC improvements land in SP for RAV4 Prime users.](https://github.com/sunnypilot/sunnypilot/pull/925)
+  * ["For these finely tuned NNLC models for Toyota we recommend TR7 model. For reasons we don't understand it seems to be vastly superior than any other model at keeping centered in lane and steering with precision. Nothing else comes close." (SP Discord)](https://discord.com/channels/880416502577266699/1371352826625785907)
 
 ---
 
