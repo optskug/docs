@@ -1406,6 +1406,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [Some PRC users discuss some services that offer to re-key. Unfortunately, it still seems that getting a key is not possible, even with some insider Chinese Toyota (FAW) knowledge.](https://discord.com/channels/469524606043160576/905950538816978974/1382203847661064345)
 * [More NNLC improvements land in SP for RAV4 Prime users.](https://github.com/sunnypilot/sunnypilot/pull/925)
   * ["For these finely tuned NNLC models for Toyota we recommend TR7 model. For reasons we don't understand it seems to be vastly superior than any other model at keeping centered in lane and steering with precision. Nothing else comes close." (SP Discord)](https://discord.com/channels/880416502577266699/1371352826625785907)
+* [SoLstun (6duda9) has a 2023 US-made Corolla with a VIN that starts with 5 and may be up for a car port attempt. Unfortunately, they are also busy in July but may be able to assist later.](https://discord.com/channels/469524606043160576/905950538816978974/1386761726065901638)
 * [geohot: "Remember, our goal is solving self driving cars, not anything else. It's important to stay focused on the mission. Solving Toyota security will not help with the mission, but we strongly encourage the community to solve it."](https://www.reddit.com/r/Comma_ai/comments/1lfmcew/comment/myxmnja/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 ---
