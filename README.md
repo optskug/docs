@@ -307,7 +307,7 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 1. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
 2. In rare cases, `TSK Extractor` may hit an unexpected error.
-![](img/v3.ext-unknown.jpg)  
+![](img/v3.ext-unknown.jpg)
   The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
 3. Run `TSK Extractor` within 30 seconds of putting the car in `Not Ready To Drive` mode. If the car stays on that mode for a long time the extractor no longer works.
 4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
@@ -1406,6 +1406,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [Some PRC users discuss some services that offer to re-key. Unfortunately, it still seems that getting a key is not possible, even with some insider Chinese Toyota (FAW) knowledge.](https://discord.com/channels/469524606043160576/905950538816978974/1382203847661064345)
 * [More NNLC improvements land in SP for RAV4 Prime users.](https://github.com/sunnypilot/sunnypilot/pull/925)
   * ["For these finely tuned NNLC models for Toyota we recommend TR7 model. For reasons we don't understand it seems to be vastly superior than any other model at keeping centered in lane and steering with precision. Nothing else comes close." (SP Discord)](https://discord.com/channels/880416502577266699/1371352826625785907)
+* [geohot: "Remember, our goal is solving self driving cars, not anything else. It's important to stay focused on the mission. Solving Toyota security will not help with the mission, but we strongly encourage the community to solve it."](https://www.reddit.com/r/Comma_ai/comments/1lfmcew/comment/myxmnja/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 ---
 
