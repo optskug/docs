@@ -69,8 +69,9 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
     * Working
       * Gako - 10/23
     * Not Working
-      * samueljsg - 12/23
-      * [sadmenmen (Sienna made in PRC)](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932) - 04/24
+      * hl.elias_44035 (Sienna from PRC) - 12/22
+      * samueljsg - 12/23      
+      * [sadmenmen (Sienna from PRC)](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932) - 04/24
       * grb5 - 09/24
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * All Trims supported
