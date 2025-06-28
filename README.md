@@ -244,6 +244,7 @@ Unplug the power to turn off the device.
 2. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
 3. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `commaai/nightly-dev` manually instead of using TSK Manager.
 4. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install `optskug/tskm`
+5. Sometimes the installer won't even proceed. Instead of Custom Software, install comma openpilot, then uninstall it through the Settings menu, and then try again.
 </details>
 
 ### Step 2. Install the hardware
