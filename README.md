@@ -30,7 +30,7 @@
 
 ## Background
 
-tl;dr: Toyota started to use cryptographical signatures to block openpilot (and other hacks). Some smart people in the industry hacked the signatures for _some_ cars, but not all cars.
+tl;dr: Toyota started to use cryptographical signatures to block openpilot (and other hacks). Some smart people in the industry hacked the signatures for _some_ cars, but not all cars. Nobody is known to be working on the issue at the moment.
 
 openpilot, in order to control the steering or latitude, needs to be able to man-in-the-middle the steering control messages used by the lane keep assist system. It blocks the original steering control messages and replaces them with its own. Messages originally come from the forward-facing camera, which is also known as the "Forward Recognition Camera" or "Object Recognition Camera" in Toyota vehicles. The camera is responsible for the lane keep assist in Toyota vehicles.
 
