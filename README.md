@@ -72,7 +72,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
       * Gako - 10/23
     * Not Working
       * hl.elias_44035 (Sienna from PRC) - 12/22
-      * samueljsg - 12/23      
+      * samueljsg - 12/23
       * [sadmenmen (Sienna from PRC)](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932) - 04/24
       * grb5 - 09/24
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
@@ -312,8 +312,10 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 1. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
 2. In rare cases, `TSK Extractor` may hit an unexpected error.
-![](img/v3.ext-unknown.jpg)
-  The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
+
+   ![](img/v3.ext-unknown.jpg)
+
+   The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
 3. Run `TSK Extractor` within 30 seconds of putting the car in `Not Ready To Drive` mode. If the car stays on that mode for a long time the extractor no longer works.
 4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
 </details>
