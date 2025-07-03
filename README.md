@@ -36,6 +36,8 @@ openpilot, in order to control the steering or latitude, needs to be able to man
 
 There is a `STEERING_LKA`-ish message and more in some new Toyotas that currently has an "authentication code" scheme appended to the end. The algorithm and security system for this "authentication code" is somewhat known for certain vehicles but requires a key that is unique to each vehicle to be extracted or smuggled out of the vehicle (https://icanhack.nl/blog/secoc-key-extraction/). Not all vehicles are able to have their keys extracted with what is currently known. Without the key or knowledge of the system, third parties like comma and users cannot control the vehicle. While vehicles that have had their keys smuggled out are currently working with openpilot.
 
+At the moment, nobody is known to be working on the issue beyond what was done by Willem and Greg. Newer vehicles other than the ones on this list are not known to be working with the existing exploits discovered and built by them to dump their keys.
+
 ### Unresolved Mysteries
 
 The following is not comprehensive.
