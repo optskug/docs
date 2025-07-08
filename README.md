@@ -113,7 +113,7 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * Uses TSS 3.0 but does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows. This is still of great interest to the Toyota Security Key / SecOC efforts as it may provide better insight into the TSS 3.0 system without the key complication.
   * Note that this is not the same as the 2023 TMC/JP-made Corolla or the 2024+ Corolla. It happens to be applicable to a single year of US-made Corolla.
 * 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
-  * Brute force script may work.
+  * Brute force script may work (all guessing), but probably not on 2024+ models. Nobody has tried with earlier models.
 * 2022+ GR Yaris (EUDM/JDM/MXDM)
   * Unknown
 
