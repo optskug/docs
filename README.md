@@ -38,6 +38,8 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 At the moment, nobody is known to be working on the issue beyond what was done by Willem and Greg. Newer vehicles other than the ones on this list are not known to be working with the existing exploits discovered and built by them to dump their keys.
 
+There has been some primordial research on firmware modification to disable the security system, but it is not known if this is possible or not.
+
 ### Unresolved Mysteries
 
 The following is not comprehensive.
@@ -46,6 +48,7 @@ The following is not comprehensive.
   * Could a simulation of an extraneous "blank" vulnerable ECU into the system be tacked onto the communication with Toyota to extract the key?
   * There's something with Master ECUs and Slave ECUs here.
 * The 2023 US made ICE Corolla (VIN starts with `5`) is a TSS 3.0 vehicle that does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. No one has come by to show what TSS3 without TSK looks like. It's not a rare vehicle so it's quite unknown why no one has come by yet.
+* What might a firmware mod approach look like? Is it possible to flash a custom firmware that disables SecOC?
 
 ---
 
@@ -162,7 +165,7 @@ Car hackers, we need your help with these.
 * 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497)
   * TSS 2.0
   * No known ~~bootloader~~[^4] exploit execution
-  * User ThisGuy has an extra rack on the bench. No known progress.
+  * User ThisGuy has an extra rack on the bench. Sent to Willem for further analysis. Uses HSM, possible firmware mod approach to disable SecOC in planning. See July 2025 update below.
   * 04 ~~bootloader~~[^4]
 * 2021+ Venza
   * Key at least not at the same location as the RAV4 Prime
@@ -1415,6 +1418,13 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * ["For these finely tuned NNLC models for Toyota we recommend TR7 model. For reasons we don't understand it seems to be vastly superior than any other model at keeping centered in lane and steering with precision. Nothing else comes close." (SP Discord)](https://discord.com/channels/880416502577266699/1371352826625785907)
 * [SoLstun (6duda9) has a 2023 US-made Corolla with a VIN that starts with 5 and may be up for a car port attempt. Unfortunately, they are also busy in July but may be able to assist later.](https://discord.com/channels/469524606043160576/905950538816978974/1386761726065901638)
 * [geohot: "Remember, our goal is solving self driving cars, not anything else. It's important to stay focused on the mission. Solving Toyota security will not help with the mission, but we strongly encourage the community to solve it."](https://www.reddit.com/r/Comma_ai/comments/1lfmcew/comment/myxmnja/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+### July 2025
+
+* [The 2021 Venza is confirmed to still be using the HSM or updated firmware.](https://discord.com/channels/469524606043160576/905950538816978974/1394057771254546503)
+* [willem: "Quick update from my side. @ThisGuy sent me a 2022 Tundra EPS to look at. It has a weird redundant architecture with 2x RH850 on the PCB, and the exploit didn't work out of the box. After modifying my scripts a bit I was able to get my exploit to run. Unfortunately it's using the HSM."](https://discord.com/channels/469524606043160576/905950538816978974/1394067422566416405)
+  * "But during this process I found that there is a TSB for the 2022 Tundra EPS (T-SB-0069-22). This means you can download a .cuw file (T-0035-22.cuw) containing the firmware."
+  * "The most interesting part of this is actually the flash driver that's uploaded before flashing. Having this file will help tremendously if we want to go the route of flashing custom firmware that disables SecOC."
 
 ---
 
