@@ -170,7 +170,7 @@ Car hackers, we need your help with these.
 * 2021+ Venza
   * Key at least not at the same location as the RAV4 Prime
   * Brute force efforts to find key location TBD
-  * Has a 02 ~~bootloader~~[^4] though from one sample. Strange for this vintage? Maybe another should try.
+  * Has a 02 ~~bootloader~~[^4] though from two 2021 samples.
 * 2024+ Lexus GX[^3]
 * 2022+ Lexus LS, LX, NX[^3]
 * 2023+ Lexus RX, RZ[^3]
