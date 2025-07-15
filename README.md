@@ -1425,6 +1425,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [willem: "Quick update from my side. @ThisGuy sent me a 2022 Tundra EPS to look at. It has a weird redundant architecture with 2x RH850 on the PCB, and the exploit didn't work out of the box. After modifying my scripts a bit I was able to get my exploit to run. Unfortunately it's using the HSM."](https://discord.com/channels/469524606043160576/905950538816978974/1394067422566416405)
   * "But during this process I found that there is a TSB for the 2022 Tundra EPS (T-SB-0069-22). This means you can download a .cuw file (T-0035-22.cuw) containing the firmware."
   * "The most interesting part of this is actually the flash driver that's uploaded before flashing. Having this file will help tremendously if we want to go the route of flashing custom firmware that disables SecOC."
+  * "could this easily open the door to other cars? or is it pretty tundra specific from what we know" - spanconstant5
+    * "This flash driver should be applicable to all cars"
 
 ---
 
