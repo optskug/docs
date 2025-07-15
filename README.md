@@ -6,6 +6,12 @@
 
 [![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c%26cellRange%3DA1)](https://docs.google.com/spreadsheets/d/1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c/edit#gid=0&range=A1)[^2]
 
+The [comma.ai Discord](https://discord.comma.ai) isn't really a good place to store _answers_ or guidance to questions about the situation with Toyota's TSK/ECU Security Key/SecOC and openpilot.
+Discord's search is terrible, and the content inside of it isn't accessible to search engines.
+This is an attempt to document some of the discussion and information about the situation with Toyota's TSK/ECU Security Key/SecOC and openpilot in a more accessible way.
+
+This document is a bit long, you may want to put its contents into your 🤖 AI assistant of choice, such as [ChatGPT](https://chat.openai.com/chat), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com), and so on to ask it questions about the contents of this document.
+
 ---
 
 ## Table of Contents
