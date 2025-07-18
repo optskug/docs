@@ -69,7 +69,7 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
   * Toyota Harness A
   * Early 2024 MY situation like Early 2024 MY Sienna unknown.
   * The compatibility status of the RAV4 Hybrid is not relevant to the Prime/PHEV. They're different vehicles.
-* 2021-2023 Sienna Hybrid
+* 2021-2023 Sienna Hybrid (USDM), 2021-2022 Sienna Hybrid (PRC)
   * All Trims supported
   * Toyota Harness A
   * Not applicable to 2023+ Sienna (PRC)
@@ -78,12 +78,17 @@ These cars can run openpilot but are not listed on https://comma.ai/vehicles or 
     * Check driver door jam to get month and year. It's Month/Year
       * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
     * Working
-      * Gako - 10/23
+      * USDM
+        * Gako - 10/23
+      * PRC
+        * [aivordin's acquaintance - 03/22](https://discord.com/channels/469524606043160576/905950538816978974/1395329561297817731)
     * Not Working
-      * hl.elias_44035 (Sienna from PRC) - 12/22
-      * samueljsg - 12/23
-      * [sadmenmen (Sienna from PRC)](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932) - 04/24
-      * grb5 - 09/24
+      * USDM
+        * samueljsg - 12/23
+        * grb5 - 09/24
+      * PRC
+        * hl.elias_44035 - 12/22
+        * [sadmenmen - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932)
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * All Trims supported
   * Toyota Harness A
