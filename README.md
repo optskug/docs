@@ -148,8 +148,8 @@ Car hackers, we need your help with these.
   * Mentioned in Willem's blog post.
 * 2024+ Corolla, All origins.
 * 2023+ Crown
-* 2024+ Grand Highlander ICE and Hybrid[^3]
-* 2024 Highlander ICE and Hybrid
+* 2024+ Grand Highlander ICE and Hybrid[^3], 2024 Crown Kluger ICE and Hybrid (PRC, elsewhere?)
+* 2024 Highlander ICE and Hybrid,
   * TSS 2.0
   * Known to be not working.
   * Memory can be dumped but the key is not in visible memory.
