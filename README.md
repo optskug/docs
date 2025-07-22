@@ -53,7 +53,7 @@ The following is not comprehensive.
 * The exact details of how the process of how Toyota's tools communicate with the vehicle and their servers, and how the key is updated for multiple ECUs is still not fully known or experimented with. A high level overview of the process is known, but not the exact details.
   * Could a simulation of an extraneous "blank" vulnerable ECU into the system be tacked onto the communication with Toyota to extract the key?
   * There's something with Master ECUs and Slave ECUs here.
-* The 2023 US made ICE Corolla (VIN starts with `5`) is a TSS 3.0 vehicle that does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. No one has come by to show what TSS3 without TSK looks like. It's not a rare vehicle so it's quite unknown why no one has come by yet.
+* The 2023 US made ICE Corolla (VIN starts with `5`) is a TSS 3.0 vehicle that does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. No one has come by to show what TSS3 without TSK looks like. One person has come by but they don't have that much time and ... that's it? Just one person, how weird.
 * What might a firmware mod approach look like? Is it possible to flash a custom firmware that disables SecOC?
 
 ---
