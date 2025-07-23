@@ -257,7 +257,7 @@ Unplug the power to turn off the device.
 <details><summary>Troubleshooting</summary>
 
 1. A normal phone or laptop charger works fine. If not, USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
-1. Sometimes the installer won't proceed or get stuck around 10% and restart. Instead of Custom Software, install comma openpilot, uninstall it through the Settings menu, and then try again.
+1. Sometimes the installer won't proceed or gets stuck around 10% and restarts. Instead of Custom Software, install comma openpilot, uninstall it through the Settings menu, and then try again.
 1. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
 1. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `commaai/nightly-dev` manually instead of using TSK Manager.
 1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install `optskug/tskm`
