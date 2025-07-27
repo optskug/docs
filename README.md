@@ -62,7 +62,11 @@ The following is not comprehensive.
 
 ### 🟢 Successfully running openpilot
 
-These cars can run openpilot but are not listed on https://comma.ai/vehicles or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because comma.ai (the company) understandably doesn't want to own the security key hacking process. Follow the [Setup Guide](#setup-guide) below and you'll have it working.
+These cars can run openpilot but are not listed on https://comma.ai/vehicles#toyota or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because comma.ai (the company) understandably doesn't want to own the security key hacking process.
+
+If it is on https://comma.ai/vehicles#toyota, then it's not in question and is supported by comma.ai for openpilot.
+
+Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 * 2021-2023 RAV4 Prime
   * All Trims supported
