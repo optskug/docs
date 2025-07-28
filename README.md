@@ -1443,6 +1443,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "The most interesting part of this is actually the flash driver that's uploaded before flashing. Having this file will help tremendously if we want to go the route of flashing custom firmware that disables SecOC."
   * "could this easily open the door to other cars? or is it pretty tundra specific from what we know" - spanconstant5
     * "This flash driver should be applicable to all cars"
+* [calvinspark notices that the Chinese August 2023 PRC Sienna which doesn't work for dumping has an 0x01 app identifier and a 0x02 bootloader identifier.](https://discord.com/channels/469524606043160576/905950538816978974/1399402947762327743)
 
 ---
 
