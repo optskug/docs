@@ -92,6 +92,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
         * grb5 - 09/24
       * PRC
         * hl.elias_44035 - 12/22
+        * [aivordin's acquaintance 2 - 08/23](https://discord.com/channels/469524606043160576/905950538816978974/1399314022829920286)
         * [sadmenmen - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932)
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * All Trims supported
