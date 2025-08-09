@@ -77,7 +77,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * All Trims supported
   * Toyota Harness A
   * Not applicable to 2023+ Sienna (PRC)
-  * Early 2024 MY (09/23 to 11/23) might work? Currently too few data points to determine cutoff
+  * Early 2024 MY (Built in 09/23 to 11/23 according to sticker) might work? Currently too few data points to determine cutoff
     https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
     * Check driver door jam to get month and year. It's Month/Year
       * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
