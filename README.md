@@ -188,7 +188,8 @@ Car hackers, we need your help with these.
   * Brute force efforts to find key location TBD
   * Has a 02 ~~bootloader~~[^4] though from two 2021 samples.
 * 2024+ Lexus GX[^3]
-* 2022+ Lexus LS, LX, NX[^3]
+* 2022+ Lexus LX, NX[^3]
+* 2023+ Lexus LS
 * 2023+ Lexus RX, RZ[^3]
 * 2024+ Lexus TX[^3]
 
