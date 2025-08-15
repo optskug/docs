@@ -68,7 +68,7 @@ If it is on https://comma.ai/vehicles#toyota, then it's not in question and is s
 
 Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
-* 2021-2023 RAV4 Prime
+* 2021-2023 RAV4 Prime/PHEV
   * All Trims supported
   * Toyota Harness A
   * Early 2024 MY situation like Early 2024 MY Sienna unknown.
