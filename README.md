@@ -1446,6 +1446,13 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
     * "This flash driver should be applicable to all cars"
 * [calvinspark notices that the Chinese August 2023 PRC Sienna which doesn't work for dumping has an 0x01 app identifier and a 0x02 bootloader identifier.](https://discord.com/channels/469524606043160576/905950538816978974/1399402947762327743)
 
+### August 2025
+
+* [ryleymcc, creator of the Mazda Torque Interceptor, discusses a bit about the Toyota Torque Interceptor (MT)](https://discord.com/channels/839295599928934430/936051750639665172/1405340646088380526)
+  * The connector for Toyota's EPS was found but unfortunately it is "protected". A 3D printed replacement is needed.
+  * The method used on the Mazda Torque Interceptors is non-appliable to Toyota as it is non-linear. Ripping the firmware may be needed to create a lookup table to "linearize" it.
+  * "its not too hard to dump it"
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
