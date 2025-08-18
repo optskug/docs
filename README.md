@@ -105,6 +105,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * Not sold in the USA, but is in Australia, Japan, and Europe
   * Only one guy using it in Japan, unfortunately. Help double the population!
     * Another vehicle, not a daily driver, but an academic study specimen, has their key dumped in France.
+    * ggajoch has dumped their key in Poland and is using it.
 * 2021 GR Yaris (EUDM/JDM/MXDM)
   * All Trims supported
   * Toyota Harness A
