@@ -1454,6 +1454,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * The connector for Toyota's EPS was found but unfortunately it is "protected". A 3D printed replacement is needed.
   * The method used on the Mazda Torque Interceptors is non-appliable to Toyota as it is non-linear. Ripping the firmware may be needed to create a lookup table to "linearize" it.
   * "its not too hard to dump it"
+* [ggajoch works in #dev-toyota-security for their Yaris's Long issues (SP)](https://discord.com/channels/880416502577266699/1326834259096371211/1408115978306322564)
 
 ---
 
