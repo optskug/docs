@@ -1450,11 +1450,13 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### August 2025
 
 * [Apparently the Combonation Meter Assembly or the Instrument cluster on a Corolla Hatchback (All JP Made) isn't covered under security key?](https://www.reddit.com/r/CorollaHatchback/s/QnkrnvYDu0)
+  * [Nevermind, it is. Without it, TSS3 won't work.](https://www.reddit.com/r/CorollaHatchback/comments/1mrhvac/comment/n9mkwdm/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * [ryleymcc, creator of the Mazda Torque Interceptor, discusses a bit about the Toyota Torque Interceptor (MT)](https://discord.com/channels/839295599928934430/936051750639665172/1405340646088380526)
   * The connector for Toyota's EPS was found but unfortunately it is "protected". A 3D printed replacement is needed.
   * The method used on the Mazda Torque Interceptors is non-appliable to Toyota as it is non-linear. Ripping the firmware may be needed to create a lookup table to "linearize" it.
   * "its not too hard to dump it"
 * [ggajoch works in #dev-toyota-security for their Yaris's Long issues (SP)](https://discord.com/channels/880416502577266699/1326834259096371211/1408115978306322564)
+* [Someone on reddit is documenting meter assembly swapping on Rav4s and there is a private swap of meters for the Rav4 Prime. They cannot share it as "it contains my credentials".](https://discord.com/channels/469524606043160576/905950538816978974/1407581549519437834)
 
 ---
 
