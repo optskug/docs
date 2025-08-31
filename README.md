@@ -343,6 +343,9 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 ### Step 5. Install `commaai/nightly-dev`
 
+> [!WARNING]
+> **Wherever `commaai/nightly-dev` is seen, C3 users should instead use Sunnypilot's `sunnypilot/staging-c3-new` wherever they see `commaai/nightly-dev`. comma dropped support for the C3 in their codebase. [This guide will be getting some updates to reflect this change and an issue has been made to track that.](https://github.com/optskug/docs/issues/51). C3X users should continue with `commaai/nightly-dev`.**
+
 Start your car's engine.
 
 Go to the `Reboot Menu` and `Install commaai/nightly-dev`.
@@ -1457,6 +1460,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "its not too hard to dump it"
 * [ggajoch works in #dev-toyota-security for their Yaris's Long issues (SP)](https://discord.com/channels/880416502577266699/1326834259096371211/1408115978306322564)
 * [Someone on reddit is documenting meter assembly swapping on Rav4s and there is a private swap of meters for the Rav4 Prime. They cannot share it as "it contains my credentials".](https://discord.com/channels/469524606043160576/905950538816978974/1407581549519437834)
+* [C3 support is removed from comma's codebase, this means the guide is temporarily unavailable for C3 users.](https://github.com/optskug/docs/issues/51)
 
 ---
 
