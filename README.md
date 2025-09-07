@@ -249,9 +249,11 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 ### Step 1. Install `TSK Manager`
 
-At home, sitting next to your router, turn on C3X with your phone charger. Ignore the low voltage warning.
+At home, sitting next to your router, turn on C3X with your phone charger.
 
 Choose `Custom Software` and enter the URL `optskug/tskm`
+
+If you have C3 (predecessor to C3X), enter `optskug/tskm-c3`
 
 ![](img/v4.install.1.jpg)
 
@@ -343,14 +345,13 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 ### Step 5. Install `commaai/nightly-dev`
 
-> [!WARNING]
-> **Wherever `commaai/nightly-dev` is seen, C3 users should instead use Sunnypilot's `sunnypilot/staging-c3-new` wherever they see `commaai/nightly-dev`. comma dropped support for the C3 in their codebase. [This guide will be getting some updates to reflect this change and an issue has been made to track that.](https://github.com/optskug/docs/issues/51). C3X users should continue with `commaai/nightly-dev`.**
-
 Start your car's engine.
 
 Go to the `Reboot Menu` and `Install commaai/nightly-dev`.
 
 `commaai/nightly-dev` is the only branch from comma.ai with TSK support.
+
+If you have C3, install `sunnypilot/staging-tici`. There are no branches from comma.ai with C3+TSK support, so SunnyPilot is your best option. If you have no idea what this means, come talk to us in [comma Discord](https://discord.comma.ai) at #toyota-security channel.
 
 ![](img/v4.reboot.jpg)
 
