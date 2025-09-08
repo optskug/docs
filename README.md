@@ -249,7 +249,7 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 ### Step 1. Install `TSK Manager`
 
-At home, sitting next to your router, turn on C3X with your phone charger.
+At home, sitting next to your router, turn on C3X with your phone charger. Ignore the low voltage warning.
 
 Choose `Custom Software` and enter the URL `optskug/tskm`
 
