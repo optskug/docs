@@ -1465,7 +1465,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 ### September 2025
 
-* The guide has been adjusted to to handle C3 and C3X users where possible.
+* [The guide has been adjusted to to handle C3 and C3X users where possible.](https://github.com/optskug/docs/issues/51)
 * [An attempt is made by tsuk1247 to dump the key on a 2025 Vellfire (TSS3) but it can't communicate/won't work.](https://discord.com/channels/469524606043160576/905950538816978974/1414826230712238231)
 
 ---
