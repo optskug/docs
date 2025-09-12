@@ -10,7 +10,13 @@ The [comma.ai Discord](https://discord.comma.ai) isn't really a good place to st
 Discord's search is terrible, and the content inside of it isn't accessible to search engines.
 This is an attempt to document some of the discussion and information about the situation with Toyota's TSK/ECU Security Key/SecOC and openpilot in a more accessible way.
 
-This document is a bit long, you may want to put its contents into your 🤖 AI assistant of choice, such as [ChatGPT](https://chat.openai.com/chat), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com), and so on to ask it questions about the contents of this document.
+> [!TIP]
+> This document is a bit long, you may want to put the URL of this document into your 🤖 AI assistant of choice to ask it questions about the contents of this document. Deepwiki is a good choice for querying with citations and references.
+>
+> Visit this button: [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/optskug/docs) about openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC!
+>
+> Of course, other AI assistants such as [ChatGPT](https://chat.openai.com/chat), [Claude](https://claude.ai/), or [Gemini](https://gemini.google.com) can also be used once you pass them the URL of this repository: https://github.com/optskug/docs
+>
 
 ---
 
