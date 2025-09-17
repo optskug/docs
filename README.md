@@ -462,9 +462,10 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 ## Forks
 
 > [!CAUTION]
-> Using forks present a real danger. Do your research!
+> Using forks presents a real danger. Do your research!
 >
-> Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). Please do not ask about forks outside of that channel.
+> Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760).<br/>
+> Please do not ask about forks outside of that channel.
 
 <table>
     <tr>
@@ -510,7 +511,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
       <td>
         <code>install.sunnypilot.ai/staging</code><br/>
         (a.k.a. sunnypilot)<br/>
-        <a href="https://discord.gg/sunnypilot">sunnypilot discord</a>
+        <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
@@ -528,7 +529,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
       <td>
         <code>frogpilot.download</code> <br/>
         (a.k.a. FrogPilot)<br/>
-        <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
+        <a href="https://discord.com/invite/frogpilot">FrogPilot Discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
@@ -542,13 +543,15 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
     </tr>
 </table>
 
-If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork!
+If you are installing a fork not included in the list above, find the fork author and ask the following.
 
 1. Is it for the latest C3X?
 2. Does it supports SecOC/TSK?
 3. Does it contain banned code?
 4. Does it meet the new regulations from comma?
 5. Is there anything to watch out for?
+
+If you can't find the author, don't install the fork!
 
 ---
 
