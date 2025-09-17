@@ -466,11 +466,6 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 >
 > Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). Please do not ask about forks outside of that channel.
 
-* If you're new, start with `commaai/nightly-dev` and use it for two weeks, to get a good baseline and debug any hardware issues.
-  * `commaai/nightly-dev` is the same as the latest official version with TSK + lateral-only support.
-  * Comma provides hardware support only with the comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
-* Some forks have their own Discord. Find them and ask questions there.
-
 <table>
     <tr>
         <td><strong>Install URL</strong></td>
