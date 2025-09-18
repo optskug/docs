@@ -547,7 +547,7 @@ If you are installing a fork not included in the list above, find the fork autho
 
 1. Does it meet the [safety standards from comma](https://github.com/commaai/openpilot/blob/master/docs/SAFETY.md#forks-of-openpilot)? Using a fork that doesn't meet the safety standards will get you banned from comma.ai servers.
 1. Is it for the latest C3X? A fork for an older device may [brick your C3X](https://discord.com/channels/771493367246094347/834826173795139584/1315136040020742185).
-1. Does it supports SecOC/TSK?
+1. Does it support SecOC/TSK?
 1. Does it contain banned code? Using a fork with banned code may get you [banned from comma.ai servers](https://discord.com/channels/469524606043160576/954493346250887168/1297991602710511728).
 1. Is there [anything](https://discord.com/channels/469524606043160576/616456819027607567/1166547952836300870) to [watch out](https://github.com/FrogAi/FrogPilot/blob/9751e9b03364fab843accf00b62af85adfef4feb/selfdrive/ui/soundd.py#L98) for?
 
