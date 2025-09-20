@@ -461,45 +461,15 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 ---
 ## Forks
 
-Forks may offer additional functionality or changes that comma openpilot may not offer or are unwilling to offer.
-
-You can totally have a good time with comma openpilot without using a fork too. You can also have a better time or a worse time with forks!
-
-### Which Fork Should I Use?
-
 > [!CAUTION]
-> Using forks present a real danger so do your research and understand what fork you are installing and what it does. Do not go down this path without research!
+> Using forks presents a real danger. Do your research!
 >
-> Some forks will brick your C3X. \
-> Some forks may not be made for the current C3X. \
-> comma may make changes to newly produced C3Xs that necessitate always running the newest comma openpilot and forks might brick them.
->
-> Some forks contain banned code. \
-> Using it will get you banned from using any comma.ai cloud resource or debugging. \
-> They will not restore access.
->
-> Some forks have nudgeless-lane-change. \
-> Simply clicking the turn signal will move your car to the next lane. \
-> Without any checks. \
-> Yes, it will drive into the car next to you.
->
-> Some forks play a blood-curdling goat scream at max volume randomly. 🐐
->
-> comma will not answer to support you if you're running forks until you restore back to comma openpilot.
-
-Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760). Please do not ask about forks outside of that channel.
-
-For all forks, you should read their README documentation as well.
-
-If you're new, please start with comma openpilot with `commaai/nightly-dev` and use it for two weeks. This is the same as the latest official version with only lateral support (with TSK support enabled). This will give you a good baseline to compare the other forks to and sort out any issues with the underlying hardware. Additionally, comma will only do/take bug or hardware support with comma openpilot which is critical for this period. The [bathtub curve of hardware reliability](https://en.wikipedia.org/wiki/Bathtub_curve) is very real.
-
-Then familiarize yourself with the communities through Discord for each fork you are looking to install. While the comma Discord may not offer any support for forks outside of basic support in their #custom-forks channel, a fork's Discord communities may or may not offer support for their fork's issues. Do not skip getting familiar with comma openpilot as you should have a basic understanding first.
-
-If you acknowledge the warning above and are still looking to try a fork that supports SecOC/TSK, the following are available to install at your own risk. Keep in mind that this page is community maintained and may not stay up to date so please send in changes/fixes, or notices of any inaccuracies:
+> Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760).<br/>
+> Please do not ask about forks outside of that channel.
 
 <table>
     <tr>
-        <td><strong>Fork</strong></td>
+        <td><strong>Install URL</strong></td>
         <td>
           <strong>Lat:</strong> Lateral support
           <br>
@@ -507,21 +477,6 @@ If you acknowledge the warning above and are still looking to try a fork that su
           <br>
           <strong>Long:</strong> Longitudinal support
         </td>
-    </tr>
-    <tr>
-      <td><code>alexandresato/personal3</code>  <br/>
-        (a.k.a SatoPilot)
-      </td>
-      <td>
-        <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> Yes from community (MADS from Spektor56) <br/>
-        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
-        <ul>
-          <li>First fork to get long!</li>
-          <li>Very quick stop-and-go response</li>
-          <li><code>alexandresato/extract_secoc_key_btn</code> includes a TSK key extract button and is rebased with <code>personal3</code> often.</li>
-        </ul>
-      </td>
     </tr>
     <tr>
       <td><code>commaai/nightly-dev</code></td>
@@ -538,17 +493,32 @@ If you acknowledge the warning above and are still looking to try a fork that su
       </td>
     </tr>
     <tr>
+      <td><code>alexandresato/personal3</code><br/>
+        (a.k.a SatoPilot)
+      </td>
       <td>
-        <code>sunnypilot/staging-c3-new</code> <br/>
-        (a.k.a sunnypilot) <br/>
-        <a href="https://discord.gg/sunnypilot">sunnypilot discord</a>
+        <strong>Lat:</strong> Yes from upstream <br/>
+        <strong>MADS:</strong> Yes from community (MADS from Spektor56) <br/>
+        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
+        <ul>
+          <li>First fork to get long!</li>
+          <li>Very quick stop-and-go response</li>
+          <li><code>alexandresato/extract_secoc_key_btn</code> includes a TSK key extract button and is rebased with <code>personal3</code> often.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>install.sunnypilot.ai/staging</code><br/>
+        (a.k.a. sunnypilot)<br/>
+        <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
         <strong>MADS:</strong> Yes from community (MADS original author) <br/>
         <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
         <ul>
-          <li>Pre-built version of `sunnypilot/master-new`</li>
+          <li>Pre-built version of `sunnypilot/master`</li>
           <li>Model switcher to easily switch between various models</li>
           <li>NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna</li>
           <li>Ships the same latest improvements as nightly-dev (with the same risk of breaking on rare occasions).</li>
@@ -557,47 +527,31 @@ If you acknowledge the warning above and are still looking to try a fork that su
     </tr>
     <tr>
       <td>
-        <code>chrispypatt/frogpilot-r4p</code> <br/>
-        (fork of FrogPilot) <br/>
-        <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
+        <code>frogpilot.download</code> <br/>
+        (a.k.a. FrogPilot)<br/>
+        <a href="https://discord.com/invite/frogpilot">FrogPilot Discord</a>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> Yes from community (AOL from FP) <br/>
-        <strong>Long:</strong> Yes from community (original author) <br/> <br/>
+        <strong>MADS:</strong> Yes from community (AOL original author) <br/>
+        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
         <ul>
-          <li>chrispypatt's fork with TSK long support.</li>
           <li>Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
           <li>‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.</li>
         </ul>
       </td>
     </tr>
-    <tr>
-      <td>
-        <code>optskug/SiennaFP</code> <br/>
-        (fork of FrogPilot) <br/>
-        <a href="https://discord.com/invite/frogpilot">FrogPilot discord</a>
-      </td>
-      <td>
-        <strong>Lat:</strong> Yes from community (from anrum) <br/>
-        <strong>MADS:</strong> Yes from community (AOL from FP) <br/>
-        <strong>Long:</strong> No <br/> <br/>
-        <ul>
-          <li>anrum's old fork of FP and first fork to support TSK lateral!</li>
-          <li>Includes a TSK keyboard with key caching</li>
-          <li>Includes auto key installer</li>
-          <li>Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
-        </ul>
-      </td>
-    </tr>
 </table>
 
-If you are installing a fork not included in the list above, find the fork author and ask the following. If you can't find the author, don't install the fork!
+If you are installing a fork not included in the list above, find the fork author and ask the following.
 
-1. Is it for the latest C3X?
-2. Does it supports SecOC/TSK?
-3. Does it contain banned code?
-4. Is there anything to watch out for?
+1. Does it meet the [safety standards from comma](https://github.com/commaai/openpilot/blob/master/docs/SAFETY.md#forks-of-openpilot)? Using a fork that doesn't meet the safety standards will get you banned from comma.ai servers.
+1. Is it for the latest C3X? A fork for an older device may [brick your C3X](https://discord.com/channels/771493367246094347/834826173795139584/1315136040020742185).
+1. Does it support SecOC/TSK?
+1. Does it contain banned code? Using a fork with banned code may get you [banned from comma.ai servers](https://discord.com/channels/469524606043160576/954493346250887168/1297991602710511728).
+1. Is there [anything](https://discord.com/channels/469524606043160576/616456819027607567/1166547952836300870) to [watch out](https://github.com/FrogAi/FrogPilot/blob/9751e9b03364fab843accf00b62af85adfef4feb/selfdrive/ui/soundd.py#L98) for?
+
+If you can't find the author, don't install the fork!
 
 ---
 
