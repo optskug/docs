@@ -13,7 +13,11 @@ This is an attempt to document some of the discussion and information about the 
 > [!TIP]
 > This document is a bit long, you may want to put the URL of this document into your 🤖 AI assistant of choice to ask it questions about the contents of this document. Deepwiki is a good choice for querying with citations and references.
 >
+> https://deepwiki.com/optskug/docs
+>
 > Visit this button: [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/optskug/docs) about openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC!
+>
+> You are encouraged to share deepwiki conversations links in Discord if you aren't sure it is interpreting this document correctly.
 >
 > Of course, other AI assistants such as [ChatGPT](https://chat.openai.com/chat), [Claude](https://claude.ai/), or [Gemini](https://gemini.google.com) can also be used once you pass them the URL of this repository: https://github.com/optskug/docs
 >
