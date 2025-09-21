@@ -15,6 +15,8 @@ This is an attempt to document some of the discussion and information about the 
 >
 > https://deepwiki.com/optskug/docs
 >
+> [![](./img/ai-deepwiki.png)](https://deepwiki.com/optskug/docs)
+>
 > Visit this button: [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/optskug/docs) about openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC!
 >
 > You are encouraged to share deepwiki conversations links in Discord if you aren't sure it is interpreting this document correctly.
