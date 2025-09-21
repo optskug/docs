@@ -84,7 +84,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * All Trims supported
   * Toyota Harness A
   * Early 2024 MY situation like Early 2024 MY Sienna unknown.
-  * The compatibility status of the RAV4 Hybrid is not relevant to the Prime/PHEV. They're different vehicles.
+  * The compatibility status of the RAV4 Hybrid or RAV4 ICE is not relevant to the Prime/PHEV. They're different vehicles.
 * 2021-2023 Sienna Hybrid (USDM), 2021-2022 Sienna Hybrid (PRC)
   * All Trims supported
   * Toyota Harness A
