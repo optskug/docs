@@ -402,8 +402,8 @@ Comma Power (OBD2 connector + long cable) is optional. It's not necessary for us
 __Pros__
 * Don't need to wait for C3X to boot up on a car start.
 * Auto-update to get the latest and greatest.
-* Upload logs automatically. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
-* Easier to SSH in to debug or fetch video clips via [op-relay-clipper](https://github.com/nelsonjchen/op-replay-clipper).
+* Upload logs and videos to [comma connect](https://connect.comma.ai/) automatically. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
+* Easier to SSH in to debug.
 
 __Cons__
 * Auto-updates may break.
