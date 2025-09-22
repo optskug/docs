@@ -374,20 +374,15 @@ If you have C3, install `sunnypilot/staging-tici`. There are no branches from co
 3. Openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
 </details>
 
-### Step 6. Calibrate & Clean up
+### Step 6. Calibrate & Validate
 
 C3X should show the 15mph calibration screen.
 
 ![](img/v3.calibrate.jpg)
 
-If you're able to calibrate and use openpilot to use the steering wheel (aka "lat support"), you can clean up the cables and put the covers back on.
+If you're able to calibrate and use openpilot to use the steering wheel (aka "lat support"), it's working!
 
-You're done! Congratulations!
-
-* `commaai/nightly-dev` can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
-
-
-* Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car, which allows you to upload logs and SSH in more easily. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
+`commaai/nightly-dev` can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
 
 <details><summary>Troubleshooting</summary>
 
@@ -396,7 +391,31 @@ You're done! Congratulations!
 3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
 </details>
 
-### Step 7. What's next?
+### Step 7. Clean up
+
+Put the covers back on, and you're done. Congratulations!
+
+Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car.
+
+<details><summary>Comma Power</summary>
+
+__Pros__
+* Don't need to wait for C3X to boot up on a car start.
+* Auto-update to get the latest and greatest.
+* Upload logs and videos to [comma connect](https://connect.comma.ai/) automatically. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
+* Easier to SSH in to debug.
+
+__Cons__
+* Auto-updates may break.
+* Some have experienced 12V battery drain.
+* More cables to manage.
+
+I (@calvinspark) don't use it because I hate even a remote possibility of a 12V battery issue.
+
+If you decide not to use it, bring C3X into your home to get updates. Note that an auto-update to v0.10.0 broke C3 users, so check Discord for compatilibity issues before a major version update.
+</details>
+
+### Step 8. What's next?
 
 #### Keep using `commaai/nightly-dev`
 
