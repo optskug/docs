@@ -599,6 +599,8 @@ The last known vote count from community observations:
 
 [![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM%26cellRange%3DBulkVoteCount)](https://docs.google.com/spreadsheets/d/1GOeN2ph9JLvOlwStZso988YPT-lILl7yZqFW8UPCFZM/edit#gid=0&range=BulkVoteCount)[^2]
 
+115/500 votes.
+
 In addition to their vote system, comma also has/had specific bounties up:
 
 * ["$5k if someone cracks it and upstreams RAV4 prime support -geohot (link currently broken)](https://discord.com/channels/469524606043160576/524328425415245827/839289683489062952)
