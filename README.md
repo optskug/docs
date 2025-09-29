@@ -1456,6 +1456,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [The guide has been adjusted to to handle C3 and C3X users where possible.](https://github.com/optskug/docs/issues/51)
 * [An attempt is made by tsuk1247 to dump the key on a 2025 Vellfire (TSS3) but it can't communicate/won't work.](https://discord.com/channels/469524606043160576/905950538816978974/1414826230712238231)
 * ["do we have any devlopments on the tundra EPS "? Willem: "No updates 🙁"](https://discord.com/channels/469524606043160576/905950538816978974/1417100272496283830)
+* [SecOC longitudinal control support has been merged into upstream comma openpilot/opendbc.](https://github.com/commaai/opendbc/pull/1385)
+  * Pull request by chrispypatt adds SecOC longitudinal control functionality to Toyota vehicles with TSK/SecOC security.
 
 ---
 
