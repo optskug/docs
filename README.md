@@ -936,6 +936,12 @@ btw i'd bet against toyota security coming to the 3 cheap cars, the chips to do 
 
 ### October 2022
 
+* [gsmdev posts about their experience with RE'ing Toyota ECUs](https://discord.com/channels/469524606043160576/905950538816978974/1025836706194268210)
+  * Me have experience with Toyota reverse engineering and CUW files.
+  * On fresh firmwares Toyota have fully change algorithm. On firmwares with SeedKey ; Nonce. They use AES CBC for encryption. And AES CMAC for final check. Inside PC software they convert SeedKey to 128 bit Array. This seed used for encrypt firmware. AES_ECB(BL_KEY, SeedKey, SessionKey)  - Take from bootloader BL_KEY 0x10 bytes inside firmware bootloader region and encrypt via AES_ECB with this key and input data SeedKey. Out from AES will be SessionKey. And this SessionKey used to encryption data with AES_CBC.
+  * About NONCE - it used On final stady after writing firmware. Is AES-CMAC of whole firmware update. After checking AES-CMAC bootloader write signature inside firmware region like it correct. If this will be not maked. Firmware will never run after reboot. Module will be allways in bootloader mode.
+  * About Compression i have never seen before CUW with compression. If some one have readed fullflash from module with support compressed update. I can help with reversing.
+  Also can help with reversing other parts.
 * [Remote starters with no key do exist on Toyota Security vehicles.](https://discord.com/channels/469524606043160576/905950538816978974/1029816408491692112)
 * [(RP Discord) In which a crew of people work through RE'ing some firmware on an EPS for their VWs.](https://discord.com/channels/660951518014341124/1026931406590447617/1034646246125735987)
 
@@ -1456,6 +1462,9 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [The guide has been adjusted to to handle C3 and C3X users where possible.](https://github.com/optskug/docs/issues/51)
 * [An attempt is made by tsuk1247 to dump the key on a 2025 Vellfire (TSS3) but it can't communicate/won't work.](https://discord.com/channels/469524606043160576/905950538816978974/1414826230712238231)
 * ["do we have any devlopments on the tundra EPS "? Willem: "No updates 🙁"](https://discord.com/channels/469524606043160576/905950538816978974/1417100272496283830)
+* [`denso12345`, replying to an ancient post by gsmdev](https://discord.com/channels/469524606043160576/905950538816978974/1421724831216304201)
+  * "Hi, in the CUW Calibration there some keys i try to understand the algorithm to decrypt the calibration as u say there is some keys in the calibration as this example"
+  * Along with a lot of dumps and decompiled code about Seed/Security Access.
 * [SecOC longitudinal control support has been merged into upstream comma openpilot/opendbc.](https://github.com/commaai/opendbc/pull/1385)
   * Pull request by chrispypatt adds SecOC longitudinal control functionality to Toyota vehicles with TSK/SecOC security.
 
