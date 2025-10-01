@@ -42,6 +42,7 @@ This is an attempt to document some of the discussion and information about the 
    * [Key Installation](#key-installation)
    * [Advanced Topic: Run the exploit using SSH manually](#advanced-topic-run-the-exploit-using-ssh-manually)
    * [Forks](#forks)
+* [Discords of Note](#discords-of-note)
 * [Current History](#current-history)
 
 ---
@@ -580,6 +581,22 @@ If you can't find the author, don't install the fork!
 
 ---
 
+## Discords of Note
+
+Most if not all Discord links are to the comma.ai Discord accessible with an invite from https://discord.comma.ai unless otherwise noted. These other Discords include:
+
+* Retropilot (RP): https://discord.gg/GzWegVa.
+* Sunnypilot's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV.
+* Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): https://discord.gg/rRB7eDKccy
+* MoreTorque (MT): https://discord.gg/439DM9KJ4r
+* Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
+* Konik.ai (KA): Discord Link on https://konik.ai/
+* Car Hacking Village (CHV): https://www.carhackingvillage.com/
+
+The activities, actions, and discussions on non-comma.ai Discords are/may not supported by or affiliated with comma.ai (this may even apply even to the comma.ai Discord too). In the case of MoreTorque, comma.ai is strongly opposed to that community/Discord. That said, the ECU Security Key issues affects all and relevant events and information may be there as well.
+
+---
+
 ## Bounty Statuses
 
 ### 🗳️ comma.ai Vote for Toyota Security
@@ -656,20 +673,7 @@ Here's a brief to get anybody going into this ECU Security Key issue up to speed
 
 Discord links may be linking to the middle of the conversation. Scroll up and down for context.
 
-Many of these Discord links are to a pre-hidden channel named `#toyota-security` in the  comma.ai Discord. Accessing `#toyota-security` on comma.ai Discord requires completing the simple prompt in `#join-development`. Otherwise, it is inaccessible. More often than not, the Discord links are to `#toyota-security` in the comma.ai Discord, so please complete the prompt.
-
-Most if not all Discord links are to the comma.ai Discord accessible with an invite from https://discord.comma.ai unless otherwise noted. These other Discords include:
-
-* Retropilot (RP): https://discord.gg/GzWegVa.
-* Sunnypilot's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV.
-* Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): https://discord.gg/rRB7eDKccy
-* MoreTorque (MT): https://discord.gg/439DM9KJ4r
-* Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
-* Konik.ai (KA): Discord Link on https://konik.ai/
-* Car Hacking Village (CHV): https://www.carhackingvillage.com/
-
-The activities, actions, and discussions on non-comma.ai Discords are/may not supported by or affiliated with comma.ai (this may even apply even to the comma.ai Discord too). In the case of MoreTorque, comma.ai is strongly opposed to that community/Discord. That said, the ECU Security Key issues affects all and relevant events and information may be there as well.
-
+Many of these Discord links are to the `#toyota-security` channel in the comma.ai Discord. For a list of other relevant Discord servers, please see the [Discords of Note](#discords-of-note) section.
 
 ## Background
 
