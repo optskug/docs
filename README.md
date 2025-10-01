@@ -86,9 +86,11 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * Toyota Harness A
   * Early 2024 MY situation like Early 2024 MY Sienna unknown.
   * The compatibility status of the RAV4 Hybrid or RAV4 ICE is not relevant to the Prime/PHEV. They're different vehicles.
+  * Sunnypilot Discord Channel: [#dev-toyota-security](https://discord.com/channels/880416502577266699/1385812275285327945) (requires joining the [Sunnypilot Discord](#discords-of-note))
 * 2021-2023 Sienna Hybrid (USDM), 2021-2022 Sienna Hybrid (PRC)
   * All Trims supported
   * Toyota Harness A
+  * Sunnypilot Discord Channel: [#dev-toyota-security](https://discord.com/channels/880416502577266699/1371352826625785907) (requires joining the [Sunnypilot Discord](#discords-of-note))
   * Not applicable to 2023+ Sienna (PRC)
   * Early 2024 MY (Built in 09/23 to 11/23 according to sticker) might work? Currently too few data points to determine cutoff
     https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
@@ -587,6 +589,8 @@ Most if not all Discord links are to the comma.ai Discord accessible with an inv
 
 * Retropilot (RP): https://discord.gg/GzWegVa.
 * Sunnypilot's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV.
+  * [#dev-toyota-security (Sienna)](https://discord.com/channels/880416502577266699/1371352826625785907)
+  * [#dev-toyota-security (RAV4 Prime)](https://discord.com/channels/880416502577266699/1385812275285327945)
 * Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): https://discord.gg/rRB7eDKccy
 * MoreTorque (MT): https://discord.gg/439DM9KJ4r
 * Frogpilot (FP): https://github.com/FrogAi/FrogPilot?tab=readme-ov-file#discord
