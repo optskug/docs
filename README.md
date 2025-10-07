@@ -136,7 +136,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 * These vehicles do not use the HSM.
 * These all seem to share the commonality of a ~~version 1 bootloader~~[^4] ? on the EPS
 * Longitudinal
-  * Some people seem to have it going. It is a [work in progress in getting it upstreamed to comma's codebase](https://github.com/commaai/opendbc/pull/1385).
+  * The [pull request for longitudinal support has been merged into `opendbc`](https://github.com/commaai/opendbc/pull/1385), but openpilot has not yet updated its copy of the repository to include it.
   * Some [Forks](#forks) have it as an option.
   * Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
 
@@ -385,7 +385,7 @@ C3X should show the 15mph calibration screen.
 
 If you're able to calibrate and use openpilot to use the steering wheel (aka "lat support"), it's working!
 
-`commaai/nightly-dev` can't use the gas and brake pedals (aka "long support") on TSK vehicles. Monitor this PR (https://github.com/commaai/opendbc/pull/1385) for long support progress. Experimental mode is also not supported because experimental mode requires long support.
+`commaai/nightly-dev` can't use the gas and brake pedals (aka "long support") on TSK vehicles. The [pull request for longitudinal support has been merged into `opendbc`](https://github.com/commaai/opendbc/pull/1385), but openpilot has not yet updated its copy of the repository to include it. Experimental mode is also not supported because experimental mode requires long support.
 
 <details><summary>Troubleshooting</summary>
 
