@@ -268,7 +268,7 @@ At home, sitting next to your router, turn on C3X with your phone charger. Ignor
 
 Choose `Custom Software` and enter the URL `optskug/tskm`
 
-If you have C3 (predecessor to C3X), enter `optskug/tskm-c3`
+If you have C3 (predecessor to C3X), enter `https://smiskol.com/fork/optskug/tskm-c3`
 
 ![](img/v4.install.1.jpg)
 
