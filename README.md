@@ -1476,6 +1476,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [SecOC longitudinal control support has been merged into upstream comma openpilot/opendbc.](https://github.com/commaai/opendbc/pull/1385)
   * Pull request by chrispypatt adds SecOC longitudinal control functionality to Toyota vehicles with TSK/SecOC security.
 
+### October 2025
+
+* [ziltoid4354 reinstalls frogpilot and re-extracts their key but the key seems to have changed. Swears no servicing.](https://discord.com/channels/469524606043160576/905950538816978974/1426970856843772016)
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
