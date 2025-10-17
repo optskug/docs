@@ -1479,6 +1479,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### October 2025
 
 * [ziltoid4354 reinstalls frogpilot and re-extracts their key but the key seems to have changed. Swears no servicing.](https://discord.com/channels/469524606043160576/905950538816978974/1426970856843772016)
+* [johntthesmith asks about the difference between Toyota A and Toyota B harnesses. It is explained that all supported Toyotas use Harness A, and no one has successfully used Harness B for operational openpilot in newer Toyotas. As such, there are no reports on differences.](https://discord.com/channels/469524606043160576/524327905937850394/1428756435306811433)
 
 ---
 
