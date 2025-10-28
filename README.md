@@ -537,7 +537,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
     </tr>
     <tr>
       <td>
-        <code>install.sunnypilot.ai/release-tizi</code><br/>
+        <code>sunnypilot/release-tizi</code><br/>
         (a.k.a. sunnypilot)<br/>
         <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a>
       </td>
@@ -550,7 +550,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
           <li>Model switcher to easily switch between various AI models</li>
           <li>NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna</li>
           <li>sunnypilot complies with comma.ai's safety rules as accurately as possible.</li>
-          <li>‼️ If your device is C3 install <code>install.sunnypilot.ai/staging-tici</code> instead. TICI hardware support at sunnypilot is slightly older than release but similarly capable at the moment.</li>
+          <li>‼️ If your device is C3 install <code>sunnypilot/staging-tici</code> instead. TICI hardware support at sunnypilot is slightly older than release but similarly capable at the moment.</li>
         </ul>
       </td>
     </tr>
