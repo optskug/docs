@@ -364,7 +364,7 @@ Start your car's engine.
 
 Go to the `Reboot Menu` and `Install commaai/nightly-dev`.
 
-`commaai/nightly-dev` is the only branch from comma.ai with TSK support.
+`commaai/nightly-dev` is the only branch from comma.ai with TSK support (C3X only).
 
 If you have C3, install `sunnypilot/staging-tici`. There are no branches from comma.ai with C3+TSK support, so SunnyPilot is your best option. If you have no idea what this means, come talk to us in [comma Discord](https://discord.comma.ai) at #toyota-security channel.
 
@@ -537,7 +537,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
     </tr>
     <tr>
       <td>
-        <code>install.sunnypilot.ai/staging</code><br/>
+        <code>sunnypilot/release-tizi</code><br/>
         (a.k.a. sunnypilot)<br/>
         <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a>
       </td>
@@ -546,10 +546,11 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
         <strong>MADS:</strong> Yes from community (MADS original author) <br/>
         <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
         <ul>
-          <li>Pre-built version of `sunnypilot/master`</li>
-          <li>Model switcher to easily switch between various models</li>
+          <li>Stable <code>release-tizi</code> of sunnypilot is extensively tested by the secoc community.</li>
+          <li>Model switcher to easily switch between various AI models</li>
           <li>NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna</li>
-          <li>Ships the same latest improvements as nightly-dev (with the same risk of breaking on rare occasions).</li>
+          <li>sunnypilot complies with comma.ai's safety rules as accurately as possible.</li>
+          <li>‼️ If your device is C3 install <code>sunnypilot/staging-tici</code> instead. TICI hardware support at sunnypilot is slightly older than release but similarly capable at the moment.</li>
         </ul>
       </td>
     </tr>
