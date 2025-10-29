@@ -546,7 +546,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
         <strong>MADS:</strong> Yes from community (MADS original author) <br/>
         <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
         <ul>
-          <li>Stable release of sunnypilot is extensively tested by the secoc community.</li>
+          <li>Stable <code>release-tizi</code> of sunnypilot is extensively tested by the secoc community.</li>
           <li>Model switcher to easily switch between various AI models</li>
           <li>NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna</li>
           <li>sunnypilot complies with comma.ai's safety rules as accurately as possible.</li>
