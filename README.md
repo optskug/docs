@@ -539,7 +539,8 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
       <td>
         <code>sunnypilot/release-tizi</code><br/>
         (a.k.a. sunnypilot)<br/>
-        <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a>
+        <a href="https://community.sunnypilot.ai">sunnypilot Discourse Forum</a>        
+        <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a><br/>        
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
