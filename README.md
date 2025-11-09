@@ -266,6 +266,8 @@ If your car is not listed above, then there has been no documented information o
 > * **Official support** - A future `nightly-dev` branch from comma.ai will likely work in the near future
 >
 > **Please be patient.** Developing and testing support for new hardware takes considerable time and resources. Users with the comma four should wait for official announcements before attempting to use this guide.
+>
+> **For comma four updates:** Visit the [sunnypilot community forum](https://community.sunnypilot.ai/t/regarding-comma-4-support-on-sunnypilot/870) for the latest information on comma four support.
 
 * [Key Extraction](#key-extraction) if you don't know the key.
 * [Key Installation](#key-installation) if you know the key.
