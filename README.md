@@ -254,6 +254,19 @@ If your car is not listed above, then there has been no documented information o
 
 # Setup Guide
 
+> [!WARNING]
+> **This guide has not been updated or tested for the comma four.**
+>
+> The [comma four](https://comma.ai/shop/comma-four) is a very new device released in late 2024. Community contributors do not yet have access to it for testing and development.
+>
+> **Known issues and limitations:**
+> * **SSH instructions** - May work but have not been tested on the comma four
+> * **GUI tools** - Need to be adjusted for the new UI and form factor 
+> * **Fork support** - Popular forks such as sunnypilot and frogpilot do not yet support the comma four and it may take some time for them to merge in comma four support
+> * **Official support** - A future `nightly-dev` branch from comma.ai will likely work in the near future
+>
+> **Please be patient.** Developing and testing support for new hardware takes considerable time and resources. Users with the comma four should wait for official announcements before attempting to use this guide.
+
 * [Key Extraction](#key-extraction) if you don't know the key.
 * [Key Installation](#key-installation) if you know the key.
 
