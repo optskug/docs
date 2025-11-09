@@ -257,7 +257,7 @@ If your car is not listed above, then there has been no documented information o
 > [!WARNING]
 > **This guide has not been updated or tested for the comma four.**
 >
-> The [comma four](https://comma.ai/shop/comma-four) is a very new device released in late 2024. Community contributors do not yet have access to it for testing and development.
+> The [comma four](https://comma.ai/shop/comma-four) is a very new device released on November 8, 2025. Community contributors do not yet have access to it for testing and development.
 >
 > **Known issues and limitations:**
 > * **SSH instructions** - May work but have not been tested on the comma four
