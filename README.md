@@ -1498,6 +1498,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [ziltoid4354 reinstalls frogpilot and re-extracts their key but the key seems to have changed. Swears no servicing.](https://discord.com/channels/469524606043160576/905950538816978974/1426970856843772016)
 * [johntthesmith asks about the difference between Toyota A and Toyota B harnesses. It is explained that all supported Toyotas use Harness A, and no one has successfully used Harness B for operational openpilot in newer Toyotas. As such, there are no reports on differences.](https://discord.com/channels/469524606043160576/524327905937850394/1428756435306811433)
 
+### November 2025
+
+* comma releases the [comma four](https://comma.ai/shop/comma-four). It is a radical redesign of the form factor and a lot of work needs to be done with regards to code working on these devices.
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
