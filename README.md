@@ -262,7 +262,7 @@ If your car is not listed above, then there has been no documented information o
 >
 > **Known issues and limitations:**
 > * **SSH instructions** - May work but have not been tested on the comma four
-> * **GUI tools** - Need to be adjusted for the new UI and form factor 
+> * **GUI tools** - Need to be adjusted for the new UI and form factor
 > * **Fork support** - Popular forks such as sunnypilot and frogpilot do not yet support the comma four and it may take some time for them to merge in comma four support
 > * **Official support** - A future `nightly-dev` branch from comma.ai will likely work in the near future
 >
@@ -555,8 +555,8 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
       <td>
         <code>sunnypilot/release-tizi</code><br/>
         (a.k.a. sunnypilot)<br/>
-        <a href="https://community.sunnypilot.ai">sunnypilot Discourse Forum</a>        
-        <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a><br/>        
+        <a href="https://community.sunnypilot.ai">sunnypilot Discourse Forum</a>
+        <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a><br/>
       </td>
       <td>
         <strong>Lat:</strong> Yes from upstream <br/>
@@ -1501,6 +1501,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 ### November 2025
 
+* [ggajoch discovers a reproducible issue where the EU Yaris Hybrid errors out when crossing over lane lines without the blinker on. It was not seen on the JP Yaris.](https://github.com/sunnypilot/opendbc/issues/364)
 * comma releases the [comma four](https://comma.ai/shop/comma-four). It is a radical redesign of the form factor and a lot of work needs to be done with regards to code working on these devices.
 
 ---
