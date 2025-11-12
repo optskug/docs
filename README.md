@@ -261,12 +261,12 @@ If your car is not listed above, then there has been no documented information o
 > The [comma four](https://comma.ai/shop/comma-four) is a very new device released on November 8, 2025. Community contributors do not yet have access to it for testing and development.
 >
 > **Known issues and limitations:**
-> * **SSH instructions** - May work but have not been tested on the comma four
+> * **SSH instructions** - Likely will work but have not been tested on the comma four
 > * **GUI tools** - Need to be adjusted for the new UI and form factor
 > * **Fork support** - Popular forks such as sunnypilot and frogpilot do not yet support the comma four and it may take some time for them to merge in comma four support
-> * **Official support** - A future `nightly-dev` branch from comma.ai will likely work in the near future
+> * **Official support** - A future `nightly-dev` branch from comma.ai will likely work in the near future post-release, but it has not yet been released or tested.
 >
-> **Please be patient.** Developing and testing support for new hardware takes considerable time and resources. Users with the comma four should wait for official announcements before attempting to use this guide.
+> **Please be patient.** Developing and testing support for new hardware takes considerable time and resources. New users with the comma four with a low pain tolerance should wait for official announcements before attempting to use this guide. On the other hand, if you are a new user with the comma four and have a high technical pain tolerance, please consult  [comma Discord](https://discord.comma.ai)'s #toyota-security channel.
 >
 > **For comma four updates:** Visit the [sunnypilot community forum](https://community.sunnypilot.ai/t/regarding-comma-4-support-on-sunnypilot/870) for the latest information on comma four support.
 
