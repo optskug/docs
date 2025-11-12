@@ -1123,7 +1123,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1134950311719
   * Highlander 2024, even though it still has TSS 2.5, got TSK . Not unexpected for it being rather oddly the most change prone.
   * The 2024 Rav4 still does not have TSK.
   * 2024 Lexus TX, has TSK, not big surprise
-  * There is no longer a differentiation between JP and US 2024 Corollas for TSK.  *All* 2024 corollas have TSK.
+  * There is no longer a differentiation between JP and US 2024 Corollas for TSK.  *All* 2024 Corollas have TSK.
   * The 2023 ES and 2024 ES does not have TSK, contrary to what others may have reported.
 * [A small discussion on differences between Toyota Dealership and independent shop access re: TSK and Techstream](https://discord.com/channels/469524606043160576/905950538816978974/1177567834688196638)
   * "The local branches don't have the data. Any dealer that wants to swap  a secured ECU for repairs has to login through Techstream to get the one specific key for the ECU he is installing at that time. Third party shops have to do the same but they don't even get Techstream Global access. They get case-by-case access if Toyota approves it. (E.g. parts number matching and so forth)"
