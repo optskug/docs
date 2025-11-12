@@ -155,7 +155,14 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
 
 ### 🔴 Not hacked and can't run openpilot
 
-Car hackers, we need your help with these.
+These fall into a few categories:
+
+* Introduced in 2022+ with TSK/SecOC but it's strongly suspected that they have an updated chip that precludes the existing exploits from dumping the key. (Most)
+  * See [Willem's blog post about dumping the keys, specifically the section "Notes on Newer Vehicles"](https://icanhack.nl/blog/secoc-key-extraction/#notes-on-newer-vehicles)
+  * We've only been able to dump keys from vehicles models that were introduced with TSK/SecOC in 2020-2021. Presumably Toyota was going through their existing stock of ECU hardware and phased in TSK/SecOC over time for existing models but new models starting in 2022+ all have an evolved or uncracked TSK/SecOC from day one.
+* We can't get code execution on the EPS ECU to run the exploit for some other reason. (Tundra)
+
+The List:
 
 * 2022+ Aygo X (EUDM)[^3]
 * 2023+ Aygo X (Euro tech info Lookup)
