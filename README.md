@@ -77,7 +77,7 @@ The following is not comprehensive.
 
 These cars can run openpilot but are not listed on https://comma.ai/vehicles#toyota or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because comma.ai (the company) understandably doesn't want to own the security key hacking process.
 
-If it is on https://comma.ai/vehicles#toyota, then it's not in question and is supported by comma.ai for openpilot.
+If it is on https://comma.ai/vehicles#toyota, then it's not in question and is supported by comma.ai for openpilot. At the moment, all harnesses for pre-existing and non-TSK/SecOC supported Toyota vehicles are Toyota Harness A and can be used with TSK/SecOC supported vehicles.
 
 Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
