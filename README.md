@@ -122,6 +122,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
     * Another vehicle, not a daily driver, but an academic study specimen, has their key dumped in France.
     * ggajoch has dumped their key in Poland and is using it.
     * [Some issue with going over lane lines at the moment causing LKAS errors. Needs more investigation. EU only?](https://github.com/sunnypilot/opendbc/issues/364)
+    * [Some issue with Traction Control](https://discord.com/channels/469524606043160576/905950538816978974/1438655571082477569)
 * 2021 GR Yaris (EUDM/JDM/MXDM)
   * All Trims supported
   * Toyota Harness A
@@ -1532,6 +1533,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
     [00:33:29.180 --> 00:33:34.759]   9 is going to be that guy. Get your car. Is it compatible with my car? Yeah, bro. He sits
     [00:33:34.759 --> 00:33:39.599]   in the seat. All right. That's my talk. I'll take questions.
     ```
+* [GON0822 says there was an issue with the traction control on his Yaris Hybrid.](https://discord.com/channels/469524606043160576/905950538816978974/1438655571082477569)
+
 
 ---
 
