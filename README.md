@@ -1510,7 +1510,28 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### November 2025
 
 * [ggajoch discovers a reproducible issue where the EU Yaris Hybrid errors out when crossing over lane lines without the blinker on. It was not seen on the JP Yaris.](https://github.com/sunnypilot/opendbc/issues/364)
-* comma releases the [comma four](https://comma.ai/shop/comma-four). It is a radical redesign of the form factor and a lot of work needs to be done with regards to code working on these devices.
+* `COMMA CON 2025` is held in San Diego. Numerous interesting announcements are made:
+  * comma releases the [comma four](https://comma.ai/shop/comma-four). It is a radical redesign of the form factor and a lot of work needs to be done with regards to code working on these devices.
+  * Toyota Security Comments: [comma ai | COMMA CON 2025 | George Hotz | Outwit, Outplay, Outlast | President](https://www.youtube.com/watch?v=werrvv0MVXQ), an excerpt:
+
+    ```
+    [00:32:11.079 --> 00:32:13.079]   The ultimate comma
+    [00:32:13.079 --> 00:32:16.079]   is not a device that plugs into your car.
+    [00:32:16.400 --> 00:32:18.500]   It's a robot that gets in the driver's seat.
+    [00:32:20.180 --> 00:32:21.279]   That's where we're going.
+    [00:32:22.299 --> 00:32:23.160]   Why should we,
+    [00:32:23.160 --> 00:32:31.200]   oh, you're going to crack the Toyota should we oh oh you gotta crack the toyota security oh no who cares build a robot that gets in the seat and grabs the wheel and
+    [00:32:31.200 --> 00:32:38.240]   turns the wheel now don't do this tomorrow because it's not gonna work right having
+    [00:32:38.240 --> 00:32:54.819]   accurate predictions about technology is super important if you want to know where to do investment. I wish VCs understood any concept of this. But yeah, OpenPilot is a general purpose robotics operating system.
+    [00:32:54.819 --> 00:32:58.839]   OpenPilot, everyone always says, oh, comma, you're going to die if you don't partner with
+    [00:32:58.839 --> 00:33:02.859]   car makers. Everyone's going to get security. Or, oh, my God, I don't care. I want to build
+    [00:33:02.859 --> 00:33:11.960]   a robot. I want it to cook and clean for me. But like actually do this. Not build up some hype. In the same way Cruise told
+    [00:33:12.599 --> 00:33:15.680]   you they were going to solve self-driving and wasted $10 billion, you're going to see
+    [00:33:15.680 --> 00:33:19.700]   all the same stuff happen in humanoid robots. And guess who's going to be there to pick
+    [00:33:19.700 --> 00:33:29.180]   up the pieces? Kama and Tesla. Same people who are there today. So, yeah. No, I mean, the Kama
+    [00:33:29.180 --> 00:33:34.759]   9 is going to be that guy. Get your car. Is it compatible with my car? Yeah, bro. He sits
+    [00:33:34.759 --> 00:33:39.599]   in the seat. All right. That's my talk. I'll take questions.
+    ```
 
 ---
 
