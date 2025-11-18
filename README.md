@@ -1511,7 +1511,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### November 2025
 
 * [ggajoch discovers a reproducible issue where the EU Yaris Hybrid errors out when crossing over lane lines without the blinker on. It was not seen on the JP Yaris.](https://github.com/sunnypilot/opendbc/issues/364)
-* `COMMA CON 2025` is held in San Diego. Numerous interesting announcements are made:
+* [COMMA_CON 2025](https://www.reddit.com/r/Comma_ai/comments/1nr5zvn/comma_con_2025/) is held in San Diego. Numerous interesting announcements are made:
   * comma releases the [comma four](https://comma.ai/shop/comma-four). It is a radical redesign of the form factor and a lot of work needs to be done with regards to code working on these devices.
   * Toyota Security Comments: [comma ai | COMMA CON 2025 | George Hotz | Outwit, Outplay, Outlast | President](https://youtu.be/werrvv0MVXQ?t=1966), an excerpt:
 
