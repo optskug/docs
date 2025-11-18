@@ -118,7 +118,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
     * Experimental work in disabling the radar has shown this does is not enough to let openpilot control longitudinal.
   * Not sold in the USA, but is in Australia, Japan, and Europe
-  * Only one guy using it in Japan, unfortunately. Help double the population!
+  * Only one guy using it in Japan and one guy in Poland, unfortunately. Help increase the population!
     * Another vehicle, not a daily driver, but an academic study specimen, has their key dumped in France.
     * ggajoch has dumped their key in Poland and is using it.
     * [Some issue with going over lane lines at the moment causing LKAS errors. Needs more investigation. EU only?](https://github.com/sunnypilot/opendbc/issues/364)
