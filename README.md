@@ -15,7 +15,7 @@ This is an attempt to document some of the discussion and information about the 
 >
 > https://deepwiki.com/optskug/docs
 >
-> [![](./img/ai-deepwiki.png)](https://deepwiki.com/optskug/docs)
+> [![](./img/ai-deepwiki-anim.gif)](https://deepwiki.com/optskug/docs)
 >
 > You are encouraged to share DeepWiki conversations links in Discord if you aren't sure it is interpreting this document correctly or if you have follow questions.
 >
