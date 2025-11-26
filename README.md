@@ -1532,6 +1532,14 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
     [00:33:34.759 --> 00:33:39.599]   in the seat. All right. That's my talk. I'll take questions.
     ```
 * [GON0822 says there was an issue with the traction control on his Yaris Hybrid.](https://discord.com/channels/469524606043160576/905950538816978974/1438655571082477569)
+* [kaizen asks and pings geohot if they could bring their unsupported 2023 NX to comma to reverse engineer. However, it's responded that comma never responds to such requests.](https://discord.com/channels/469524606043160576/905950538816978974/1443348195655811173)
+  * "i've never heard of comma answering such a request . they sometimes refer people to https://comma.ai/shop 's Custom Car Ports offering but it has never been used in the context of ⁠toyota-security" - nelsonjchen
+  * Snippets from page:
+    * "Hire the comma openpilot team to add dedicated support for a new make or model vehicle that has electronically controllable gas, brake, and steering. We will work until the port is upstreamed, or on a branch for non production cars."
+    * "This service is intended for pre/non production vehicles. For production vehicles on the market today, we will likely do the port much cheaper, perhaps as cheap as the cost of the car."
+    * Pricing
+      * $50,000 Down Payment (immediate)
+      * $500,000 Total (due at start of project)"
 
 
 ---
