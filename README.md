@@ -1541,6 +1541,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
     * Pricing
       * $50,000 Down Payment (immediate)
       * $500,000 Total (due at start of project)"
+  * [geohot responds: "if someone wants to pay me $500k i'd totally crack toyota security on whatever car you give me. be a fun christmas project, who's got the 500k?"](https://discord.com/channels/469524606043160576/905950538816978974/1443360744660799549)
 
 
 ---
