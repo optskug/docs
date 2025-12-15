@@ -1543,6 +1543,9 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
       * $500,000 Total (due at start of project)"
   * [geohot responds: "if someone wants to pay me $500k i'd totally crack toyota security on whatever car you give me. be a fun christmas project, who's got the 500k?"](https://discord.com/channels/469524606043160576/905950538816978974/1443360744660799549)
 
+### December 2025
+
+* [kevinpan9405: If someone need this to do some research, I can buy it. (Tundra Steering Rack)](https://discord.com/channels/469524606043160576/905950538816978974/1450196046410944635)
 
 ---
 
