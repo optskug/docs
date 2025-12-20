@@ -264,14 +264,17 @@ If your car is not listed above, then there has been no documented information o
 > [!WARNING]
 > **This guide has not been updated or tested for the comma four.**
 >
-> The [comma four](https://comma.ai/shop/comma-four) is a very new device released on November 8, 2025. Community contributors do not yet have access to it for testing and development.
+> The [comma four](https://comma.ai/shop/comma-four) is a new device released on November 8, 2025. Community contributors do not yet have access to it for testing and development.
 >
 > **Known issues and limitations:**
-> * **SSH instructions** - Likely will work but have not been tested on the comma four
-> * **GUI tools** - Need to be adjusted for the new UI and form factor
+> * **SSH instructions** - [Works, but there's a reason to use TSK Manager instead. You like GUIs don't you?](https://community.sunnypilot.ai/t/toyota-2021-rav4-prime-w-c4-working/1776)
+> * **GUI tools** - Need to be adjusted for the new UI and form factor. calvinspark has a TSKM build but it'll be on calvinspark to update this doc when he feels he is ready.
 > * **Fork support** - Popular forks such as sunnypilot and frogpilot do not yet support the comma four and it may take some time for them to merge in comma four support
->   * **For comma four sunnypilot updates:** Visit the [sunnypilot community forum](https://community.sunnypilot.ai/t/regarding-comma-4-support-on-sunnypilot/870) for the latest information on comma four support.
-> * **Official support** - A future `nightly-dev` branch from comma.ai will likely work in the near future post-release, but it has not yet been released or tested.
+>   * frogpilot: Their maintainer and codebase has drifted away from comma.ai's mainline openpilot significantly and has not kept up. Their maintainer has expressed no plans to add comma four support.
+>   * sunnypilot: Their codebase keeps up with comma.ai's mainline openpilot more closely, so sunnypilot support has come a lot sooner, abeit a lot of work is still needed.
+>     * **For comma four sunnypilot updates:** Visit the [sunnypilot community forum](https://community.sunnypilot.ai/t/regarding-comma-4-support-on-sunnypilot/870) for the latest information on comma four support.
+>     * Recommended Branches: https://community.sunnypilot.ai/t/recommended-branch-installations/235
+> * **Official support** - The `nightly-dev` branch from comma.ai will likely work, but it has not yet been released or tested.
 >
 > **Please be patient.** Developing and testing support for new hardware takes considerable time and resources. New users with the comma four with a low pain tolerance should wait for official announcements before attempting to use this guide. On the other hand, if you are a new user with the comma four and have a high technical pain tolerance, please consult  [comma Discord](https://discord.comma.ai)'s #toyota-security channel.
 >
