@@ -262,22 +262,11 @@ If your car is not listed above, then there has been no documented information o
 # Setup Guide
 
 > [!WARNING]
-> **This guide has not been updated or tested for the comma four.**
+> **comma four (C4) support is in beta.**
 >
-> The [comma four](https://comma.ai/shop/comma-four) is a new device released on November 8, 2025. Community contributors do not yet have access to it for testing and development.
+> Several people reported success, but Calvin hasn't received his C4 yet, so there are no photos or an official seal of quality.
 >
-> **Known issues and limitations:**
-> * **SSH instructions** - [Works, but there's a reason to use TSK Manager instead. You like GUIs don't you?](https://community.sunnypilot.ai/t/toyota-2021-rav4-prime-w-c4-working/1776)
-> * **GUI tools** - Need to be adjusted for the new UI and form factor. calvinspark has a TSKM build but it'll be on calvinspark to update this doc when he feels he is ready.
-> * **Fork support** - Popular forks such as sunnypilot and frogpilot do not yet support the comma four and it may take some time for them to merge in comma four support
->   * frogpilot: Their maintainer and codebase has drifted away from comma.ai's mainline openpilot significantly and has not kept up. Their maintainer has expressed no plans to add comma four support.
->   * sunnypilot: Their codebase keeps up with comma.ai's mainline openpilot more closely, so sunnypilot support has come a lot sooner, abeit a lot of work is still needed.
->     * **For comma four sunnypilot updates:** Visit the [sunnypilot community forum](https://community.sunnypilot.ai/t/regarding-comma-4-support-on-sunnypilot/870) for the latest information on comma four support.
->     * Recommended Branches: https://community.sunnypilot.ai/t/recommended-branch-installations/235
-> * **Official support** - The `nightly-dev` branch from comma.ai will likely work, but it has not yet been released or tested.
->
-> **Please be patient.** Developing and testing support for new hardware takes considerable time and resources. New users with the comma four with a low pain tolerance should wait for official announcements before attempting to use this guide. On the other hand, if you are a new user with the comma four and have a high technical pain tolerance, please consult  [comma Discord](https://discord.comma.ai)'s #toyota-security channel.
->
+> ETA 2026-01
 
 
 * [Key Extraction](#key-extraction) if you don't know the key.
@@ -290,11 +279,13 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 ### Step 1. Install `TSK Manager`
 
-At home, sitting next to your router, turn on C3X with your phone charger. Ignore the low voltage warning.
+At home, sitting next to your router, turn on Comma with a phone charger. Ignore the low voltage warning.
 
-Choose `Custom Software` and enter the URL `optskug/tskm`
+Choose `Custom Software` and enter the URL:
 
-If you have C3 (predecessor to C3X), enter `https://smiskol.com/fork/optskug/tskm-c3`
+* C4: `calvinpark/tskm-c4`
+* C3X: `optskug/tskm`
+* C3: `https://smiskol.com/fork/optskug/tskm-c3`
 
 ![](img/v4.install.1.jpg)
 
@@ -310,23 +301,23 @@ Unplug the power to turn off the device.
 1. Sometimes the installer won't proceed or gets stuck around 10% and restarts. Instead of Custom Software, install comma openpilot, uninstall it through the Settings menu, and then try again.
 1. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
 1. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `commaai/nightly-dev` manually instead of using TSK Manager.
-1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install `optskug/tskm`
+1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install using the URL for your device.
 </details>
 
 ### Step 2. Install the hardware
 
 Go to your car and connect everything including Comma Power (OBD2 connector + long cable).
 
-Official Setup Guide: https://comma.ai/setup/comma-3x
+Official Setup Guide: https://comma.ai/setup
 
-Turn the car on and off - C3X should remain powered on.
+Turn the car on and off - Comma should remain powered on.
 
 ![](img/v3.tsk-manager.incar.jpg)
 
 <details><summary>Troubleshooting</summary>
 
-1. The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than C3X.
-2. For connecting C3X to the harness, always use the right-angled OBD-C cable that came with the C3X. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
+1. The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than Comma.
+2. For connecting Comma to the harness, always use the official OBD-C cable that came with Comma. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
 3. You can remove Comma Power later but connect it for now.
 </details>
 
@@ -388,11 +379,15 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
 Start your car's engine.
 
-Go to the `Reboot Menu` and `Install commaai/nightly-dev`.
+Go to the `Reboot Menu`.
 
-`commaai/nightly-dev` is the only branch from comma.ai with TSK support (C3X only).
+* C4: `Install commaai/nightly-dev`
+* C3X: `Install commaai/nightly-dev`
+* C3: `Install sunnypilot/staging-tici`
 
-If you have C3, install `sunnypilot/staging-tici`. There are no branches from comma.ai with C3+TSK support, so SunnyPilot is your best option. If you have no idea what this means, come talk to us in [comma Discord](https://discord.comma.ai) at #toyota-security channel.
+For C4 and C3X, `commaai/nightly-dev` is the only branch from comma.ai with TSK support.
+
+For C3, there are no branches from comma.ai with C3+TSK support, so SunnyPilot is your best option. If you have no idea what this means, come talk to us in [comma Discord](https://discord.comma.ai) at #toyota-security channel.
 
 ![](img/v4.reboot.jpg)
 
@@ -405,18 +400,18 @@ If you have C3, install `sunnypilot/staging-tici`. There are no branches from co
 
 ### Step 6. Calibrate & Validate
 
-C3X should show the 15mph calibration screen.
+Comma should show the 15mph calibration screen.
 
 ![](img/v3.calibrate.jpg)
 
 If you're able to calibrate and use openpilot to use the steering wheel (aka "lat support"), it's working!
 
-`commaai/nightly-dev` can't use the gas and brake pedals (aka "long support") on TSK vehicles. The [pull request for longitudinal support has been merged into `opendbc`](https://github.com/commaai/opendbc/pull/1385), but openpilot has not yet updated its copy of the repository to include it. Experimental mode is also not supported because experimental mode requires long support.
+`commaai/nightly-dev` can use both the gas and brake pedals (aka "long support") and also the steering wheel (aka "lat support") on TSK vehicles. In other words, it can do all the normal things that an openpilot can do including Experimental Mode.
 
 <details><summary>Troubleshooting</summary>
 
 1. If you get an `LKAS` error, either the key was not installed or you're running a fork/branch without TSK support.
-2. If C3x says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyota-security.
+2. If Comma says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyota-security.
 3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
 </details>
 
@@ -424,12 +419,12 @@ If you're able to calibrate and use openpilot to use the steering wheel (aka "la
 
 Put the covers back on, and you're done. Congratulations!
 
-Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using C3X, but keeping it allows C3X to stay powered on when you turn off the car.
+Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using Comma, but keeping it allows Comma to stay powered on when you turn off the car.
 
 <details><summary>Comma Power</summary>
 
 __Pros__
-* Don't need to wait for C3X to boot up on a car start.
+* Don't need to wait for Comma to boot up on a car start.
 * Auto-update to get the latest and greatest.
 * Upload logs and videos to [comma connect](https://connect.comma.ai/) automatically. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
 * Easier to SSH in to debug.
@@ -441,7 +436,7 @@ __Cons__
 
 I (@calvinspark) don't use it because I hate even a remote possibility of a 12V battery issue.
 
-If you decide not to use it, bring C3X into your home to get updates. Note that an auto-update to v0.10.0 broke C3 users, so check Discord for compatilibity issues before a major version update.
+If you decide not to use it, bring Comma into your home to get updates. Note that an auto-update to v0.10.0 broke C3 users, so check Discord for compatibility issues before a major version update.
 </details>
 
 ### Step 8. What's next?
