@@ -529,8 +529,12 @@ Unless otherwise noted, all forks support lat, MADS/AOL, and long.
 
 ### openpilot
 
-URL: `commaani/nightly-dev`
+URL
+* C4: `commaai/nightly-dev`
+* C3X: `commaai/nightly-dev`
+* C3: Not supported. Product support ended so use a fork instead.
 
+Notes
 * Not a fork but an alternate branch from comma.ai with TSK support.
 * Install this if you need support from [comma.ai's support](https://comma.ai/support). They won't talk to you if you're on a fork.
 * Pre-compiled, so quick to install.
@@ -539,8 +543,12 @@ URL: `commaani/nightly-dev`
 
 ### SatoPilot
 
-URL: `alexandresato/personal3`
+URL
+* C4: Not yet supported
+* C3X: `alexandresato/personal3`
+* C3: `alexandresato/personal3`
 
+Notes
 * First fork to get long!
 * Very quick stop-and-go response.
 * `alexandresato/extract_secoc_key_btn` includes a TSK key extract button and is rebased with <code>personal3</code> often. The button is only for C3 & C3X, not for C4.
