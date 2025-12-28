@@ -387,7 +387,7 @@ Go to the `Reboot Menu`.
 
 For C4 and C3X, `commaai/nightly-dev` is the only branch from comma.ai with TSK support.
 
-For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot is your best option. If you have no idea what this means, come talk to us in [comma Discord](https://discord.comma.ai) at #toyota-security channel.
+For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot is your best option.
 
 ![](img/v4.reboot.jpg)
 
