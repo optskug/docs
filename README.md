@@ -541,18 +541,6 @@ Notes
 * It has the most up-to-date changes, which is cool, but it could get unstable.
 * Supports lat and long, but no MADS/AOL.
 
-### SatoPilot
-
-URL
-* C4: Not yet supported
-* C3X: `alexandresato/personal3`
-* C3: `alexandresato/personal3`
-
-Notes
-* First fork to get long!
-* Very quick stop-and-go response.
-* `alexandresato/extract_secoc_key_btn` includes a TSK key extract button and is rebased with <code>personal3</code> often. The button is only for C3 & C3X, not for C4.
-
 ### sunnypilot
 
 [URL](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
@@ -579,6 +567,18 @@ Notes
 * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
 * ‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.
 * Discord: https://discord.com/invite/frogpilot
+
+### SatoPilot
+
+URL
+* C4: Not yet supported
+* C3X: `alexandresato/personal3`
+* C3: `alexandresato/personal3`
+
+Notes
+* First fork to get long!
+* Very quick stop-and-go response.
+* `alexandresato/extract_secoc_key_btn` includes a TSK key extract button and is rebased with <code>personal3</code> often. The button is only for C3 & C3X, not for C4.
 
 ### Others
 
