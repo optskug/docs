@@ -39,7 +39,7 @@ This is an attempt to document some of the discussion and information about the 
    * [Key Extraction](#key-extraction)
    * [Key Installation](#key-installation)
    * [Advanced Topic: Run the exploit using SSH manually](#advanced-topic-run-the-exploit-using-ssh-manually)
-   * [Forks](#forks)
+* [Forks](#forks)
 * [Discords of Note](#discords-of-note)
 * [Current History](#current-history)
 
@@ -513,7 +513,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 
 
 ---
-## Forks
+# Forks
 
 > [!CAUTION]
 > Using forks presents a real danger. Do your research!
@@ -527,7 +527,7 @@ Unless otherwise noted, all forks support lat, MADS/AOL, and long.
 * `MADS/AOL` are features in sunnypilot and FrogPilot that keep the steering wheel control engaged even after applying brakes.
 * `Long` is longitudinal support which means openpilot can use the gas and brake pedals.
 
-### openpilot
+## openpilot
 
 URL
 * C4: `commaai/nightly-dev`
@@ -541,7 +541,7 @@ Notes
 * It has the most up-to-date changes, which is cool, but it could get unstable.
 * Supports lat and long, but no MADS/AOL.
 
-### sunnypilot
+## sunnypilot
 
 [URL](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
 * C4: `dev.sunnypilot.ai`
@@ -556,7 +556,7 @@ Notes
 * C3 branch (`statging-tici`) is slightly older than release but similarly capable at the moment.
 * Forum: https://community.sunnypilot.ai
 
-### FrogPilot
+## FrogPilot
 
 URL
 * C4: Not yet supported
@@ -568,7 +568,7 @@ Notes
 * ‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.
 * Discord: https://discord.com/invite/frogpilot
 
-### SatoPilot
+## SatoPilot
 
 URL
 * C4: Not yet supported
@@ -580,7 +580,7 @@ Notes
 * Very quick stop-and-go response.
 * `alexandresato/extract_secoc_key_btn` includes a TSK key extract button and is rebased with <code>personal3</code> often. The button is only for C3 & C3X, not for C4.
 
-### Others
+## Others
 
 If you are installing a fork not included in the list above, find the fork author and ask the following.
 
