@@ -1546,6 +1546,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [kevinpan9405: If someone need this to do some research, I can buy it. (Tundra Steering Rack)](https://discord.com/channels/469524606043160576/905950538816978974/1450196046410944635)
 * [codyisapro is the first to extract a key with the comma four.](https://discord.com/channels/469524606043160576/905950538816978974/1450992174064734308)
 * [astradotpng extracts a key from their Rav4 Prime with SSH instructions](https://community.sunnypilot.ai/t/toyota-2021-rav4-prime-w-c4-working/1776)
+* [calvinspark updated the setup guide with C4 instructions and changes.](https://github.com/optskug/docs/pull/69)
 
 ---
 
