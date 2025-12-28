@@ -160,6 +160,7 @@ These fall into a few categories:
   * See [Willem's blog post about dumping the keys, specifically the section "Notes on Newer Vehicles"](https://icanhack.nl/blog/secoc-key-extraction/#notes-on-newer-vehicles)
   * We've only been able to dump keys from vehicles models that were introduced with TSK/SecOC in 2020-2021. Presumably Toyota was going through their existing stock of ECU hardware and phased in TSK/SecOC over time for existing models but new models starting in 2022+ all have an evolved or uncracked TSK/SecOC from day one.
 * We can't get code execution on the EPS ECU to run the exploit for some other reason. (Tundra)
+* CAN Bus captures from these vehicles are unlikely to be of use for any research until someone figures out how to get _into_ the ECUs themselves. In other words, you can't tell much from ciphertext. 
 
 The List:
 
