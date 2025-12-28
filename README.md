@@ -266,8 +266,8 @@ If your car is not listed above, then there has been no documented information o
 >
 > Several people reported success, but Calvin hasn't received his C4 yet, so there are no photos or an official seal of quality.
 >
-> ETA 2026-01
-
+> If you are a new user, consider waiting for the official release, ETA 2026-01. Check this page for an update or find us at the [comma Discord](https://discord.comma.ai)'s #toyota-security channel.
+>
 
 * [Key Extraction](#key-extraction) if you don't know the key.
 * [Key Installation](#key-installation) if you know the key.
@@ -279,7 +279,7 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 ### Step 1. Install `TSK Manager`
 
-At home, sitting next to your router, turn on Comma with a phone charger. Ignore the low voltage warning.
+At home, sitting next to your router, turn on the comma device with a phone charger. Ignore the low voltage warning.
 
 Choose `Custom Software` and enter the URL:
 
@@ -301,7 +301,7 @@ Unplug the power to turn off the device.
 1. Sometimes the installer won't proceed or gets stuck around 10% and restarts. Instead of Custom Software, install comma openpilot, uninstall it through the Settings menu, and then try again.
 1. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
 1. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `commaai/nightly-dev` manually instead of using TSK Manager.
-1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the device. Afterward, install using the URL for your device.
+1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the comma device. Afterward, install using the URL for the comma device.
 </details>
 
 ### Step 2. Install the hardware
@@ -310,14 +310,14 @@ Go to your car and connect everything including Comma Power (OBD2 connector + lo
 
 Official Setup Guide: https://comma.ai/setup
 
-Turn the car on and off - Comma should remain powered on.
+Turn the car on and off - the comma device should remain powered on.
 
 ![](img/v3.tsk-manager.incar.jpg)
 
 <details><summary>Troubleshooting</summary>
 
-1. The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than Comma.
-2. For connecting Comma to the harness, always use the official OBD-C cable that came with Comma. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
+1. The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than a comma device.
+2. For connecting a comma device to the harness, always use the official OBD-C cable that came with the comma device. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
 3. You can remove Comma Power later but connect it for now.
 </details>
 
@@ -387,7 +387,7 @@ Go to the `Reboot Menu`.
 
 For C4 and C3X, `commaai/nightly-dev` is the only branch from comma.ai with TSK support.
 
-For C3, there are no branches from comma.ai with C3+TSK support, so SunnyPilot is your best option. If you have no idea what this means, come talk to us in [comma Discord](https://discord.comma.ai) at #toyota-security channel.
+For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot is your best option. If you have no idea what this means, come talk to us in [comma Discord](https://discord.comma.ai) at #toyota-security channel.
 
 ![](img/v4.reboot.jpg)
 
@@ -395,12 +395,12 @@ For C3, there are no branches from comma.ai with C3+TSK support, so SunnyPilot i
 
 1. `commaai/nightly-dev` is the newest and possibly unstable branch from comma.ai with TSK support.
 2. Frustratingly, there isn't a release branch from comma.ai with TSK support.
-3. Openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
+3. openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
 </details>
 
 ### Step 6. Calibrate & Validate
 
-Comma should show the 15mph calibration screen.
+The comma device should show the 15mph calibration screen.
 
 ![](img/v3.calibrate.jpg)
 
@@ -411,7 +411,7 @@ If you're able to calibrate and use openpilot to use the steering wheel (aka "la
 <details><summary>Troubleshooting</summary>
 
 1. If you get an `LKAS` error, either the key was not installed or you're running a fork/branch without TSK support.
-2. If Comma says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyota-security.
+2. If the comma device says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyota-security.
 3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
 </details>
 
@@ -419,12 +419,12 @@ If you're able to calibrate and use openpilot to use the steering wheel (aka "la
 
 Put the covers back on, and you're done. Congratulations!
 
-Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using Comma, but keeping it allows Comma to stay powered on when you turn off the car.
+Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using a comma device, but keeping it allows the comma device to stay powered on when you turn off the car.
 
 <details><summary>Comma Power</summary>
 
 __Pros__
-* Don't need to wait for Comma to boot up on a car start.
+* Don't need to wait for the comma device to boot up on a car start.
 * Auto-update to get the latest and greatest.
 * Upload logs and videos to [comma connect](https://connect.comma.ai/) automatically. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
 * Easier to SSH in to debug.
@@ -436,7 +436,7 @@ __Cons__
 
 I (@calvinspark) don't use it because I hate even a remote possibility of a 12V battery issue.
 
-If you decide not to use it, bring Comma into your home to get updates. Note that an auto-update to v0.10.0 broke C3 users, so check Discord for compatibility issues before a major version update.
+If you decide not to use it, bring the comma device into your home to get updates. Note that an auto-update to v0.10.0 broke C3 users, so check Discord for compatibility issues before a major version update.
 </details>
 
 ### Step 8. What's next?
@@ -465,7 +465,7 @@ We're in [comma Discord](https://discord.comma.ai) in #toyota-security channel.
 
 Modern openpilot and its forks have an [auto-key-install process](https://github.com/commaai/openpilot/pull/34401/files) that runs on every car start.
 
-This means that **uninstalling openpilot or resetting comma no longer uninstalls the security key.**
+This means that **uninstalling openpilot or resetting the comma device no longer uninstalls the security key.**
 
 **🎉🎉🎉 Gone are the days of key installation. From now on, just install openpilot and go drive, just like non-TSK users! 🎉🎉🎉**
 
