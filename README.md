@@ -521,11 +521,12 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 > Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760).<br/>
 > Please do not ask about forks outside of that channel.
 
-Unless otherwise noted, all forks support lat, MADS/AOL, and long.
 
-* `Lat` is lateral support which means openpilot can use the steering wheel.
-* `MADS/AOL` are features in sunnypilot and FrogPilot that keep the steering wheel control engaged even after applying brakes.
-* `Long` is longitudinal support which means openpilot can use the gas and brake pedals.
+> [!NOTE]
+> All forks support lat, MADS/AOL, and long, unless noted otherwise.
+> * `Lat` is lateral support which means openpilot can use the steering wheel.
+> * `MADS/AOL` are features in sunnypilot and FrogPilot that keep the steering wheel control engaged even after applying brakes.
+> * `Long` is longitudinal support which means openpilot can use the gas and brake pedals.
 
 ## openpilot
 
