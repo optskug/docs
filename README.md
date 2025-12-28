@@ -523,12 +523,16 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 
 Unless otherwise noted, all forks support lat, MADS/AOL, and long.
 
+* `Lat` is lateral support which means openpilot can use the steering wheel.
+* `MADS/AOL` are features in sunnypilot and FrogPilot that keep the steering wheel control engaged even after applying brakes.
+* `Long` is longitudinal support which means openpilot can use the gas and brake pedals.
+
 ### openpilot
 
 URL: `commaani/nightly-dev`
 
 * Not a fork but an alternate branch from comma.ai with TSK support.
-* Install this if you need support from comma.ai company. They won't talk to you if you're on a fork.
+* Install this if you need support from [comma.ai's support](https://comma.ai/support). They won't talk to you if you're on a fork.
 * Pre-compiled, so quick to install.
 * It has the most up-to-date changes, which is cool, but it could get unstable.
 * Supports lat and long, but no MADS/AOL.
@@ -549,17 +553,21 @@ URL: `alexandresato/personal3`
 * C3: `install.sunnypilot.ai/staging-tici`
 
 Notes
-* Release branch of sunnypilot is extensively tested by the secoc community.
+* Release branch of sunnypilot is extensively tested by the Toyota SecOC community.
 * Model switcher to easily switch between various AI models.
 * NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna.
 * sunnypilot complies with comma.ai's safety rules as accurately as possible.
-* C3 branch (`statging-tici`) is slightly older than release but similarly capable at the moment.</li>
-* Discord: https://discord.gg/sunnypilot
+* C3 branch (`statging-tici`) is slightly older than release but similarly capable at the moment.
+* Forum: https://community.sunnypilot.ai
 
 ### FrogPilot
 
-URL: `frogpilot.download`
+URL
+* C4: Not yet supported
+* C3X: `frogpilot.download`
+* C3: `frogpilot.download`
 
+Notes
 * Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
 * ‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.
 * Discord: https://discord.com/invite/frogpilot
