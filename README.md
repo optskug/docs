@@ -544,7 +544,7 @@ Notes
 
 ## sunnypilot
 
-[URL](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
+URL [(Source)](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
 * C4: `dev.sunnypilot.ai`
 * C3X: `release.sunnypilot.ai`
 * C3: `install.sunnypilot.ai/staging-tici`
@@ -554,7 +554,7 @@ Notes
 * Model switcher to easily switch between various AI models.
 * NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna.
 * sunnypilot complies with comma.ai's safety rules as accurately as possible.
-* C3 branch (`statging-tici`) is slightly older than release but similarly capable at the moment.
+* C3 branch (`staging-tici`) is slightly older than release but similarly capable at the moment.
 * Forum: https://community.sunnypilot.ai
 
 ## FrogPilot
