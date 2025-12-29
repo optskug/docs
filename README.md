@@ -37,8 +37,7 @@ This is an attempt to document some of the discussion and information about the 
       * [Unknown](#unknown)
 * [Setup Guide](#setup-guide)
    * [Key Extraction](#key-extraction)
-   * [Key Installation](#key-installation)
-   * [Advanced Topic: Run the exploit using SSH manually](#advanced-topic-run-the-exploit-using-ssh-manually)
+   * [Advanced Topics](#advanced-topics)
 * [Forks](#forks)
 * [Discords of Note](#discords-of-note)
 * [Current History](#current-history)
@@ -270,9 +269,6 @@ If your car is not listed above, then there has been no documented information o
 > If you are a new user, consider waiting for the official release, ETA 2026-01. Check this page for an update or find us at the [comma Discord](https://discord.comma.ai)'s #toyota-security channel.
 >
 
-* [Key Extraction](#key-extraction) if you don't know the key.
-* [Key Installation](#key-installation) if you know the key.
-
 ## Key Extraction
 
 Your car has a security key that Toyota doesn't want you to have. \
@@ -460,51 +456,17 @@ Please let us know! We've put in lots of effort into this doc, so even a simple 
 
 We're in [comma Discord](https://discord.comma.ai) in #toyota-security channel.
 
-## Key Installation
+## Advanced Topics
 
-### You shouldn't need to do this
+### Install a known key
 
-Modern openpilot and its forks have an [auto-key-install process](https://github.com/commaai/openpilot/pull/34401/files) that runs on every car start.
+In some cases it's possible to [type in a key that you already know](https://github.com/optskug/docs/blob/f582e47020c0aff210cbdf9d452c0f19e67bcad7/README.md#key-installation).  This was made when the key extraction was just getting started.
 
-This means that **uninstalling openpilot or resetting the comma device no longer uninstalls the security key.**
+These days the key extraction is well-established, so re-extracting the key is just as easy as typing it in.
 
-**🎉🎉🎉 Gone are the days of key installation. From now on, just install openpilot and go drive, just like non-TSK users! 🎉🎉🎉**
+### Run the exploit using SSH manually
 
-### When to do this
-
-You may need to still reinstall the key if
-1. your C3 died and you got a new C3X,
-2. the key was never installed in `/cache/params/SecOCKey` because you did it the old SSH way and never ran `TSK Manager` / `TSK Keyboard`,
-3. the installed key in `/cache/params/SecOCKey` was deleted, or
-4. you're using an old fork without the auto-key-installer.
-
-Follow this guide to reinstall the key.
-
-### Method 1. Use the built-in `TSK Manager`/`TSK Keyboard`
-
-Some forks/branches have `TSK Manager` or `TSK Keyboard` under Settings.
-
-⚙ > `Device` > `TSK Manager`/`TSK Keyboard`
-
-![](img/v2.settings-keyboard.jpg)
-
-If it's there, use it to type in your key and install, and then reboot.
-
-### Method 2. SSH and install the key to `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files
-
-Redo [Step 4B-4. Install the security key & Reboot](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-4b-4-install-the-security-key--reboot).
-
-### Method 3. Uninstall openpilot, install the key using `TSK Manager`, and install openpilot
-
-Follow [Step 1. Install TSK Manager](#step-1-install-tsk-manager) to install `TSK Manager` via the URL `optskug/tskm`
-
-No need to go to the car. Run `TSK Keyboard`. Use it to type in your key and install.
-
-![](img/v3.tsk-keyboard.jpg)
-
-## Advanced Topic: Run the exploit using SSH manually
-
-This is how to [extract the key manually](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-4b-run-the-exploit-using-ssh-manually). Most people can skip this.
+Is a GUI button too easy for your engineering spirit? Here is how to [extract the key manually](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-4b-run-the-exploit-using-ssh-manually).
 
 
 
