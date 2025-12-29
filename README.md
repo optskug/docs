@@ -39,7 +39,7 @@ This is an attempt to document some of the discussion and information about the 
    * [Key Extraction](#key-extraction)
    * [Key Installation](#key-installation)
    * [Advanced Topic: Run the exploit using SSH manually](#advanced-topic-run-the-exploit-using-ssh-manually)
-   * [Forks](#forks)
+* [Forks](#forks)
 * [Discords of Note](#discords-of-note)
 * [Current History](#current-history)
 
@@ -509,7 +509,7 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 
 
 ---
-## Forks
+# Forks
 
 > [!CAUTION]
 > Using forks presents a real danger. Do your research!
@@ -517,88 +517,72 @@ This is how to [extract the key manually](https://github.com/optskug/docs/blob/1
 > Begin your research in [comma.ai Discord's #custom-forks](https://discord.com/channels/469524606043160576/538741329799413760).<br/>
 > Please do not ask about forks outside of that channel.
 
-<table>
-    <tr>
-        <td><strong>Install URL</strong></td>
-        <td>
-          <strong>Lat:</strong> Lateral support
-          <br>
-          <strong>MADS:</strong> AOL / MADS / keep-lat-on-after-brakes
-          <br>
-          <strong>Long:</strong> Longitudinal support
-        </td>
-    </tr>
-    <tr>
-      <td><code>commaai/nightly-dev</code></td>
-      <td>
-        <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> No <br/>
-        <strong>Long:</strong> No <br/> <br/>
-        <ul>
-          <li>Not a fork but an alternate branch from comma.ai with TSK support.</li>
-          <li>Install this if you need support from comma.ai company. They won't talk to you if you're on a fork.</li>
-          <li>Pre-compiled, so quick to install.</li>
-          <li>It has the most up-to-date changes, which is cool, but it could get unstable.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td><code>alexandresato/personal3</code><br/>
-        (a.k.a SatoPilot)
-      </td>
-      <td>
-        <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> Yes from community (MADS from Spektor56) <br/>
-        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
-        <ul>
-          <li>First fork to get long!</li>
-          <li>Very quick stop-and-go response</li>
-          <li><code>alexandresato/extract_secoc_key_btn</code> includes a TSK key extract button and is rebased with <code>personal3</code> often.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>sunnypilot/release-tizi</code><br/>
-        (a.k.a. sunnypilot)<br/>
-        <a href="https://community.sunnypilot.ai">sunnypilot Discourse Forum</a>
-        <a href="https://discord.gg/sunnypilot">sunnypilot Discord</a><br/>
-      </td>
-      <td>
-        <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> Yes from community (MADS original author) <br/>
-        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
-        <ul>
-          <li>Stable <code>release-tizi</code> of sunnypilot is extensively tested by the secoc community.</li>
-          <li>Model switcher to easily switch between various AI models</li>
-          <li>NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna</li>
-          <li>sunnypilot complies with comma.ai's safety rules as accurately as possible.</li>
-          <li>‼️ If your device is C3 install <code>sunnypilot/staging-tici</code> instead. TICI hardware support at sunnypilot is slightly older than release but similarly capable at the moment.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>frogpilot.download</code> <br/>
-        (a.k.a. FrogPilot)<br/>
-        <a href="https://discord.com/invite/frogpilot">FrogPilot Discord</a>
-      </td>
-      <td>
-        <strong>Lat:</strong> Yes from upstream <br/>
-        <strong>MADS:</strong> Yes from community (AOL original author) <br/>
-        <strong>Long:</strong> Yes from community (from chrispypatt) <br/> <br/>
-        <ul>
-          <li>Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
-          <li>‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.</li>
-        </ul>
-      </td>
-    </tr>
-</table>
+
+> [!NOTE]
+> All forks support lat, MADS/AOL, and long, unless noted otherwise.
+> * `Lat` is lateral support which means openpilot can use the steering wheel.
+> * `MADS/AOL` are features in sunnypilot and FrogPilot that keep the steering wheel control engaged even after applying brakes.
+> * `Long` is longitudinal support which means openpilot can use the gas and brake pedals.
+
+## openpilot
+
+URL
+* C4: `commaai/nightly-dev`
+* C3X: `commaai/nightly-dev`
+* C3: Not supported. Product support ended so use a fork instead.
+
+Notes
+* Not a fork but an alternate branch from comma.ai with TSK support.
+* Install this if you need support from [comma.ai's support](https://comma.ai/support). They won't talk to you if you're on a fork.
+* Pre-compiled, so quick to install.
+* It has the most up-to-date changes, which is cool, but it could get unstable.
+* Supports lat and long, but no MADS/AOL.
+
+## sunnypilot
+
+URL [(Source)](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
+* C4: `dev.sunnypilot.ai`
+* C3X: `release.sunnypilot.ai`
+* C3: `install.sunnypilot.ai/staging-tici`
+
+Notes
+* Release branch of sunnypilot is extensively tested by the Toyota SecOC community.
+* Model switcher to easily switch between various AI models.
+* NNLC: Big steering improvements for '21-23 RAV4 Prime and Sienna.
+* sunnypilot complies with comma.ai's safety rules as accurately as possible.
+* C3 branch (`staging-tici`) is slightly older than release but similarly capable at the moment.
+* Forum: https://community.sunnypilot.ai
+
+## FrogPilot
+
+URL
+* C4: Not yet supported
+* C3X: `frogpilot.download`
+* C3: `frogpilot.download`
+
+Notes
+* Uses an old AGNOS version. When downgrading, OP may get stuck in a registration loop. In this case, tap-tap-tap on the boot logo and reset the device to recover and then install again.</li>
+* ‼️ DO NOT RUN FROGPILOT DEEP STORAGE DELETE. It deletes your security key, and you have to run TSK Manager again. Run it only when you're selling the device.
+* Discord: https://discord.com/invite/frogpilot
+
+## SatoPilot
+
+URL
+* C4: Not yet supported
+* C3X: `alexandresato/personal3`
+* C3: `alexandresato/personal3`
+
+Notes
+* First fork to get long!
+* Very quick stop-and-go response.
+* `alexandresato/extract_secoc_key_btn` includes a TSK key extract button and is rebased with <code>personal3</code> often. The button is only for C3 & C3X, not for C4.
+
+## Others
 
 If you are installing a fork not included in the list above, find the fork author and ask the following.
 
 1. Does it meet the [safety standards from comma](https://github.com/commaai/openpilot/blob/master/docs/SAFETY.md#forks-of-openpilot)? Using a fork that doesn't meet the safety standards will get you banned from comma.ai servers.
-1. Is it for the latest C3X? A fork for an older device may [brick your C3X](https://discord.com/channels/771493367246094347/834826173795139584/1315136040020742185).
+1. Is it for the latest C3X or C4? A fork for an older comma device may [brick your C3X/C4](https://discord.com/channels/771493367246094347/834826173795139584/1315136040020742185).
 1. Does it support SecOC/TSK?
 1. Does it contain banned code? Using a fork with banned code may get you [banned from comma.ai servers](https://discord.com/channels/469524606043160576/954493346250887168/1297991602710511728).
 1. Is there [anything](https://discord.com/channels/469524606043160576/616456819027607567/1166547952836300870) to [watch out](https://github.com/FrogAi/FrogPilot/blob/9751e9b03364fab843accf00b62af85adfef4feb/selfdrive/ui/soundd.py#L98) for?
