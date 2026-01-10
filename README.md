@@ -81,6 +81,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 * 2021-2023 RAV4 Prime/PHEV
   * All Trims supported
+  * For non-Prime/PHEV RAV4s (e.g. various ICE trims, Hybrid trims, etc.) in the US, please refer to [comma's supported vehicle list](https://comma.ai/vehicles#toyota)
   * Toyota Harness A
   * Early 2024 MY situation like Early 2024 MY Sienna unknown.
   * The compatibility status of the RAV4 Hybrid or RAV4 ICE is not relevant to the Prime/PHEV. They're different vehicles.
