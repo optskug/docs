@@ -55,7 +55,7 @@ There is a `STEERING_LKA`-ish message and more in some new Toyotas that currentl
 
 At the moment, nobody is known to be working on the issue beyond what was done by Willem and Greg. Newer vehicles other than the ones on this list are not known to be working with the existing exploits discovered and built by them to dump their keys.
 
-There has been some primordial research on firmware modification to disable the security system, but it is not known if this is possible or not.
+There has been some primordial research on firmware modification to disable the security system, but it is not known if this is possible or not. However, there has been no updates since July 2025.
 
 ### Unresolved Mysteries
 
