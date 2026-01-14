@@ -1242,7 +1242,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * SecOC Key extraction is outside of the scope of this work though and will not be included. In other words, plug-and-play is not to be expected. The are open to seeing if/any UI or workflow might come from the community on this.
 * Jason opens a new draft pull request superceding Willem's pull request: https://github.com/commaai/openpilot/pull/33654
 * Produced a user group list of working vehicles and users on Jason's request: https://docs.google.com/spreadsheets/d/1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c/edit?gid=0#gid=0
-* [A mainland China/PRC user with a PRC-built 2022 Sienna comes into the Frogpilot Discord. They are able to extract the key but for whatever reason, can't write "Params". Will followup with prescribed reset. User really only speaks Mandarin so the Frogpilot Discord Frogbot's thread auto-translation bot is used. (FP Discord)](https://discord.com/channels/1137853399715549214/1289252533654650952/1289401084640493641)
+* [A mainland China/PRC user with a Mainland China-made 2022 Sienna comes into the Frogpilot Discord. They are able to extract the key but for whatever reason, can't write "Params". Will followup with prescribed reset. User really only speaks Mandarin so the Frogpilot Discord Frogbot's thread auto-translation bot is used. (FP Discord)](https://discord.com/channels/1137853399715549214/1289252533654650952/1289401084640493641)
   * Note: They are also using a Mr. One C3 clone since comma doesn't appear to ship to China from their POV for whatever reason. This complicates debugging and upstreaming to comma's branch is impossible for their vehicle.
   * [Got it working with Mr One's C3 Clone! (FP Discord)](https://discord.com/channels/1137853399715549214/1289252533654650952/1289678233633165343)
 * [Jason has a test branch out for users to try on a new openpilot base. Users may need to reinstall their key. He is looking for reports of successes and failures.](https://discord.com/channels/469524606043160576/905950538816978974/1290439760267186270)
@@ -1408,7 +1408,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [More comments from geohot](https://www.reddit.com/r/Comma_ai/comments/1l271c2/comment/mvsoj94/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
   * "Our mission is solving self driving cars, improving the models and the software. That's where we are focusing the full resources of the team, we just don't care that much about encryption. To comma the AI and driving quality is the interesting problem, the security isn't. Buy a different car, or break the encryption yourself (you have all the tools)."
-* [hl.elias_44035 is unable to get their Sienna in the PRC working. It was made in December 2022 and is likely a 2023 model.](https://discord.com/channels/469524606043160576/905950538816978974/1379612874942709780)
+* [hl.elias_44035 is unable to get their Mainland China-made Sienna working. It was made in December 2022 and is likely a 2023 model.](https://discord.com/channels/469524606043160576/905950538816978974/1379612874942709780)
 * [Some PRC users discuss some services that offer to re-key. Unfortunately, it still seems that getting a key is not possible, even with some insider Chinese Toyota (FAW) knowledge.](https://discord.com/channels/469524606043160576/905950538816978974/1382203847661064345)
 * [More NNLC improvements land in SP for RAV4 Prime users.](https://github.com/sunnypilot/sunnypilot/pull/925)
   * ["For these finely tuned NNLC models for Toyota we recommend TR7 model. For reasons we don't understand it seems to be vastly superior than any other model at keeping centered in lane and steering with precision. Nothing else comes close." (SP Discord)](https://discord.com/channels/880416502577266699/1371352826625785907)
@@ -1423,7 +1423,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "The most interesting part of this is actually the flash driver that's uploaded before flashing. Having this file will help tremendously if we want to go the route of flashing custom firmware that disables SecOC."
   * "could this easily open the door to other cars? or is it pretty tundra specific from what we know" - spanconstant5
     * "This flash driver should be applicable to all cars"
-* [calvinspark notices that the Chinese August 2023 PRC Sienna which doesn't work for dumping has an 0x01 app identifier and a 0x02 bootloader identifier.](https://discord.com/channels/469524606043160576/905950538816978974/1399402947762327743)
+* [calvinspark notices that the August 2023 Mainland China-made Sienna which doesn't work for dumping has an 0x01 app identifier and a 0x02 bootloader identifier.](https://discord.com/channels/469524606043160576/905950538816978974/1399402947762327743)
 
 ### August 2025
 
