@@ -85,25 +85,26 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * Early 2024 MY situation like Early 2024 MY Sienna unknown.
   * The compatibility status of the RAV4 Hybrid or RAV4 ICE is not relevant to the Prime/PHEV. They're different vehicles.
   * Sunnypilot Discord Channel: [#dev-toyota-security](https://discord.com/channels/880416502577266699/1385812275285327945) (requires joining the [Sunnypilot Discord](#discords-of-note))
-* 2021-2023 Sienna Hybrid (USDM), 2021-2022 Sienna Hybrid (PRC)
+* 2021-2023 Sienna Hybrid (US-made), 2021-2022 Sienna Hybrid (Mainland China-made)
   * All Trims supported
+  * VINs starting with `5` are US-made. VINs starting with `L` are Mainland China-made. We are not aware of Siennas made in any other regions.
   * Toyota Harness A
   * Sunnypilot Discord Channel: [#dev-toyota-security](https://discord.com/channels/880416502577266699/1371352826625785907) (requires joining the [Sunnypilot Discord](#discords-of-note))
-  * Not applicable to 2023+ Sienna (PRC)
+  * Not applicable to 2023+ Sienna (Mainland China-made)
   * Early 2024 MY (Built in 09/23 to 11/23 according to sticker) might work? Currently too few data points to determine cutoff
     https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
     * Check driver door jam to get month and year. It's Month/Year
       * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
     * Working
-      * USDM
+      * US-made
         * Gako - 10/23
-      * PRC
+      * Mainland China-made
         * [aivordin's acquaintance - 03/22](https://discord.com/channels/469524606043160576/905950538816978974/1395329561297817731)
     * Not Working
-      * USDM
+      * US-made
         * samueljsg - 12/23
         * grb5 - 09/24
-      * PRC
+      * Mainland China-made
         * hl.elias_44035 - 12/22
         * [aivordin's acquaintance 2 - 08/23](https://discord.com/channels/469524606043160576/905950538816978974/1399314022829920286)
         * [sadmenmen - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932)
@@ -194,7 +195,7 @@ The List:
   * New 02 ~~bootloader~~[^4] seen
 * 2024+ RAV4 in Europe (techinfo)
 * 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
-* 2023+ Sienna (PRC)
+* 2023+ Sienna (Mainland China-made)
 * 2024+ Sienna
   * TSS 2.0
   * Key at least not at the same location as other RAV4 Prime
