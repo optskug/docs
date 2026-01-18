@@ -1497,6 +1497,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [astradotpng extracts a key from their Rav4 Prime with SSH instructions](https://community.sunnypilot.ai/t/toyota-2021-rav4-prime-w-c4-working/1776)
 * [calvinspark updated the setup guide with C4 instructions and changes.](https://github.com/optskug/docs/pull/69)
 
+### January 2026
+
+* [GON0822 is able to get their Yaris running on the comma four. Running sunnypilot dev branch.](https://discord.com/channels/469524606043160576/905950538816978974/1462060811878006886)
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
