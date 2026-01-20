@@ -1500,6 +1500,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### January 2026
 
 * [GON0822 is able to get their Japanese Yaris running on the comma four. Running sunnypilot dev branch.](https://discord.com/channels/469524606043160576/905950538816978974/1462060811878006886)
+* [roxen3005/Rajesh had to replace the ECM in their Sienna 2023. They were very worried about this replacement making openpilot incompatible. It did not, though they had to re-extract the new key.](https://discord.com/channels/469524606043160576/905950538816978974/1463230276967862474)
 
 ---
 
