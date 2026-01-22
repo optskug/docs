@@ -419,7 +419,7 @@ C3X will show the 15mph calibration screen immediately.
 
 ![](img/v3.calibrate.jpg)
 
-If you're able to calibrate and use openpilot to use the steering wheel and gas/brake pedals, it's working!
+If you're able to calibrate and use openpilot to control the steering wheel and gas/brake pedals, it's working!
 
 `commaai/nightly-dev` can use both the gas and brake pedals (aka "long support") and also the steering wheel (aka "lat support") on TSK vehicles. In other words, it can do all the normal things that an openpilot can do including Experimental Mode.
 
