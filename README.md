@@ -263,14 +263,6 @@ If your car is not listed above, then there has been no documented information o
 
 # Setup Guide
 
-> [!WARNING]
-> **comma four (C4) support is in beta.**
->
-> Several people reported success, but Calvin hasn't received his C4 yet, so there are no photos or an official seal of quality.
->
-> If you are a new user, consider waiting for the official release, ETA 2026-01. Check this page for an update or find us at the [comma Discord](https://discord.comma.ai)'s #toyota-security channel.
->
-
 ## Key Extraction
 
 Your car has a security key that Toyota doesn't want you to have. \
@@ -282,15 +274,27 @@ At home, sitting next to your router, turn on the comma device with a phone char
 
 Choose `Custom Software` and enter the URL:
 
-* C4: `calvinpark/tskm-c4`
+* C4: `optskug/tskm`
+
+On any screen, swipe down to go back.
+
+![](img/v5.c4.install.1.jpg)
+
+![](img/v5.c4.install.2.jpg)
+
+![](img/v5.c4.tsk-manager.home.jpg)
+
+The buttons are a bit too sensitive - I'll fix this soon.
+
 * C3X: `optskug/tskm`
-* C3: `https://smiskol.com/fork/optskug/tskm-c3`
 
 ![](img/v4.install.1.jpg)
 
 ![](img/v4.install.2.jpg)
 
 ![](img/v3.tsk-manager.home.jpg)
+
+* C3: `https://smiskol.com/fork/optskug/tskm-c3`
 
 Unplug the power to turn off the device.
 
@@ -310,6 +314,8 @@ Go to your car and connect everything including Comma Power (OBD2 connector + lo
 Official Setup Guide: https://comma.ai/setup
 
 Turn the car on and off - the comma device should remain powered on.
+
+![](img/v5.c4.tsk-manager.incar.jpg)
 
 ![](img/v3.tsk-manager.incar.jpg)
 
@@ -351,6 +357,8 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 Run `TSK Extractor`.
 
+![](img/v5.c4.ext-success.jpg)
+
 ![](img/v3.ext-success.jpg)
 
 Congratulations, you have the key now!
@@ -359,6 +367,8 @@ Congratulations, you have the key now!
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
 Sometimes `TSK Extractor` can't talk to the car. Try again.
+
+![](img/v5.c4.ext-known.jpg)
 
 ![](img/v3.ext-known.jpg)
 
@@ -388,6 +398,8 @@ For C4 and C3X, `commaai/nightly-dev` is the only branch from comma.ai with TSK 
 
 For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot is your best option.
 
+![](img/v5.c4.reboot.jpg)
+
 ![](img/v4.reboot.jpg)
 
 <details><summary>Troubleshooting</summary>
@@ -399,11 +411,15 @@ For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot i
 
 ### Step 6. Calibrate & Validate
 
-The comma device should show the 15mph calibration screen.
+C4 will show the home screen. Once you start driving it will show the 15mph calibration screen.
+
+![](img/v5.c4.calibrate-1.jpg) ![](img/v5.c4.calibrate-2.jpg)
+
+C3X will show the 15mph calibration screen immediately.
 
 ![](img/v3.calibrate.jpg)
 
-If you're able to calibrate and use openpilot to use the steering wheel (aka "lat support"), it's working!
+If you're able to calibrate and use openpilot to use the steering wheel and gas/brake pedals, it's working!
 
 `commaai/nightly-dev` can use both the gas and brake pedals (aka "long support") and also the steering wheel (aka "lat support") on TSK vehicles. In other words, it can do all the normal things that an openpilot can do including Experimental Mode.
 
