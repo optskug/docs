@@ -213,6 +213,7 @@ The List:
 * 2023+ Lexus LS[^3]
 * 2023+ Lexus RX, RZ[^3]
 * 2024+ Lexus TX[^3]
+* 2025+ Lexus UX[^3]
 
 ### 🔵 Vehicles not in comma's supported vehicles list
 
@@ -250,6 +251,8 @@ With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehic
   * No one has tried
 * 2025 Lexus ES Non-Hybrid
   * Seems to have issues being auto-added to comma's supported vehicle list for some reason.
+* 2024 Lexus UX
+  * Last year without security key according to TechInfo.
 
 ### Unknown
 
@@ -1513,6 +1516,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [GON0822 is able to get their Japanese Yaris running on the comma four. Running sunnypilot dev branch.](https://discord.com/channels/469524606043160576/905950538816978974/1462060811878006886)
 * [roxen3005/Rajesh had to replace the ECM in their Sienna 2023. They were very worried about this replacement making openpilot incompatible. It did not, though they had to re-extract the new key.](https://discord.com/channels/469524606043160576/905950538816978974/1463230276967862474)
+* [jyf0228 unfortuantely discovers that their 2025 UX has Toyota Security Key and that the 2024 UX does not. As it was introduced in 2025, it is added to the list of unsupported vehicles.](https://discord.com/channels/469524606043160576/524327905937850394/1464342057345618175)
 
 ---
 
