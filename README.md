@@ -17,7 +17,7 @@ This is an attempt to document some of the discussion and information about the 
 >
 > [![](./img/ai-deepwiki-anim.gif)](https://deepwiki.com/optskug/docs)
 >
-> You are encouraged to share DeepWiki conversations links in Discord if you aren't sure it is interpreting this document correctly or if you have follow questions.
+> You are encouraged to share DeepWiki conversations links in Discord if you aren't sure it is interpreting this document correctly or if you have follow up questions that it can't handle.
 >
 > Of course, other AI assistants such as [ChatGPT](https://chat.openai.com/chat), [Claude](https://claude.ai/), or [Gemini](https://gemini.google.com) can also be used once you pass them the URL of this repository: https://github.com/optskug/docs
 >
