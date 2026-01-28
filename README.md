@@ -4,8 +4,6 @@
 
 [*Toyota's Sword in Rock situation*](https://store.steampowered.com/app/1865370/The_one_who_pulls_out_the_sword_will_be_crowned_king/) (that has been pulled out [quite a bit by Willem and Greg](https://icanhack.nl/blog/secoc-key-extraction/)!)
 
-[![](https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c%26cellRange%3DA1)](https://docs.google.com/spreadsheets/d/1sprUteWtCVH6nQ6JfsmX0liIJ58H4nAVWxtAdorfW4c/edit#gid=0&range=A1)[^2]
-
 The [comma.ai Discord](https://discord.comma.ai) isn't really a good place to store _answers_ or guidance to questions about the situation with Toyota's TSK/ECU Security Key/SecOC and openpilot.
 Discord's search is terrible, and the content inside of it isn't accessible to search engines.
 This is an attempt to document some of the discussion and information about the situation with Toyota's TSK/ECU Security Key/SecOC and openpilot in a more accessible way.
