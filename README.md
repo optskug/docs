@@ -84,12 +84,10 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * Toyota Harness A
   * Early 2024 MY situation like Early 2024 MY Sienna unknown.
   * The compatibility status of the RAV4 Hybrid or RAV4 ICE is not relevant to the Prime/PHEV. They're different vehicles.
-  * Sunnypilot Discord Channel: [#dev-toyota-security](https://discord.com/channels/880416502577266699/1385812275285327945) (requires joining the [Sunnypilot Discord](#discords-of-note))
 * 2021-2023 Sienna Hybrid (US-made), 2021-2022 Sienna Hybrid (Mainland China-made)
   * All Trims supported
   * VINs starting with `5` are US-made. VINs starting with `L` are Mainland China-made. We are not aware of Siennas made in any other regions.
   * Toyota Harness A
-  * Sunnypilot Discord Channel: [#dev-toyota-security](https://discord.com/channels/880416502577266699/1371352826625785907) (requires joining the [Sunnypilot Discord](#discords-of-note))
   * Not applicable to 2023+ Sienna (Mainland China-made)
   * Early 2024 MY (Built in 09/23 to 11/23 according to sticker) might work? Currently too few data points to determine cutoff
     https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
