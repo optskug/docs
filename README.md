@@ -1518,6 +1518,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [roxen3005/Rajesh had to replace the ECM in their Sienna 2023. They were very worried about this replacement making openpilot incompatible. It did not, though they had to re-extract the new key.](https://discord.com/channels/469524606043160576/905950538816978974/1463230276967862474)
 * [jyf0228 unfortuantely discovers that their 2025 UX has Toyota Security Key and that the 2024 UX does not. As it was introduced in 2025, it is added to the list of unsupported vehicles.](https://discord.com/channels/469524606043160576/524327905937850394/1464342057345618175)
 
+### February 2026
+
+* [Ren./ivybridge4627 is able to get 2020 JDM Yaris Hybrid using a comma ai 3x.](https://discord.com/channels/469524606043160576/905950538816978974/1468087525099831410)
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
