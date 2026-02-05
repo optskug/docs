@@ -1521,6 +1521,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### February 2026
 
 * [Ren./ivybridge4627 is able to get 2020 JDM Yaris Hybrid using a comma ai 3x.](https://discord.com/channels/469524606043160576/905950538816978974/1468087525099831410)
+* [man9778 investigates the Japanese-made 2023 Prius in Korea, suspecting weaker security due to removed features. It has the same security as others and for the time being, is not supported for any key extraction.](https://discord.com/channels/469524606043160576/905950538816978974/1468991096762925222)
 
 ---
 
