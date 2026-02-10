@@ -1522,6 +1522,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [Ren./ivybridge4627 is able to get 2020 JDM Yaris Hybrid using a comma ai 3x.](https://discord.com/channels/469524606043160576/905950538816978974/1468087525099831410)
 * [man9778 investigates the Japanese-made 2023 Prius in Korea, suspecting weaker security due to removed features. It has the same security as others and for the time being, is not supported for any key extraction.](https://discord.com/channels/469524606043160576/905950538816978974/1468991096762925222)
+* [adeeb, a comma staffer, responds to "Comma AI approach to a future of vehicles with encrypted CAN bus"](https://www.reddit.com/r/Comma_ai/comments/1qyufzq/comment/o46cci8/)
+  * "It’s the same as any car support. We seeded a lot of the car support, and for the last few years, the community has extended it a ton while we make openpilot more capable."
+  * "Car port difficulty has always been a spectrum, and SecOc just pushes the spectrum a little further over. But the community already has some SecOc cars driving around, and even a few FlexRay cars recently."
+  * "(That being said, we’re hiring if anyone wants to come here and work on car ports!)"
 
 ---
 
