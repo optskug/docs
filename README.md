@@ -76,7 +76,7 @@ If it is on https://comma.ai/vehicles#toyota, then it's not in question and is s
 
 Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
-* 2021-2023 RAV4 Prime/PHEV
+* 2021-2023 RAV4 Prime/PHEV aka. Plug-in Hybrid
   * All Trims supported
   * For non-Prime/PHEV RAV4s (e.g. various ICE trims, Hybrid trims, etc.) in the US, please refer to [comma's supported vehicle list](https://comma.ai/vehicles#toyota)
   * Toyota Harness A
@@ -183,7 +183,7 @@ The List:
 * 2025+ Highlander ICE and Hybrid[^3]
 * 2024+ Mirai[^3]
 * 2023+ Prius and Prius Prime/PHEV[^3]
-* 2024+ RAV4 Prime/PHEV
+* 2024+ RAV4 Prime/PHEV aka. Plug-in Hybrid
   * TSS 2.0
   * Key at least not at the same location as other RAV4 Prime
   * Brute force efforts to find key location TBD
