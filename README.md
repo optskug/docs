@@ -157,7 +157,7 @@ These fall into a few categories:
   * See [Willem's blog post about dumping the keys, specifically the section "Notes on Newer Vehicles"](https://icanhack.nl/blog/secoc-key-extraction/#notes-on-newer-vehicles)
   * We've only been able to dump keys from vehicles models that were introduced with TSK/SecOC in 2020-2021. Presumably Toyota was going through their existing stock of ECU hardware and phased in TSK/SecOC over time for existing models but new models starting in 2022+ all have an evolved or uncracked TSK/SecOC from day one.
 * We can't get code execution on the EPS ECU to run the exploit for some other reason. (Tundra)
-* CAN Bus captures from these vehicles are unlikely to be of use for any research until someone figures out how to get _into_ the ECUs themselves. In other words, you can't tell much from ciphertext. 
+* CAN Bus captures from these vehicles are unlikely to be of use for any research until someone figures out how to get _into_ the ECUs themselves. In other words, you can't tell much from ciphertext.
 
 The List:
 
@@ -642,6 +642,11 @@ In its place are more specific community bounties:
 * ecman. for some Lexus RX
   * 1000 USD
   * https://discord.com/channels/469524606043160576/905950538816978974/1374020440711762042
+* yja5020. for Land Cruiser 250
+  * 1000 USD
+  * https://discord.com/channels/469524606043160576/905950538816978974/1473790899942326363
+  * "My offer is serious but conditional to have comma properly working on the LC 250"
+
 ## Pictures of TSK'd and non-TSK'd Camera ECUs
 
 FWIW the outside of the ECU Security Key camera of a Rav4 Prime looks the same as a non-ECU Security Camera of a Corolla or Corolla Hatchback.
