@@ -54,6 +54,9 @@ At the moment, nobody is known to be working on the issue beyond what was done b
 
 There has been some primordial research on firmware modification to disable the security system, but it is not known if this is possible or not. However, there has been no updates since July 2025.
 
+> [!NOTE]
+> Toyota is not alone in implementing encrypted CAN bus systems to block ADAS additions. For example, Ford has been rolling out their Trusted Realtime Operating Network (TRON) on CANFD vehicles starting with the 2023 Superduty. You can check the [Confirmed TRON Status List](https://bluepilot.dev/2025/08/13/confirmed-tron-status-list/) on Blue Pilot for more details on affected Ford vehicles that are likewise currently incompatible with openpilot.
+
 ### Unresolved Mysteries
 
 The following is not comprehensive.
@@ -1447,6 +1450,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 ### August 2025
 
+* [Blue Pilot publishes a confirmed TRON (Trusted Realtime Operating Network / Ford's encrypted CAN bus) status list for Ford vehicles. Beginning with the 2023 Superduty, Ford has been rolling out encoded CANFD systems into vehicles which are incompatible with openpilot.](https://bluepilot.dev/2025/08/13/confirmed-tron-status-list/)
 * [Apparently the Combonation Meter Assembly or the Instrument cluster on a Corolla Hatchback (All JP Made) isn't covered under security key?](https://www.reddit.com/r/CorollaHatchback/s/QnkrnvYDu0)
   * [Nevermind, it is. Without it, TSS3 won't work.](https://www.reddit.com/r/CorollaHatchback/comments/1mrhvac/comment/n9mkwdm/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * [ryleymcc, creator of the Mazda Torque Interceptor, discusses a bit about the Toyota Torque Interceptor (MT)](https://discord.com/channels/839295599928934430/936051750639665172/1405340646088380526)
