@@ -1535,6 +1535,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "It’s the same as any car support. We seeded a lot of the car support, and for the last few years, the community has extended it a ton while we make openpilot more capable."
   * "Car port difficulty has always been a spectrum, and SecOc just pushes the spectrum a little further over. But the community already has some SecOc cars driving around, and even a few FlexRay cars recently."
   * "(That being said, we’re hiring if anyone wants to come here and work on car ports!)"
+* [man\_9778 attempts to dump a key from their 2025 Prius. Initial software does not work.](https://discord.com/channels/469524606043160576/905950538816978974/1474835486680944703)
 
 ---
 
