@@ -523,7 +523,7 @@ Notes
 ## sunnypilot
 
 URL [(Source)](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
-* C4: `dev.sunnypilot.ai`
+* C4: `staging.sunnypilot.ai`
 * C3X: `release.sunnypilot.ai`
 * C3: `install.sunnypilot.ai/staging-tici`
 
