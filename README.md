@@ -97,6 +97,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
     * Working
       * US-made
         * Gako - 10/23
+        * [luke_chen01 - 11/23](https://discord.com/channels/469524606043160576/905950538816978974/1482268326259327098)
       * Mainland China-made
         * [aivordin's acquaintance - 03/22](https://discord.com/channels/469524606043160576/905950538816978974/1395329561297817731)
     * Not Working
