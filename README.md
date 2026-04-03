@@ -1538,6 +1538,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
   * "(That being said, we’re hiring if anyone wants to come here and work on car ports!)"
 * [man\_9778 attempts to dump a key from their 2025 Prius. Initial software does not work.](https://discord.com/channels/469524606043160576/905950538816978974/1474835486680944703)
 
+### March 2026
+
+* [Tundra status is still basically unchanged: the rack did make it to Willem and he eventually got the exploit to run, but the key was not stored in memory. A December follow-up said he was busy with other consultation projects.](https://discord.com/channels/469524606043160576/905950538816978974/1488632670505275463)
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
