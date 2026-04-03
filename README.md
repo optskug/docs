@@ -1542,6 +1542,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [Tundra status is still basically unchanged: the rack did make it to Willem and he eventually got the exploit to run, but the key was not stored in memory. A December follow-up said he was busy with other consultation projects.](https://discord.com/channels/469524606043160576/905950538816978974/1488632670505275463)
 
+### April 2026
+
+* [man\_9778 reports that a Korean-market 5th gen Prius looks promising under a forced-recognized sunnypilot build and suspects SecOC may not be applied, but it is still very early and they are asking for help analyzing a route.](https://discord.com/channels/469524606043160576/905950538816978974/1488870442943905853)
+
 ---
 
 [^1]: This is an image of the CAN BUS traffic on a RAV4 Prime. The "checksum" for the Lane Keep Assist messages are now very high in entropy, indicative of some sort of signing or encryption being used.
