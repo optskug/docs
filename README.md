@@ -358,7 +358,7 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 >
 > Turn off the car, wait one minute, and turn it back on. Everything will be back to normal.
 
-Run `TSK Extractor`.
+Run `TSK Extractor`. This takes up to 10 seconds.
 
 ![](img/v5.c4.ext-success.jpg)
 
