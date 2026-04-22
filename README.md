@@ -217,6 +217,12 @@ The List:
 * 2023+ Lexus LS[^3]
 * 2023+ Lexus RX, RZ[^3]
 * 2024+ Lexus TX[^3]
+* 2025 Lexus ES Hybrid (Korean import)
+  * Reported on April 19, 2026 on the sunnypilot forum as showing `dashcam mode, unrecognized car` before manual selection and `unknown vehicle variant` after manual selection.
+  * Reported VIN starts with `J`.
+  * sunnyhaibin's follow-up log review found `PCM_CRUISE` only when using the SecOC DBC along with `0x0F` / `SECOC_SYNCHONIZATION`.
+  * This strongly suggests that this market-specific variant is affected by TSK/SecOC.
+  * Do not generalize this finding to all 2025 Lexus ES vehicles.
 * 2025+ Lexus UX[^3]
 
 ### 🔵 Vehicles not in comma's supported vehicles list
@@ -233,6 +239,8 @@ They may not have been added due to:
 However, they are confirmed on Toyota Techinfo to not have SecOC/TSK.
 
 With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehicles and might just be a fingerprint away from being supported by openpilot.
+
+Vehicle status notes in this section are for the US market unless otherwise specified.
 
 * 2023 US-made (VIN starts with `5`) Corolla Sedan
   * TSS 3.0
@@ -254,7 +262,8 @@ With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehic
   * TSS2.5
   * No one has tried
 * 2025 Lexus ES Non-Hybrid
-  * Seems to have issues being auto-added to comma's supported vehicle list for some reason.
+  * In the US market, this seems to have issues being auto-added to comma's supported vehicle list for some reason.
+  * This should not be read as covering non-US variants such as the Korean-import 2025 Lexus ES Hybrid noted above.
 * 2024 Lexus UX
   * Last year without security key according to TechInfo.
 
@@ -1545,6 +1554,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### April 2026
 
 * [man\_9778 reports that a Korean-market 5th gen Prius looks promising under a forced-recognized sunnypilot build and suspects SecOC may not be applied, but it is still very early and they are asking for help analyzing a route.](https://discord.com/channels/469524606043160576/905950538816978974/1488870442943905853)
+* [sunnyhaibin analyzes a 2025 Lexus ES Hybrid Korean import after a sunnypilot user reports that a comma four stays in `dashcam mode, unrecognized car`, and then shows `unknown vehicle variant` after manual selection. The reported VIN starts with `J`, and the follow-up log review found `PCM_CRUISE` only with the SecOC DBC plus `0x0F` / `SECOC_SYNCHONIZATION`, which strongly suggests this non-US-market variant is TSK/SecOC-affected rather than just missing from the supported-car list.](https://community.sunnypilot.ai/t/comma-4-not-recognizing-a-supported-car/4678/4?u=sunnyhaibin)
 
 ---
 
