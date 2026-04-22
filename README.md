@@ -1555,6 +1555,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 
 * [man\_9778 reports that a Korean-market 5th gen Prius looks promising under a forced-recognized sunnypilot build and suspects SecOC may not be applied, but it is still very early and they are asking for help analyzing a route.](https://discord.com/channels/469524606043160576/905950538816978974/1488870442943905853)
 * [sunnyhaibin analyzes a 2025 Lexus ES Hybrid Korean import after a sunnypilot user reports that a comma four stays in `dashcam mode, unrecognized car`, and then shows `unknown vehicle variant` after manual selection. The reported VIN starts with `J`, and the follow-up log review found `PCM_CRUISE` only with the SecOC DBC plus `0x0F` / `SECOC_SYNCHONIZATION`, which strongly suggests this non-US-market variant is TSK/SecOC-affected rather than just missing from the supported-car list.](https://community.sunnypilot.ai/t/comma-4-not-recognizing-a-supported-car/4678/4?u=sunnyhaibin)
+* [In a follow-up to the older 2022 Tundra EPS thread, blurbdust says they have a script for extracting the flash driver from the Techinfo `.cuw` package and offers to DM it without including keys. They add that it computes `0x201` and `0x202`, which they say are needed to decrypt the flash driver. This appears to be community-side tooling around the `.cuw` file, not a broader new breakthrough on the Tundra itself.](https://discord.com/channels/469524606043160576/905950538816978974/1496150355224952995)
 
 ---
 
