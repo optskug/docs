@@ -1550,6 +1550,8 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### March 2026
 
 * [Tundra status is still basically unchanged: the rack did make it to Willem and he eventually got the exploit to run, but the key was not stored in memory. A December follow-up said he was busy with other consultation projects.](https://discord.com/channels/469524606043160576/905950538816978974/1488632670505275463)
+* [In the openpilot 0.11 AMA, adeeb comments on newer vehicles and "encrypted" CAN buses, saying "encryption is fake news" and that there is "hope for any car with LKAS and ACC". When asked about the 2026 RAV4, he replies: "does it have LKAS and ACC? if so, you're in luck :)".](https://www.reddit.com/r/Comma_ai/comments/1rwhomf/openpilot_011_ships_today_ask_us_anything/)
+  * [A later May 2026 Reddit thread points back to this AMA as a counterpoint to claims that comma has fully written off manufacturer encryption/SecOC-style vehicles.](https://www.reddit.com/r/Comma_ai/comments/1t48mx0/comment/ok324kd/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 ### April 2026
 
