@@ -170,7 +170,7 @@ The List:
 * 2023+ bz4x[^3] (Probably the same for sister rebranded Subaru Solterra)
 * 2025+ Camry[^3]
 * 2023 TMC/JP-made Corolla[^3]
-* 2022+ Corolla Cross (USDM, not applicable to Thailand or Brazil)[^3]
+* 2022+ Corolla Cross (USDM, not applicable to Thailand, Brazil, or Taiwan)[^3]
 * 2023 Corolla Cross Hybrid
   * TSS 2.0
   * Known to be not working.
@@ -248,6 +248,13 @@ Vehicle status notes in this section are for the US market unless otherwise spec
   * It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
   * Likely requires a C3X as it's probably that it uses CAN-FD.
   * Probably not a fingerprint print away.
+* Taiwan-market Corolla Cross
+  * TSS 2.0
+  * No TSK/SecOC.
+  * Locally built / Taiwan domestic-market model.
+  * Saber422 reports that the 2026 Taiwan Corolla Cross is still TSS2.
+  * This is not a hardware hack or bypass situation. The Taiwan Corolla Cross simply appears to be a market-specific non-TSK case, similar to the Thailand-market Corolla Cross situation.
+  * Not known to be openpilot-supported yet. It likely needs normal route/fingerprint work rather than key extraction.
 * 2021 Lexus RC
   * TSS2
   * No TSK
@@ -1559,6 +1566,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [sunnyhaibin analyzes a 2025 Lexus ES Hybrid Korean import after a sunnypilot user reports that a comma four stays in `dashcam mode, unrecognized car`, and then shows `unknown vehicle variant` after manual selection. The reported VIN starts with `J`, and the follow-up log review found `PCM_CRUISE` only with the SecOC DBC plus `0x0F` / `SECOC_SYNCHONIZATION`, which strongly suggests this non-US-market variant is TSK/SecOC-affected rather than just missing from the supported-car list.](https://community.sunnypilot.ai/t/comma-4-not-recognizing-a-supported-car/4678/4?u=sunnyhaibin)
 * [In a follow-up to the older 2022 Tundra EPS thread, blurbdust says they have a script for extracting the flash driver from the Techinfo `.cuw` package and offers to DM it without including keys. They add that it computes `0x201` and `0x202`, which they say are needed to decrypt the flash driver. This appears to be community-side tooling around the `.cuw` file, not a broader new breakthrough on the Tundra itself.](https://discord.com/channels/469524606043160576/905950538816978974/1496150355224952995)
 * [(OPC Discord) As a funny sidenote from another SecOC world, Majd says a Fisker Ocean openpilot port is being worked on using the Toyota SecOC examples plus Tesla signals, and that the SecOC keys were "super easy" to retrieve because Fisker apparently left an option to read from the ECUs without security.](https://discord.com/channels/771493367246094347/771493367779295304/1498001868003999954)
+
+### May 2026
+
+* [spanconstant5 asks whether the Taiwan Corolla Cross still is built locally without TSK after hearing an old hardware-hack rumor / seeing a Taiwan Corolla Cross video.](https://discord.com/channels/469524606043160576/905950538816978974/1501647353063673957) Saber422 responds that Corolla Cross is made locally in Taiwan and that the 2026 Taiwan Corolla Cross is still TSS2. There is no known hardware hack here: Taiwan Corolla Cross appears to simply never have had TSK/SecOC, similar to the Thailand-market Corolla Cross situation.
 
 ---
 
