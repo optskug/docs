@@ -113,7 +113,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
   * Toyota Harness A
   * Dataflash dump hack works as the key is not in the same address as RAV4 Prime in program memory
   * Brute force efforts to find key location successful on both European and Japanese Yaris Hybrid. European user eventually gave up full installation due to unrelated C3 malfunction.
-  * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach
+  * https://github.com/I-CAN-hack/secoc/pull/4 - brute force dataflash dump approach used to locate and extract the SecOC key
   * First Continental Radar + Camera setup going and thus first radar controlled ACC vehicle done with. This does not mean longitudinal is controlled by openpilot though.
     * Experimental work in disabling the radar has shown this does is not enough to let openpilot control longitudinal.
   * Not sold in the USA, but is in Australia, Japan, and Europe
