@@ -36,6 +36,7 @@ This is an attempt to document some of the discussion and information about the 
 * [Setup Guide](#setup-guide)
    * [Key Extraction](#key-extraction)
    * [Advanced Topics](#advanced-topics)
+* [FAQ](#faq)
 * [Forks](#forks)
 * [Discords of Note](#discords-of-note)
 * [Current History](#current-history)
@@ -506,6 +507,19 @@ These days the key extraction is well-established, so re-extracting the key is j
 Is a GUI button too easy for your engineering spirit? Here is how to [extract the key manually](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-4b-run-the-exploit-using-ssh-manually).
 
 
+
+---
+# FAQ
+
+## Q: Can I use one comma device with both a SecOC/TSK vehicle and a non-SecOC vehicle?
+
+A: Yes, this should be fine. The SecOC key can remain installed; openpilot should simply not use it on the non-SecOC vehicle.
+
+Switching between two SecOC/TSK vehicles is where it gets annoying. The key is vehicle-specific, so the correct key needs to be present for whichever SecOC/TSK vehicle is being driven.
+
+Changing forks is still a reinstall/flash process, not a built-in dual-boot or per-car preset switcher. Pick a branch or fork that supports the vehicles you plan to use.
+
+Source: [Share Comma 4 between 2023 Toyota Sienna and 2019 Lexus ES300?](https://www.reddit.com/r/Comma_ai/comments/1tyvgln/comment/oq7nt83/)
 
 ---
 # Forks
