@@ -519,7 +519,7 @@ Switching between two SecOC/TSK vehicles is where it gets annoying. The key is v
 
 Changing forks is still a reinstall/flash process, not a built-in dual-boot or per-car preset switcher. Pick a branch or fork that supports the vehicles you plan to use.
 
-Source: [Share Comma 4 between 2023 Toyota Sienna and 2019 Lexus ES300?](https://www.reddit.com/r/Comma_ai/comments/1tyvgln/comment/oq7nt83/)
+Source: [comma.ai Discord #toyota-security](https://discord.com/channels/469524606043160576/905950538816978974/1513075043800977478)
 
 ---
 # Forks
