@@ -158,6 +158,17 @@ Related vehicles such as [🟠 2023+ Sienna (Mainland China-made)](#-may-be-poss
   * Still not broadly "supported": payload availability, exact vehicle/build/market coverage, and independent verification are incomplete. The upper build-date / model-year range for this approach is not known.
   * At least code is executed. Unknown what might have changed across other 2024+ Siennas.
   * New 02 ~~bootloader~~[^4] seen.
+  * Reports:
+    * Working
+      * US-made
+          * VanceLiu/Vance425 - 01/24
+          * samueljsg - 12/23
+          * (thehui)/bkai201 - 06/24
+          * josh_schmitt_60596 - N/A , was a 21 but had its EPS swapped to something with the `0x02` identifier, so unknown effective build date.
+    * Not Working
+      * PRC-made
+          * pandus_lee - 09/25
+
 
 ### 🟠 May be possible to hack but hasn't been tried
 
