@@ -188,6 +188,12 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * Key at least not at the same location as the RAV4 Prime.
   * Very speculative June 2026 follow-up: after the 2024-era Sienna `8965B4514000` / `0x02` EPS reports above, it may be worth brave testers trying the newer DataFlash candidate scan + CAN MAC-oracle strategy here too. This is not proven for 2021+ Venza; ECU differences, payload compatibility, security-access differences, HSM changes, or a different key location may still make it fail. Please report successes, failures, EPS versions, CAN logs, and dump behavior back in #toyota-security.
   * Has a 02 ~~bootloader~~[^4] though from two 2021 samples.
+* 2024+ RAV4 Prime/PHEV aka. Plug-in Hybrid
+  * TSS 2.0
+  * Key at least not at the same location as other RAV4 Prime.
+  * Very speculative June 2026 follow-up: after the 2024-era Sienna `8965B4514000` / `0x02` EPS reports above, it may be worth brave testers trying the newer DataFlash candidate scan + CAN MAC-oracle strategy here too. This is not proven for 2024+ RAV4 Prime; ECU differences, payload compatibility, security-access differences, HSM changes, or a different key location may still make it fail. Please report successes, failures, EPS versions, CAN logs, and dump behavior back in #toyota-security.
+  * At least code is executed. Unknown what might have changed.
+  * New 02 ~~bootloader~~[^4] seen.
 * 2022+ GR Yaris (EUDM/JDM/MXDM)
   * Unknown
 
