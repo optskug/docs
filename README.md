@@ -163,6 +163,7 @@ Related vehicles such as [🟠 2023+ Sienna (Mainland China-made)](#-may-be-poss
       * US-made
           * VanceLiu/Vance425 - 01/24
           * samueljsg - 12/23
+          * [Chaim - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1518307440029077625)
           * (thehui)/bkai201 - 06/24
           * josh_schmitt_60596 - N/A , was a 21 but had its EPS swapped to something with the `0x02` identifier, so unknown effective build date.
     * Not Working
