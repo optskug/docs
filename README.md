@@ -321,6 +321,9 @@ If your car is not listed above, then there has been no documented information o
 
 # Setup Guide
 
+> [!WARNING]
+> This setup guide does **not** cover vehicles in the [🟡 reported-working newer experimental path section](#-reported-working-with-a-newer-experimental-path), including 2024+ Sienna. Those vehicles currently require different experimental tooling and notes; see that section for thehui's alternative instructions.
+
 ## Key Extraction
 
 Your car has a security key that Toyota doesn't want you to have. \
