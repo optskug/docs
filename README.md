@@ -162,6 +162,7 @@ Related vehicles such as [🟠 2023+ Sienna (Mainland China-made)](#-may-be-poss
     * Working
       * US-made
           * VanceLiu/Vance425 - 01/24
+          * chipmunk/aidashu - 01/24, EPS `8965B4514000`
           * samueljsg - 12/23
           * [Chaim - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1518307440029077625)
           * (thehui)/bkai201 - 06/24
@@ -1644,6 +1645,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * Non-Toyota aside: [comma opens a $10k opendbc bounty for 2026 Ford F-150 / TRON support](https://github.com/commaai/opendbc/issues/3426), with other Ford TRON-platform vehicles also eligible. The bounty asks for a harness design, a high-quality lateral port, and at least proof-of-concept longitudinal support; the issue also notes a smaller payout tier for support that requires manual user-provided parameters, similar in spirit to the 2021 RAV4 Prime situation.
 * [nelsonjchen reaches out for 2023+ Mainland China-made Sienna owners/testers after the 2024 US Sienna DataFlash-oracle reports.](https://discord.com/channels/469524606043160576/905950538816978974/1516968701805596852) This is an outreach / data-gathering item rather than a result: the PRC Sienna bucket remains orange because existing data points are mixed, with some older PRC Sienna reports, later non-working examples, and changed identifier observations. Useful follow-up would include build date, VIN origin, EPS/app identifiers, CAN logs, dump behavior, and both successful and failed attempts.
 * [thehui cautions that the current 2024+ Sienna solution appears specific to EPS `8965B4514000`, and that more CAN logs from different EPS versions are needed before calling the approach general.](https://discord.com/channels/469524606043160576/905950538816978974/1518315346526732438)
+* [chipmunk/aidashu reports another successful 2024 Sienna run on a January 2024 build with EPS `8965B4514000`, while also documenting rough edges in thehui's current instructions.](https://discord.com/channels/469524606043160576/905950538816978974/1520359990022639627) Step 1 CAN collection worked, but they hit setup blockers around the `/data/toyota_dataflash_secoc_setup` path expectation and a missing `patch_tss3_missing_fw_to_4th_gen.py` helper referenced by `steps/step_fingerprint_patch.py`. thehui supplied the missing file directly, after which the run succeeded. Treat this as both another success report and a request for more users to walk through the instructions, verify the repo packaging, and comment with fixes.
 
 ---
 
