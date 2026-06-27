@@ -104,7 +104,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
         * [aivordin's acquaintance - 03/22](https://discord.com/channels/469524606043160576/905950538816978974/1395329561297817731)
     * Not Working
       * US-made
-        * samueljsg - 12/23
+        * ~~samueljsg - 12/23~~ - later reported working via the [🟡 newer experimental path](#-reported-working-with-a-newer-experimental-path)
         * grb5 - 09/24
       * Mainland China-made
         * hl.elias_44035 - 12/22
