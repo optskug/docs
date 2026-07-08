@@ -167,9 +167,11 @@ Related vehicles such as [🟠 2023+ Sienna (Mainland China-made)](#-may-be-poss
           * [Chaim - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1518307440029077625)
           * (thehui)/bkai201 - 06/24
           * josh_schmitt_60596 - N/A , was a 21 but had its EPS swapped to something with the `0x02` identifier, so unknown effective build date.
+          * [robocow1 - 09/25, used Codex to drive the process](https://discord.com/channels/469524606043160576/905950538816978974/1524238336741474394)
     * Not Working
       * PRC-made
           * pandus_lee - 09/25
+          * [3b1b.eth - 09/25](https://discord.com/channels/469524606043160576/905950538816978974/1524242481200365753)
 
 
 ### 🟠 May be possible to hack but hasn't been tried
