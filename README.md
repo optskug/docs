@@ -201,7 +201,7 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * Reports:
     * Not Working
       * JP-made
-          * [yc - xx/24](https://discord.com/channels/469524606043160576/1524987019087052820/1525024279547220028)
+          * [yc - 10/23](https://discord.com/channels/469524606043160576/1524987019087052820/1525024279547220028)
 * 2022+ GR Yaris (EUDM/JDM/MXDM)
   * Unknown
 
