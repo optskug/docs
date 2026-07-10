@@ -52,7 +52,7 @@ openpilot, in order to control the latitude (aka. steering), needs to be able to
 
 There is a `STEERING_LKA`-ish message and more in some new Toyotas that currently has an "authentication code" scheme appended to the end. The algorithm and security system for this "authentication code" is somewhat known for certain vehicles but requires a key that is unique to each vehicle to be extracted or smuggled out of the vehicle (https://icanhack.nl/blog/secoc-key-extraction/). Not all vehicles are able to have their keys extracted with what is currently known. Without the key for each vehicle, third parties like comma and users cannot control the vehicle. While vehicles that have had their keys smuggled out are currently working with openpilot.
 
-At the moment, nobody is known to be working on the issue beyond what was done by Willem and Greg. Newer vehicles other than the ones on this list are not known to be working with the existing exploits discovered and built by them to dump their keys.
+Most work on the issue still builds on what Willem and Greg accomplished. As of July 2026, 3b1b.eth is pursuing the payload-build secret through analysis of a purchased steering-control module, with the goal of building wider DataFlash-dumping payloads. Newer vehicles other than the ones on this list are not known to be working with the existing exploits discovered and built by Willem and Greg to dump their keys.
 
 There has been some primordial research on firmware modification to disable the security system, but it is not known if this is possible or not. However, there has been no updates since July 2025.
 
@@ -1654,6 +1654,10 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [chipmunk/aidashu reports another successful 2024 Sienna run on a January 2024 build with EPS `8965B4514000`, while also documenting rough edges in thehui's current instructions.](https://discord.com/channels/469524606043160576/905950538816978974/1520359990022639627) Step 1 CAN collection worked, but they hit setup blockers around the `/data/toyota_dataflash_secoc_setup` path expectation and a missing `patch_tss3_missing_fw_to_4th_gen.py` helper referenced by `steps/step_fingerprint_patch.py`. thehui supplied the missing file directly, after which the run succeeded. Treat this as both another success report and a request for more users to walk through the instructions, verify the repo packaging, and comment with fixes.
 * [robocow1 gets the alternative TSK dumping method working on a 2025 Sienna on a C3. These two boundaries are pushed.](https://discord.com/channels/469524606043160576/905950538816978974/1524242641536028832)
 * [Calvin produces a dataflash dump version of the 2024 Sienna SecOC key extraction flow but tries it with yc's 2024 Rav4 Prime. Unfortunately, no key was found. ](https://discord.com/channels/469524606043160576/905950538816978974/1524242641536028832)
+
+### July 2026
+
+* [3b1b.eth reports purchasing a steering-control module and pursuing the payload-build secret through module firmware/hardware analysis, following the sacrificial-module path used by Willem and Greg.](https://discord.com/channels/469524606043160576/1524987019087052820/1525284784547299359) If recovered, the secret could allow 3b1b.eth to build custom payloads that dump wider or complete DataFlash regions and search them for vehicle-specific SecOC key material. This is an active research effort: no firmware dump, payload-build secret, or SecOC key recovery has been reported yet.
 
 ---
 
