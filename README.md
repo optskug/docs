@@ -198,6 +198,10 @@ If you have one of these cars, please stop by the [comma Discord](https://discor
   * Very speculative June 2026 follow-up: after the 2024-era Sienna `8965B4514000` / `0x02` EPS reports above, it may be worth brave testers trying the newer DataFlash candidate scan + CAN MAC-oracle strategy here too. This is not proven for 2024+ RAV4 Prime; ECU differences, payload compatibility, security-access differences, HSM changes, or a different key location may still make it fail. Please report successes, failures, EPS versions, CAN logs, and dump behavior back in #toyota-security.
   * At least code is executed. Unknown what might have changed.
   * New 02 ~~bootloader~~[^4] seen.
+  * Reports:
+    * Not Working
+      * JP-made
+          * [yc - xx/24](https://discord.com/channels/469524606043160576/1524987019087052820/1525024279547220028)
 * 2022+ GR Yaris (EUDM/JDM/MXDM)
   * Unknown
 
@@ -1649,6 +1653,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [thehui cautions that the current 2024+ Sienna solution appears specific to EPS `8965B4514000`, and that more CAN logs from different EPS versions are needed before calling the approach general.](https://discord.com/channels/469524606043160576/905950538816978974/1518315346526732438)
 * [chipmunk/aidashu reports another successful 2024 Sienna run on a January 2024 build with EPS `8965B4514000`, while also documenting rough edges in thehui's current instructions.](https://discord.com/channels/469524606043160576/905950538816978974/1520359990022639627) Step 1 CAN collection worked, but they hit setup blockers around the `/data/toyota_dataflash_secoc_setup` path expectation and a missing `patch_tss3_missing_fw_to_4th_gen.py` helper referenced by `steps/step_fingerprint_patch.py`. thehui supplied the missing file directly, after which the run succeeded. Treat this as both another success report and a request for more users to walk through the instructions, verify the repo packaging, and comment with fixes.
 * [robocow1 gets the alternative TSK dumping method working on a 2025 Sienna on a C3. These two boundaries are pushed.](https://discord.com/channels/469524606043160576/905950538816978974/1524242641536028832)
+* [Calvin produces a dataflash dump version of the 2024 Sienna SecOC key extraction flow but tries it with yc's 2024 Rav4 Prime. Unfortunately, no key was found. ](https://discord.com/channels/469524606043160576/905950538816978974/1524242641536028832)
 
 ---
 
