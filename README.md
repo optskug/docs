@@ -342,7 +342,7 @@ At home, sitting next to your router, turn on the comma device with a phone char
 
 Choose `Custom Software` and enter the URL:
 
-* C4: `optskug/tskm`
+* C4: `optskug/tskm-0.11.0`
 
 On any screen, swipe down to go back.
 
@@ -354,7 +354,7 @@ On any screen, swipe down to go back.
 
 The buttons are a bit too sensitive - I'll fix this soon.
 
-* C3X: `optskug/tskm`
+* C3X: `optskug/tskm-0.11.0`
 
 ![](img/v4.install.1.jpg)
 
