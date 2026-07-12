@@ -362,7 +362,7 @@ The buttons are a bit too sensitive - I'll fix this soon.
 
 ![](img/v3.tsk-manager.home.jpg)
 
-* C3: `https://smiskol.com/fork/optskug/tskm-c3`
+* C3: `https://install.sunnypilot.ai/fork/optskug/tskm-c3`
 
 Unplug the power to turn off the device.
 
