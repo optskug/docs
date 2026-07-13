@@ -1658,6 +1658,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 ### July 2026
 
 * [3b1b.eth reports purchasing a steering-control module and pursuing the payload-build secret through module firmware/hardware analysis, following the sacrificial-module path used by Willem and Greg.](https://discord.com/channels/469524606043160576/1524987019087052820/1525284784547299359) If recovered, the secret could allow 3b1b.eth to build custom payloads that dump wider or complete DataFlash regions and search them for vehicle-specific SecOC key material. This is an active research effort: no firmware dump, payload-build secret, or SecOC key recovery has been reported yet.
+* [Silly Burrito tells geohot, "just waiting for that Toyota to work before I get one, tell your marketing guy that 😉". geohot replies: "the security key one? buy a different car".](https://discord.com/channels/469524606043160576/954493346250887168/1526325538749157568)
 
 ---
 
