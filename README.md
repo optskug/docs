@@ -269,6 +269,9 @@ The List:
   * sunnyhaibin's follow-up log review found `PCM_CRUISE` only when using the SecOC DBC along with `0x0F` / `SECOC_SYNCHONIZATION`.
   * This strongly suggests that this market-specific variant is affected by TSK/SecOC.
   * Do not generalize this finding to all 2025 Lexus ES vehicles.
+* 2025 Lexus ES (China-market / PRC)
+  * Long (`long047829`) reports TSK/SecOC-style checksum failures on a China-market ES2025 while using openpilot.
+  * This is a separate market-specific report from the Korean-import ES Hybrid and should not be generalized to all 2025 Lexus ES vehicles.
 * 2025+ Lexus UX[^3]
 
 ### 🔵 Vehicles not in comma's supported vehicles list
@@ -1661,6 +1664,7 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [yc points to a Penthertz retrospective collecting the RH850 fault-injection work that followed Willem's 2022 RAV4 Prime EPS research.](https://discord.com/channels/469524606043160576/1524987019087052820/1525414373559107604) [The March 2026 article](https://community.penthertz.com/t/the-evolution-of-rh850-hacking-from-a-diy-to-the-pico-glitcher-v3/30) traces quite a history: subsequent researchers extended the line of work across additional RH850 families and production ECUs, including firmware and diagnostic-secret extraction, EM fault injection, and Quarkslab's bypass of 16-byte ID Code protection, reproduced with the lower-cost Pico Glitcher v3. These are valuable follow-ups to Willem's RH850 reverse-engineering adventures, but they involve different chips, protections, and targets and do not by themselves report a new Toyota SecOC key-extraction result.
 * [Silly Burrito tells geohot, "just waiting for that Toyota to work before I get one, tell your marketing guy that 😉". geohot replies: "the security key one? buy a different car".](https://discord.com/channels/469524606043160576/954493346250887168/1526325538749157568)
 * [3b1b.eth reports getting a DIY glitching setup working on a Sienna EPS after a day of hands-on trial and error.](https://discord.com/channels/469524606043160576/905950538816978974/1527362940708065421) They have the module connected and are now attempting a firmware dump in order to recover the material needed to re-sign/build their own payloads, which could then support wider DataFlash dumps and a search for SecOC key material. This is a hardware bring-up milestone only: no firmware dump, payload-signing secret, or SecOC key recovery is reported here.
+* [Long (`long047829`) reports that a China-market 2025 Lexus ES shows TSK/SecOC-style checksum failures when using openpilot.](https://discord.com/channels/469524606043160576/954493346250887168/1527543242197958736) This adds a PRC-market ES2025 datapoint alongside the earlier Korean-import ES Hybrid report; both are market-specific findings and do not establish the status of every 2025 Lexus ES variant.
 
 ---
 
