@@ -352,7 +352,7 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 > Your phone charging cable will not work here. For connecting a comma device to the harness, always use the official OBD-C cable that came with the comma device. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
 
 Turn on the captions.<br>
-<a href="https://www.youtube.com/watch?v=Z9K3Agimwho&list=PLDDq90qjoCsk"><img src="img/v6.2.hardware.jpg" width="500"></a>
+<a href="https://www.youtube.com/watch?v=jwalKl9AsR8&list=PLDDq90qjoCsk"><img src="img/v6.2.hardware.jpg" width="500"></a>
 
 #### Step 3. Extract the key
 
@@ -544,7 +544,7 @@ We're in [comma Discord](https://discord.comma.ai) in #toyota-security channel.
 
 ### Install a known key
 
-In some cases it's possible to [type in a key that you already know](https://github.com/optskug/docs/blob/f582e47020c0aff210cbdf9d452c0f19e67bcad7/README.md#key-installation).  This was made when the key extraction was just getting started.
+In some cases it's possible to [type in a key that you already know](https://github.com/optskug/docs/blob/f582e47020c0aff210cbdf9d452c0f19e67bcad7/README.md#key-installation). This was made when the key extraction was just getting started.
 
 These days the key extraction is well-established, so re-extracting the key is just as easy as typing it in.
 
