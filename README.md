@@ -341,15 +341,15 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 #### Step 1. Install `TSK Manager`
 
 44-second overview.<br>
-[![Title](https://wsrv.nl/?url=markdown-videos-api.jorgenkh.no/youtube/GjbAbqLMSNk%3Fwidth%3D1280%26height%3D720&w=405&h=405&fit=cover)](https://youtube.com/shorts/GjbAbqLMSNk)
+<a href="https://www.youtube.com/shorts/bYqBKtZDiA4"><img src="img/v6.1.hardware-shorts.jpg" width="300"></a>
 
 18-minute real-time demonstration. Turn on the captions.<br>
-[![Title](https://markdown-videos-api.jorgenkh.no/youtube/Jo9SRp4VjMs?width=640&height=360)](https://www.youtube.com/watch?v=Jo9SRp4VjMs)
+<a href="https://www.youtube.com/watch?v=Jo9SRp4VjMs&list=PLDDq90qjoCsk"><img src="img/v6.1.hardware.jpg" width="500"></a>
 
 #### Step 2. Install the hardware
 
 Turn on the captions.<br>
-[![Title](https://markdown-videos-api.jorgenkh.no/youtube/Z9K3Agimwho?width=640&height=360)](https://www.youtube.com/watch?v=Z9K3Agimwho)
+<a href="https://www.youtube.com/watch?v=Z9K3Agimwho&list=PLDDq90qjoCsk"><img src="img/v6.2.software.jpg" width="500"></a>
 
 #### Step 3. Extract the key
 
@@ -363,12 +363,12 @@ Turn on the captions.<br>
 > THIS IS IMPORTANT! Many people had to jump the car, so I'm telling you. Please listen. Do not stay on this mode for more than 5 minutes.
 
 Turn on the captions.<br>
-[![Title](https://markdown-videos-api.jorgenkh.no/youtube/qRibDOLg4f4?width=640&height=360)](https://www.youtube.com/watch?v=qRibDOLg4f4)
+<a href="https://www.youtube.com/watch?v=qRibDOLg4f4&list=PLDDq90qjoCsk"><img src="img/v6.3.extraction.jpg" width="500"></a>
 
 #### Step 4. Install OpenPilot or SunnyPilot
 
 Turn on the captions.<br>
-[![Title](https://markdown-videos-api.jorgenkh.no/youtube/Ndfnhri2JGU?width=640&height=360)](https://www.youtube.com/watch?v=Ndfnhri2JGU)
+<a href="https://www.youtube.com/watch?v=Ndfnhri2JGU&list=PLDDq90qjoCsk"><img src="img/v6.4.openpilot.jpg" width="500"></a>
 
 ### Comma 3
 
