@@ -348,6 +348,9 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 
 #### Step 2. Install the hardware
 
+> [!CAUTION]
+> Your phone charging cable will not work here. For connecting a comma device to the harness, always use the official OBD-C cable that came with the comma device. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
+
 Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=Z9K3Agimwho&list=PLDDq90qjoCsk"><img src="img/v6.2.hardware.jpg" width="500"></a>
 
