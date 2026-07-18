@@ -331,41 +331,58 @@ If your car is not listed above, then there has been no documented information o
 
 # Setup Guide
 
-> [!WARNING]
-> This setup guide does **not** cover vehicles in the [🟡 reported-working newer experimental path section](#-reported-working-with-a-newer-experimental-path), including 2024+ Sienna. Those vehicles currently require different experimental tooling and notes; see that section for thehui's alternative instructions.
-
 ## Key Extraction
 
 Your car has a security key that Toyota doesn't want you to have. \
 Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key-extraction/) to extract the key.
 
-### Step 1. Install `TSK Manager`
+### Comma 3X and Comma 4
+
+#### Step 1. Install `TSK Manager`
+
+44-second overview.<br>
+<a href="https://www.youtube.com/shorts/bYqBKtZDiA4"><img src="img/v6.1.hardware-shorts.jpg" width="300"></a>
+
+18-minute real-time demonstration. Turn on the captions.<br>
+<a href="https://www.youtube.com/watch?v=Jo9SRp4VjMs&list=PLDDq90qjoCsk"><img src="img/v6.1.hardware.jpg" width="500"></a>
+
+#### Step 2. Install the hardware
+
+Turn on the captions.<br>
+<a href="https://www.youtube.com/watch?v=Z9K3Agimwho&list=PLDDq90qjoCsk"><img src="img/v6.2.software.jpg" width="500"></a>
+
+#### Step 3. Extract the key
+
+> [!CAUTION]
+> The 12V battery will die in 10 minutes when you're in `Not Ready to Drive` mode.
+> 
+> Turn off the A/C and never stay on this mode for more than 5 minutes at a time. After 5 minutes, start the engine and leave it running for 5 minutes before trying again.
+>
+> The 12V battery is not your hybrid driving battery. It doesn't matter that your car is charged to 100%.
+>
+> THIS IS IMPORTANT! Many people had to jump the car, so I'm telling you. Please listen. Do not stay on this mode for more than 5 minutes.
+
+Turn on the captions.<br>
+<a href="https://www.youtube.com/watch?v=qRibDOLg4f4&list=PLDDq90qjoCsk"><img src="img/v6.3.extraction.jpg" width="500"></a>
+
+#### Step 4. Install OpenPilot or SunnyPilot
+
+Turn on the captions.<br>
+<a href="https://www.youtube.com/watch?v=Ndfnhri2JGU&list=PLDDq90qjoCsk"><img src="img/v6.4.openpilot.jpg" width="500"></a>
+
+### Comma 3
+
+#### Step 1. Install `TSK Manager`
 
 At home, sitting next to your router, turn on the comma device with a phone charger. Ignore the low voltage warning.
 
 Choose `Custom Software` and enter the URL:
 
-* C4: `optskug/tskm-0.11.0`
-
-On any screen, swipe down to go back.
-
-![](img/v5.c4.install.1.jpg)
-
-![](img/v5.c4.install.2.jpg)
-
-![](img/v5.c4.tsk-manager.home.jpg)
-
-The buttons are a bit too sensitive - I'll fix this soon.
-
-* C3X: `optskug/tskm-0.11.0`
-
-![](img/v4.install.1.jpg)
+`https://install.sunnypilot.ai/fork/optskug/tskm-c3`
 
 ![](img/v4.install.2.jpg)
 
 ![](img/v3.tsk-manager.home.jpg)
-
-* C3: `https://install.sunnypilot.ai/fork/optskug/tskm-c3`
 
 Unplug the power to turn off the device.
 
@@ -378,15 +395,13 @@ Unplug the power to turn off the device.
 1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the comma device. Afterward, install using the URL for the comma device.
 </details>
 
-### Step 2. Install the hardware
+#### Step 2. Install the hardware
 
 Go to your car and connect everything including Comma Power (OBD2 connector + long cable).
 
 Official Setup Guide: https://comma.ai/setup
 
 Turn the car on and off - the comma device should remain powered on.
-
-![](img/v5.c4.tsk-manager.incar.jpg)
 
 ![](img/v3.tsk-manager.incar.jpg)
 
@@ -397,7 +412,7 @@ Turn the car on and off - the comma device should remain powered on.
 3. You can remove Comma Power later but connect it for now.
 </details>
 
-### Step 3. Put the car into `Not Ready To Drive` mode
+#### Step 3. Put the car into `Not Ready To Drive` mode
 
 Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
@@ -417,7 +432,7 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 3. Some cars don't have `ACCESSORY` mode. Doesn't matter - get on the mode that says `Not Ready To Drive`.
 </details>
 
-### Step 4. Run the exploit using `TSK Manager`
+#### Step 4. Run the exploit using `TSK Manager`
 
 > [!NOTE]
 > Your car is going to freak out - it will beep and flash all kinds of errors.
@@ -428,8 +443,6 @@ Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
 
 Run `TSK Extractor`. This takes up to 10 seconds.
 
-![](img/v5.c4.ext-success.jpg)
-
 ![](img/v3.ext-success.jpg)
 
 Congratulations, you have the key now!
@@ -438,8 +451,6 @@ Congratulations, you have the key now!
 > It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
 
 Sometimes `TSK Extractor` can't talk to the car. Try again.
-
-![](img/v5.c4.ext-known.jpg)
 
 ![](img/v3.ext-known.jpg)
 
@@ -455,23 +466,13 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
 </details>
 
-### Step 5. Install `commaai/nightly-dev`
+#### Step 5. Install `commaai/nightly-dev`
 
 Start your car's engine.
 
-Go to the `Reboot Menu`.
-
-* C4: `Install commaai/nightly-dev`
-* C3X: `Install commaai/nightly-dev`
-* C3: `Install sunnypilot/staging-tici`
-
-For C4 and C3X, `commaai/nightly-dev` is the only branch from comma.ai with TSK support.
+Go to the `Reboot Menu` and choose `Install sunnypilot/staging-tici`.
 
 For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot is your best option.
-
-![](img/v5.c4.reboot.jpg)
-
-![](img/v4.reboot.jpg)
 
 <details><summary>Troubleshooting</summary>
 
@@ -480,13 +481,9 @@ For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot i
 3. openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
 </details>
 
-### Step 6. Calibrate & Validate
+#### Step 6. Calibrate & Validate
 
-C4 will show the home screen. Once you start driving it will show the 15mph calibration screen.
-
-![](img/v5.c4.calibrate-1.jpg) ![](img/v5.c4.calibrate-2.jpg)
-
-C3X will show the 15mph calibration screen immediately.
+C3 will boot into the 15mph calibration screen.
 
 ![](img/v3.calibrate.jpg)
 
@@ -501,7 +498,7 @@ If you're able to calibrate and use openpilot to control the steering wheel and 
 3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
 </details>
 
-### Step 7. Clean up
+#### Step 7. Clean up
 
 Put the covers back on, and you're done. Congratulations!
 
@@ -525,9 +522,9 @@ I (@calvinspark) don't use it because I hate even a remote possibility of a 12V 
 If you decide not to use it, bring the comma device into your home to get updates. Note that an auto-update to v0.10.0 broke C3 users, so check Discord for compatibility issues before a major version update.
 </details>
 
-### Step 8. What's next?
+#### Step 8. What's next?
 
-#### Keep using `commaai/nightly-dev`
+##### Keep using `commaai/nightly-dev`
 
 * If there is a hardware problem, you need to be on a branch from comma.ai to get support from the comma.ai company.
 
@@ -537,7 +534,7 @@ If you decide not to use it, bring the comma device into your home to get update
 
 * If everything's working as expected for a week or two, you're done - just keep using it. If you want to tinker more, check out [Forks](#forks).
 
-#### Tell us how it went
+##### Tell us how it went
 
 Did everything go smoothly? Was something not clear? Did you get into a state that's not described in the doc?
 
@@ -605,7 +602,7 @@ Notes
 ## sunnypilot
 
 URL [(Source)](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
-* C4: `staging.sunnypilot.ai`
+* C4: `install.sunnypilot.ai/release-mici`
 * C3X: `release.sunnypilot.ai`
 * C3: `install.sunnypilot.ai/staging-tici`
 
