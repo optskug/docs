@@ -341,21 +341,21 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 #### Step 1. Install `TSK Manager`
 
 44-second overview.<br>
-<a href="https://www.youtube.com/shorts/bYqBKtZDiA4"><img src="img/v6.1.hardware-shorts.jpg" width="300"></a>
+<a href="https://www.youtube.com/shorts/bYqBKtZDiA4"><img src="img/v6.1.software-shorts.jpg" width="300"></a>
 
 18-minute real-time demonstration. Turn on the captions.<br>
-<a href="https://www.youtube.com/watch?v=Jo9SRp4VjMs&list=PLDDq90qjoCsk"><img src="img/v6.1.hardware.jpg" width="500"></a>
+<a href="https://www.youtube.com/watch?v=Jo9SRp4VjMs&list=PLDDq90qjoCsk"><img src="img/v6.1.software.jpg" width="500"></a>
 
 #### Step 2. Install the hardware
 
 Turn on the captions.<br>
-<a href="https://www.youtube.com/watch?v=Z9K3Agimwho&list=PLDDq90qjoCsk"><img src="img/v6.2.software.jpg" width="500"></a>
+<a href="https://www.youtube.com/watch?v=Z9K3Agimwho&list=PLDDq90qjoCsk"><img src="img/v6.2.hardware.jpg" width="500"></a>
 
 #### Step 3. Extract the key
 
 > [!CAUTION]
 > The 12V battery will die in 10 minutes when you're in `Not Ready to Drive` mode.
-> 
+>
 > Turn off the A/C and never stay on this mode for more than 5 minutes at a time. After 5 minutes, start the engine and leave it running for 5 minutes before trying again.
 >
 > The 12V battery is not your hybrid driving battery. It doesn't matter that your car is charged to 100%.
@@ -365,7 +365,7 @@ Turn on the captions.<br>
 Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=qRibDOLg4f4&list=PLDDq90qjoCsk"><img src="img/v6.3.extraction.jpg" width="500"></a>
 
-#### Step 4. Install OpenPilot or SunnyPilot
+#### Step 4. Install openpilot or sunnypilot
 
 Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=Ndfnhri2JGU&list=PLDDq90qjoCsk"><img src="img/v6.4.openpilot.jpg" width="500"></a>
@@ -391,7 +391,7 @@ Unplug the power to turn off the device.
 1. A normal phone or laptop charger works fine. If not, USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
 1. Sometimes the installer won't proceed or gets stuck around 10% and restarts. Instead of Custom Software, install comma openpilot, uninstall it through the Settings menu, and then try again.
 1. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
-1. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `commaai/nightly-dev` manually instead of using TSK Manager.
+1. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `sunnypilot/staging-tici` manually instead of using TSK Manager.
 1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the comma device. Afterward, install using the URL for the comma device.
 </details>
 
@@ -461,24 +461,25 @@ Sometimes `TSK Extractor` can't talk to the car. Try again.
 
    ![](img/v3.ext-unknown.jpg)
 
-   The exploit is proven to work but `TSK Extractor` GUI is new. Send @calvinspark a photo and then try again.
+   Send @calvinspark a photo and then try again.
 3. Run `TSK Extractor` within 30 seconds of putting the car in `Not Ready To Drive` mode. If the car stays on that mode for a long time the extractor no longer works.
 4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
 </details>
 
-#### Step 5. Install `commaai/nightly-dev`
+#### Step 5. Install `sunnypilot/staging-tici`
 
 Start your car's engine.
 
 Go to the `Reboot Menu` and choose `Install sunnypilot/staging-tici`.
 
+![](img/v4.reboot.jpg)
+
 For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot is your best option.
 
 <details><summary>Troubleshooting</summary>
 
-1. `commaai/nightly-dev` is the newest and possibly unstable branch from comma.ai with TSK support.
-2. Frustratingly, there isn't a release branch from comma.ai with TSK support.
-3. openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
+1. Frustratingly, there isn't a release branch from comma.ai with TSK support.
+1. openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
 </details>
 
 #### Step 6. Calibrate & Validate
@@ -489,7 +490,7 @@ C3 will boot into the 15mph calibration screen.
 
 If you're able to calibrate and use openpilot to control the steering wheel and gas/brake pedals, it's working!
 
-`commaai/nightly-dev` can use both the gas and brake pedals (aka "long support") and also the steering wheel (aka "lat support") on TSK vehicles. In other words, it can do all the normal things that an openpilot can do including Experimental Mode.
+`sunnypilot/staging-tici` can use both the gas and brake pedals (aka "long support") and also the steering wheel (aka "lat support") on TSK vehicles. In other words, it can do all the normal things that an openpilot can do including Experimental Mode.
 
 <details><summary>Troubleshooting</summary>
 
@@ -524,13 +525,7 @@ If you decide not to use it, bring the comma device into your home to get update
 
 #### Step 8. What's next?
 
-##### Keep using `commaai/nightly-dev`
-
-* If there is a hardware problem, you need to be on a branch from comma.ai to get support from the comma.ai company.
-
-* If there is a software problem, you need to be on a branch from comma.ai to get support on comma.ai's Discord. There is a channel for #custom-forks, but it's easier to get support in other channels.
-
-* `commaai/nightly-dev` updates every day but you don't need to update every day. We hope that comma.ai provides a stable release branch with TSK support, but until then, `commaai/nightly-dev` is the only official branch with TSK support.
+##### Keep using `sunnypilot/staging-tici`
 
 * If everything's working as expected for a week or two, you're done - just keep using it. If you want to tinker more, check out [Forks](#forks).
 
