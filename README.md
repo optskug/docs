@@ -24,6 +24,7 @@ This is an attempt to document some of the discussion and information about the 
 
 ## Table of Contents
 
+<!-- toc:start -->
 * [openpilot/etc. on Toyota/Lexus/Subaru with TSK/ECU SECURITY KEY/SecOC](#openpilotetc-on-toyotalexussubaru-with-tskecu-security-keysecoc)
    * [Background](#background)
    * [Cars](#cars)
@@ -41,6 +42,7 @@ This is an attempt to document some of the discussion and information about the 
 * [Forks](#forks)
 * [Discords of Note](#discords-of-note)
 * [Current History](#current-history)
+<!-- toc:end -->
 
 ---
 
@@ -72,6 +74,11 @@ The following is not comprehensive.
 ---
 
 ## Cars
+
+> [!IMPORTANT]
+> TSS version alone does **not** tell you whether a vehicle has TSK/SecOC or whether the current exploit path will work. Region, model year, plant/origin, and the exact ECU hardware matter more.
+>
+> Example: the EU 2024 RAV4 Hybrid appears to have TSK, while the US 2025 RAV4 appears not to have TSK according to TechInfo checks. Do not assume "TSS 2.0" means "works" or "TSS 3.0" means "doesn't work".
 
 ### 🟢 Successfully running openpilot
 
@@ -586,6 +593,8 @@ Source: [comma.ai Discord #toyota-security](https://discord.com/channels/4695246
 
 ## openpilot
 
+[![nightly-dev last commit](https://img.shields.io/github/last-commit/commaai/openpilot/nightly-dev?label=nightly-dev%20last%20commit)](https://github.com/commaai/openpilot/commits/nightly-dev/)
+
 URL
 * C4: `commaai/nightly-dev`
 * C3X: `commaai/nightly-dev`
@@ -599,6 +608,10 @@ Notes
 * Supports lat and long, but no MADS/AOL.
 
 ## sunnypilot
+
+[![staging last commit](https://img.shields.io/github/last-commit/sunnypilot/sunnypilot/staging?label=staging%20last%20commit)](https://github.com/sunnypilot/sunnypilot/commits/staging/)
+[![release-tizi last commit](https://img.shields.io/github/last-commit/sunnypilot/sunnypilot/release-tizi?label=release-tizi%20last%20commit)](https://github.com/sunnypilot/sunnypilot/commits/release-tizi/)
+[![staging-tici last commit](https://img.shields.io/github/last-commit/sunnypilot/sunnypilot/staging-tici?label=staging-tici%20last%20commit)](https://github.com/sunnypilot/sunnypilot/commits/staging-tici/)
 
 URL [(Source)](https://community.sunnypilot.ai/t/recommended-branch-installations/235)
 * C4: `install.sunnypilot.ai/release-mici`
@@ -615,6 +628,8 @@ Notes
 
 ## FrogPilot
 
+[![FrogPilot last commit](https://img.shields.io/github/last-commit/FrogAi/FrogPilot/FrogPilot?label=FrogPilot%20last%20commit)](https://github.com/FrogAi/FrogPilot/commits/FrogPilot/)
+
 URL
 * C4: Not yet supported
 * C3X: `frogpilot.download`
@@ -626,6 +641,9 @@ Notes
 * Discord: https://discord.com/invite/frogpilot
 
 ## SatoPilot
+
+[![personal3 last commit](https://img.shields.io/github/last-commit/AlexandreSato/openpilot/personal3?label=personal3%20last%20commit)](https://github.com/AlexandreSato/openpilot/commits/personal3/)
+[![extract_secoc_key_btn last commit](https://img.shields.io/github/last-commit/AlexandreSato/openpilot/extract_secoc_key_btn?label=extract_secoc_key_btn%20last%20commit)](https://github.com/AlexandreSato/openpilot/commits/extract_secoc_key_btn/)
 
 URL
 * C4: Not yet supported
