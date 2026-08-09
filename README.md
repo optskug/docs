@@ -66,7 +66,7 @@ The following is not comprehensive.
 * The exact details of how the process of how Toyota's tools communicate with the vehicle and their servers, and how the key is updated for multiple ECUs is still not fully known or experimented with. A high level overview of the process is known, but not the exact details.
   * Could a simulation of an extraneous "blank" vulnerable ECU into the system be tacked onto the communication with Toyota to extract the key?
   * There's something with Master ECUs and Slave ECUs here.
-* The 2023 US made ICE Corolla (VIN starts with `5`) is a TSS 3.0 vehicle that does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. No one has come by to show what TSS3 without TSK looks like. One person has come by but they don't have that much time and ... that's it? Just one person, how weird.
+* The 2023 US made ICE Corolla (VIN starts with `5`) is a TSS 3.0 vehicle that does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. However, the first known CAN logs from one of these cars show key-like count and authentication fields on `STEERING_LKA`, `STEERING_LTA`, and `BRAKE_2`. It remains unclear whether this is TSK/SecOC, a hardcoded key, or another authentication scheme.
 * What might a firmware mod approach look like? Is it possible to flash a custom firmware that disables SecOC?
 
 ---
@@ -179,9 +179,6 @@ Related vehicles such as [🟠 2023+ Sienna (Mainland China-made)](#-may-be-poss
 
 If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information from people like you.
 
-* 2023 US-made Corolla (VIN starts with `5`)
-  * Uses TSS 3.0 but does not appear to have ECU Security Key or SecOC steps when replacing the forward camera. It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows. This is still of great interest to the Toyota Security Key / SecOC efforts as it may provide better insight into the TSS 3.0 system without the security key complication. The effort needs CAN bus logs to look at with a comma device hooked up from someone with this car.
-  * Note that this is not the same as the 2023 TMC/JP-made Corolla or the 2024+ Corolla. It happens to be applicable to a single year of US-made Corolla.
 * 2023+ Sienna (Mainland China-made)
   * Separate from the US-made 2024+ Sienna reports above. This may be worth revisiting, but it is not known to be working.
   * Compare with [🟡 2024+ Sienna](#-reported-working-with-a-newer-experimental-path): Toyota Safety Sense generation does not map cleanly to Toyota TSK / ECU Security Key / SecOC behavior.
@@ -226,6 +223,11 @@ The List:
 * 2023+ bz4x[^3] (Probably the same for sister rebranded Subaru Solterra)
 * 2025+ Camry[^3]
 * 2023 TMC/JP-made Corolla[^3]
+* 2023 US-made Corolla (VIN starts with `5`)
+  * TSS 3.0.
+  * The first known CAN logs show changing count and authentication fields on `STEERING_LKA`, `STEERING_LTA`, and `BRAKE_2`, indicating some kind of key or authentication is present.
+  * No key extraction or working openpilot port has been reported yet. The next step is to run TSK Manager and see whether it can obtain a key.
+  * This is not the same as the 2023 TMC/JP-made Corolla or the 2024+ Corolla.
 * 2022+ Corolla Cross (USDM, not applicable to Thailand, Brazil, or Taiwan)[^3]
 * 2023 Corolla Cross Hybrid
   * TSS 2.0
@@ -291,16 +293,10 @@ They may not have been added due to:
 
 However, they are confirmed on Toyota Techinfo to not have SecOC/TSK.
 
-With the exception of the 2023 US-made Corolla, these vehicles are not TSK vehicles and might just be a fingerprint away from being supported by openpilot.
+These vehicles are not TSK vehicles and might just be a fingerprint away from being supported by openpilot.
 
 Vehicle status notes in this section are for the US market unless otherwise specified.
 
-* 2023 US-made (VIN starts with `5`) Corolla Sedan
-  * TSS 3.0
-  * No ECU Security Key or SecOC steps when replacing the forward camera.
-  * It's unknown whether it has TSK, and if yes in what form. Maybe they just don't do the pairing thing but hardcode a key. No one knows.
-  * Likely requires a C3X as it's probably that it uses CAN-FD.
-  * Probably not a fingerprint print away.
 * Taiwan-market Corolla Cross
   * TSS 2.0
   * No TSK/SecOC.
@@ -1674,7 +1670,11 @@ https://discord.com/channels/469524606043160576/905950538816978974/1234383264467
 * [adeeb, comma staffer, says "glad to see some new approaches here 🙂, there's so many angles to explore"](https://discord.com/channels/469524606043160576/905950538816978974/1530706221534023760)
 * [yc and 3b1b.eth begin investigating which Toyota servers respond to official rekey requests.](https://discord.com/channels/469524606043160576/905950538816978974/1530766866090557451) [A follow-up reports that Toyota's official key-configuration software requires uploading both the MCU ID and VIN, and that the server refuses to provide a key update when only the VIN is supplied.](https://discord.com/channels/469524606043160576/905950538816978974/1531130354411245598)
   * This establishes both values as required inputs to the server-side rekey flow. It suggests that the MCU ID and VIN may be seed or binding values used when deriving the update material, but the rejection behavior alone does not yet establish the exact calculation or prove that either value directly participates in the cryptographic key derivation.
-  * [The discussion reaches what yc calls “absurd levels of sophistication”: extracting the HSM master key may require invasive semiconductor work such as decapsulating the chip package and probing signals between the CPU and flash die, while the proposed fault-injection path appears to require two consecutive voltage glitches and professional equipment such as a ChipWhisperer Husky.](https://discord.com/channels/469524606043160576/905950538816978974/1530851936507789363) After a five-hour Pico glitch attempt, 3b1b.eth says the work is beyond their current capabilities and that they do not plan to continue researching it. They express disappointment that community members have already done so much while comma has not, pointedly turning geohot's advice back on him: “why use comma? Just get a different car.” The problem is no longer merely finding the right extraction technique: the required effort, equipment, and hardware-security expertise have become impractical for the community effort as it currently exists. Unless a substantially easier path emerges from the Toyota-server investigation, the `8965B4512000` key-extraction approach is effectively stalled; yc suggests that running a CAN proxy workload on a more accessible and replaceable ECU such as the wheel-angle sensor may be a safer direction than continuing to attack the EPS key.
+* [The discussion reaches what yc calls “absurd levels of sophistication”: extracting the HSM master key may require invasive semiconductor work such as decapsulating the chip package and probing signals between the CPU and flash die, while the proposed fault-injection path appears to require two consecutive voltage glitches and professional equipment such as a ChipWhisperer Husky.](https://discord.com/channels/469524606043160576/905950538816978974/1530851936507789363) After a five-hour Pico glitch attempt, 3b1b.eth says the work is beyond their current capabilities and that they do not plan to continue researching it. They express disappointment that community members have already done so much while comma has not, pointedly turning geohot's advice back on him: “why use comma? Just get a different car.” The problem is no longer merely finding the right extraction technique: the required effort, equipment, and hardware-security expertise have become impractical for the community effort as it currently exists. Unless a substantially easier path emerges from the Toyota-server investigation, the `8965B4512000` key-extraction approach is effectively stalled; yc suggests that running a CAN proxy workload on a more accessible and replaceable ECU such as the wheel-angle sensor may be a safer direction than continuing to attack the EPS key.
+
+### August 2026
+
+* [albinoelephant records the first known CAN logs from a US-made 2023 Corolla.](https://discord.com/channels/469524606043160576/905950538816978974/1535892025982066699) The logs show changing count and authentication fields on `STEERING_LKA`, `STEERING_LTA`, and `BRAKE_2`, indicating that the car has some kind of key or message authentication despite the forward-camera replacement procedure not showing ordinary ECU Security Key/SecOC steps. The route ID is `a74eba85c97eaf67/00000004--555953f500/0`. The next step is to run TSK Manager and see whether it can obtain a key; no key extraction or working openpilot port has been reported yet.
 
 ---
 
