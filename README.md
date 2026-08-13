@@ -28,9 +28,7 @@ This is an attempt to document some of the discussion and information about the 
    * [Background](#background)
    * [Cars](#cars)
       * [🟢 Successfully running openpilot](#-successfully-running-openpilot)
-         * [Notes](#notes)
-      * [🟡 Reported working with a newer experimental path](#-reported-working-with-a-newer-experimental-path)
-      * [🟠 May be possible to hack but hasn't been tried](#-may-be-possible-to-hack-but-hasnt-been-tried)
+      * [🟠 Tried but no key extracted yet](#-tried-but-no-key-extracted-yet)
       * [🔴 Not hacked and can't run openpilot](#-not-hacked-and-cant-run-openpilot)
       * [🔵 Vehicles not in comma's supported vehicles list](#-vehicles-not-in-commas-supported-vehicles-list)
       * [Unknown](#unknown)
@@ -77,39 +75,44 @@ The following is not comprehensive.
 
 These cars can run openpilot but are not listed on https://comma.ai/vehicles#toyota or [CARS.md](https://github.com/commaai/openpilot/blob/master/docs/CARS.md) because comma.ai (the company) understandably doesn't want to own the security key hacking process.
 
-If it is on https://comma.ai/vehicles#toyota, then it's not in question and is supported by comma.ai for openpilot. At the moment, all harnesses for pre-existing and non-TSK/SecOC supported Toyota vehicles are Toyota Harness A and can be used with TSK/SecOC supported vehicles.
+If it is on https://comma.ai/vehicles#toyota, then it's supported by comma.ai for openpilot. At the moment, all harnesses for pre-existing and non-TSK/SecOC supported Toyota vehicles are Toyota Harness A and can be used with TSK/SecOC supported vehicles.
 
 Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 * 2021-2023 RAV4 Prime/PHEV aka. Plug-in Hybrid
   * All Trims supported
-  * For non-Prime/PHEV RAV4s (e.g. various ICE trims, Hybrid trims, etc.) in the US, please refer to [comma's supported vehicle list](https://comma.ai/vehicles#toyota)
   * Toyota Harness A
-  * Early 2024 MY situation like Early 2024 MY Sienna unknown.
-  * The compatibility status of the RAV4 Hybrid or RAV4 ICE is not relevant to the Prime/PHEV. They're different vehicles.
-* 2021-2023 Sienna Hybrid (US-made), 2021-2022 Sienna Hybrid (Mainland China-made)
+  * Early 2024 MY situation unknown. See [🟠 2024+ RAV4 Prime/PHEV](#-tried-but-no-key-extracted-yet).
+  * The compatibility status of the RAV4 Hybrid or RAV4 ICE is not relevant to the Prime/PHEV. They're different vehicles. See [comma's supported vehicle list](https://comma.ai/vehicles#toyota).
+* 2021-2026 Sienna Hybrid (US-made), 2021-2022 Sienna Hybrid (Mainland China-made)
   * All Trims supported
   * VINs starting with `5` are US-made. VINs starting with `L` are Mainland China-made. We are not aware of Siennas made in any other regions.
   * Toyota Harness A
-  * Not applicable to 2023+ Sienna (Mainland China-made)
-  * Early 2024 MY (Built in 09/23 to 11/23 according to sticker) might work? Currently too few data points to determine cutoff
-    https://discord.com/channels/469524606043160576/905950538816978974/1350659380592513142
-    * Check driver door jam to get month and year. It's Month/Year
-      * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
-    * Working
+  * 2023+ Mainland China-made Sienna does not work. See [🟠 2023+ Sienna (Mainland China-made)](#-tried-but-no-key-extracted-yet).
+  * The 2024+ cars are TSS 2.0-ish / Toyota Security / SecOC. Some public notes and tooling previously called this "TSS3", but Discord discussion and later repo cleanup suggest the 4th gen Sienna is better described as TSS2.5-ish / TSS 2.0-ish rather than true TSS3. TSS generation is not a reliable proxy for Toyota TSK / ECU Security Key / SecOC behavior.
+  * New 02 ~~bootloader~~[^4] seen.
+  * Reports are dated by the build month and year from the driver door jamb sticker. It's Month/Year.
+    * ![20250316_201239](https://github.com/user-attachments/assets/1ebd4643-5774-409f-9c15-0e170864b480)
+  * Reports:
+    * US-made
+      * Gako - 10/23
+      * [luke_chen01 - 11/23](https://discord.com/channels/469524606043160576/905950538816978974/1482268326259327098)
+      * samueljsg - 12/23
+      * VanceLiu/Vance425 - 01/24
+      * chipmunk/aidashu - 01/24, EPS `8965B4514000`
+      * [Chaim - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1518307440029077625)
+      * (thehui)/bkai201 - 06/24
+      * josh_schmitt_60596 - N/A , was a 21 but had its EPS swapped to something with the 0x02 identifier, so unknown effective build date.
+      * [@AA - 03/25](https://discord.com/channels/469524606043160576/905950538816978974/1532403518739185924)
+      * [TheGreatRangerOne - 04/25](https://discord.com/channels/469524606043160576/905950538816978974/1530394707463639310)
+      * [robocow1 - 09/25, MY2025, used Codex to drive the process, also first C3 with these vehicles](https://discord.com/channels/469524606043160576/905950538816978974/1524238336741474394)
+      * [Toshi - 06/26, MY2026 - First 2026 working](https://discord.com/channels/469524606043160576/905950538816978974/1528218323047940267)
+      * [BOOTYJUICE - 06/26](https://discord.com/channels/469524606043160576/905950538816978974/1528655930227425340)
+    * Mainland China-made
+      * [aivordin's acquaintance - 03/22](https://discord.com/channels/469524606043160576/905950538816978974/1395329561297817731)
+    * Not working with the original memory dump, not retested with the newer DataFlash extraction
       * US-made
-        * Gako - 10/23
-        * [luke_chen01 - 11/23](https://discord.com/channels/469524606043160576/905950538816978974/1482268326259327098)
-      * Mainland China-made
-        * [aivordin's acquaintance - 03/22](https://discord.com/channels/469524606043160576/905950538816978974/1395329561297817731)
-    * Not Working
-      * US-made
-        * ~~samueljsg - 12/23~~ - later reported working via the [🟡 newer experimental path](#-reported-working-with-a-newer-experimental-path)
         * grb5 - 09/24
-      * Mainland China-made
-        * hl.elias_44035 - 12/22
-        * [aivordin's acquaintance 2 - 08/23](https://discord.com/channels/469524606043160576/905950538816978974/1399314022829920286)
-        * [sadmenmen - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932)
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * All Trims supported
   * Toyota Harness A
@@ -135,76 +138,60 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
 
 #### Notes
 
-* These vehicles have TSS 2.0.
+* These vehicles have TSS 2.0 ~ 2.5.
 * These vehicles do not use the HSM.
-* These all seem to share the commonality of a ~~version 1 bootloader~~[^4] ? on the EPS
-* Longitudinal
-  * The [pull request for longitudinal support has been merged into `opendbc`](https://github.com/commaai/opendbc/pull/1385), but openpilot has not yet updated its copy of the repository to include it.
-  * Some [Forks](#forks) have it as an option.
-  * Resume command spams still works from existing implementation so stop and go without touching is active if openpilot is active.
+* ~~These all seem to share the commonality of a version 1 bootloader on the EPS~~[^4]. On 24+ Siennas we're seeing 02 bootloader. This means 02 bootloader is no longer a mark of unhackability.
 
-### 🟡 Reported working with a newer experimental path
+### 🟠 Tried but no key extracted yet
 
-These cars have credible community reports of working openpilot control, but they do **not** follow the current [Setup Guide](#setup-guide). The current GUI guide/app extraction flow does not handle this path yet.
+Code execution works and we can dump the memory/dataflash, but no keys found in the dumps yet.
 
-If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information, especially build dates, EPS versions, CAN logs, dump behavior, successful attempts, and failed attempts.
+If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information from people like you. Please bring build date, VIN origin, EPS part number and identifiers, CAN logs, dump behavior, and both successful and failed attempts.
 
-Related vehicles such as [🟠 2023+ Sienna (Mainland China-made)](#-may-be-possible-to-hack-but-hasnt-been-tried), 2021+ Venza, and 2024+ RAV4 Prime are still only speculative revisit candidates for this newer DataFlash candidate scan + CAN MAC-oracle strategy. They are not promoted into this category unless someone reports a working result.
-
-* 2024+ Sienna
-  * TSS 2.0-ish / Toyota Security / SecOC. Some new public notes and tooling previously called this "TSS3", but Discord discussion and later repo cleanup suggest the 4th gen Sienna itself is better described as TSS2.5-ish / TSS 2.0-ish rather than true TSS3. TSS generation is not a reliable proxy for Toyota TSK / ECU Security Key / SecOC behavior.
-  * VanceLiu/Vance425 and thehui/bkai201 report successful SecOC key recovery on the `8965B4514000` / `0x02` Sienna EPS family using EPS DataFlash candidate scanning plus CAN MAC-oracle validation. See [thehui/bkai201's Toyota Dataflash SecOC Setup repo](https://github.com/Bk2ol/tsk_extraction_by_can_log), whose currently validated target remains a 4th-gen Sienna with EPS `8965B4514000`.
-  * Start with [thehui/bkai201's Toyota Dataflash SecOC Setup repo](https://github.com/Bk2ol/tsk_extraction_by_can_log) if you are researching this path. Treat it as experimental research tooling, not as the normal GUI setup guide.
-  * Still not broadly "supported": payload availability, exact vehicle/build/market coverage, and independent verification are incomplete. The upper build-date / model-year range for this approach is not known.
-  * At least code is executed. Unknown what might have changed across other 2024+ Siennas.
-  * New 02 ~~bootloader~~[^4] seen.
-  * Reports:
-    * Working
-      * US-made
-          * VanceLiu/Vance425 - 01/24
-          * chipmunk/aidashu - 01/24, EPS `8965B4514000`
-          * samueljsg - 12/23
-          * [Chaim - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1518307440029077625)
-          * (thehui)/bkai201 - 06/24
-          * josh_schmitt_60596 - N/A , was a 21 but had its EPS swapped to something with the `0x02` identifier, so unknown effective build date.
-          * [robocow1 - 09/25, used Codex to drive the process, also first C3 with these vehicles](https://discord.com/channels/469524606043160576/905950538816978974/1524238336741474394)
-          * [Toshi - 06/26 - First 2026 working](https://discord.com/channels/469524606043160576/905950538816978974/1528218323047940267)
-    * Not Working
-      * PRC-made
-          * pandus_lee - 09/25
-          * [3b1b.eth - 09/25](https://discord.com/channels/469524606043160576/905950538816978974/1524242481200365753)
-
-
-### 🟠 May be possible to hack but hasn't been tried
-
-If you have one of these cars, please stop by the [comma Discord](https://discord.comma.ai)'s #toyota-security channel - we need more information from people like you.
-
-* 2023+ Sienna (Mainland China-made)
-  * Separate from the US-made 2024+ Sienna reports above. This may be worth revisiting, but it is not known to be working.
-  * Compare with [🟡 2024+ Sienna](#-reported-working-with-a-newer-experimental-path): Toyota Safety Sense generation does not map cleanly to Toyota TSK / ECU Security Key / SecOC behavior.
-  * Existing data points are mixed and confusing: a Mainland China-made 2022 Sienna owner in Frogpilot Discord reportedly extracted a key but got stuck writing params, while later 2023+ Mainland China-made examples failed or showed changed identifiers.
-  * Known non-working / uncertain examples include hl.elias_44035's December 2022 build, aivordin's acquaintance 2 with an August 2023 build, and sadmenmen's April 2024 build.
-  * calvinspark later noticed an August 2023 Mainland China-made Sienna that did not dump had an `0x01` app identifier and `0x02` ~~bootloader~~[^4] identifier.
-  * Please bring build date, VIN origin, EPS/app identifiers, CAN logs, and dump behavior to #toyota-security.
-* 2021+ Venza
-  * Key at least not at the same location as the RAV4 Prime.
-  * Very speculative June 2026 follow-up: after the 2024-era Sienna `8965B4514000` / `0x02` EPS reports above, it may be worth brave testers trying the newer DataFlash candidate scan + CAN MAC-oracle strategy here too. This is not proven for 2021+ Venza; ECU differences, payload compatibility, security-access differences, HSM changes, or a different key location may still make it fail. Please report successes, failures, EPS versions, CAN logs, and dump behavior back in #toyota-security.
-  * Has a 02 ~~bootloader~~[^4] though from two 2021 samples.
-  * Reports:
-    * Not Working
-      * [purpleterrier - xx/21?](https://discord.com/channels/469524606043160576/905950538816978974/1525572192950292520)
+* 2023 Corolla Cross Hybrid
+  * TSS 2.0
+  * Code execution: yes. Memory can be dumped but the key is not in visible memory.
+  * Mentioned in Willem's blog post.
+* 2024 Highlander ICE and Hybrid
+  * TSS 2.0
+  * Code execution: yes. Memory can be dumped but the key is not in visible memory.
+  * 02 ~~bootloader~~[^4]
 * 2024+ RAV4 Prime/PHEV aka. Plug-in Hybrid
   * TSS 2.0
+  * Code execution: yes. At least code is executed. Unknown what might have changed.
   * Key at least not at the same location as other RAV4 Prime.
-  * Very speculative June 2026 follow-up: after the 2024-era Sienna `8965B4514000` / `0x02` EPS reports above, it may be worth brave testers trying the newer DataFlash candidate scan + CAN MAC-oracle strategy here too. This is not proven for 2024+ RAV4 Prime; ECU differences, payload compatibility, security-access differences, HSM changes, or a different key location may still make it fail. Please report successes, failures, EPS versions, CAN logs, and dump behavior back in #toyota-security.
-  * At least code is executed. Unknown what might have changed.
   * New 02 ~~bootloader~~[^4] seen.
   * Reports:
     * Not Working
       * JP-made
           * [yc - 10/23](https://discord.com/channels/469524606043160576/1524987019087052820/1525024279547220028)
-* 2022+ GR Yaris (EUDM/JDM/MXDM)
-  * Unknown
+* 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
+* 2023+ Sienna (Mainland China-made)
+  * Separate from the US-made Sienna in [🟢 Successfully running openpilot](#-successfully-running-openpilot). This may be worth revisiting, but it is not known to be working.
+  * Toyota Safety Sense generation does not map cleanly to Toyota TSK / ECU Security Key / SecOC behavior.
+  * Code execution: not reported.
+  * Existing data points are mixed and confusing: a Mainland China-made 2022 Sienna owner in Frogpilot Discord reportedly extracted a key but got stuck writing params, while later 2023+ Mainland China-made examples failed or showed changed identifiers.
+  * calvinspark later noticed an August 2023 Mainland China-made Sienna that did not dump had an `0x01` app identifier and `0x02` ~~bootloader~~[^4] identifier.
+  * Reports:
+    * Not Working
+      * hl.elias_44035 - 12/22
+      * [aivordin's acquaintance 2 - 08/23](https://discord.com/channels/469524606043160576/905950538816978974/1399314022829920286)
+      * [sadmenmen - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1362613104206151932)
+      * pandus_lee - 09/25
+      * [3b1b.eth - 09/25](https://discord.com/channels/469524606043160576/905950538816978974/1524242481200365753)
+* 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497)
+  * TSS 2.0
+  * Code execution: yes. Willem reported getting the exploit to run on a 2022 Tundra EPS, but said the EPS uses an HSM.
+  * Tim tried the Sienna-style DataFlash candidate verifier and [reported no luck](https://discord.com/channels/469524606043160576/905950538816978974/1515703348060487681).
+  * Relevant source links: [Willem's 2022 Tundra EPS / HSM update](https://discord.com/channels/469524606043160576/905950538816978974/1394067422566416405), [Tim's June 2026 Tundra test thread](https://discord.com/channels/469524606043160576/905950538816978974/1515703348060487681), and the public [I-CAN-hack/secoc `tundra` branch](https://github.com/I-CAN-hack/secoc/tree/tundra).
+  * User ThisGuy has an extra rack on the bench. Sent to Willem for further analysis. Uses HSM, possible firmware mod approach to disable SecOC in planning. See July 2025 update below.
+  * 04 ~~bootloader~~[^4]
+* 2021+ Venza
+  * Code execution: yes. Key at least not at the same location as the RAV4 Prime.
+  * Has a 02 ~~bootloader~~[^4] though from two 2021 samples.
+  * Reports:
+    * Not Working
+      * [purpleterrier - xx/21?](https://discord.com/channels/469524606043160576/905950538816978974/1525572192950292520)
 
 ### 🔴 Not hacked and can't run openpilot
 
@@ -213,7 +200,6 @@ These fall into a few categories:
 * Introduced in 2022+ with TSK/SecOC but it's strongly suspected that they have an updated chip that precludes the existing exploits from dumping the key. (Most)
   * See [Willem's blog post about dumping the keys, specifically the section "Notes on Newer Vehicles"](https://icanhack.nl/blog/secoc-key-extraction/#notes-on-newer-vehicles)
   * We've only been able to dump keys from vehicles models that were introduced with TSK/SecOC in 2020-2021. Presumably Toyota was going through their existing stock of ECU hardware and phased in TSK/SecOC over time for existing models but new models starting in 2022+ all have an evolved or uncracked TSK/SecOC from day one.
-* We can't get code execution on the EPS ECU to run the exploit for some other reason. (Tundra)
 * CAN Bus captures from these vehicles are unlikely to be of use for any research until someone figures out how to get _into_ the ECUs themselves. In other words, you can't tell much from ciphertext.
 
 The List:
@@ -229,41 +215,19 @@ The List:
   * No key extraction or working openpilot port has been reported yet. The next step is to run TSK Manager and see whether it can obtain a key.
   * This is not the same as the 2023 TMC/JP-made Corolla or the 2024+ Corolla.
 * 2022+ Corolla Cross (USDM, not applicable to Thailand, Brazil, or Taiwan)[^3]
-* 2023 Corolla Cross Hybrid
-  * TSS 2.0
-  * Known to be not working.
-  * Memory can be dumped but the key is not in visible memory.
-  * Mentioned in Willem's blog post.
 * 2024+ Corolla/ Corolla Hybrid, All origins.
 * 2023+ Crown
 * 2024+ Grand Highlander ICE and Hybrid[^3], 2024 Crown Kluger ICE and Hybrid (PRC, elsewhere?)
-* 2024 Highlander ICE and Hybrid,
-  * TSS 2.0
-  * Known to be not working.
-  * Memory can be dumped but the key is not in visible memory.
-  * 02 ~~bootloader~~[^4]
+* 2022+ GR Yaris (EUDM/JDM/MXDM)
 * 2025+ Highlander ICE and Hybrid[^3]
 * 2024+ Mirai[^3]
 * 2023+ Prius and Prius Prime/PHEV[^3]
+* 2024+ RAV4 in Europe (techinfo)
+* 2024+ Tacoma[^3]
 * 2021+ Yaris Cross Hybrid (EUDM/JDM/MXDM)
   * Emna tried `optskug/secoc` key extraction and reached programming session / seed generation, but the computed key was rejected with `SECURITY_ACCESS - invalid key`.
   * This now has a concrete negative datapoint rather than only "hasn't been tried" speculation.
   * The likely next step is not merely rebuilding `payload.bin`; someone probably needs to figure out the correct security key / `SEED_KEY_SECRET`, possibly by following Willem's sacrificial EPS reverse-engineering path.
-* 2024+ RAV4 Prime/PHEV aka. Plug-in Hybrid
-  * TSS 2.0
-  * Key at least not at the same location as other RAV4 Prime
-  * Very speculative June 2026 follow-up: after the 2024-era Sienna `8965B4514000` / `0x02` EPS reports below, it may be worth brave testers trying the newer DataFlash candidate scan + CAN MAC-oracle strategy here too. This is not proven for 2024+ RAV4 Prime; ECU differences, payload compatibility, security-access differences, HSM changes, or a different key location may still make it fail. Please report successes, failures, EPS versions, CAN logs, and dump behavior back in #toyota-security.
-  * At least code is executed. Unknown what might have changed.
-  * New 02 ~~bootloader~~[^4] seen
-* 2024+ RAV4 in Europe (techinfo)
-* 2023+ Sequoia (Speculated from being a Tundra with an SUV Body)
-* 2024+ Tacoma[^3]
-* 2022+ Tundra (Confirmed in https://github.com/commaai/openpilot/issues/27869#issuecomment-1504046497)
-  * TSS 2.0
-  * Still red: no working key extraction is reported. Willem later reported getting the exploit to run on a 2022 Tundra EPS, but said the EPS uses an HSM. Tim later tried the Sienna-style DataFlash candidate verifier and [reported no luck](https://discord.com/channels/469524606043160576/905950538816978974/1515703348060487681).
-  * Relevant source links: [Willem's 2022 Tundra EPS / HSM update](https://discord.com/channels/469524606043160576/905950538816978974/1394067422566416405), [Tim's June 2026 Tundra test thread](https://discord.com/channels/469524606043160576/905950538816978974/1515703348060487681), and the public [I-CAN-hack/secoc `tundra` branch](https://github.com/I-CAN-hack/secoc/tree/tundra).
-  * User ThisGuy has an extra rack on the bench. Sent to Willem for further analysis. Uses HSM, possible firmware mod approach to disable SecOC in planning. See July 2025 update below.
-  * 04 ~~bootloader~~[^4]
 * 2024+ Lexus GX[^3]
 * 2022+ Lexus LX, NX[^3]
 * 2023+ Lexus LS[^3]
@@ -548,11 +512,13 @@ In some cases it's possible to [type in a key that you already know](https://git
 
 These days the key extraction is well-established, so re-extracting the key is just as easy as typing it in.
 
-### Run the exploit using SSH manually
+### Run the 21-23 exploit using SSH manually
 
 Is a GUI button too easy for your engineering spirit? Here is how to [extract the key manually](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-4b-run-the-exploit-using-ssh-manually).
 
+### Run the 24+ exploit using SSH manually
 
+VanceLiu/Vance425 and thehui/bkai201 built the same 2024+ hack in a different packaging. See https://github.com/Bk2ol/tsk_extraction_by_can_log.
 
 ---
 # FAQ
