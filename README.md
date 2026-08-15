@@ -55,7 +55,7 @@ Most work on the issue still builds on what Willem and Greg accomplished. As of 
 There has been some primordial research on firmware modification to disable the security system, but it is not known if this is possible or not. However, there has been no updates since July 2025.
 
 > [!NOTE]
-> Toyota is not alone in implementing encrypted CAN bus systems to block ADAS additions. For example, Ford has been rolling out their Trusted Realtime Operating Network (TRON) on CANFD vehicles starting with the 2023 Superduty. You can check the [Confirmed TRON Status List](https://bluepilot.dev/2025/08/13/confirmed-tron-status-list/) on Blue Pilot for more details on affected Ford vehicles that are likewise currently incompatible with openpilot.
+> Toyota is not alone in implementing encrypted CAN bus systems to block ADAS additions. For example, Ford has been rolling out their Trusted Realtime Operating Network (TRON) on CANFD vehicles starting with the 2023 Superduty. GM has likewise rolled out its Global B architecture, also known as the Vehicle Intelligence Platform (VIP), on newer vehicles; affected Global B vehicles are currently incompatible with openpilot. You can check the [Confirmed TRON Status List](https://bluepilot.dev/2025/08/13/confirmed-tron-status-list/) on Blue Pilot for more details on affected Ford vehicles that are likewise currently incompatible with openpilot.
 
 ### Unresolved Mysteries
 
