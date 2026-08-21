@@ -308,9 +308,7 @@ If your car is not listed above, then there has been no documented information o
 Your car has a security key that Toyota doesn't want you to have. \
 Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key-extraction/) to extract the key.
 
-### Comma 3X and Comma 4
-
-#### Step 1. Install `TSK Manager`
+### Step 1. Install `TSK Manager`
 
 44-second overview.<br>
 <a href="https://www.youtube.com/shorts/bYqBKtZDiA4"><img src="img/v6.1.software-shorts.jpg" width="300"></a>
@@ -318,7 +316,49 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 18-minute real-time demonstration. Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=Jo9SRp4VjMs&list=PLDDq90qjoCsk"><img src="img/v6.1.software.jpg" width="500"></a>
 
-#### Step 2. Install the hardware
+#### If you have a C3
+
+1. Install openpilot.
+1. Uninstall openpilot.
+1. On your computer, do one of these.
+   * Yes, a computer is required.
+   * `192.168.x.x` is comma's IP.
+
+>Mac Apple Silicon
+>```
+>curl -fL https://github.com/ophwug/agnos-waiting-for-internet-debug/releases/latest/download/agnos-waiting-for-internet-debug-darwin-arm64 -o agnos-waiting-for-internet-debug
+>
+>chmod +x agnos-waiting-for-internet-debug
+>
+>./agnos-waiting-for-internet-debug --ip 192.168.x.x --custom-software-url https://installer.comma.ai/optskug/tskm-c3
+>```
+
+>Mac Intel
+>```
+>curl -fL https://github.com/ophwug/agnos-waiting-for-internet-debug/releases/latest/download/agnos-waiting-for-internet-debug-darwin-amd64 -o agnos-waiting-for-internet-debug
+>
+>chmod +x agnos-waiting-for-internet-debug
+>
+>./agnos-waiting-for-internet-debug --ip 192.168.x.x --custom-software-url https://installer.comma.ai/optskug/tskm-c3
+>```
+
+>Linux
+>```
+>curl -fL https://github.com/ophwug/agnos-waiting-for-internet-debug/releases/latest/download/agnos-waiting-for-internet-debug-linux -o agnos-waiting-for-internet-debug
+>
+>chmod +x agnos-waiting-for-internet-debug
+>
+>./agnos-waiting-for-internet-debug --ip 192.168.x.x --custom-software-url https://installer.comma.ai/optskug/tskm-c3
+>```
+
+>Windows
+>```
+>curl.exe -fL https://github.com/ophwug/agnos-waiting-for-internet-debug/releases/latest/download/agnos-waiting-for-internet-debug.exe -o agnos-waiting-for-internet-debug.exe
+>
+>.\agnos-waiting-for-internet-debug.exe --ip 192.168.x.x --custom-software-url https://installer.comma.ai/optskug/tskm-c3
+>```
+
+### Step 2. Install the hardware
 
 > [!CAUTION]
 > Your phone charging cable will not work here. For connecting a comma device to the harness, always use the official OBD-C cable that came with the comma device. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
@@ -326,7 +366,7 @@ Follow this guide to run a [hardware exploit](https://icanhack.nl/blog/secoc-key
 Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=jwalKl9AsR8&list=PLDDq90qjoCsk"><img src="img/v6.2.hardware.jpg" width="500"></a>
 
-#### Step 3. Extract the key
+### Step 3. Extract the key
 
 > [!CAUTION]
 > The 12V battery will die in 10 minutes when you're in `Not Ready to Drive` mode.
@@ -340,175 +380,18 @@ Turn on the captions.<br>
 Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=qRibDOLg4f4&list=PLDDq90qjoCsk"><img src="img/v6.3.extraction.jpg" width="500"></a>
 
-#### Step 4. Install openpilot or sunnypilot
+### Step 4. Install openpilot or sunnypilot
 
 Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=Ndfnhri2JGU&list=PLDDq90qjoCsk"><img src="img/v6.4.openpilot.jpg" width="500"></a>
 
-### Comma 3
+If SunnyPilot goes into Dashcam Mode, check `Settings` > `Toggles` > `Enable SunnyPilot`.
 
-#### Step 1. Install `TSK Manager`
+### Step 5. Tell us how it went
 
-At home, sitting next to your router, turn on the comma device with a phone charger. Ignore the low voltage warning.
+Did everything go smoothly? Was something not clear? Did you get into a state that's not described in the videos?
 
-Choose `Custom Software` and enter the URL:
-
-`https://install.sunnypilot.ai/fork/optskug/tskm-c3`
-
-![](img/v4.install.2.jpg)
-
-![](img/v3.tsk-manager.home.jpg)
-
-Unplug the power to turn off the device.
-
-<details><summary>Troubleshooting</summary>
-
-1. A normal phone or laptop charger works fine. If not, USB A-to-C cables work well, and USB PD (Power Delivery) sometimes doesn't work.
-1. Sometimes the installer won't proceed or gets stuck around 10% and restarts. Instead of Custom Software, install comma openpilot, uninstall it through the Settings menu, and then try again.
-1. The installation takes about 2 minutes, or ~20 minutes if an OS update is needed. OS update downloads a ton of stuff so don't be too far away from the router.
-1. Prefetching may fail if you're in China. The extraction will still work, but you'll have to install `sunnypilot/staging-tici` manually instead of using TSK Manager.
-1. In some cases the installation gets stuck in "registering device" screen. If this happens, unplug the device to power off, plug it back in, and then tap-tap-tap on the screen as it boots to reset the comma device. Afterward, install using the URL for the comma device.
-</details>
-
-#### Step 2. Install the hardware
-
-Go to your car and connect everything including Comma Power (OBD2 connector + long cable).
-
-Official Setup Guide: https://comma.ai/setup
-
-Turn the car on and off - the comma device should remain powered on.
-
-![](img/v3.tsk-manager.incar.jpg)
-
-<details><summary>Troubleshooting</summary>
-
-1. The car harness sends a 12V signal instead of the usual 5V. Do not plug in anything other than a comma device.
-2. For connecting a comma device to the harness, always use the official OBD-C cable that came with the comma device. comma.ai sells it if you need more: https://comma.ai/shop/obd-c-cable. If you must buy your own, USB-C 3.1 Gen 2 is required.
-3. You can remove Comma Power later but connect it for now.
-</details>
-
-#### Step 3. Put the car into `Not Ready To Drive` mode
-
-Slowly press the `POWER` button twice WITHOUT pressing the brake pedal.
-
-![](img/v2.nrtd1.jpg) ![](img/v2.nrtd2.jpg)
-
-> [!CAUTION]
-> The 12V battery will die in 10 minutes. Turn off the A/C and never stay on this mode for more than 5 minutes at a time. After 5 minutes, start the engine and leave it running for 5 minutes before trying again.
->
-> The 12V battery is not your hybrid driving battery. It doesn't matter that your car is charged to 100%.
->
-> THIS IS IMPORTANT! Many people had to jump the car, so I'm telling you. Please listen. Do not stay on this mode for more than 5 minutes.
-
-<details><summary>Troubleshooting</summary>
-
-1. Some cars refer to `Not Ready To Drive` mode as `IGNITION ON` mode while others refer to it as `POWER ON` mode. Regardless of what your car calls it, get on the mode that says `Not Ready To Drive`.
-2. The first press turns on `ACCESSORY` mode. The second press activates `Not Ready To Drive` mode.
-3. Some cars don't have `ACCESSORY` mode. Doesn't matter - get on the mode that says `Not Ready To Drive`.
-</details>
-
-#### Step 4. Run the exploit using `TSK Manager`
-
-> [!NOTE]
-> Your car is going to freak out - it will beep and flash all kinds of errors.
->
-> Relax. The exploit is safe to run and can't break your car even if you yank the cable.
->
-> Turn off the car, wait one minute, and turn it back on. Everything will be back to normal.
-
-Run `TSK Extractor`. This takes up to 10 seconds.
-
-![](img/v3.ext-success.jpg)
-
-Congratulations, you have the key now!
-
-> [!WARNING]
-> It's theoretically possible for someone to remotely hack your car with the key under very specific circumstances. You don't need to protect the key like it's your bank password, but still don't post it on Discord.
-
-Sometimes `TSK Extractor` can't talk to the car. Try again.
-
-![](img/v3.ext-known.jpg)
-
-<details><summary>Troubleshooting</summary>
-
-1. Once extracted, the key is installed in `/cache/params/SecOCKey` and `/data/params/d/SecOCKey` files.
-2. In rare cases, `TSK Extractor` may hit an unexpected error.
-
-   ![](img/v3.ext-unknown.jpg)
-
-   Send @calvinspark a photo and then try again.
-3. Run `TSK Extractor` within 30 seconds of putting the car in `Not Ready To Drive` mode. If the car stays on that mode for a long time the extractor no longer works.
-4. Normally the extraction succeeds on the first try or after the first car restart. If you tried the extractor 3 times for 3 car restarts (=9 times) and still doesn't work, there might be a hardware problem and/or you're doing something wrong. Stop and talk to us in #toyota-security.
-</details>
-
-#### Step 5. Install `sunnypilot/staging-tici`
-
-Start your car's engine.
-
-Go to the `Reboot Menu` and choose `Install sunnypilot/staging-tici`.
-
-![](img/v4.reboot.jpg)
-
-For C3, there are no branches from comma.ai with C3+TSK support, so sunnypilot is your best option.
-
-<details><summary>Troubleshooting</summary>
-
-1. Frustratingly, there isn't a release branch from comma.ai with TSK support.
-1. openpilot won't be able to drive your car if you install a branch without TSK support. See [Forks](#forks) for more information.
-</details>
-
-#### Step 6. Calibrate & Validate
-
-C3 will boot into the 15mph calibration screen.
-
-![](img/v3.calibrate.jpg)
-
-If you're able to calibrate and use openpilot to control the steering wheel and gas/brake pedals, it's working!
-
-`sunnypilot/staging-tici` can use both the gas and brake pedals (aka "long support") and also the steering wheel (aka "lat support") on TSK vehicles. In other words, it can do all the normal things that an openpilot can do including Experimental Mode.
-
-<details><summary>Troubleshooting</summary>
-
-1. If you get an `LKAS` error, either the key was not installed or you're running a fork/branch without TSK support.
-2. If the comma device says `Car unrecognized` or `Dashcam mode for unsupported car`, you need to do [Fingerprinting](https://github.com/optskug/docs/blob/19c61098eac496ded2fb1cacb732be6671c38c69/README.md#step-5-fingerprinting-if-the-car-is-not-recognized). However, this shouldn't happen anymore. If it does, please talk to us in #toyota-security.
-3. The key will change if you get a new bumper because the bumper has distance sensors that use the security key. Instead of applying the existing key to the bumper, they replace the key on all parts of the car. The same goes for many other parts with SecOC components. Even if you never get into an accident, the key can still change if a Toyota service technician presses a wrong button.
-</details>
-
-#### Step 7. Clean up
-
-Put the covers back on, and you're done. Congratulations!
-
-Comma Power (OBD2 connector + long cable) is optional. It's not necessary for using a comma device, but keeping it allows the comma device to stay powered on when you turn off the car.
-
-<details><summary>Comma Power</summary>
-
-__Pros__
-* Don't need to wait for the comma device to boot up on a car start.
-* Auto-update to get the latest and greatest.
-* Upload logs and videos to [comma connect](https://connect.comma.ai/) automatically. [If you do this, you'll be in the training set and your specific driving will improve faster than others.](https://discord.com/channels/469524606043160576/954493346250887168/1328801037578145802)
-* Easier to SSH in to debug.
-
-__Cons__
-* Auto-updates may break.
-* Some have experienced 12V battery drain.
-* More cables to manage.
-
-I (@calvinspark) don't use it because I hate even a remote possibility of a 12V battery issue.
-
-If you decide not to use it, bring the comma device into your home to get updates. Note that an auto-update to v0.10.0 broke C3 users, so check Discord for compatibility issues before a major version update.
-</details>
-
-#### Step 8. What's next?
-
-##### Keep using `sunnypilot/staging-tici`
-
-* If everything's working as expected for a week or two, you're done - just keep using it. If you want to tinker more, check out [Forks](#forks).
-
-##### Tell us how it went
-
-Did everything go smoothly? Was something not clear? Did you get into a state that's not described in the doc?
-
-Please let us know! We've put in lots of effort into this doc, so even a simple "It worked out well" comment is appreciated.
+Please let us know! We've put in lots of effort into this, so even a simple "It worked out well" comment is appreciated.
 
 We're in [comma Discord](https://discord.comma.ai) in #toyota-security channel.
 
@@ -518,7 +401,13 @@ We're in [comma Discord](https://discord.comma.ai) in #toyota-security channel.
 
 In some cases it's possible to [type in a key that you already know](https://github.com/optskug/docs/blob/f582e47020c0aff210cbdf9d452c0f19e67bcad7/README.md#key-installation). This was made when the key extraction was just getting started.
 
-These days the key extraction is well-established, so re-extracting the key is just as easy as typing it in.
+If you're comfortable with SSH, do this with your key.
+```
+sudo mkdir -p /cache/params
+sudo chown comma:comma /cache/params
+echo -n 0123456789abcdef0123456789abcdef > /cache/params/SecOCKey
+sudo reboot
+```
 
 ### Run the 21-23 exploit using SSH manually
 
