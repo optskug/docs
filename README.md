@@ -385,7 +385,7 @@ Turn on the captions.<br>
 Turn on the captions.<br>
 <a href="https://www.youtube.com/watch?v=Ndfnhri2JGU&list=PLDDq90qjoCsk"><img src="img/v6.4.openpilot.jpg" width="500"></a>
 
-If SunnyPilot goes into Dashcam Mode, check `Settings` > `Toggles` > `Enable SunnyPilot`.
+If sunnypilot goes into Dashcam Mode, check `Settings` > `Toggles` > `Enable sunnypilot`.
 
 ### Step 5. Tell us how it went
 
@@ -518,7 +518,7 @@ If you can't find the author, don't install the fork!
 Most if not all Discord links are to the comma.ai Discord accessible with an invite from https://discord.comma.ai unless otherwise noted. These other Discords include:
 
 * Retropilot (RP): https://discord.gg/GzWegVa.
-* Sunnypilot's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV.
+* sunnypilot's Openpilot Server (SP): https://discord.gg/TCTvFTKrAV.
   * [#dev-toyota-security (Sienna)](https://discord.com/channels/880416502577266699/1371352826625785907)
   * [#dev-toyota-security (RAV4 Prime)](https://discord.com/channels/880416502577266699/1385812275285327945)
 * Openpilot Enthusiasts (Formerly "Openpilot community") (OPC): https://discord.gg/rRB7eDKccy
