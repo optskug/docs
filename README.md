@@ -303,6 +303,9 @@ If your car is not listed above, then there has been no documented information o
 
 # Setup Guide
 
+> [!TIP]
+> Buying a comma four? [Use this referral link to save $50](https://refer.comma.ai/GEA4PYX).
+
 ## Key Extraction
 
 Your car has a security key that Toyota doesn't want you to have. \
