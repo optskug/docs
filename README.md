@@ -103,6 +103,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
       * [Chaim - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1518307440029077625)
       * (thehui)/bkai201 - 06/24
       * josh_schmitt_60596 - N/A , was a 21 but had its EPS swapped to something with the 0x02 identifier, so unknown effective build date.
+      * [zimm3rmann - 02/25](https://discordapp.com/channels/469524606043160576/905950538816978974/1542288053131804712)
       * [@AA - 03/25](https://discord.com/channels/469524606043160576/905950538816978974/1532403518739185924)
       * [TheGreatRangerOne - 04/25](https://discord.com/channels/469524606043160576/905950538816978974/1530394707463639310)
       * [robocow1 - 09/25, MY2025, used Codex to drive the process, also first C3 with these vehicles](https://discord.com/channels/469524606043160576/905950538816978974/1524238336741474394)
