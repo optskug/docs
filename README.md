@@ -102,6 +102,7 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
       * chipmunk/aidashu - 01/24, EPS `8965B4514000`
       * [Chaim - 04/24](https://discord.com/channels/469524606043160576/905950538816978974/1518307440029077625)
       * (thehui)/bkai201 - 06/24
+      * [grb5 - 09/24](https://discord.com/channels/469524606043160576/905950538816978974/1540236854333546526)
       * josh_schmitt_60596 - N/A , was a 21 but had its EPS swapped to something with the 0x02 identifier, so unknown effective build date.
       * [zimm3rmann - 02/25](https://discordapp.com/channels/469524606043160576/905950538816978974/1542288053131804712)
       * [@AA - 03/25](https://discord.com/channels/469524606043160576/905950538816978974/1532403518739185924)
@@ -111,9 +112,6 @@ Follow the [Setup Guide](#setup-guide) below and you'll have it working.
       * [BOOTYJUICE - 06/26](https://discord.com/channels/469524606043160576/905950538816978974/1528655930227425340)
     * Mainland China-made
       * [aivordin's acquaintance - 03/22](https://discord.com/channels/469524606043160576/905950538816978974/1395329561297817731)
-    * Not working with the original memory dump, not retested with the newer DataFlash extraction
-      * US-made
-        * grb5 - 09/24
 * 2020-2022 Yaris Hybrid (EUDM/JDM/MXDM)
   * All Trims supported
   * Toyota Harness A
