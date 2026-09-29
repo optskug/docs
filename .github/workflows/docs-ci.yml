@@ -1,0 +1,28 @@
+name: docs-ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Verify README TOC is synchronized
+        run: python scripts/sync_readme_toc.py --check
+
+      - name: Verify README regression checks
+        run: python scripts/check_readme_regressions.py

@@ -1,0 +1,40 @@
+name: sync-readme-toc
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - scripts/sync_readme_toc.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Synchronize README TOC
+        run: python scripts/sync_readme_toc.py
+
+      - name: Commit and push updated TOC
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README.md table of contents already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: sync README table of contents"
+          git push
